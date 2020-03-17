@@ -296,7 +296,8 @@ class Cart
 
             $item->quantity = $quantity;
 
-            if (!$this->isItemHaveQuantity($item)) {
+           //echo "<pre>"; print_r($item);exit();
+            if (!$this->isItemHaveQuantity($item) && $item['product_type'] == 'product') {
                 throw new \Exception(trans('shop::app.checkout.cart.quantity.inventory_warning'));
             }
 
@@ -918,7 +919,10 @@ class Cart
      */
     public function isItemHaveQuantity($item)
     {
-        return $item->product->getTypeInstance()->isItemHaveQuantity($item);
+       //echo "<pre>"; print_r($item);exit();
+        if($item['product_type'] == "product"){
+            return $item->product->getTypeInstance()->isItemHaveQuantity($item);
+        }
     }
 
     /**
