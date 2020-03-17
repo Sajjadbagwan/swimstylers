@@ -97,7 +97,11 @@
 
                                 </div>
                                 <?php } else { //echo "<pre>";print_r($item['product_id']);
-                                //die; ?>
+                                 
+                                $results = DB::select('select * from class_attributes where class_id = ?', [$item['product_id']]);
+                                   //print_r($results[0]); 
+                                   //die;
+                                ?>
                                     <div class="item mt-5">
                                         <div class="item-image" style="margin-right: 15px;">
                                         <a href="#"><img src="http://127.0.0.1:8000/vendor/webkul/ui/assets/images/product/meduim-product-placeholder.png" /></a>
@@ -111,7 +115,31 @@
                                             </a>
                                         </div>
                                         {!! view_render_event('bagisto.shop.checkout.cart.item.name.after', ['item' => $item]) !!}
+                                        <div class="item-day">
+                                            <a href="#">
+                                             <img src="http://127.0.0.1:8000/vendor/webkul/ui/assets/images/Icon-Calendar.svg" />   {{  date('l', strtotime($results[0]->class_start_date)) }}
+                                            </a>
+                                        </div>
 
+                                        <div class="item-time">
+                                            <a href="#">
+                                              <img src="http://127.0.0.1:8000/vendor/webkul/ui/assets/images/Icon-Calendar.svg" />   {{ $results[0]->class_time }}
+                                            </a>
+                                        </div>  
+                                        <div class="item-address">
+                                            <img src="https://img.icons8.com/material/24/000000/google-maps-new.png"/><a href="#">
+                                                {{ $results[0]->class_address }}
+                                            </a>
+                                        </div>
+                                        <div class="item-address">
+                                           <img src="http://127.0.0.1:8000/vendor/webkul/ui/assets/images/Icon-Calendar.svg" /> <a href="#">
+
+                                                {{ date ("l d M Y", strtotime ($results[0]->class_start_date)) }} <br>
+                                                {{ date ("l d M Y", strtotime ($results[0]->class_start_date ."+7 days")) }}<br>
+                                                {{ date ("l d M Y", strtotime ($results[0]->class_start_date ."+14 days")) }}<br>
+                                                {{ date ("l d M Y", strtotime ($results[0]->class_start_date ."+21 days")) }}<br>
+                                            </a>
+                                        </div>
 
                                         {!! view_render_event('bagisto.shop.checkout.cart.item.price.before', ['item' => $item]) !!}
 
