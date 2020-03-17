@@ -16,6 +16,7 @@
                     </span>
 
                     @foreach ($rateGroup['rates'] as $rate)
+                    <?php //echo "<pre>"; print_r($rate); //exit;?>
                         <div class="checkout-method-group mb-20">
                             <div class="line-one">
                                 <label class="radio-container">

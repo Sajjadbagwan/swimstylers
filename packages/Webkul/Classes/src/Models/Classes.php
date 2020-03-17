@@ -6,9 +6,9 @@ use Webkul\Core\Eloquent\TranslatableModel;
 use Kalnoy\Nestedset\NodeTrait;
 use Illuminate\Support\Facades\Storage;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
-use Webkul\Category\Contracts\Category as CategoryContract;
+use Webkul\Classes\Contracts\Classes as ClassesContract;
 use Webkul\Attribute\Models\AttributeProxy;
-use Webkul\Category\Repositories\CategoryRepository;
+use Webkul\Classes\Repositories\ClassesRepository;
 
 /**
  * Class Category

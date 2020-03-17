@@ -37,6 +37,12 @@ return [
         'route' => 'admin.sales.refunds.index',
         'sort' => 4,
         'icon-class' => ''
+    ],[
+        'key' => 'classes',
+        'name' => 'Classes',
+        'route' => 'admin.classes.index',
+        'sort' => 3,
+        'icon-class' => 'catalog-icon'
     ], [
         'key' => 'catalog',
         'name' => 'admin::app.layouts.catalog',

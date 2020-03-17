@@ -174,6 +174,7 @@ class OnepageController extends Controller
     */
     public function saveOrder()
     {
+
         if (Cart::hasError())
             return response()->json(['redirect_url' => route('shop.checkout.cart.index')], 403);
 
@@ -189,9 +190,9 @@ class OnepageController extends Controller
                 'redirect_url' => $redirectUrl
             ]);
         }
-
+    //echo "<pre>";print_r(Cart::prepareDataForOrder());exit();
         $order = $this->orderRepository->create(Cart::prepareDataForOrder());
-
+ 
         Cart::deActivateCart();
 
         session()->flash('order', $order);

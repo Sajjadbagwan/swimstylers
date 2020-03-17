@@ -1,11 +1,14 @@
 @foreach ($cart->items as $item)
     <?php
+       //echo "<pre>"; print_r($item['product_type']);exit();
+       if($item['product_type'] != "class"){
         $product = $item->product;
 
         if ($product->cross_sells()->count()) {
             $products[] = $product;
             $products = array_unique($products);
         }
+    }
     ?>
 @endforeach
 

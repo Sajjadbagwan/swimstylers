@@ -108,9 +108,11 @@ class Cart extends Model implements CartContract
     public function haveStockableItems()
     {
         foreach ($this->items as $item) {
+            if($item['product_type'] != "class"){
             if ($item->product->isStockable())
                 return true;
         }
+    }
 
         return false;
     }
@@ -139,9 +141,14 @@ class Cart extends Model implements CartContract
     public function hasProductsWithQuantityBox(): bool
     {
         foreach ($this->items as $item) {
+            if($item['product_type'] != "class"){ 
             if ($item->product->getTypeInstance()->showQuantityBox() === true) {
                 return true;
             }
+         }else{
+            /* update cart classes condition */
+             return true;
+         }
         }
         return false;
     }
@@ -154,9 +161,11 @@ class Cart extends Model implements CartContract
     public function hasGuestCheckoutItems()
     {
         foreach ($this->items as $item) {
-            if ($item->product->getAttribute('guest_checkout') === 0) {
-                return false;
-            }
+            if($item['product_type'] != "class"){
+                if ($item->product->getAttribute('guest_checkout') === 0) {
+                    return false;
+                }
+         }
         }
 
         return true;

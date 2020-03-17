@@ -35,7 +35,8 @@
 
                 <div class="dropdown-content">
                     @foreach ($items as $item)
-
+                         <?php  //echo "<pre>"; print_r($item['product_id']);exit();
+                                 if($item['product_type'] != "class"){  ?>
                         <div class="item">
                             <div class="item-image" >
                                 @php
@@ -81,6 +82,51 @@
                                 {!! view_render_event('bagisto.shop.checkout.cart-mini.item.quantity.after', ['item' => $item]) !!}
                             </div>
                         </div>
+                    <?php }else { ?>
+                        <div class="item">
+                            <div class="item-image" >
+                               
+                                <img src="http://127.0.0.1:8000/vendor/webkul/ui/assets/images/product/meduim-product-placeholder.png" />
+                            </div>
+
+                            <div class="item-details">
+                                {!! view_render_event('bagisto.shop.checkout.cart-mini.item.name.before', ['item' => $item]) !!}
+
+                                <div class="item-name">{{ $item->name }}</div>
+
+                                {!! view_render_event('bagisto.shop.checkout.cart-mini.item.name.after', ['item' => $item]) !!}
+
+
+                                {!! view_render_event('bagisto.shop.checkout.cart-mini.item.options.before', ['item' => $item]) !!}
+
+                                @if (isset($item->additional['attributes']))
+                                    <div class="item-options">
+
+                                        @foreach ($item->additional['attributes'] as $attribute)
+                                            <b>{{ $attribute['attribute_name'] }} : </b>{{ $attribute['option_label'] }}</br>
+                                        @endforeach
+
+                                    </div>
+                                @endif
+
+                                {!! view_render_event('bagisto.shop.checkout.cart-mini.item.options.after', ['item' => $item]) !!}
+
+
+                                {!! view_render_event('bagisto.shop.checkout.cart-mini.item.price.before', ['item' => $item]) !!}
+
+                                <div class="item-price"><b>{{ core()->currency($item->base_total) }}</b></div>
+
+                                {!! view_render_event('bagisto.shop.checkout.cart-mini.item.price.after', ['item' => $item]) !!}
+
+
+                                {!! view_render_event('bagisto.shop.checkout.cart-mini.item.quantity.before', ['item' => $item]) !!}
+
+                                <div class="item-qty">Quantity - {{ $item->quantity }}</div>
+
+                                {!! view_render_event('bagisto.shop.checkout.cart-mini.item.quantity.after', ['item' => $item]) !!}
+                            </div>
+                        </div>
+                    <?php } ?>
 
                     @endforeach
                 </div>

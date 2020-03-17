@@ -3,6 +3,7 @@
         @csrf
         <input type="hidden" name="product_id" value="{{ $product->product_id }}">
         <input type="hidden" name="quantity" value="1">
+        <input type="hidden" name="product_type" value="product">
         <button class="btn btn-lg btn-primary addtocart" {{ $product->isSaleable() ? '' : 'disabled' }}>{{ __('shop::app.products.add-to-cart') }}</button>
     </form>
 

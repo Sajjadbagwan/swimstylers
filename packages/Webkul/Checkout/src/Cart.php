@@ -144,7 +144,7 @@ class Cart
             return ['warning' => __('shop::app.checkout.cart.item.error-add')];
         }
 
-       // echo "<pre>"; print_r($data['product_type'] );die;
+      //  echo "<pre>"; print_r($data['product_type'] );die;
 
         if($data['product_type'] != 'class'){
              $product = $this->productRepository->findOneByField('id', $productId);
@@ -176,6 +176,7 @@ class Cart
                 if (!$cartItem) {
                     $cartItem = $this->cartItemRepository->create(array_merge($cartProduct, ['cart_id' => $cart->id]));
                 } else {
+                    //echo "<pre>";print_r($cartProduct);exit();
                     if (isset($cartProduct['parent_id']) && $cartItem->parent_id != $parentCartItem->id) {
                         $cartItem = $this->cartItemRepository->create(array_merge($cartProduct,
                             ['cart_id' => $cart->id]));
@@ -194,38 +195,32 @@ class Cart
             }
         }
 }else{
-     //   echo "Sdsd"; die;
+       //echo "Sdsd"; die;
           //$product = $this->productRepository->findOneByField('id', 2);
            //$cartProducts = $product->getTypeInstance()->prepareForCart($data);
          //$parentCartItem = null;
             //echo "<pre>"; print_r($data);exit();
-         $data1 = Array('product_id' => $data['product_id'],'sku' => 'ee','quantity' => '2','name' => 'Swimming Pool',
-    'price' => '20.0000', 'base_price' => '20.0000',  'total' => '40', 'base_total' => '40', 'weight' => '1',
-    'total_weight' => '2', 'base_total_weight' => '2','type' => 'simple','product_type' => 'class',  'additional' => Array(
-          '_token' => '3YC7kS1CDdaxnzwVdZNLZoW2G7GoyxxKlxrlAGFG',
+
+         $data1 = Array('product_id' => $data['product_id'],'sku' => 'ee','quantity' => $data['quantity'],'name' => 'Swimming Pool'.' '.$data['product_id'],'price' => $data['price'], 'base_price' => $data['price'],  'total' => $data['price'], 'base_total' => $data['price'], 'weight' => '1',
+    'total_weight' => '1', 'base_total_weight' => '2','type' => 'simple','product_type' => 'class',  'additional' => Array(
+          '_token' => 'JYC9nNtgV0LtKck8jQQ700DqIaWeHS5sPCAHeCJZ',
             'product_id' => $data['product_id'],
             'quantity'=> $data['quantity'],
         ));
          //echo "<pre>"; print_r($data1);exit();
         // $cartItem = $this->cartItemRepository->create(array_merge($data1, ['cart_id' => 1]));
         //  $cartItem = $this->cartItemRepository->update($data1, 7);
+
          $cartItem = $this->cartItemRepository->create(array_merge($data1,
                             ['cart_id' => $cart->id]));
-          //echo "<pre>"; print_r($product);exit();
-          //echo "<pre>"; print_r($cartItem);exit();
-             /*if (isset($data['class_id'])) {
-                   $parentCartItem = null;
-
-                    foreach ($cartProducts as $cartProduct) {
-                            $cartItem = $this->getItemByProduct($cartProduct);
-                           // $cartProduct['class_id'] = $parentCartItem->id;
-                        }
-            }*/
-}
+         //$parentCartItem = $cartItem;
+         session()->flash('success', trans('shop::app.checkout.cart.item.success'));
+        }
+       //echo "<pre>"; print_r($cart);exit();
         Event::dispatch('checkout.cart.add.after', $cart);
 
         $this->collectTotals();
-
+        //echo "sdsd";exit();
         return $this->getCart();
     }
 
@@ -238,7 +233,7 @@ class Cart
      */
     public function create($data)
     {
-        //print_r($data);exit();
+       // print_r($data);exit();
         $cartData = [
             'channel_id'            => core()->getCurrentChannel()->id,
             'global_currency_code'  => core()->getBaseCurrencyCode(),
@@ -261,12 +256,17 @@ class Cart
 
         $cart = $this->cartRepository->create($cartData);
 
+       
         if (!$cart) {
             session()->flash('error', trans('shop::app.checkout.cart.create-error'));
 
             return;
         }
 
+       /* if($data['product_type'] == 'class'){
+            return redirect()->back();
+        }
+*/
         $this->putCart($cart);
 
         return $cart;
@@ -330,6 +330,7 @@ class Cart
         $items = $this->getCart()->all_items;
 
         foreach ($items as $item) {
+            if($item['product_type'] != "class"){
             if ($item->product->getTypeInstance()->compareOptions($item->additional, $data['additional'])) {
                 if (isset($data['additional']['parent_id'])) {
                     if ($item->parent->product->getTypeInstance()->compareOptions($item->parent->additional,
@@ -340,6 +341,7 @@ class Cart
                     return $item;
                 }
             }
+          }
         }
     }
 
@@ -484,7 +486,7 @@ class Cart
     public function getCart()
     {
         $cart = null;
-
+        //print_r(session()->has('cart'));exit();
         if ($this->getCurrentCustomer()->check()) {
             $cart = $this->cartRepository->findOneWhere([
                 'customer_id' => $this->getCurrentCustomer()->user()->id,
@@ -493,7 +495,8 @@ class Cart
         } elseif (session()->has('cart')) {
             $cart = $this->cartRepository->find(session()->get('cart')->id);
         }
-
+        //echo "asas";
+       //echo "<pre>"; print_r($cart);exit();
         return $cart && $cart->is_active ? $cart : null;
     }
 
@@ -532,6 +535,7 @@ class Cart
      */
     public function saveCustomerAddress($data)
     {
+
         if (!$cart = $this->getCart()) {
             return false;
         }
@@ -759,7 +763,8 @@ class Cart
             return false;
         } else {
             foreach ($cart->items as $item) {
-               // $item->product->getTypeInstance()->validateCartItem($item);
+                if($item['product_type'] != "class"){
+                $item->product->getTypeInstance()->validateCartItem($item);
 
                 $price = !is_null($item->custom_price) ? $item->custom_price : $item->base_price;
 
@@ -769,6 +774,7 @@ class Cart
                     'total'      => core()->convertPrice($price * $item->quantity),
                     'base_total' => $price * $item->quantity,
                 ], $item->id);
+            }
             }
 
             return true;
@@ -892,10 +898,13 @@ class Cart
     public function isItemsHaveSufficientQuantity()
     {
         foreach ($this->getCart()->items as $item) {
+            if($item['product_type'] != "class"){
+          // echo "<pre>"; print_r($item);exit();
             if (!$this->isItemHaveQuantity($item)) {
                 return false;
             }
         }
+    }
 
         return true;
     }
@@ -979,9 +988,13 @@ class Cart
         }
 
         foreach ($data['items'] as $item) {
+           // if($item['product_type'] != "class"){
             $finalData['items'][] = $this->prepareDataForOrderItem($item);
+        //}else{
+         //   $finalData['items'][] = $this->prepareDataForOrderItem($item);         
+       // }
         }
-
+       // print_r($finalData);exit();
         return $finalData;
     }
 
@@ -995,7 +1008,7 @@ class Cart
     public function prepareDataForOrderItem($data)
     {
         $finalData = [
-            'product'              => $this->productRepository->find($data['product_id']),
+            'product'              => $this->productRepository->find(1),
             'sku'                  => $data['sku'],
             'type'                 => $data['type'],
             'name'                 => $data['name'],

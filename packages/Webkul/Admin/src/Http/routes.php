@@ -32,6 +32,7 @@ Route::group(['middleware' => ['web']], function () {
         ])->name('admin.reset-password.store');
 
 
+
         // Admin Routes
         Route::group(['middleware' => ['admin']], function () {
             Route::get('/logout', 'Webkul\User\Http\Controllers\SessionController@destroy')->defaults('_config', [
@@ -249,7 +250,8 @@ Route::group(['middleware' => ['web']], function () {
                     'view' => 'admin::sales.refunds.view'
                 ])->name('admin.sales.refunds.view');
             });
-
+                
+             Route::get('classes', 'Webkul\Classes\Http\Controllers\ClassesController@index')->defaults('_config', ['view' => 'admin::classes.index'])->name('admin.classes.index');    
             // Catalog Routes
             Route::prefix('catalog')->group(function () {
                 Route::get('/sync', 'Webkul\Product\Http\Controllers\ProductController@sync');

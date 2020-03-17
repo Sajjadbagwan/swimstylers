@@ -18,7 +18,7 @@ class ClassesServiceProvider extends ServiceProvider
     {
         $this->loadMigrationsFrom(__DIR__ . '/../Database/Migrations');
 
-        CategoryProxy::observe(CategoryObserver::class);
+        ClassesProxy::observe(ClassesObserver::class);
 
         $this->registerEloquentFactoriesFrom(__DIR__ . '/../Database/Factories');
     }
@@ -30,7 +30,9 @@ class ClassesServiceProvider extends ServiceProvider
      */
     public function register()
     {
-
+           /* $this->mergeConfigFrom(
+        dirname(__DIR__) . '/Config/menu.php', 'menu.admin'
+    );*/
     }
 
     /**

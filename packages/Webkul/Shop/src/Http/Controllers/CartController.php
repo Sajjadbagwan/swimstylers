@@ -72,7 +72,7 @@ class CartController extends Controller
      */
     public function add($id)
     {
-        print_r(request()->all());exit();
+     //   print_r(request()->all());exit();
 
         if(request()->all()['product_type'] != "class"){
         try {
@@ -93,9 +93,6 @@ class CartController extends Controller
                     return redirect()->route('shop.checkout.onepage.index');
                 }
             }else{
-
-
-
             if ($result instanceof CartModel) {
                 session()->flash('success', trans('shop::app.checkout.cart.item.success'));
 
@@ -118,7 +115,11 @@ class CartController extends Controller
 
         return redirect()->back();
     }else{
-        return redirect()->route('shop.checkout.onepage.index');
+         
+                $result = Cart::addProduct($id, request()->all());
+                //session()->flash('success');
+                return redirect()->back();
+              
     }
     }
 
