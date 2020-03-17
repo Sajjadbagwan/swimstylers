@@ -199,20 +199,36 @@ class Cart
           //$product = $this->productRepository->findOneByField('id', 2);
            //$cartProducts = $product->getTypeInstance()->prepareForCart($data);
          //$parentCartItem = null;
-            //echo "<pre>"; print_r($data);exit();
+     //echo "<pre>"; print_r($cart->all_items->product_type);exit();
 
-         $data1 = Array('product_id' => $data['product_id'],'sku' => 'ee','quantity' => $data['quantity'],'name' => 'Swimming Pool'.' '.$data['product_id'],'price' => $data['price'], 'base_price' => $data['price'],  'total' => $data['price'], 'base_total' => $data['price'], 'weight' => '1',
+           
+
+         $data1 = Array('product_id' => $data['product_id'],'sku' => 'ee','quantity' => $data['quantity'],'name' => $data['product_name'],'price' => $data['price'], 'base_price' => $data['price'],  'total' => $data['price'], 'base_total' => $data['price'], 'weight' => '1',
     'total_weight' => '1', 'base_total_weight' => '2','type' => 'simple','product_type' => 'class',  'additional' => Array(
           '_token' => 'JYC9nNtgV0LtKck8jQQ700DqIaWeHS5sPCAHeCJZ',
             'product_id' => $data['product_id'],
             'quantity'=> $data['quantity'],
         ));
-         //echo "<pre>"; print_r($data1);exit();
+         //$cartItem = $this->getItemByProduct($cartProduct);
+         //echo "<pre>"; print_r($cart);exit();
         // $cartItem = $this->cartItemRepository->create(array_merge($data1, ['cart_id' => 1]));
         //  $cartItem = $this->cartItemRepository->update($data1, 7);
 
-         $cartItem = $this->cartItemRepository->create(array_merge($data1,
+         /* foreach ($cart->all_items as $itemd) {
+                    //echo "<pre>"; print_r($itemd['product_id']);exit();
+                    $cartItem = $this->getItemByProduct($data1);
+
+                    //print_r($cartItem);
+                        if($itemd['product_id'] == $data['product_id']){
+                            $cartItem = $this->cartItemRepository->update($data1, $itemd->id);
+                               
+                     }  
+                }
+                exit();*/
+                $cartItem = $this->cartItemRepository->create(array_merge($data1,
                             ['cart_id' => $cart->id]));
+         /*$cartItem = $this->cartItemRepository->create(array_merge($data1,
+                            ['cart_id' => $cart->id]));*/
          //$parentCartItem = $cartItem;
          session()->flash('success', trans('shop::app.checkout.cart.item.success'));
         }
