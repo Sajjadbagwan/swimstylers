@@ -271,6 +271,7 @@
                 <tbody>
 
                     @foreach ($order->items as $item)
+                      <?php if(empty($item->additional['class_id'])){ ?>
                         @if ($item->qty_to_ship > 0 && $item->product)
                             <tr>
                                 <td>{{ $item->getTypeInstance()->getOrderedItem($item)->sku }}</td>
@@ -340,6 +341,7 @@
                                 </td>
                             </tr>
                         @endif
+                    <?php } ?>
                     @endforeach
 
                 </tbody>

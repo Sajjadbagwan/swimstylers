@@ -167,13 +167,18 @@
 
                     {!! view_render_event('bagisto.shop.checkout.options.before', ['item' => $item]) !!}
 
-                    @if (isset($item->additional['attributes']))
+                    @if (isset($item->additional))
                         <div class="item-options">
-
-                            @foreach ($item->additional['attributes'] as $attribute)
-                                <b>{{ $attribute['attribute_name'] }} : </b>{{ $attribute['option_label'] }}</br>
-                            @endforeach
-
+                            <b><img src="https://img.icons8.com/android/24/000000/calendar.png"/>    : </b>{{ date('l', strtotime($item->additional['class_start_date'])) }}</br>
+                            <b><img src="https://img.icons8.com/android/24/000000/time.png"/> : </b>
+                            {{$item->additional['class_time'] }}</br>
+                            <b><img src="https://img.icons8.com/material/24/000000/google-maps-new.png"/> : </b>
+                            {{$item->additional['class_address'] }}</br>
+                            <b><img src="https://img.icons8.com/android/24/000000/calendar.png"/> : </b>
+                            {{ date ("l d M, Y", strtotime ($item->additional['class_start_date'])) }}</br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ date ("l d M, Y", strtotime ($item->additional['class_start_date']."+7 days")) }}</br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ date ("l d M, Y", strtotime ($item->additional['class_start_date'] ."+14 days")) }}</br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ date ("l d M, Y", strtotime ($item->additional['class_start_date']."+21 days")) }}</br>
                         </div>
                     @endif
 

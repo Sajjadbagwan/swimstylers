@@ -118,16 +118,29 @@
                                 style="text-align: left;padding: 8px">
                                 {{ $item->name }}
 
-                                @if (isset($item->additional['attributes']))
-                                    <div class="item-options">
+                                <?php if(!empty($item->additional['class_id'])){ ?>
+                                                            @if (isset($item->additional))
+                                                            <div class="item-options" style="padding-top: 10px;">
+                                                                    <img src="https://img.icons8.com/android/24/000000/calendar.png" style="width: 18px;" /><b> : </b>{{ date('l', strtotime($item->additional['class_start_date'])) }}</br>
+                                                            <img src="https://img.icons8.com/android/24/000000/time.png" style="width: 18px;"/><b> : </b>
+                                                            {{$item->additional['class_time'] }}</br>
+                                                            <b><img src="https://img.icons8.com/material/24/000000/google-maps-new.png" style="width: 18px;"/> : </b>
+                                                            {{$item->additional['class_address'] }}</br>
+                                                            <b><img src="https://img.icons8.com/android/24/000000/calendar.png" style="width: 18px;"/> : </b>
+                                                            {{ date ("l d M, Y", strtotime ($item->additional['class_start_date'])) }}</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ date ("l d M, Y", strtotime ($item->additional['class_start_date']."+7 days")) }}</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ date ("l d M, Y", strtotime ($item->additional['class_start_date'] ."+14 days")) }}</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ date ("l d M, Y", strtotime ($item->additional['class_start_date']."+21 days")) }}</br>
+                                                            </div>
+                                                        @endif
+                                                       <?php } else { ?>
+                                                        @if (isset($item->additional['attributes']))
+                                                            <div class="item-options">
 
-                                        @foreach ($item->additional['attributes'] as $attribute)
-                                            <b>{{ $attribute['attribute_name'] }}
-                                                : </b>{{ $attribute['option_label'] }}</br>
-                                        @endforeach
+                                                                @foreach ($item->additional['attributes'] as $attribute)
+                                                                    <b>{{ $attribute['attribute_name'] }} : </b>{{ $attribute['option_label'] }}</br>
+                                                                @endforeach
 
-                                    </div>
-                                @endif
+                                                            </div>
+                                                        @endif
+                                                    <?php } ?>
                             </td>
 
                             <td data-value="{{ __('shop::app.customer.account.order.view.price') }}"
