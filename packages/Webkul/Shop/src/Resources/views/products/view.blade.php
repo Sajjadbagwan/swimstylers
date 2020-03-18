@@ -103,6 +103,7 @@
         <form method="POST" id="product-form" action="{{ route('cart.add', $product->product_id) }}" @click="onSubmit($event)">
 
             <input type="hidden" name="is_buy_now" v-model="is_buy_now">
+            <input type="hidden" name="product_type" value="product">
 
             <slot></slot>
 
