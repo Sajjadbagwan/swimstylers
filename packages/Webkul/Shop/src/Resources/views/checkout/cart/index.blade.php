@@ -117,27 +117,26 @@
                                         {!! view_render_event('bagisto.shop.checkout.cart.item.name.after', ['item' => $item]) !!}
                                         <div class="item-day">
                                             <a href="#">
-                                             <img src="http://127.0.0.1:8000/vendor/webkul/ui/assets/images/Icon-Calendar.svg" />   {{  date('l', strtotime($results[0]->class_start_date)) }}
+                                             <img src="https://img.icons8.com/android/24/000000/calendar.png"/>  {{  date('l', strtotime($results[0]->class_start_date)) }}
                                             </a>
                                         </div>
 
-                                        <div class="item-time">
+                                        <div class="item-time" style="padding-top: 5px;">
                                             <a href="#">
-                                              <img src="http://127.0.0.1:8000/vendor/webkul/ui/assets/images/Icon-Calendar.svg" />   {{ $results[0]->class_time }}
+                                              <img src="https://img.icons8.com/android/24/000000/time.png"/>   {{ $results[0]->class_time }}
                                             </a>
                                         </div>  
-                                        <div class="item-address">
+                                        <div class="item-address" style="padding-top: 5px;">
                                             <img src="https://img.icons8.com/material/24/000000/google-maps-new.png"/><a href="#">
                                                 {{ $results[0]->class_address }}
                                             </a>
                                         </div>
-                                        <div class="item-address">
-                                           <img src="http://127.0.0.1:8000/vendor/webkul/ui/assets/images/Icon-Calendar.svg" /> <a href="#">
-
+                                        <div class="item-address" style="padding-top: 10px;padding-bottom: 10px;">
+                                           <img src="https://img.icons8.com/android/24/000000/calendar.png"/> <a href="#">
                                                 {{ date ("l d M Y", strtotime ($results[0]->class_start_date)) }} <br>
-                                                {{ date ("l d M Y", strtotime ($results[0]->class_start_date ."+7 days")) }}<br>
-                                                {{ date ("l d M Y", strtotime ($results[0]->class_start_date ."+14 days")) }}<br>
-                                                {{ date ("l d M Y", strtotime ($results[0]->class_start_date ."+21 days")) }}<br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ date ("l d M Y", strtotime ($results[0]->class_start_date ."+7 days")) }}<br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ date ("l d M Y", strtotime ($results[0]->class_start_date ."+14 days")) }}<br>
+                                                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ date ("l d M Y", strtotime ($results[0]->class_start_date ."+21 days")) }}<br>
                                             </a>
                                         </div>
 

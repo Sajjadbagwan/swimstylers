@@ -196,21 +196,20 @@ class Cart
         }
 }else{
        //echo "Sdsd"; die;
-          //$product = $this->productRepository->findOneByField('id', 2);
-           //$cartProducts = $product->getTypeInstance()->prepareForCart($data);
-         //$parentCartItem = null;
-     //echo "<pre>"; print_r($cart->all_items->product_type);exit();
+          
+     //echo "<pre>"; print_r($data);exit();
 
-           
+        /* class sttributes fetch data */
+        $class_attributes = \DB::select('select * from class_attributes where class_id = ?', [$data['product_id']]);
+            unset($class_attributes[0]->id);
+            $final_attr = $class_attributes[0]; 
+        //echo "<pre>";print_r($class_attributes[0]);exit();
+        $additional_array = Array('_token' => $data['_token'],'product_id' => $data['product_id'],'quantity'=> $data['quantity'],'class_id' => $class_attributes[0]->class_id,'class_start_date' => $class_attributes[0]->class_start_date, 'class_time' => $class_attributes[0]->class_time,'class_address' => $class_attributes[0]->class_address );
 
-         $data1 = Array('product_id' => $data['product_id'],'sku' => 'ee','quantity' => $data['quantity'],'name' => $data['product_name'],'price' => $data['price'], 'base_price' => $data['price'],  'total' => $data['price'], 'base_total' => $data['price'], 'weight' => '1',
-    'total_weight' => '1', 'base_total_weight' => '2','type' => 'simple','product_type' => 'class',  'additional' => Array(
-          '_token' => 'JYC9nNtgV0LtKck8jQQ700DqIaWeHS5sPCAHeCJZ',
-            'product_id' => $data['product_id'],
-            'quantity'=> $data['quantity'],
-        ));
+        $data1 = Array('product_id' => $data['product_id'],'sku' => 'ee','quantity' => $data['quantity'],'name' => $data['product_name'],'price' => $data['price'], 'base_price' => $data['price'],  'total' => $data['price'], 'base_total' => $data['price'], 'weight' => '1',
+    'total_weight' => '1', 'base_total_weight' => '2','type' => 'simple','product_type' => $data['product_type'],  'additional' => $additional_array );
          //$cartItem = $this->getItemByProduct($cartProduct);
-         //echo "<pre>"; print_r($cart);exit();
+         //echo "<pre>"; print_r($data1);exit();
         // $cartItem = $this->cartItemRepository->create(array_merge($data1, ['cart_id' => 1]));
         //  $cartItem = $this->cartItemRepository->update($data1, 7);
 
