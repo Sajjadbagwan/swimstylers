@@ -151,11 +151,12 @@ class WishlistController extends Controller
      */
     public function move($itemId)
     {
+        //print_r($itemId);exit();
         $wishlistItem = $this->wishlistRepository->findOneWhere([
                 'id' => $itemId,
                 'customer_id' => auth()->guard('customer')->user()->id
             ]);
-
+        //print_r($wishlistItem);exit();
         if (! $wishlistItem)
             abort(404);
 

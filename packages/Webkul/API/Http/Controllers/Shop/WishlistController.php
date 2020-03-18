@@ -99,7 +99,7 @@ class WishlistController extends Controller
     public function moveToCart($id)
     {
         $wishlistItem = $this->wishlistRepository->findOrFail($id);
-
+         //print_r($wishlistItem);exit();
         if ($wishlistItem->customer_id != auth()->guard($this->guard)->user()->id)
             return response()->json([
                     'message' => trans('shop::app.security-warning')

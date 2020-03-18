@@ -144,7 +144,7 @@ class Cart
             return ['warning' => __('shop::app.checkout.cart.item.error-add')];
         }
 
-      //  echo "<pre>"; print_r($data['product_type'] );die;
+       // echo "<pre>"; print_r($data);die;
 
         if($data['product_type'] != 'class'){
              $product = $this->productRepository->findOneByField('id', $productId);
@@ -1067,18 +1067,20 @@ class Cart
      */
     public function moveToCart($wishlistItem)
     {
+
+       
         if (!$wishlistItem->product->getTypeInstance()->canBeMovedFromWishlistToCart($wishlistItem)) {
             return false;
         }
 
         if (!$wishlistItem->additional) {
-            $wishlistItem->additional = ['product_id' => $wishlistItem->product_id];
+            $wishlistItem->additional = ['product_id' => $wishlistItem->product_id,'product_type' => $wishlistItem['product_type']];
         }
 
         request()->merge($wishlistItem->additional);
-
+           // echo "<pre>"; print_r($wishlistItem->additional);exit();
+        //$result = $this->addProduct($wishlistItem->product_id, $wishlistItem->additional);
         $result = $this->addProduct($wishlistItem->product_id, $wishlistItem->additional);
-
         if ($result) {
             $this->wishlistRepository->delete($wishlistItem->id);
 

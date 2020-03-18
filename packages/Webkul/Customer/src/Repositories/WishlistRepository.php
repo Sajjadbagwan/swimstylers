@@ -31,6 +31,8 @@ class WishlistRepository extends Repository
 
     public function create(array $data)
     {
+
+       
         $wishlist = $this->model->create($data);
 
         return $wishlist;
