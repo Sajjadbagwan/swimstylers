@@ -144,7 +144,7 @@ class Cart
             return ['warning' => __('shop::app.checkout.cart.item.error-add')];
         }
 
-       // echo "<pre>"; print_r($data);die;
+           // echo "<pre>"; print_r($data);die;
 
         if($data['product_type'] != 'class'){
              $product = $this->productRepository->findOneByField('id', $productId);
@@ -169,14 +169,12 @@ class Cart
                 if (isset($cartProduct['parent_id'])) {
                     $cartProduct['parent_id'] = $parentCartItem->id;
                 }
-               // echo "<pre>";print_r($cartProduct);exit();
-                //array_push($cartProduct, );
+               
                 $cartProduct['product_type']='product';
-                 //echo "<pre>";print_r($cartProduct);exit();
+                
                 if (!$cartItem) {
                     $cartItem = $this->cartItemRepository->create(array_merge($cartProduct, ['cart_id' => $cart->id]));
                 } else {
-                    //echo "<pre>";print_r($cartProduct);exit();
                     if (isset($cartProduct['parent_id']) && $cartItem->parent_id != $parentCartItem->id) {
                         $cartItem = $this->cartItemRepository->create(array_merge($cartProduct,
                             ['cart_id' => $cart->id]));
@@ -184,7 +182,6 @@ class Cart
                         if ($cartItem->product->getTypeInstance()->showQuantityBox() === false) {
                             return ['warning' => __('shop::app.checkout.cart.integrity.qty_impossible')];
                         }
-
                         $cartItem = $this->cartItemRepository->update($cartProduct, $cartItem->id);
                     }
                 }
@@ -195,47 +192,35 @@ class Cart
             }
         }
 }else{
-       //echo "Sdsd"; die;
-          
-     //echo "<pre>"; print_r($data);exit();
-
+    
         /* class sttributes fetch data */
         $class_attributes = \DB::select('select * from class_attributes where class_id = ?', [$data['product_id']]);
             unset($class_attributes[0]->id);
             $final_attr = $class_attributes[0]; 
-        //echo "<pre>";print_r($class_attributes[0]);exit();
+        
         $additional_array = Array('_token' => $data['_token'],'product_id' => $data['product_id'],'quantity'=> $data['quantity'],'class_id' => $class_attributes[0]->class_id,'class_start_date' => $class_attributes[0]->class_start_date, 'class_time' => $class_attributes[0]->class_time,'class_address' => $class_attributes[0]->class_address );
 
         $data1 = Array('product_id' => $data['product_id'],'sku' => 'ee','quantity' => $data['quantity'],'name' => $data['product_name'],'price' => $data['price'], 'base_price' => $data['price'],  'total' => $data['price'], 'base_total' => $data['price'], 'weight' => '1',
     'total_weight' => '1', 'base_total_weight' => '2','type' => 'simple','product_type' => $data['product_type'],  'additional' => $additional_array );
-         //$cartItem = $this->getItemByProduct($cartProduct);
-         //echo "<pre>"; print_r($data1);exit();
-        // $cartItem = $this->cartItemRepository->create(array_merge($data1, ['cart_id' => 1]));
-        //  $cartItem = $this->cartItemRepository->update($data1, 7);
+             
+        $cart_items_available = \DB::select('select * from cart_items where product_id = ? and cart_id = ? and product_type = ?', [$data['product_id'],$cart->id,'class']);
+                if (count($cart_items_available) > 0) {
+                   
+                    $data1['quantity'] = $cart_items_available[0]->quantity + $data['quantity'];
+                    $cartItem = $this->cartItemRepository->update($data1, $cart_items_available[0]->id);  
 
-         /* foreach ($cart->all_items as $itemd) {
-                    //echo "<pre>"; print_r($itemd['product_id']);exit();
-                    $cartItem = $this->getItemByProduct($data1);
-
-                    //print_r($cartItem);
-                        if($itemd['product_id'] == $data['product_id']){
-                            $cartItem = $this->cartItemRepository->update($data1, $itemd->id);
-                               
-                     }  
-                }
-                exit();*/
-                $cartItem = $this->cartItemRepository->create(array_merge($data1,
+                }else{
+                    $cartItem = $this->cartItemRepository->create(array_merge($data1,
                             ['cart_id' => $cart->id]));
-         /*$cartItem = $this->cartItemRepository->create(array_merge($data1,
-                            ['cart_id' => $cart->id]));*/
-         //$parentCartItem = $cartItem;
+                }
+               
+                     
          session()->flash('success', trans('shop::app.checkout.cart.item.success'));
         }
-       //echo "<pre>"; print_r($cart);exit();
         Event::dispatch('checkout.cart.add.after', $cart);
 
         $this->collectTotals();
-        //echo "sdsd";exit();
+       
         return $this->getCart();
     }
 
