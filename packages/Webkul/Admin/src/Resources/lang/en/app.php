@@ -288,7 +288,9 @@ return [
             'password-match' => 'Current password does not match.',
             'account-save' => 'Account changes saved successfully.',
             'login-error' => 'Please check your credentials and try again.',
-            'activate-warning' => 'Your account is yet to be activated, please contact administrator.'
+            'activate-warning' => 'Your account is yet to be activated, please contact administrator.',
+            'contact_number' => 'Contact Number',
+            'profile_dsec' => 'Profile Dsecription',
         ],
 
         'sessions' => [
