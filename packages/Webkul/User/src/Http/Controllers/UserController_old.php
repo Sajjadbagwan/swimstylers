@@ -8,9 +8,6 @@ use Webkul\User\Repositories\AdminRepository;
 use Webkul\User\Repositories\RoleRepository;
 use Webkul\User\Http\Requests\UserForm;
 use Hash;
-use Illuminate\Http\File;
-use Illuminate\Support\Facades\Storage; 
-use Illuminate\Support\Facades\Auth;
 
 /**
  * Admin user controller
@@ -80,12 +77,8 @@ class UserController extends Controller
     public function create()
     {
         $roles = $this->roleRepository->all();
-        $userRole = Auth::guard('admin')->user()->role_id;
-        if($userRole != 1){
-        	unset($roles[0]);
-        }
-       	$levels = $this->adminRepository->getLevel();
-        return view($this->_config['view'], compact('roles','levels'));
+
+        return view($this->_config['view'], compact('roles'));
     }
 
     /**
@@ -97,66 +90,16 @@ class UserController extends Controller
     public function store(UserForm $request)
     {
         $data = $request->all();
+
         if (isset($data['password']) && $data['password']) {
             $data['password'] = bcrypt($data['password']);
             $data['api_token'] = Str::random(80);
         }
 
-        $file = $request->file('image');
-        $image = '';
-        if($file != ''){
-        	$filename = 'profile-photo-' . time() . '.' . $file->getClientOriginalExtension();
-	   		$image = $file->storeAs('avatar', $filename);
-        }
-        
-        $adminData = [
-            'name'          => $data['name'],
-            'email'         => $data['email'],
-            'password'      => $data['password'],
-            'api_token'     => $data['api_token'],
-            'role_id'       => $data['role_id'],
-            'contact_number'=> $data['contact_number'],
-            'image'         => $image,
-        ];
-
         Event::dispatch('user.admin.create.before');
 
-        $admin = $this->adminRepository->create($adminData);
+        $admin = $this->adminRepository->create($data);
 
-        if($data['role_id'] != 1){
-	       	$dbs_doc_file = $request->file('dbs_doc_file');
-	       	if($dbs_doc_file != '' || $dbs_doc_file != null){
-	       		$filename = 'profile-photo-' . time() . '.' . $dbs_doc_file->getClientOriginalExtension();
-		    	$dbs_doc_file = $dbs_doc_file->storeAs('dbs_doc_file', $filename);
-	       	}
-	       	
-	       	$ios_cert_file = $request->file('ios_cert_file');
-	       	if($ios_cert_file != ''){
-	       		$filename = 'profile-photo-' . time() . '.' . $ios_cert_file->getClientOriginalExtension();
-		    	$ios_cert_file = $ios_cert_file->storeAs('ios_cert_file', $filename);
-	       	}
-		    
-	       	$signed_contract_file = $request->file('signed_contract_file');
-	       	if($signed_contract_file != ''){
-	       		$filename = 'profile-photo-' . time() . '.' . $signed_contract_file->getClientOriginalExtension();
-		    	$signed_contract_file = $signed_contract_file->storeAs('signed_contract_file', $filename);
-	       	}
-
-		    $detailData = [
-	            'user_id'   			=> $admin->id,
-	            'profile_dsec'			=> $data['profile_dsec'],
-	            'dbs_doc_file'			=> $dbs_doc_file,
-	            'ios_cert_file'			=> $ios_cert_file,
-	            'signed_contract_file'	=> $signed_contract_file,
-	            'max_teach_level_name'	=> $data['max_teach_level_name'],
-	            'max_teach_level_stage'	=> $data['max_teach_level_stage'],
-	            'job_title'				=> $data['job_title'],
-	            'branch_id'				=> 1,//$data['branch_id'],
-	        ];
-	        
-			\DB::table('admins_detail')->insert($detailData);
-		}
-        
         Event::dispatch('user.admin.create.after', $admin);
 
         session()->flash('success', trans('admin::app.response.create-success', ['name' => 'User']));
@@ -172,18 +115,11 @@ class UserController extends Controller
      */
     public function edit($id)
     {
+        $user = $this->adminRepository->findOrFail($id);
 
-        $user 		= $this->adminRepository->findOrFail($id);
-        $userdetail = $this->adminRepository->getDetail($id);
-        $levels 	= $this->adminRepository->getLevel();
-        $roles 		= $this->roleRepository->all();
-       	
-       	$userRole = Auth::guard('admin')->user()->role_id;
-        if($userRole != 1){
-        	unset($roles[0]);
-        }
-        
-        return view($this->_config['view'], compact('user', 'roles','userdetail','levels'));
+        $roles = $this->roleRepository->all();
+
+        return view($this->_config['view'], compact('user', 'roles'));
     }
 
     /**
@@ -196,7 +132,7 @@ class UserController extends Controller
     public function update(UserForm $request, $id)
     {
         $data = $request->all();
-        
+
         if (! $data['password']) {
             unset($data['password']);
         } else {
@@ -210,49 +146,8 @@ class UserController extends Controller
         }
 
         Event::dispatch('user.admin.update.before', $id);
-        
-        $file = $request->file('image');
-        if($file != ''){
-        	$filename = 'profile-photo-' . time() . '.' . $file->getClientOriginalExtension();
-	   		$data['image'] = $file->storeAs('avatar', $filename);
-        }
 
         $admin = $this->adminRepository->update($data, $id);
-
-        if($data['role_id'] != 1){
-
-        	$detailData = [
-	            'profile_dsec'			=> $data['profile_dsec'],
-	            'max_teach_level_name'	=> $data['max_teach_level_name'],
-	            'max_teach_level_stage'	=> $data['max_teach_level_stage'],
-	            'job_title'				=> $data['job_title'],
-	            'branch_id'				=> 1,//$data['branch_id'],
-	        ];
-
-	        $dbs_doc_file = $request->file('dbs_doc_file');
-	       	if($dbs_doc_file != '' || $dbs_doc_file != null){
-	       		$filename = 'profile-photo-' . time() . '.' . $dbs_doc_file->getClientOriginalExtension();
-		    	$dbs_doc_file = $dbs_doc_file->storeAs('dbs_doc_file', $filename);
-		    	$detailData['dbs_doc_file'] = $dbs_doc_file;
-	       	}
-	       	
-	       	$ios_cert_file = $request->file('ios_cert_file');
-	       	if($ios_cert_file != ''){
-	       		$filename = 'profile-photo-' . time() . '.' . $ios_cert_file->getClientOriginalExtension();
-		    	$ios_cert_file = $ios_cert_file->storeAs('ios_cert_file', $filename);
-		    	$detailData['ios_cert_file'] = $ios_cert_file;
-	       	}
-		    
-	       	$signed_contract_file = $request->file('signed_contract_file');
-	       	if($signed_contract_file != ''){
-	       		$filename = 'profile-photo-' . time() . '.' . $signed_contract_file->getClientOriginalExtension();
-		    	$signed_contract_file = $signed_contract_file->storeAs('signed_contract_file', $filename);
-		    	$detailData['signed_contract_file'] = $signed_contract_file;
-	       	}
-
-	       	\DB::table('admins_detail')->where('user_id', $id)->update($detailData);
-	    }
-
 
         Event::dispatch('user.admin.update.after', $admin);
 
@@ -306,7 +201,7 @@ class UserController extends Controller
      */
     public function confirm($id)
     {
-    	$user = $this->adminRepository->findOrFail($id);
+        $user = $this->adminRepository->findOrFail($id);
 
         return view($this->_config['view'], compact('user'));
     }

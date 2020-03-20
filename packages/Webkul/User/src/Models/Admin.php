@@ -19,7 +19,7 @@ class Admin extends Authenticatable implements AdminContract
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password', 'api_token', 'role_id', 'status',
+        'name', 'email', 'password', 'api_token', 'role_id', 'status','contact_number','image'
     ];
 
     /**
@@ -65,5 +65,13 @@ class Admin extends Authenticatable implements AdminContract
             return false;
 
         return in_array($permission, $this->role->permissions);
+    }
+
+    public function getDetail($id){
+        return \DB::table('admins_detail')->where('user_id',$id)->first();
+    }
+
+    public function getLevel(){
+        return \DB::table('level_master')->get();
     }
 }
