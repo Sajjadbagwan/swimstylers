@@ -39,6 +39,9 @@ class Admin extends Authenticatable implements AdminContract
         return $this->belongsTo(RoleProxy::modelClass());
     }
 
+    public function adminDetail(){
+        return $this->belongsTo(AdminDetailProxy::modelClass());
+    }
     /**
     * Send the password reset notification.
     *

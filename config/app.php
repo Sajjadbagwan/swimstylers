@@ -267,6 +267,9 @@ return [
         Webkul\Rule\Providers\RuleServiceProvider::class,
         Webkul\CMS\Providers\CMSServiceProvider::class,
         Webkul\Velocity\Providers\VelocityServiceProvider::class,
+
+        //Webkul\Branch\Providers\BranchServiceProvider::class,
+        Swim\Branch\Providers\BranchServiceProvider::class,
     ],
 
     /*
