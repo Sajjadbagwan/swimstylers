@@ -1,19 +1,19 @@
 <?php
 
-namespace Webkul\Velocity\Http\Controllers\Shop;
+namespace Swim\Velocity\Http\Controllers\Shop;
 
 use Cart;
-use Webkul\Velocity\Http\Shop\Controllers;
-use Webkul\Checkout\Contracts\Cart as CartModel;
-use Webkul\Product\Repositories\SearchRepository;
-use Webkul\Product\Repositories\ProductRepository;
-use Webkul\Velocity\Repositories\Product\ProductRepository as VelocityProductRepository;
+use Swim\Velocity\Http\Shop\Controllers;
+use Swim\Checkout\Contracts\Cart as CartModel;
+use Swim\Product\Repositories\SearchRepository;
+use Swim\Product\Repositories\ProductRepository;
+use Swim\Velocity\Repositories\Product\ProductRepository as VelocityProductRepository;
 
 /**
  * Shop controller
  *
- * @author  Shubham Mehrotra <shubhammehrotra.symfony@webkul.com> @shubhwebkul
- * @copyright 2019 Webkul Software Pvt Ltd (http://www.webkul.com)
+ * @author  Shubham Mehrotra <shubhammehrotra.symfony@Swim.com> @shubhSwim
+ * @copyright 2019 Swim Software Pvt Ltd (http://www.Swim.com)
  */
  class ShopController extends Controller
 {
@@ -48,7 +48,7 @@ use Webkul\Velocity\Repositories\Product\ProductRepository as VelocityProductRep
     /**
      * Create a new controller instance.
      *
-     * @param  \Webkul\Product\Repositories\SearchRepository $searchRepository
+     * @param  \Swim\Product\Repositories\SearchRepository $searchRepository
      * @return void
     */
     public function __construct(
@@ -80,8 +80,8 @@ use Webkul\Velocity\Repositories\Product\ProductRepository as VelocityProductRep
         $product = $this->productRepository->findBySlug($slug);
 
         if ($product) {
-            $productReviewHelper = app('Webkul\Product\Helpers\Review');
-            $productImageHelper = app('Webkul\Product\Helpers\ProductImage');
+            $productReviewHelper = app('Swim\Product\Helpers\Review');
+            $productImageHelper = app('Swim\Product\Helpers\ProductImage');
             $galleryImages = $productImageHelper->getProductBaseImage($product);
 
             $response = [
@@ -115,7 +115,7 @@ use Webkul\Velocity\Repositories\Product\ProductRepository as VelocityProductRep
                 $formattedProducts = [];
                 $count = request()->get('count');
 
-                $productRepository = app('Webkul\Velocity\Repositories\Product\ProductRepository');
+                $productRepository = app('Swim\Velocity\Repositories\Product\ProductRepository');
 
                 if ($slug == "new-products") {
                     $products = $productRepository->getNewProducts($count);
@@ -134,7 +134,7 @@ use Webkul\Velocity\Repositories\Product\ProductRepository as VelocityProductRep
 
                 break;
             default:
-                $categoryDetails = app('Webkul\Category\Repositories\CategoryRepository')->findByPath($slug);
+                $categoryDetails = app('Swim\Category\Repositories\CategoryRepository')->findByPath($slug);
 
                 if ($categoryDetails) {
                     $list = false;
@@ -167,7 +167,7 @@ use Webkul\Velocity\Repositories\Product\ProductRepository as VelocityProductRep
     public function fetchCategories()
     {
         $formattedCategories = [];
-        $categories = app('Webkul\Category\Repositories\CategoryRepository')->getVisibleCategoryTree(core()->getCurrentChannel()->root_category_id);
+        $categories = app('Swim\Category\Repositories\CategoryRepository')->getVisibleCategoryTree(core()->getCurrentChannel()->root_category_id);
 
         foreach ($categories as $category) {
             array_push($formattedCategories, $this->getCategoryFilteredData($category));
@@ -181,7 +181,7 @@ use Webkul\Velocity\Repositories\Product\ProductRepository as VelocityProductRep
 
     public function fetchFancyCategoryDetails($slug)
     {
-        $categoryDetails = app('Webkul\Category\Repositories\CategoryRepository')->findByPath($slug);
+        $categoryDetails = app('Swim\Category\Repositories\CategoryRepository')->findByPath($slug);
 
         if ($categoryDetails) {
             $response = [
@@ -213,8 +213,8 @@ use Webkul\Velocity\Repositories\Product\ProductRepository as VelocityProductRep
 
     private function formatProduct($product, $list = false)
     {
-        $reviewHelper = app('Webkul\Product\Helpers\Review');
-        $productImageHelper = app('Webkul\Product\Helpers\ProductImage');
+        $reviewHelper = app('Swim\Product\Helpers\Review');
+        $productImageHelper = app('Swim\Product\Helpers\ProductImage');
 
         $totalReviews = $reviewHelper->getTotalReviews($product);
 
@@ -253,7 +253,7 @@ use Webkul\Velocity\Repositories\Product\ProductRepository as VelocityProductRep
             $cart = Cart::getCart();
             $formattedBeforeItems = [];
             $id = request()->get('product_id');
-            $velocityHelper = app('Webkul\Velocity\Helpers\Helper');
+            $velocityHelper = app('Swim\Velocity\Helpers\Helper');
 
             if ($cart) {
                 $beforeItems = $cart->items;

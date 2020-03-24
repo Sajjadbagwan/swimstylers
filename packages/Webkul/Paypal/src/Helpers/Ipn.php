@@ -1,15 +1,15 @@
 <?php
 
-namespace Webkul\Paypal\Helpers;
+namespace Swim\Paypal\Helpers;
 
-use Webkul\Sales\Repositories\OrderRepository;
-use Webkul\Sales\Repositories\InvoiceRepository;
+use Swim\Sales\Repositories\OrderRepository;
+use Swim\Sales\Repositories\InvoiceRepository;
 
 /**
  * Paypal ipn listener helper
  *
- * @author    Jitendra Singh <jitendra@webkul.com>
- * @copyright 2018 Webkul Software Pvt Ltd (http://www.webkul.com)
+ * @author    Jitendra Singh <jitendra@Swim.com>
+ * @copyright 2018 Swim Software Pvt Ltd (http://www.Swim.com)
  */
 class Ipn
 {
@@ -44,8 +44,8 @@ class Ipn
     /**
      * Create a new helper instance.
      *
-     * @param  Webkul\Sales\Repositories\OrderRepository   $orderRepository
-     * @param  Webkul\Sales\Repositories\InvoiceRepository $invoiceRepository
+     * @param  Swim\Sales\Repositories\OrderRepository   $orderRepository
+     * @param  Swim\Sales\Repositories\InvoiceRepository $invoiceRepository
      * @return void
      */
     public function __construct(

@@ -1,9 +1,9 @@
 <?php
 
-namespace Webkul\Core\Models;
+namespace Swim\Core\Models;
 
 use Illuminate\Database\Eloquent\Model;
-use Webkul\Core\Contracts\Locale as LocaleContract;
+use Swim\Core\Contracts\Locale as LocaleContract;
 
 class Locale extends Model implements LocaleContract
 {

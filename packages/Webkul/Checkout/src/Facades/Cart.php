@@ -1,6 +1,6 @@
 <?php
 
-namespace Webkul\Checkout\Facades;
+namespace Swim\Checkout\Facades;
 
 use Illuminate\Support\Facades\Facade;
 

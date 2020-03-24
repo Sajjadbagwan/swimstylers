@@ -4,19 +4,19 @@
     "authors": [
         {
             "name": "Prashant Singh",
-            "email": "prashant.singh852@webkul.com"
+            "email": "prashant.singh852@Swim.com"
         }
     ],
     "require": {},
     "autoload": {
         "psr-4": {
-            "Webkul\\Checkout\\": "src/"
+            "Swim\\Checkout\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Webkul\\Checkout\\CheckoutServiceProvider"
+                "Swim\\Checkout\\CheckoutServiceProvider"
             ]
         }
     },

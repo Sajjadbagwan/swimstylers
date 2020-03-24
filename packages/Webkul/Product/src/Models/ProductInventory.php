@@ -1,10 +1,10 @@
 <?php
 
-namespace Webkul\Product\Models;
+namespace Swim\Product\Models;
 
 use Illuminate\Database\Eloquent\Model;
-use Webkul\Inventory\Models\InventorySourceProxy;
-use Webkul\Product\Contracts\ProductInventory as ProductInventoryContract;
+use Swim\Inventory\Models\InventorySourceProxy;
+use Swim\Product\Contracts\ProductInventory as ProductInventoryContract;
 
 class ProductInventory extends Model implements ProductInventoryContract
 {

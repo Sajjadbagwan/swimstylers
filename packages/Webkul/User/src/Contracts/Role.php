@@ -1,6 +1,6 @@
 <?php
 
-namespace Webkul\User\Contracts;
+namespace Swim\User\Contracts;
 
 interface Role
 {

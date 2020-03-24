@@ -1,17 +1,17 @@
 <?php
 
-namespace Webkul\Admin\Http\Controllers\Sales;
+namespace Swim\Admin\Http\Controllers\Sales;
 
-use Webkul\Admin\Http\Controllers\Controller;
-use Webkul\Sales\Repositories\OrderRepository;
-use Webkul\Sales\Repositories\OrderItemRepository;
-use Webkul\Sales\Repositories\ShipmentRepository;
+use Swim\Admin\Http\Controllers\Controller;
+use Swim\Sales\Repositories\OrderRepository;
+use Swim\Sales\Repositories\OrderItemRepository;
+use Swim\Sales\Repositories\ShipmentRepository;
 
 /**
  * Sales Shipment controller
  *
- * @author    Jitendra Singh <jitendra@webkul.com>
- * @copyright 2018 Webkul Software Pvt Ltd (http://www.webkul.com)
+ * @author    Jitendra Singh <jitendra@Swim.com>
+ * @copyright 2018 Swim Software Pvt Ltd (http://www.Swim.com)
  */
 class ShipmentController extends Controller
 {
@@ -46,9 +46,9 @@ class ShipmentController extends Controller
     /**
      * Create a new controller instance.
      *
-     * @param  \Webkul\Sales\Repositories\ShipmentRepository  $shipmentRepository
-     * @param  \Webkul\Sales\Repositories\OrderRepository     $orderRepository
-     * @param  \Webkul\Sales\Repositories\OrderitemRepository $orderItemRepository
+     * @param  \Swim\Sales\Repositories\ShipmentRepository  $shipmentRepository
+     * @param  \Swim\Sales\Repositories\OrderRepository     $orderRepository
+     * @param  \Swim\Sales\Repositories\OrderitemRepository $orderItemRepository
      * @return void
      */
     public function __construct(

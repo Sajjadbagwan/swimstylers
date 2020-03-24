@@ -1,22 +1,22 @@
 <?php
 
-namespace Webkul\Product\Type;
+namespace Swim\Product\Type;
 
-use Webkul\Attribute\Repositories\AttributeRepository;
-use Webkul\Product\Repositories\ProductRepository;
-use Webkul\Product\Repositories\ProductAttributeValueRepository;
-use Webkul\Product\Repositories\ProductInventoryRepository;
-use Webkul\Product\Repositories\ProductImageRepository;
-use Webkul\Product\Repositories\ProductBundleOptionRepository;
-use Webkul\Product\Repositories\ProductBundleOptionProductRepository;
-use Webkul\Product\Helpers\ProductImage;
-use Webkul\Product\Helpers\BundleOption;
+use Swim\Attribute\Repositories\AttributeRepository;
+use Swim\Product\Repositories\ProductRepository;
+use Swim\Product\Repositories\ProductAttributeValueRepository;
+use Swim\Product\Repositories\ProductInventoryRepository;
+use Swim\Product\Repositories\ProductImageRepository;
+use Swim\Product\Repositories\ProductBundleOptionRepository;
+use Swim\Product\Repositories\ProductBundleOptionProductRepository;
+use Swim\Product\Helpers\ProductImage;
+use Swim\Product\Helpers\BundleOption;
 
 /**
  * Class Bundle.
  *
- * @author    Jitendra Singh <jitendra@webkul.com>
- * @copyright 2018 Webkul Software Pvt Ltd (http://www.webkul.com)
+ * @author    Jitendra Singh <jitendra@Swim.com>
+ * @copyright 2018 Swim Software Pvt Ltd (http://www.Swim.com)
  */
 class Bundle extends AbstractType
 {
@@ -78,15 +78,15 @@ class Bundle extends AbstractType
     /**
      * Create a new product type instance.
      *
-     * @param  Webkul\Attribute\Repositories\AttributeRepository                $attributeRepository
-     * @param  Webkul\Product\Repositories\ProductRepository                    $productRepository
-     * @param  Webkul\Product\Repositories\ProductAttributeValueRepository      $attributeValueRepository
-     * @param  Webkul\Product\Repositories\ProductInventoryRepository           $productInventoryRepository
-     * @param  Webkul\Product\Repositories\ProductImageRepository               $productImageRepository
-     * @param  Webkul\Product\Repositories\ProductBundleOptionRepository        $productBundleOptionRepository
-     * @param  Webkul\Product\Repositories\ProductBundleOptionProductRepository $productBundleOptionProductRepository
-     * @param  Webkul\Product\Helpers\ProductImage                              $productImageHelper
-     * @param  Webkul\Product\Helpers\BundleOption                              $bundleOptionHelper
+     * @param  Swim\Attribute\Repositories\AttributeRepository                $attributeRepository
+     * @param  Swim\Product\Repositories\ProductRepository                    $productRepository
+     * @param  Swim\Product\Repositories\ProductAttributeValueRepository      $attributeValueRepository
+     * @param  Swim\Product\Repositories\ProductInventoryRepository           $productInventoryRepository
+     * @param  Swim\Product\Repositories\ProductImageRepository               $productImageRepository
+     * @param  Swim\Product\Repositories\ProductBundleOptionRepository        $productBundleOptionRepository
+     * @param  Swim\Product\Repositories\ProductBundleOptionProductRepository $productBundleOptionProductRepository
+     * @param  Swim\Product\Helpers\ProductImage                              $productImageHelper
+     * @param  Swim\Product\Helpers\BundleOption                              $bundleOptionHelper
      * @return void
      */
     public function __construct(

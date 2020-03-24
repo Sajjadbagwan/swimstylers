@@ -1,15 +1,15 @@
 <?php
 
-namespace Webkul\Velocity\Helpers;
+namespace Swim\Velocity\Helpers;
 
 use DB;
-use Webkul\Product\Helpers\Review;
-use Webkul\Product\Models\Product as ProductModel;
-use Webkul\Velocity\Repositories\OrderBrandsRepository;
-use Webkul\Product\Repositories\ProductReviewRepository;
-use Webkul\Velocity\Repositories\VelocityMetadataRepository;
-use Webkul\Attribute\Repositories\AttributeOptionRepository;
-use Webkul\Product\Repositories\ProductRepository as ProductRepository;
+use Swim\Product\Helpers\Review;
+use Swim\Product\Models\Product as ProductModel;
+use Swim\Velocity\Repositories\OrderBrandsRepository;
+use Swim\Product\Repositories\ProductReviewRepository;
+use Swim\Velocity\Repositories\VelocityMetadataRepository;
+use Swim\Attribute\Repositories\AttributeOptionRepository;
+use Swim\Product\Repositories\ProductRepository as ProductRepository;
 
 class Helper extends Review
 {

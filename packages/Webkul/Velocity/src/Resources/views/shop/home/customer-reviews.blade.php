@@ -1,5 +1,5 @@
 @php
-    $reviews = app('Webkul\Velocity\Helpers\Helper')->getShopRecentReviews(4);
+    $reviews = app('Swim\Velocity\Helpers\Helper')->getShopRecentReviews(4);
     $reviewCount = count($reviews);
 @endphp
 

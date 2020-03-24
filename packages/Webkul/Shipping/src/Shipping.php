@@ -1,9 +1,9 @@
 <?php
 
-namespace Webkul\Shipping;
+namespace Swim\Shipping;
 
 use Illuminate\Support\Facades\Config;
-use Webkul\Checkout\Facades\Cart;
+use Swim\Checkout\Facades\Cart;
 
 /**
  * Class Shipping.

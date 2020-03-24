@@ -1,6 +1,6 @@
 <?php
 
-namespace Webkul\User\Http\Requests;
+namespace Swim\User\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 

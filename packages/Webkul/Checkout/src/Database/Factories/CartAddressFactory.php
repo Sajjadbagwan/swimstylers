@@ -3,7 +3,7 @@
 /** @var \Illuminate\Database\Eloquent\Factory $factory */
 
 use Faker\Generator as Faker;
-use Webkul\Checkout\Models\CartAddress;
+use Swim\Checkout\Models\CartAddress;
 
 $factory->define(CartAddress::class, function (Faker $faker) {
     $now = date("Y-m-d H:i:s");

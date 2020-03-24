@@ -1,14 +1,14 @@
 <?php
 
-namespace Webkul\Ui\DataGrid;
+namespace Swim\Ui\DataGrid;
 
 use Illuminate\Support\Facades\Event;
 
 /**
  * DataGrid class
  *
- * @author    Prashant Singh <jitendra@webkul.com> @prashant-webkul
- * @copyright 2018 Webkul Software Pvt Ltd (http://www.webkul.com)
+ * @author    Prashant Singh <jitendra@Swim.com> @prashant-Swim
+ * @copyright 2018 Swim Software Pvt Ltd (http://www.Swim.com)
  */
 abstract class DataGrid
 {

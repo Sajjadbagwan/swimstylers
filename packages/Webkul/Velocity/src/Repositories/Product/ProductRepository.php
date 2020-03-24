@@ -1,11 +1,11 @@
 <?php
 
-namespace Webkul\Velocity\Repositories\Product;
+namespace Swim\Velocity\Repositories\Product;
 
-use Webkul\Core\Eloquent\Repository;
+use Swim\Core\Eloquent\Repository;
 use Illuminate\Container\Container as App;
-use Webkul\Product\Repositories\ProductFlatRepository;
-use Webkul\Attribute\Repositories\AttributeRepository;
+use Swim\Product\Repositories\ProductFlatRepository;
+use Swim\Attribute\Repositories\AttributeRepository;
 
 class ProductRepository extends Repository
 {
@@ -19,7 +19,7 @@ class ProductRepository extends Repository
     /**
      * Create a new controller instance.
      *
-     * @param  Webkul\Attribute\Repositories\AttributeRepository $attributeRepository
+     * @param  Swim\Attribute\Repositories\AttributeRepository $attributeRepository
      * @return void
      */
     public function __construct(
@@ -39,7 +39,7 @@ class ProductRepository extends Repository
      */
     function model()
     {
-        return 'Webkul\Product\Contracts\Product';
+        return 'Swim\Product\Contracts\Product';
     }
 
     /**

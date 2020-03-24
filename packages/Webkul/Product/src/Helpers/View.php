@@ -1,19 +1,19 @@
 <?php
 
-namespace Webkul\Product\Helpers;
+namespace Swim\Product\Helpers;
 
 /**
  * Product View Helper
  *
- * @author Jitendra Singh <jitendra@webkul.com>
- * @copyright 2018 Webkul Software Pvt Ltd (http://www.webkul.com)
+ * @author Jitendra Singh <jitendra@Swim.com>
+ * @copyright 2018 Swim Software Pvt Ltd (http://www.Swim.com)
  */
 class View extends AbstractProduct
 {
     /**
      * Returns the visible custom attributes
      *
-     * @param Webkul\Product\Models\Product $product
+     * @param Swim\Product\Models\Product $product
      * @return integer
      */
     public function getAdditionalData($product)
@@ -22,10 +22,10 @@ class View extends AbstractProduct
 
         $attributes = $product->attribute_family->custom_attributes()->where('attributes.is_visible_on_front', 1)->get();
 
-        $attributeOptionReposotory = app('Webkul\Attribute\Repositories\AttributeOptionRepository');
+        $attributeOptionReposotory = app('Swim\Attribute\Repositories\AttributeOptionRepository');
 
         foreach ($attributes as $attribute) {
-            if ($product instanceof \Webkul\Product\Models\ProductFlat) {
+            if ($product instanceof \Swim\Product\Models\ProductFlat) {
                 $value = $product->product->{$attribute->code};
             } else {
                 $value = $product->{$attribute->code};

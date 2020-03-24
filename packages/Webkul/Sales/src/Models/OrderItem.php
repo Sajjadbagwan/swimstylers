@@ -1,10 +1,10 @@
 <?php
 
-namespace Webkul\Sales\Models;
+namespace Swim\Sales\Models;
 
 use Illuminate\Database\Eloquent\Model;
-use Webkul\Sales\Contracts\OrderItem as OrderItemContract;
-use Webkul\Product\Models\Product;
+use Swim\Sales\Contracts\OrderItem as OrderItemContract;
+use Swim\Product\Models\Product;
 
 class OrderItem extends Model implements OrderItemContract
 {

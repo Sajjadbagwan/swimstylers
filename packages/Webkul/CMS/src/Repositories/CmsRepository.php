@@ -1,17 +1,17 @@
 <?php
 
-namespace Webkul\CMS\Repositories;
+namespace Swim\CMS\Repositories;
 
 use Illuminate\Support\Facades\Event;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
-use Webkul\Core\Eloquent\Repository;
-use Webkul\CMS\Models\CmsPageTranslation;
+use Swim\Core\Eloquent\Repository;
+use Swim\CMS\Models\CmsPageTranslation;
 
 /**
  * CMS Reposotory
  *
- * @author  Jitendra Singh <jitendra@webkul.com>
- * @copyright 2018 Webkul Software Pvt Ltd (http://www.webkul.com)
+ * @author  Jitendra Singh <jitendra@Swim.com>
+ * @copyright 2018 Swim Software Pvt Ltd (http://www.Swim.com)
  */
 class CmsRepository extends Repository
 {
@@ -22,7 +22,7 @@ class CmsRepository extends Repository
      */
     function model()
     {
-        return 'Webkul\CMS\Contracts\CmsPage';
+        return 'Swim\CMS\Contracts\CmsPage';
     }
 
     /**

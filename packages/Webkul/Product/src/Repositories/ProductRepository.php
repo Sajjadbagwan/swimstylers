@@ -1,21 +1,21 @@
 <?php
 
-namespace Webkul\Product\Repositories;
+namespace Swim\Product\Repositories;
 
 use DB;
 use Illuminate\Container\Container as App;
 use Illuminate\Support\Facades\Event;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
-use Webkul\Attribute\Repositories\AttributeRepository;
-use Webkul\Core\Eloquent\Repository;
-use Webkul\Product\Repositories\ProductFlatRepository;
-use Webkul\Product\Models\ProductAttributeValue;
+use Swim\Attribute\Repositories\AttributeRepository;
+use Swim\Core\Eloquent\Repository;
+use Swim\Product\Repositories\ProductFlatRepository;
+use Swim\Product\Models\ProductAttributeValue;
 
 /**
  * Product Repository
  *
- * @author    Jitendra Singh <jitendra@webkul.com>
- * @copyright 2018 Webkul Software Pvt Ltd (http://www.webkul.com)
+ * @author    Jitendra Singh <jitendra@Swim.com>
+ * @copyright 2018 Swim Software Pvt Ltd (http://www.Swim.com)
  */
 class ProductRepository extends Repository
 {
@@ -29,7 +29,7 @@ class ProductRepository extends Repository
     /**
      * Create a new controller instance.
      *
-     * @param  Webkul\Attribute\Repositories\AttributeRepository $attributeRepository
+     * @param  Swim\Attribute\Repositories\AttributeRepository $attributeRepository
      * @return void
      */
     public function __construct(
@@ -49,7 +49,7 @@ class ProductRepository extends Repository
      */
     function model()
     {
-        return 'Webkul\Product\Contracts\Product';
+        return 'Swim\Product\Contracts\Product';
     }
 
     /**

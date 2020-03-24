@@ -1,25 +1,25 @@
 <?php
 
-namespace Webkul\Product\Providers;
+namespace Swim\Product\Providers;
 
 use Konekt\Concord\BaseModuleServiceProvider;
 
 class ModuleServiceProvider extends BaseModuleServiceProvider
 {
     protected $models = [
-        \Webkul\Product\Models\Product::class,
-        \Webkul\Product\Models\ProductAttributeValue::class,
-        \Webkul\Product\Models\ProductFlat::class,
-        \Webkul\Product\Models\ProductImage::class,
-        \Webkul\Product\Models\ProductInventory::class,
-        \Webkul\Product\Models\ProductOrderedInventory::class,
-        \Webkul\Product\Models\ProductReview::class,
-        \Webkul\Product\Models\ProductSalableInventory::class,
-        \Webkul\Product\Models\ProductDownloadableSample::class,
-        \Webkul\Product\Models\ProductDownloadableLink::class,
-        \Webkul\Product\Models\ProductGroupedProduct::class,
-        \Webkul\Product\Models\ProductBundleOption::class,
-        \Webkul\Product\Models\ProductBundleOptionTranslation::class,
-        \Webkul\Product\Models\ProductBundleOptionProduct::class,
+        \Swim\Product\Models\Product::class,
+        \Swim\Product\Models\ProductAttributeValue::class,
+        \Swim\Product\Models\ProductFlat::class,
+        \Swim\Product\Models\ProductImage::class,
+        \Swim\Product\Models\ProductInventory::class,
+        \Swim\Product\Models\ProductOrderedInventory::class,
+        \Swim\Product\Models\ProductReview::class,
+        \Swim\Product\Models\ProductSalableInventory::class,
+        \Swim\Product\Models\ProductDownloadableSample::class,
+        \Swim\Product\Models\ProductDownloadableLink::class,
+        \Swim\Product\Models\ProductGroupedProduct::class,
+        \Swim\Product\Models\ProductBundleOption::class,
+        \Swim\Product\Models\ProductBundleOptionTranslation::class,
+        \Swim\Product\Models\ProductBundleOptionProduct::class,
     ];
 }

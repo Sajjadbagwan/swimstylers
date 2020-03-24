@@ -1,21 +1,21 @@
 <?php
 
-namespace Webkul\Admin\Listeners;
+namespace Swim\Admin\Listeners;
 
 use Illuminate\Support\Facades\Mail;
-use Webkul\Admin\Mail\NewOrderNotification;
-use Webkul\Admin\Mail\NewAdminNotification;
-use Webkul\Admin\Mail\NewInvoiceNotification;
-use Webkul\Admin\Mail\NewShipmentNotification;
-use Webkul\Admin\Mail\NewInventorySourceNotification;
-use Webkul\Admin\Mail\CancelOrderNotification;
-use Webkul\Admin\Mail\NewRefundNotification;
+use Swim\Admin\Mail\NewOrderNotification;
+use Swim\Admin\Mail\NewAdminNotification;
+use Swim\Admin\Mail\NewInvoiceNotification;
+use Swim\Admin\Mail\NewShipmentNotification;
+use Swim\Admin\Mail\NewInventorySourceNotification;
+use Swim\Admin\Mail\CancelOrderNotification;
+use Swim\Admin\Mail\NewRefundNotification;
 
 /**
  * Order event handler
  *
- * @author    Jitendra Singh <jitendra@webkul.com>
- * @copyright 2018 Webkul Software Pvt Ltd (http://www.webkul.com)
+ * @author    Jitendra Singh <jitendra@Swim.com>
+ * @copyright 2018 Swim Software Pvt Ltd (http://www.Swim.com)
  */
 class Order
 {

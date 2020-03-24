@@ -41,7 +41,7 @@
                                 <span class="control-error" v-if="errors.has('page_title')">@{{ errors.first('page_title') }}</span>
                             </div>
 
-                            @inject('channels', 'Webkul\Core\Repositories\ChannelRepository')
+                            @inject('channels', 'Swim\Core\Repositories\ChannelRepository')
 
                             <div class="control-group" :class="[errors.has('channels[]') ? 'has-error' : '']">
                                 <label for="url-key" class="required">{{ __('admin::app.cms.pages.channel') }}</label>
@@ -109,7 +109,7 @@
 @stop
 
 @push('scripts')
-    <script src="{{ asset('vendor/webkul/admin/assets/js/tinyMCE/tinymce.min.js') }}"></script>
+    <script src="{{ asset('vendor/Swim/admin/assets/js/tinyMCE/tinymce.min.js') }}"></script>
 
     <script>
         $(document).ready(function () {

@@ -4,19 +4,19 @@
     "authors": [
         {
             "name": "Jitendra Singh",
-            "email": "jitendra@webkul.com"
+            "email": "jitendra@Swim.com"
         }
     ],
     "require": {},
     "autoload": {
         "psr-4": {
-            "Webkul\\Ui\\": "src/"
+            "Swim\\Ui\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Webkul\\Ui\\Providers\\UiServiceProvider"
+                "Swim\\Ui\\Providers\\UiServiceProvider"
             ],
             "aliases": {}
         }

@@ -1,16 +1,16 @@
 <?php
 
-namespace Webkul\Checkout\Providers;
+namespace Swim\Checkout\Providers;
 
 use Konekt\Concord\BaseModuleServiceProvider;
 
 class ModuleServiceProvider extends BaseModuleServiceProvider
 {
     protected $models = [
-        \Webkul\Checkout\Models\Cart::class,
-        \Webkul\Checkout\Models\CartAddress::class,
-        \Webkul\Checkout\Models\CartItem::class,
-        \Webkul\Checkout\Models\CartPayment::class,
-        \Webkul\Checkout\Models\CartShippingRate::class,
+        \Swim\Checkout\Models\Cart::class,
+        \Swim\Checkout\Models\CartAddress::class,
+        \Swim\Checkout\Models\CartItem::class,
+        \Swim\Checkout\Models\CartPayment::class,
+        \Swim\Checkout\Models\CartShippingRate::class,
     ];
 }

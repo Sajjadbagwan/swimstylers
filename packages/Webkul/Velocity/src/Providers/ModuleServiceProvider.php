@@ -1,13 +1,13 @@
 <?php
 
-namespace Webkul\Velocity\Providers;
+namespace Swim\Velocity\Providers;
 
 use Konekt\Concord\BaseModuleServiceProvider;
 
 class ModuleServiceProvider extends BaseModuleServiceProvider
 {
     protected $models = [
-        \Webkul\Velocity\Models\Content::class,
-        \Webkul\Velocity\Models\Category::class
+        \Swim\Velocity\Models\Content::class,
+        \Swim\Velocity\Models\Category::class
     ];
 }

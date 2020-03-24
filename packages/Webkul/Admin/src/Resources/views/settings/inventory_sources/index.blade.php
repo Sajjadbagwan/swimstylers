@@ -19,7 +19,7 @@
         </div>
 
         <div class="page-content">
-            @inject('inventory_sources','Webkul\Admin\DataGrids\InventorySourcesDataGrid')
+            @inject('inventory_sources','Swim\Admin\DataGrids\InventorySourcesDataGrid')
             {!! $inventory_sources->render() !!}
         </div>
     </div>

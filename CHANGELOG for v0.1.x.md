@@ -849,11 +849,11 @@ Opened in bagisto/bagisto
 
 ## **v0.1.1(13th of November, 2018)** - *Release*
 
-* #94 - [fixed] Sign-in page shows signup text(@prashant-webkul)
+* #94 - [fixed] Sign-in page shows signup text(@prashant-Swim)
 
-* #95 - [fixed] Buy Now Button does not work(@prashant-webkul)
+* #95 - [fixed] Buy Now Button does not work(@prashant-Swim)
 
-* #96 - [fixed] Search button does not work(@prashant-webkul)
+* #96 - [fixed] Search button does not work(@prashant-Swim)
 
 * #97 - [fixed] client side validation / js validation is missing at login page
 
@@ -861,19 +861,19 @@ Opened in bagisto/bagisto
 
 * #114 - [fixed] Invoice printing added as a feature
 
-* [fixed] Email templates logo issue fixed(@jitendra-webkul)
+* [fixed] Email templates logo issue fixed(@jitendra-Swim)
 
-* [fixed] Front search issue fixed due to hardcoded attribute code in search criteria(@jitendra-webkul)
+* [fixed] Front search issue fixed due to hardcoded attribute code in search criteria(@jitendra-Swim)
 
 * [changed] Versioning of core packages
 
-* [fixed] Buynow validation fixes(@jitendra-webkul)
+* [fixed] Buynow validation fixes(@jitendra-Swim)
 
 * [feature] New action type added in datagrid
 
 * [feature] Loader added in storefront product page
 
-* [fixed] Tax rates and categories form fixes(@jitendra-webkul)
+* [fixed] Tax rates and categories form fixes(@jitendra-Swim)
 
 * [feature] Country state selector added where country and states were there originally in release v0.1.0
 
@@ -881,11 +881,11 @@ Opened in bagisto/bagisto
 
 * [feature] Customer can now make any of his/her existing address a default address
 
-* [fixed] Customer address 2 form field validation required changed to optional(@jitendra-webkul)
+* [fixed] Customer address 2 form field validation required changed to optional(@jitendra-Swim)
 
-* [fixed] Tax rates validation fixes for zip ranges(@prashant-webkul)
+* [fixed] Tax rates validation fixes for zip ranges(@prashant-Swim)
 
-* [changed] Core packages composer file parameter name changed from namespace webkul to bagisto
+* [changed] Core packages composer file parameter name changed from namespace Swim to bagisto
 
 * [feature] Payment package added in core packages
 
@@ -897,7 +897,7 @@ Opened in bagisto/bagisto
 
 * [changed] Responsive styles refined and extended for checkout pages on storefront
 
-* [fixed] Various UI/UX fixes in store front styles and layouts(@prashant-webkul & @jitendra-webkul)
+* [fixed] Various UI/UX fixes in store front styles and layouts(@prashant-Swim & @jitendra-Swim)
 
 
 ## **v0.1.0(30th of October 2018)** - *First release*

@@ -177,7 +177,7 @@
 @stop
 
 @push('scripts')
-    <script src="{{ asset('vendor/webkul/admin/assets/js/tinyMCE/tinymce.min.js') }}"></script>
+    <script src="{{ asset('vendor/Swim/admin/assets/js/tinyMCE/tinymce.min.js') }}"></script>
 
     <script>
         $(document).ready(function () {

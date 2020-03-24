@@ -1,4 +1,4 @@
-@inject ('toolbarHelper', 'Webkul\Product\Helpers\Toolbar')
+@inject ('toolbarHelper', 'Swim\Product\Helpers\Toolbar')
 
 {!! view_render_event('bagisto.shop.products.list.toolbar.before') !!}
 

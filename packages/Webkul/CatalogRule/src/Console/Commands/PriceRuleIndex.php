@@ -1,9 +1,9 @@
 <?php
 
-namespace Webkul\CatalogRule\Console\Commands;
+namespace Swim\CatalogRule\Console\Commands;
 
 use Illuminate\Console\Command;
-use Webkul\CatalogRule\Helpers\CatalogRuleIndex;
+use Swim\CatalogRule\Helpers\CatalogRuleIndex;
 
 class PriceRuleIndex extends Command
 {
@@ -31,7 +31,7 @@ class PriceRuleIndex extends Command
     /**
      * Create a new command instance.
      *
-     * @param  Webkul\CatalogRuleProduct\Helpers\CatalogRuleIndex $catalogRuleIndexHelper
+     * @param  Swim\CatalogRuleProduct\Helpers\CatalogRuleIndex $catalogRuleIndexHelper
      * @return void
      */
     public function __construct(CatalogRuleIndex $catalogRuleIndexHelper)

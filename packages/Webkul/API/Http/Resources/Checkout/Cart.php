@@ -1,10 +1,10 @@
 <?php
 
-namespace Webkul\API\Http\Resources\Checkout;
+namespace Swim\API\Http\Resources\Checkout;
 
 use Illuminate\Http\Resources\Json\JsonResource;
-use Webkul\API\Http\Resources\Core\Channel as ChannelResource;
-use Webkul\API\Http\Resources\Customer\Customer as CustomerResource;
+use Swim\API\Http\Resources\Core\Channel as ChannelResource;
+use Swim\API\Http\Resources\Customer\Customer as CustomerResource;
 
 class Cart extends JsonResource
 {
@@ -16,8 +16,8 @@ class Cart extends JsonResource
      */
     public function toArray($request)
     {
-        $taxes = \Webkul\Tax\Helpers\Tax::getTaxRatesWithAmount($this, false);
-        $baseTaxes = \Webkul\Tax\Helpers\Tax::getTaxRatesWithAmount($this, true);
+        $taxes = \Swim\Tax\Helpers\Tax::getTaxRatesWithAmount($this, false);
+        $baseTaxes = \Swim\Tax\Helpers\Tax::getTaxRatesWithAmount($this, true);
 
         $formatedTaxes = $this->formatTaxAmounts($taxes, false);
         $formatedBaseTaxes = $this->formatTaxAmounts($baseTaxes, true);

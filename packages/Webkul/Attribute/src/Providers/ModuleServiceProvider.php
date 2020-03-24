@@ -1,17 +1,17 @@
 <?php
 
-namespace Webkul\Attribute\Providers;
+namespace Swim\Attribute\Providers;
 
 use Konekt\Concord\BaseModuleServiceProvider;
 
 class ModuleServiceProvider extends BaseModuleServiceProvider
 {
     protected $models = [
-        \Webkul\Attribute\Models\Attribute::class,
-        \Webkul\Attribute\Models\AttributeFamily::class,
-        \Webkul\Attribute\Models\AttributeGroup::class,
-        \Webkul\Attribute\Models\AttributeOption::class,
-        \Webkul\Attribute\Models\AttributeOptionTranslation::class,
-        \Webkul\Attribute\Models\AttributeTranslation::class,
+        \Swim\Attribute\Models\Attribute::class,
+        \Swim\Attribute\Models\AttributeFamily::class,
+        \Swim\Attribute\Models\AttributeGroup::class,
+        \Swim\Attribute\Models\AttributeOption::class,
+        \Swim\Attribute\Models\AttributeOptionTranslation::class,
+        \Swim\Attribute\Models\AttributeTranslation::class,
     ];
 }

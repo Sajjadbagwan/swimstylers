@@ -1,9 +1,9 @@
 <?php
 
-namespace Webkul\Attribute\Models;
+namespace Swim\Attribute\Models;
 
-use Webkul\Core\Eloquent\TranslatableModel;
-use Webkul\Attribute\Contracts\Attribute as AttributeContract;
+use Swim\Core\Eloquent\TranslatableModel;
+use Swim\Attribute\Contracts\Attribute as AttributeContract;
 
 class Attribute extends TranslatableModel implements AttributeContract
 {

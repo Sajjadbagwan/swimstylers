@@ -1,19 +1,19 @@
 <?php
 
-namespace Webkul\API\Http\Controllers\Shop;
+namespace Swim\API\Http\Controllers\Shop;
 
 use Illuminate\Support\Facades\Event;
-use Webkul\Checkout\Repositories\CartRepository;
-use Webkul\Checkout\Repositories\CartItemRepository;
-use Webkul\API\Http\Resources\Checkout\Cart as CartResource;
+use Swim\Checkout\Repositories\CartRepository;
+use Swim\Checkout\Repositories\CartItemRepository;
+use Swim\API\Http\Resources\Checkout\Cart as CartResource;
 use Cart;
-use Webkul\Customer\Repositories\WishlistRepository;
+use Swim\Customer\Repositories\WishlistRepository;
 
 /**
  * Cart controller
  *
- * @author    Jitendra Singh <jitendra@webkul.com>
- * @copyright 2018 Webkul Software Pvt Ltd (http://www.webkul.com)
+ * @author    Jitendra Singh <jitendra@Swim.com>
+ * @copyright 2018 Swim Software Pvt Ltd (http://www.Swim.com)
  */
 class CartController extends Controller
 {
@@ -48,9 +48,9 @@ class CartController extends Controller
     /**
      * Controller instance
      *
-     * @param Webkul\Checkout\Repositories\CartRepository     $cartRepository
-     * @param Webkul\Checkout\Repositories\CartItemRepository $cartItemRepository
-     * @param Webkul\Checkout\Repositories\WishlistRepository $wishlistRepository
+     * @param Swim\Checkout\Repositories\CartRepository     $cartRepository
+     * @param Swim\Checkout\Repositories\CartItemRepository $cartItemRepository
+     * @param Swim\Checkout\Repositories\WishlistRepository $wishlistRepository
      */
     public function __construct(
         CartRepository $cartRepository,

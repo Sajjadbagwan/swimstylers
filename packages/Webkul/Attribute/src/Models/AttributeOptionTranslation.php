@@ -1,9 +1,9 @@
 <?php
 
-namespace Webkul\Attribute\Models;
+namespace Swim\Attribute\Models;
 
 use Illuminate\Database\Eloquent\Model;
-use Webkul\Attribute\Contracts\AttributeOptionTranslation as AttributeOptionTranslationContract;
+use Swim\Attribute\Contracts\AttributeOptionTranslation as AttributeOptionTranslationContract;
 
 class AttributeOptionTranslation extends Model implements AttributeOptionTranslationContract
 {

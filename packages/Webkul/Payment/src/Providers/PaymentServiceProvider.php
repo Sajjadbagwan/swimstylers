@@ -1,11 +1,11 @@
 <?php
 
-namespace Webkul\Payment\Providers;
+namespace Swim\Payment\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Foundation\AliasLoader;
-use Webkul\Payment\Payment;
-use Webkul\Payment\Facades\Payment as PaymentFacade;
+use Swim\Payment\Payment;
+use Swim\Payment\Facades\Payment as PaymentFacade;
 
 class PaymentServiceProvider extends ServiceProvider
 {

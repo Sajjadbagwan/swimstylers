@@ -1,15 +1,15 @@
 <?php
 
-namespace Webkul\Core\Http\Controllers;
+namespace Swim\Core\Http\Controllers;
 
 use Illuminate\Support\Facades\Event;
-use Webkul\Core\Repositories\ChannelRepository;
+use Swim\Core\Repositories\ChannelRepository;
 
 /**
  * Channel controller
  *
- * @author Jitendra Singh <jitendra@webkul.com>
- * @copyright 2018 Webkul Software Pvt Ltd (http://www.webkul.com)
+ * @author Jitendra Singh <jitendra@Swim.com>
+ * @copyright 2018 Swim Software Pvt Ltd (http://www.Swim.com)
  */
 class ChannelController extends Controller
 {
@@ -30,7 +30,7 @@ class ChannelController extends Controller
     /**
      * Create a new controller instance.
      *
-     * @param  \Webkul\Core\Repositories\ChannelRepository $channelRepository
+     * @param  \Swim\Core\Repositories\ChannelRepository $channelRepository
      * @return void
      */
     public function __construct(ChannelRepository $channelRepository)
@@ -68,7 +68,7 @@ class ChannelController extends Controller
     public function store()
     {
         $this->validate(request(), [
-            'code' => ['required', 'unique:channels,code', new \Webkul\Core\Contracts\Validations\Code],
+            'code' => ['required', 'unique:channels,code', new \Swim\Core\Contracts\Validations\Code],
             'name' => 'required',
             'locales' => 'required|array|min:1',
             'default_locale_id' => 'required|in_array:locales.*',
@@ -130,7 +130,7 @@ class ChannelController extends Controller
     public function update($id)
     {
         $this->validate(request(), [
-            'code' => ['required', 'unique:channels,code,' . $id, new \Webkul\Core\Contracts\Validations\Code],
+            'code' => ['required', 'unique:channels,code,' . $id, new \Swim\Core\Contracts\Validations\Code],
             'name' => 'required',
             'locales' => 'required|array|min:1',
             'inventory_sources' => 'required|array|min:1',

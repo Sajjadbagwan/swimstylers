@@ -1,13 +1,13 @@
 <?php
 
-namespace Webkul\CatalogRule\Helpers;
+namespace Swim\CatalogRule\Helpers;
 
 use Carbon\Carbon;
-use Webkul\Attribute\Repositories\AttributeRepository;
-use Webkul\Product\Repositories\ProductRepository;
-use Webkul\Product\Models\ProductAttributeValue;
-use Webkul\CatalogRule\Repositories\CatalogRuleProductRepository;
-use Webkul\Rule\Helpers\Validator;
+use Swim\Attribute\Repositories\AttributeRepository;
+use Swim\Product\Repositories\ProductRepository;
+use Swim\Product\Models\ProductAttributeValue;
+use Swim\CatalogRule\Repositories\CatalogRuleProductRepository;
+use Swim\Rule\Helpers\Validator;
 
 class CatalogRuleProduct
 {
@@ -42,10 +42,10 @@ class CatalogRuleProduct
     /**
      * Create a new helper instance.
      *
-     * @param  Webkul\Attribute\Repositories\AttributeRepository            $attributeRepository
-     * @param  Webkul\Product\Repositories\ProductRepository                $productRepository
-     * @param  Webkul\CatalogRule\Repositories\CatalogRuleProductRepository $catalogRuleProductRepository
-     * @param  Webkul\Rule\Helpers\Validator                                $validator
+     * @param  Swim\Attribute\Repositories\AttributeRepository            $attributeRepository
+     * @param  Swim\Product\Repositories\ProductRepository                $productRepository
+     * @param  Swim\CatalogRule\Repositories\CatalogRuleProductRepository $catalogRuleProductRepository
+     * @param  Swim\Rule\Helpers\Validator                                $validator
      * @return void
      */
     public function __construct(

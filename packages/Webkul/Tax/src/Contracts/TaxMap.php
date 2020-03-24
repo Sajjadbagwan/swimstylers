@@ -1,6 +1,6 @@
 <?php
 
-namespace Webkul\Tax\Contracts;
+namespace Swim\Tax\Contracts;
 
 interface TaxMap
 {

@@ -1,15 +1,15 @@
 <?php
 
-namespace Webkul\Admin\Database\Seeders;
+namespace Swim\Admin\Database\Seeders;
 
 use Illuminate\Database\Seeder;
-use Webkul\Category\Database\Seeders\DatabaseSeeder as CategorySeeder;
-use Webkul\Attribute\Database\Seeders\DatabaseSeeder as AttributeSeeder;
-use Webkul\Core\Database\Seeders\DatabaseSeeder as CoreSeeder;
-use Webkul\User\Database\Seeders\DatabaseSeeder as UserSeeder;
-use Webkul\Customer\Database\Seeders\DatabaseSeeder as CustomerSeeder;
-use Webkul\Inventory\Database\Seeders\DatabaseSeeder as InventorySeeder;
-use Webkul\CMS\Database\Seeders\DatabaseSeeder as CMSSeeder;
+use Swim\Category\Database\Seeders\DatabaseSeeder as CategorySeeder;
+use Swim\Attribute\Database\Seeders\DatabaseSeeder as AttributeSeeder;
+use Swim\Core\Database\Seeders\DatabaseSeeder as CoreSeeder;
+use Swim\User\Database\Seeders\DatabaseSeeder as UserSeeder;
+use Swim\Customer\Database\Seeders\DatabaseSeeder as CustomerSeeder;
+use Swim\Inventory\Database\Seeders\DatabaseSeeder as InventorySeeder;
+use Swim\CMS\Database\Seeders\DatabaseSeeder as CMSSeeder;
 
 class DatabaseSeeder extends Seeder
 {

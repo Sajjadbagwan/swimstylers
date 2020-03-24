@@ -1,18 +1,18 @@
 <?php
 
-namespace Webkul\Sales\Repositories;
+namespace Swim\Sales\Repositories;
 
 use Illuminate\Container\Container as App;
 use Illuminate\Support\Facades\Event;
 use Illuminate\Support\Facades\DB;
-use Webkul\Core\Eloquent\Repository;
-use Webkul\Sales\Contracts\Invoice;
+use Swim\Core\Eloquent\Repository;
+use Swim\Sales\Contracts\Invoice;
 
 /**
  * Invoice Reposotory
  *
- * @author    Jitendra Singh <jitendra@webkul.com>
- * @copyright 2018 Webkul Software Pvt Ltd (http://www.webkul.com)
+ * @author    Jitendra Singh <jitendra@Swim.com>
+ * @copyright 2018 Swim Software Pvt Ltd (http://www.Swim.com)
  */
 class InvoiceRepository extends Repository
 {
@@ -47,10 +47,10 @@ class InvoiceRepository extends Repository
     /**
      * Create a new repository instance.
      *
-     * @param \Webkul\Sales\Repositories\OrderRepository                     $orderRepository
-     * @param \Webkul\Sales\Repositories\OrderItemRepository                 $orderItemRepository
-     * @param \Webkul\Sales\Repositories\InvoiceItemRepository               $invoiceItemRepository
-     * @param \Webkul\Sales\Repositories\DownloadableLinkPurchasedRepository $downloadableLinkPurchasedRepository
+     * @param \Swim\Sales\Repositories\OrderRepository                     $orderRepository
+     * @param \Swim\Sales\Repositories\OrderItemRepository                 $orderItemRepository
+     * @param \Swim\Sales\Repositories\InvoiceItemRepository               $invoiceItemRepository
+     * @param \Swim\Sales\Repositories\DownloadableLinkPurchasedRepository $downloadableLinkPurchasedRepository
      * @param \Illuminate\Container\Container                                $app
      */
     public function __construct(

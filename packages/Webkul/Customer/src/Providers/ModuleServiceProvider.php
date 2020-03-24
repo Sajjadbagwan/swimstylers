@@ -1,15 +1,15 @@
 <?php
 
-namespace Webkul\Customer\Providers;
+namespace Swim\Customer\Providers;
 
 use Konekt\Concord\BaseModuleServiceProvider;
 
 class ModuleServiceProvider extends BaseModuleServiceProvider
 {
     protected $models = [
-        \Webkul\Customer\Models\Customer::class,
-        \Webkul\Customer\Models\CustomerAddress::class,
-        \Webkul\Customer\Models\CustomerGroup::class,
-        \Webkul\Customer\Models\Wishlist::class,
+        \Swim\Customer\Models\Customer::class,
+        \Swim\Customer\Models\CustomerAddress::class,
+        \Swim\Customer\Models\CustomerGroup::class,
+        \Swim\Customer\Models\Wishlist::class,
     ];
 }

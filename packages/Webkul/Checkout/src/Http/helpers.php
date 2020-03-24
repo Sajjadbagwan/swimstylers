@@ -1,5 +1,5 @@
 <?php
-    use Webkul\Checkout\Cart;
+    use Swim\Checkout\Cart;
 
     if (! function_exists('cart')) {
         function cart()

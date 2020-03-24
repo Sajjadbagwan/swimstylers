@@ -3,7 +3,7 @@
 /** @var \Illuminate\Database\Eloquent\Factory $factory */
 
 use Faker\Generator as Faker;
-use Webkul\Product\Models\ProductReview;
+use Swim\Product\Models\ProductReview;
 
 $factory->define(ProductReview::class, function (Faker $faker, array $attributes) {
     if (!array_key_exists('product_id', $attributes)) {

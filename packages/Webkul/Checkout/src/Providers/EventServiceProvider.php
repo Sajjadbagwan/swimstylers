@@ -1,6 +1,6 @@
 <?php
 
-namespace Webkul\Checkout\Providers;
+namespace Swim\Checkout\Providers;
 
 use Illuminate\Foundation\Support\Providers\EventServiceProvider as ServiceProvider;
 
@@ -12,6 +12,6 @@ class EventServiceProvider extends ServiceProvider
      * @var array
      */
     protected $subscribe = [
-        'Webkul\Checkout\Listeners\CustomerEventsHandler'
+        'Swim\Checkout\Listeners\CustomerEventsHandler'
     ];
 }

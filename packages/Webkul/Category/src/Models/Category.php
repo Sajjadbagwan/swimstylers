@@ -1,19 +1,19 @@
 <?php
 
-namespace Webkul\Category\Models;
+namespace Swim\Category\Models;
 
-use Webkul\Core\Eloquent\TranslatableModel;
+use Swim\Core\Eloquent\TranslatableModel;
 use Kalnoy\Nestedset\NodeTrait;
 use Illuminate\Support\Facades\Storage;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
-use Webkul\Category\Contracts\Category as CategoryContract;
-use Webkul\Attribute\Models\AttributeProxy;
-use Webkul\Category\Repositories\CategoryRepository;
+use Swim\Category\Contracts\Category as CategoryContract;
+use Swim\Attribute\Models\AttributeProxy;
+use Swim\Category\Repositories\CategoryRepository;
 
 /**
  * Class Category
  *
- * @package Webkul\Category\Models
+ * @package Swim\Category\Models
  *
  * @property-read string $url_path maintained by database triggers
  */

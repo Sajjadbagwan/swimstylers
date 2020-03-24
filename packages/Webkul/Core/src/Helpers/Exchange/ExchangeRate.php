@@ -1,6 +1,6 @@
 <?php
 
-namespace Webkul\Core\Helpers\Exchange;
+namespace Swim\Core\Helpers\Exchange;
 
 abstract class ExchangeRate
 {

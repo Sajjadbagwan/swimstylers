@@ -1,11 +1,11 @@
 <?php
 
-namespace Webkul\Product\Models;
+namespace Swim\Product\Models;
 
 use Illuminate\Database\Eloquent\Model;
-use Webkul\Attribute\Models\AttributeProxy;
-use Webkul\Channel\Models\ChannelProxy;
-use Webkul\Product\Contracts\ProductAttributeValue as ProductAttributeValueContract;
+use Swim\Attribute\Models\AttributeProxy;
+use Swim\Channel\Models\ChannelProxy;
+use Swim\Product\Contracts\ProductAttributeValue as ProductAttributeValueContract;
 
 class ProductAttributeValue extends Model implements ProductAttributeValueContract
 {

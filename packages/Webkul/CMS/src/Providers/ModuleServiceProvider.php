@@ -1,13 +1,13 @@
 <?php
 
-namespace Webkul\CMS\Providers;
+namespace Swim\CMS\Providers;
 
 use Konekt\Concord\BaseModuleServiceProvider;
 
 class ModuleServiceProvider extends BaseModuleServiceProvider
 {
     protected $models = [
-        \Webkul\CMS\Models\CmsPage::class,
-        \Webkul\CMS\Models\CmsPageTranslation::class
+        \Swim\CMS\Models\CmsPage::class,
+        \Swim\CMS\Models\CmsPageTranslation::class
     ];
 }

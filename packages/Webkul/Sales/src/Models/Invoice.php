@@ -1,9 +1,9 @@
 <?php
 
-namespace Webkul\Sales\Models;
+namespace Swim\Sales\Models;
 
 use Illuminate\Database\Eloquent\Model;
-use Webkul\Sales\Contracts\Invoice as InvoiceContract;
+use Swim\Sales\Contracts\Invoice as InvoiceContract;
 
 class Invoice extends Model implements InvoiceContract
 {

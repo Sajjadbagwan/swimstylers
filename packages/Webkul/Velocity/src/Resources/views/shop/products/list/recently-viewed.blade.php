@@ -1,6 +1,6 @@
-@inject ('velocityHelper', 'Webkul\Velocity\Helpers\Helper')
-@inject ('productRatingHelper', 'Webkul\Product\Helpers\Review')
-@inject ('productImageHelper', 'Webkul\Product\Helpers\ProductImage')
+@inject ('velocityHelper', 'Swim\Velocity\Helpers\Helper')
+@inject ('productRatingHelper', 'Swim\Product\Helpers\Review')
+@inject ('productImageHelper', 'Swim\Product\Helpers\ProductImage')
 
 <recently-viewed
     add-class="{{ isset($addClass) ? $addClass : '' }}"

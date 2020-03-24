@@ -1,6 +1,6 @@
 <?php
 
-namespace Webkul\CartRule\Contracts;
+namespace Swim\CartRule\Contracts;
 
 interface CartRuleCustomer
 {

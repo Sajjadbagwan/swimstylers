@@ -1,6 +1,6 @@
 <?php
 
-namespace Webkul\Customer\Mail;
+namespace Swim\Customer\Mail;
 
 use Illuminate\Bus\Queueable;
 use Illuminate\Mail\Mailable;
@@ -11,7 +11,7 @@ use Illuminate\Contracts\Queue\ShouldQueue;
  * Registration Mail class
  *
  * @author    Prateek Srivastava
- * @copyright 2018 Webkul Software Pvt Ltd (http://www.webkul.com)
+ * @copyright 2018 Swim Software Pvt Ltd (http://www.Swim.com)
  */
 class RegistrationEmail extends Mailable
 {

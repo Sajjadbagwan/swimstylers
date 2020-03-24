@@ -1,9 +1,9 @@
 <?php
 
-namespace Webkul\Classes\Observers;
+namespace Swim\Classes\Observers;
 
 use Illuminate\Support\Facades\Storage;
-use Webkul\Classes\Models\Classes;
+use Swim\Classes\Models\Classes;
 use Carbon\Carbon;
 
 class ClassesObserver

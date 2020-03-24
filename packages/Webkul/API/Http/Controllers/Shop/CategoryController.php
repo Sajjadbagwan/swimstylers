@@ -1,16 +1,16 @@
 <?php
 
-namespace Webkul\API\Http\Controllers\Shop;
+namespace Swim\API\Http\Controllers\Shop;
 
 use Illuminate\Http\Request;
-use Webkul\Category\Repositories\CategoryRepository;
-use Webkul\API\Http\Resources\Catalog\Category as CategoryResource;
+use Swim\Category\Repositories\CategoryRepository;
+use Swim\API\Http\Resources\Catalog\Category as CategoryResource;
 
 /**
  * Category controller
  *
- * @author    Jitendra Singh <jitendra@webkul.com>
- * @copyright 2018 Webkul Software Pvt Ltd (http://www.webkul.com)
+ * @author    Jitendra Singh <jitendra@Swim.com>
+ * @copyright 2018 Swim Software Pvt Ltd (http://www.Swim.com)
  */
 class CategoryController extends Controller
 {
@@ -24,7 +24,7 @@ class CategoryController extends Controller
     /**
      * Create a new controller instance.
      *
-     * @param  Webkul\Category\Repositories\CategoryRepository $categoryRepository
+     * @param  Swim\Category\Repositories\CategoryRepository $categoryRepository
      * @return void
      */
     public function __construct(CategoryRepository $categoryRepository)

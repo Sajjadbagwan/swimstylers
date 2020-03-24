@@ -1,9 +1,9 @@
 <?php
 
-namespace Webkul\Sales\Models;
+namespace Swim\Sales\Models;
 
 use Illuminate\Database\Eloquent\Model;
-use Webkul\Sales\Contracts\Refund as RefundContract;
+use Swim\Sales\Contracts\Refund as RefundContract;
 
 class Refund extends Model implements RefundContract
 {

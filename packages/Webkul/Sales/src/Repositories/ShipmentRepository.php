@@ -1,21 +1,21 @@
 <?php
 
-namespace Webkul\Sales\Repositories;
+namespace Swim\Sales\Repositories;
 
 use Illuminate\Container\Container as App;
 use Illuminate\Support\Facades\Event;
 use Illuminate\Support\Facades\DB;
-use Webkul\Core\Eloquent\Repository;
-use Webkul\Sales\Contracts\Shipment;
-use Webkul\Sales\Repositories\OrderRepository;
-use Webkul\Sales\Repositories\OrderItemRepository;
-use Webkul\Sales\Repositories\ShipmentItemRepository;
+use Swim\Core\Eloquent\Repository;
+use Swim\Sales\Contracts\Shipment;
+use Swim\Sales\Repositories\OrderRepository;
+use Swim\Sales\Repositories\OrderItemRepository;
+use Swim\Sales\Repositories\ShipmentItemRepository;
 
 /**
  * Shipment Reposotory
  *
- * @author    Jitendra Singh <jitendra@webkul.com>
- * @copyright 2018 Webkul Software Pvt Ltd (http://www.webkul.com)
+ * @author    Jitendra Singh <jitendra@Swim.com>
+ * @copyright 2018 Swim Software Pvt Ltd (http://www.Swim.com)
  */
 class ShipmentRepository extends Repository
 {
@@ -43,9 +43,9 @@ class ShipmentRepository extends Repository
     /**
      * Create a new repository instance.
      *
-     * @param  Webkul\Sales\Repositories\OrderRepository        $orderRepository
-     * @param  Webkul\Sales\Repositories\OrderItemRepository    $orderItemRepository
-     * @param  Webkul\Sales\Repositories\ShipmentItemRepository $orderItemRepository
+     * @param  Swim\Sales\Repositories\OrderRepository        $orderRepository
+     * @param  Swim\Sales\Repositories\OrderItemRepository    $orderItemRepository
+     * @param  Swim\Sales\Repositories\ShipmentItemRepository $orderItemRepository
      * @return void
      */
     public function __construct(

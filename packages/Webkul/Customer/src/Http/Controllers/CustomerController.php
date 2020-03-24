@@ -1,17 +1,17 @@
 <?php
 
-namespace Webkul\Customer\Http\Controllers;
+namespace Swim\Customer\Http\Controllers;
 
 use Hash;
-use Webkul\Customer\Repositories\CustomerRepository;
-use Webkul\Product\Repositories\ProductReviewRepository;
+use Swim\Customer\Repositories\CustomerRepository;
+use Swim\Product\Repositories\ProductReviewRepository;
 
 /**
  * Customer controlller for the customer basically for the tasks of customers which will be
  * done after customer authentication.
  *
- * @author    Prashant Singh <prashant.singh852@webkul.com>
- * @copyright 2018 Webkul Software Pvt Ltd (http://www.webkul.com)
+ * @author    Prashant Singh <prashant.singh852@Swim.com>
+ * @copyright 2018 Swim Software Pvt Ltd (http://www.Swim.com)
  */
 class CustomerController extends Controller
 {
@@ -39,8 +39,8 @@ class CustomerController extends Controller
     /**
      * Create a new controller instance.
      *
-     * @param \Webkul\Customer\Repositories\CustomerRepository     $customer
-     * @param \Webkul\Product\Repositories\ProductReviewRepository $productReview
+     * @param \Swim\Customer\Repositories\CustomerRepository     $customer
+     * @param \Swim\Product\Repositories\ProductReviewRepository $productReview
      *
      * @return void
      */

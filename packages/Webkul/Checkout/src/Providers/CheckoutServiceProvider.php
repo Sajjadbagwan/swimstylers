@@ -1,10 +1,10 @@
 <?php
 
-namespace Webkul\Checkout\Providers;
+namespace Swim\Checkout\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Foundation\AliasLoader;
-use Webkul\Checkout\Facades\Cart;
+use Swim\Checkout\Facades\Cart;
 use Illuminate\Database\Eloquent\Factory as EloquentFactory;
 
 class CheckoutServiceProvider extends ServiceProvider
@@ -49,7 +49,7 @@ class CheckoutServiceProvider extends ServiceProvider
             return new cart();
         });
 
-        $this->app->bind('cart', 'Webkul\Checkout\Cart');
+        $this->app->bind('cart', 'Swim\Checkout\Cart');
     }
 
     /**

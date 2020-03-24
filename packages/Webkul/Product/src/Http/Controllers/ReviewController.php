@@ -1,15 +1,15 @@
 <?php
 
-namespace Webkul\Product\Http\Controllers;
+namespace Swim\Product\Http\Controllers;
 
 use Illuminate\Support\Facades\Event;
-use Webkul\Product\Repositories\ProductReviewRepository;
+use Swim\Product\Repositories\ProductReviewRepository;
 
 /**
  * Review controller
  *
- * @author    Rahul Shukla <rahulshukla.symfony517@webkul.com>
- * @copyright 2018 Webkul Software Pvt Ltd (http://www.webkul.com)
+ * @author    Rahul Shukla <rahulshukla.symfony517@Swim.com>
+ * @copyright 2018 Swim Software Pvt Ltd (http://www.Swim.com)
  */
 class ReviewController extends Controller
 {
@@ -30,7 +30,7 @@ class ReviewController extends Controller
     /**
      * Create a new controller instance.
      *
-     * @param  \Webkul\Product\Repositories\ProductReviewRepository  $productReview
+     * @param  \Swim\Product\Repositories\ProductReviewRepository  $productReview
      * @return void
      */
     public function __construct(

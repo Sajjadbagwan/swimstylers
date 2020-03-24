@@ -1,9 +1,9 @@
 <?php
 
-namespace Webkul\Velocity\Models;
+namespace Swim\Velocity\Models;
 
 use Illuminate\Database\Eloquent\Model;
-use Webkul\Velocity\Contracts\VelocityMetadata as VelocityMetadataContract;
+use Swim\Velocity\Contracts\VelocityMetadata as VelocityMetadataContract;
 
 class VelocityMetadata extends Model implements VelocityMetadataContract
 {

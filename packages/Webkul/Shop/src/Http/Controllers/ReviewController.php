@@ -1,15 +1,15 @@
 <?php
 
-namespace Webkul\Shop\Http\Controllers;
+namespace Swim\Shop\Http\Controllers;
 
-use Webkul\Product\Repositories\ProductRepository;
-use Webkul\Product\Repositories\ProductReviewRepository;
+use Swim\Product\Repositories\ProductRepository;
+use Swim\Product\Repositories\ProductReviewRepository;
 
 /**
  * Review controller
  *
- * @author    Jitendra Singh <jitendra@webkul.com>
- * @copyright 2018 Webkul Software Pvt Ltd (http://www.webkul.com)
+ * @author    Jitendra Singh <jitendra@Swim.com>
+ * @copyright 2018 Swim Software Pvt Ltd (http://www.Swim.com)
  */
 class ReviewController extends Controller
 {
@@ -30,8 +30,8 @@ class ReviewController extends Controller
     /**
      * Create a new controller instance.
      *
-     * @param  \Webkul\Product\Repositories\ProductRepository        $productRepository
-     * @param  \Webkul\Product\Repositories\ProductReviewRepository  $productReviewRepository
+     * @param  \Swim\Product\Repositories\ProductRepository        $productRepository
+     * @param  \Swim\Product\Repositories\ProductReviewRepository  $productReviewRepository
      * @return void
      */
     public function __construct(

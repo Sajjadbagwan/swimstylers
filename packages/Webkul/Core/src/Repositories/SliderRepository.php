@@ -1,19 +1,19 @@
 <?php
 
-namespace Webkul\Core\Repositories;
+namespace Swim\Core\Repositories;
 
 use Storage;
-use Webkul\Core\Eloquent\Repository;
+use Swim\Core\Eloquent\Repository;
 use Illuminate\Support\Facades\Event;
 use Illuminate\Container\Container as App;
-use Webkul\Core\Repositories\ChannelRepository;
+use Swim\Core\Repositories\ChannelRepository;
 use Illuminate\Support\Arr;
 
 /**
  * Slider Repository
  *
- * @author  Prashant Singh <prashant.singh852@webkul.com>
- * @copyright 2018 Webkul Software Pvt Ltd (http://www.webkul.com)
+ * @author  Prashant Singh <prashant.singh852@Swim.com>
+ * @copyright 2018 Swim Software Pvt Ltd (http://www.Swim.com)
  */
 class SliderRepository extends Repository
 {
@@ -27,7 +27,7 @@ class SliderRepository extends Repository
     /**
      * Create a new repository instance.
      *
-     * @param  \Webkul\Core\Repositories\ChannelRepository $channelRepository
+     * @param  \Swim\Core\Repositories\ChannelRepository $channelRepository
      * @return void
      */
     public function __construct(
@@ -47,7 +47,7 @@ class SliderRepository extends Repository
      */
     function model()
     {
-        return 'Webkul\Core\Contracts\Slider';
+        return 'Swim\Core\Contracts\Slider';
     }
 
     /**

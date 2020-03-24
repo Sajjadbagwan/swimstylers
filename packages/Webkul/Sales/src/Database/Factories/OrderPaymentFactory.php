@@ -4,7 +4,7 @@
 
 use Faker\Generator as Faker;
 use Illuminate\Support\Facades\DB;
-use Webkul\Sales\Models\OrderPayment;
+use Swim\Sales\Models\OrderPayment;
 
 $factory->define(OrderPayment::class, function (Faker $faker, array $attributes) {
 

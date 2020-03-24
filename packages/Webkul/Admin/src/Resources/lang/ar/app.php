@@ -864,7 +864,7 @@ return [
     ],
 
     'footer' => [
-        'copy-right' => ' مدعوم من <a href="https://bagisto.com/" target="_blank"> Bagisto </a> ، مشروع مجتمع بواسطة <a href="https://webkul.com/" target="_blank">Webkul</a>'
+        'copy-right' => ' مدعوم من <a href="https://bagisto.com/" target="_blank"> Bagisto </a> ، مشروع مجتمع بواسطة <a href="https://Swim.com/" target="_blank">Swim</a>'
     ],
 
     'admin' => [

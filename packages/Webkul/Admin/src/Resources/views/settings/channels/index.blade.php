@@ -19,7 +19,7 @@
         </div>
 
         <div class="page-content">
-            @inject('channels','Webkul\Admin\DataGrids\ChannelDataGrid')
+            @inject('channels','Swim\Admin\DataGrids\ChannelDataGrid')
             {!! $channels->render() !!}
         </div>
     </div>

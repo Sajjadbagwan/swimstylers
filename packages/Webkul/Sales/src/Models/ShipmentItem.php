@@ -1,9 +1,9 @@
 <?php
 
-namespace Webkul\Sales\Models;
+namespace Swim\Sales\Models;
 
 use Illuminate\Database\Eloquent\Model;
-use Webkul\Sales\Contracts\ShipmentItem as ShipmentItemContract;
+use Swim\Sales\Contracts\ShipmentItem as ShipmentItemContract;
 
 class ShipmentItem extends Model implements ShipmentItemContract
 {

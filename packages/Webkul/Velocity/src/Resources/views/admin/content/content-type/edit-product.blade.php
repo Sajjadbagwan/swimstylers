@@ -28,7 +28,7 @@
                     :fieldLabel="'{{ __('admin::app.catalog.attributes.options') }}'"
                     :fieldPlaceholder="'{{ __('velocity::app.admin.contents.search-hint') }}'"
                     :routePath="'{{ route('velocity.admin.content.search') }}'"
-                    :linkedResults='@json(app('Webkul\Velocity\Repositories\ContentRepository')->getProducts($content->id))'
+                    :linkedResults='@json(app('Swim\Velocity\Repositories\ContentRepository')->getProducts($content->id))'
                 ></field-autocomplete>
             </div>
         </div>

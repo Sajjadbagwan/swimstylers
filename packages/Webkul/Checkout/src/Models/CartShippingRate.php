@@ -1,9 +1,9 @@
 <?php
 
-namespace Webkul\Checkout\Models;
+namespace Swim\Checkout\Models;
 
 use Illuminate\Database\Eloquent\Model;
-use Webkul\Checkout\Contracts\CartShippingRate as CartShippingRateContract;
+use Swim\Checkout\Contracts\CartShippingRate as CartShippingRateContract;
 
 class CartShippingRate extends Model implements CartShippingRateContract
 {

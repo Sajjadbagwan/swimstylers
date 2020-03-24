@@ -8,7 +8,7 @@ return [
         'active' => true,
         'default_rate' => '10',
         'type' => 'per_unit',
-        'class' => 'Webkul\Shipping\Carriers\FlatRate'
+        'class' => 'Swim\Shipping\Carriers\FlatRate'
     ],
 
     'free' => [
@@ -17,6 +17,6 @@ return [
         'description' => 'Free Shipping',
         'active' => true,
         'default_rate' => '0',
-        'class' => 'Webkul\Shipping\Carriers\Free'
+        'class' => 'Swim\Shipping\Carriers\Free'
     ]
 ];

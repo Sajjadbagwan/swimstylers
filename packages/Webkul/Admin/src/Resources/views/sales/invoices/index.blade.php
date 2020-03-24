@@ -22,7 +22,7 @@
         </div>
 
         <div class="page-content">
-            @inject('orderInvoicesGrid', 'Webkul\Admin\DataGrids\OrderInvoicesDataGrid')
+            @inject('orderInvoicesGrid', 'Swim\Admin\DataGrids\OrderInvoicesDataGrid')
             {!! $orderInvoicesGrid->render() !!}
         </div>
     </div>

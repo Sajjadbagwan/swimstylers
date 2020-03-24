@@ -1,22 +1,22 @@
 <?php
 
-namespace Webkul\Customer\Http\Controllers;
+namespace Swim\Customer\Http\Controllers;
 
 use Illuminate\Support\Str;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Event;
 use Illuminate\Support\Facades\Mail;
-use Webkul\Customer\Mail\RegistrationEmail;
-use Webkul\Customer\Mail\VerificationEmail;
-use Webkul\Customer\Repositories\CustomerRepository;
-use Webkul\Customer\Repositories\CustomerGroupRepository;
+use Swim\Customer\Mail\RegistrationEmail;
+use Swim\Customer\Mail\VerificationEmail;
+use Swim\Customer\Repositories\CustomerRepository;
+use Swim\Customer\Repositories\CustomerGroupRepository;
 use Cookie;
 
 /**
  * Registration controller
  *
- * @author    Prashant Singh <prashant.singh852@webkul.com>
- * @copyright 2018 Webkul Software Pvt Ltd (http://www.webkul.com)
+ * @author    Prashant Singh <prashant.singh852@Swim.com>
+ * @copyright 2018 Swim Software Pvt Ltd (http://www.Swim.com)
  */
 class RegistrationController extends Controller
 {
@@ -44,8 +44,8 @@ class RegistrationController extends Controller
     /**
      * Create a new Repository instance.
      *
-     * @param \Webkul\Customer\Repositories\CustomerRepository      $customer
-     * @param \Webkul\Customer\Repositories\CustomerGroupRepository $customerGroupRepository
+     * @param \Swim\Customer\Repositories\CustomerRepository      $customer
+     * @param \Swim\Customer\Repositories\CustomerGroupRepository $customerGroupRepository
      *
      * @return void
      */

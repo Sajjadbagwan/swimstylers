@@ -5,7 +5,7 @@
         </div>
 
         <div class="payment-methods col-12">
-            @foreach(\Webkul\Payment\Facades\Payment::getPaymentMethods() as $method)
+            @foreach(\Swim\Payment\Facades\Payment::getPaymentMethods() as $method)
                 <div class="method-sticker">
                     {{ $method['method_title'] }}
                 </div>
@@ -19,7 +19,7 @@
         </div>
 
         <div class="shipping-methods col-12">
-            @foreach(\Webkul\Shipping\Facades\Shipping::getShippingMethods() as $method)
+            @foreach(\Swim\Shipping\Facades\Shipping::getShippingMethods() as $method)
                 <div class="method-sticker">
                     {{ $method['method_title'] }}
                 </div>

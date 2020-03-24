@@ -1,13 +1,13 @@
 <?php
 
-namespace Webkul\User\Providers;
+namespace Swim\User\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Foundation\AliasLoader;
 use Illuminate\Routing\Router;
-use Webkul\User\Bouncer;
-use Webkul\User\Facades\Bouncer as BouncerFacade;
-use Webkul\User\Http\Middleware\Bouncer as BouncerMiddleware;
+use Swim\User\Bouncer;
+use Swim\User\Facades\Bouncer as BouncerFacade;
+use Swim\User\Http\Middleware\Bouncer as BouncerMiddleware;
 
 class UserServiceProvider extends ServiceProvider
 {

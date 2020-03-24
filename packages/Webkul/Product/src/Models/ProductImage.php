@@ -1,10 +1,10 @@
 <?php
 
-namespace Webkul\Product\Models;
+namespace Swim\Product\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Storage;
-use Webkul\Product\Contracts\ProductImage as ProductImageContract;
+use Swim\Product\Contracts\ProductImage as ProductImageContract;
 
 class ProductImage extends Model implements ProductImageContract
 {

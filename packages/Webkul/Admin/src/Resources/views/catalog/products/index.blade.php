@@ -64,7 +64,7 @@
         {!! view_render_event('bagisto.admin.catalog.products.list.before') !!}
 
         <div class="page-content">
-            @inject('products', 'Webkul\Admin\DataGrids\ProductDataGrid')
+            @inject('products', 'Swim\Admin\DataGrids\ProductDataGrid')
             {!! $products->render() !!}
         </div>
 

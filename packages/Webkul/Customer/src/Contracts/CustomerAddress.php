@@ -1,6 +1,6 @@
 <?php
 
-namespace Webkul\Customer\Contracts;
+namespace Swim\Customer\Contracts;
 
 interface CustomerAddress
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Webkul\Shop\Mail;
+namespace Swim\Shop\Mail;
 
 use Illuminate\Bus\Queueable;
 use Illuminate\Mail\Mailable;
@@ -9,9 +9,9 @@ use Illuminate\Contracts\Queue\ShouldQueue;
 /**
  * Subscriber Mail class
  *
- * @author  Prashant Singh <prashant.singh852@webkul.com> @prashant-webkul
+ * @author  Prashant Singh <prashant.singh852@Swim.com> @prashant-Swim
  *
- * @copyright 2018 Webkul Software Pvt Ltd (http://www.webkul.com)
+ * @copyright 2018 Swim Software Pvt Ltd (http://www.Swim.com)
  */
 class SubscriptionEmail extends Mailable
 {

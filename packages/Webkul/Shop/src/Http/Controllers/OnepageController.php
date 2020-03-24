@@ -1,21 +1,21 @@
 <?php
 
-namespace Webkul\Shop\Http\Controllers;
+namespace Swim\Shop\Http\Controllers;
 
-use Webkul\Shop\Http\Controllers\Controller;
-use Webkul\Checkout\Facades\Cart;
-use Webkul\Shipping\Facades\Shipping;
-use Webkul\Payment\Facades\Payment;
-use Webkul\Checkout\Http\Requests\CustomerAddressForm;
-use Webkul\Sales\Repositories\OrderRepository;
-use Webkul\Customer\Repositories\CustomerRepository;
+use Swim\Shop\Http\Controllers\Controller;
+use Swim\Checkout\Facades\Cart;
+use Swim\Shipping\Facades\Shipping;
+use Swim\Payment\Facades\Payment;
+use Swim\Checkout\Http\Requests\CustomerAddressForm;
+use Swim\Sales\Repositories\OrderRepository;
+use Swim\Customer\Repositories\CustomerRepository;
 
 /**
  * Chekout controller for the customer and guest for placing order
  *
- * @author  Jitendra Singh <jitendra@webkul.com> @jitendra-webkul
- * @author  Prashant Singh <prashant.singh852@webkul.com> @prashant-webkul
- * @copyright 2018 Webkul Software Pvt Ltd (http://www.webkul.com)
+ * @author  Jitendra Singh <jitendra@Swim.com> @jitendra-Swim
+ * @author  Prashant Singh <prashant.singh852@Swim.com> @prashant-Swim
+ * @copyright 2018 Swim Software Pvt Ltd (http://www.Swim.com)
  */
 class OnepageController extends Controller
 {
@@ -34,8 +34,8 @@ class OnepageController extends Controller
     /**
      * Create a new controller instance.
      *
-     * @param  \Webkul\Attribute\Repositories\OrderRepository   $orderRepository
-     * @param  \Webkul\Customer\Repositories\CustomerRepository $customerRepository
+     * @param  \Swim\Attribute\Repositories\OrderRepository   $orderRepository
+     * @param  \Swim\Customer\Repositories\CustomerRepository $customerRepository
      * @return void
      */
     public function __construct(
@@ -96,7 +96,7 @@ class OnepageController extends Controller
     /**
      * Saves customer address.
      *
-     * @param  \Webkul\Checkout\Http\Requests\CustomerAddressForm $request
+     * @param  \Swim\Checkout\Http\Requests\CustomerAddressForm $request
      * @return \Illuminate\Http\Response
     */
     public function saveAddress(CustomerAddressForm $request)

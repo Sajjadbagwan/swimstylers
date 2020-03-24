@@ -1,5 +1,5 @@
 <?php
-    use Webkul\Core\Core;
+    use Swim\Core\Core;
 
     if (! function_exists('core')) {
         function core()

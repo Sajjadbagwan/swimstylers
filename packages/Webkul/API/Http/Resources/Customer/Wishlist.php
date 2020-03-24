@@ -1,9 +1,9 @@
 <?php
 
-namespace Webkul\API\Http\Resources\Customer;
+namespace Swim\API\Http\Resources\Customer;
 
 use Illuminate\Http\Resources\Json\JsonResource;
-use Webkul\API\Http\Resources\Catalog\Product as ProductResource;
+use Swim\API\Http\Resources\Catalog\Product as ProductResource;
 
 class Wishlist extends JsonResource
 {

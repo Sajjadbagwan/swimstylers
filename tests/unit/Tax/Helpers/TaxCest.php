@@ -5,9 +5,9 @@ namespace Tests\Unit\Tax\Helpers;
 use Faker\Factory;
 use Illuminate\Support\Facades\Config;
 use UnitTester;
-use Webkul\Tax\Models\TaxCategory;
-use Webkul\Tax\Models\TaxMap;
-use Webkul\Tax\Models\TaxRate;
+use Swim\Tax\Models\TaxCategory;
+use Swim\Tax\Models\TaxMap;
+use Swim\Tax\Models\TaxRate;
 use Cart;
 
 class TaxCest
@@ -44,7 +44,7 @@ class TaxCest
                 'tax_category_id' => $taxCategorie1->id,
             ],
         ];
-        $product1 = $I->haveProduct(\Webkul\Core\Helpers\Laravel5Helper::SIMPLE_PRODUCT, $config1);
+        $product1 = $I->haveProduct(\Swim\Core\Helpers\Laravel5Helper::SIMPLE_PRODUCT, $config1);
 
         $config2 = [
             'productInventory' => ['qty' => 100],
@@ -54,7 +54,7 @@ class TaxCest
                 'tax_category_id' => $taxCategorie2->id,
             ],
         ];
-        $product2 = $I->haveProduct(\Webkul\Core\Helpers\Laravel5Helper::SIMPLE_PRODUCT, $config2);
+        $product2 = $I->haveProduct(\Swim\Core\Helpers\Laravel5Helper::SIMPLE_PRODUCT, $config2);
 
         Cart::addProduct($product1->id, [
             '_token'     => session('_token'),
@@ -72,10 +72,10 @@ class TaxCest
         $this->scenario = [
             'object'           => Cart::getCart(),
             'expectedTaxRates' => [
-                (string)round((float)$tax1->tax_rate, \Webkul\Tax\Helpers\Tax::TAX_PRECISION)
+                (string)round((float)$tax1->tax_rate, \Swim\Tax\Helpers\Tax::TAX_PRECISION)
                 => round(11 * $product1->price * $tax1->tax_rate / 100, 4),
 
-                (string)round((float)$tax2->tax_rate, \Webkul\Tax\Helpers\Tax::TAX_PRECISION)
+                (string)round((float)$tax2->tax_rate, \Swim\Tax\Helpers\Tax::TAX_PRECISION)
                 => round(7 * $product2->price * $tax2->tax_rate / 100, 4),
             ],
             'expectedTaxTotal' =>
@@ -89,7 +89,7 @@ class TaxCest
     public function testGetTaxRatesWithAmount(UnitTester $I)
     {
         $result = $I->executeFunction(
-            \Webkul\Tax\Helpers\Tax::class,
+            \Swim\Tax\Helpers\Tax::class,
             'getTaxRatesWithAmount',
             [$this->scenario['object'], false]
         );
@@ -103,7 +103,7 @@ class TaxCest
     public function testGetTaxTotal(UnitTester $I)
     {
         $result = $I->executeFunction(
-            \Webkul\Tax\Helpers\Tax::class,
+            \Swim\Tax\Helpers\Tax::class,
             'getTaxTotal',
             [$this->scenario['object'], false]
         );

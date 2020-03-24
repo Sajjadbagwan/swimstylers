@@ -1,6 +1,6 @@
 <?php
 
-namespace Webkul\Checkout\Http\Requests;
+namespace Swim\Checkout\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Validation\Rule;

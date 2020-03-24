@@ -1,14 +1,14 @@
 <?php
 
-namespace Webkul\User\Repositories;
+namespace Swim\User\Repositories;
 
-use Webkul\Core\Eloquent\Repository;
+use Swim\Core\Eloquent\Repository;
 
 /**
  * Role Reposotory
  *
- * @author    Jitendra Singh <jitendra@webkul.com>
- * @copyright 2018 Webkul Software Pvt Ltd (http://www.webkul.com)
+ * @author    Jitendra Singh <jitendra@Swim.com>
+ * @copyright 2018 Swim Software Pvt Ltd (http://www.Swim.com)
  */
 class RoleRepository extends Repository
 {
@@ -19,6 +19,6 @@ class RoleRepository extends Repository
      */
     function model()
     {
-        return 'Webkul\User\Contracts\Role';
+        return 'Swim\User\Contracts\Role';
     }
 }

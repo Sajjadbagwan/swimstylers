@@ -1,9 +1,9 @@
 <?php
 
-namespace Webkul\Core\Models;
+namespace Swim\Core\Models;
 
 use Illuminate\Database\Eloquent\Model;
-use Webkul\Core\Contracts\CoreConfig as CoreConfigContract;
+use Swim\Core\Contracts\CoreConfig as CoreConfigContract;
 
 class CoreConfig extends Model implements CoreConfigContract
 {

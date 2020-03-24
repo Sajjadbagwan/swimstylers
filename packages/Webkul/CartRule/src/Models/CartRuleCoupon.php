@@ -1,9 +1,9 @@
 <?php
 
-namespace Webkul\CartRule\Models;
+namespace Swim\CartRule\Models;
 
 use Illuminate\Database\Eloquent\Model;
-use Webkul\CartRule\Contracts\CartRuleCoupon as CartRuleCouponContract;
+use Swim\CartRule\Contracts\CartRuleCoupon as CartRuleCouponContract;
 
 class CartRuleCoupon extends Model implements CartRuleCouponContract
 {

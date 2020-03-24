@@ -2,7 +2,7 @@
 
 Route::group(['prefix' => 'api'], function ($router) {
 
-    Route::group(['namespace' => 'Webkul\API\Http\Controllers\Shop', 'middleware' => ['locale', 'theme', 'currency']], function ($router) {
+    Route::group(['namespace' => 'Swim\API\Http\Controllers\Shop', 'middleware' => ['locale', 'theme', 'currency']], function ($router) {
         //Currency and Locale switcher
         Route::get('switch-currency', 'CoreController@switchCurrency');
 
@@ -11,39 +11,39 @@ Route::group(['prefix' => 'api'], function ($router) {
 
         //Category routes
         Route::get('categories', 'ResourceController@index')->defaults('_config', [
-            'repository' => 'Webkul\Category\Repositories\CategoryRepository',
-            'resource' => 'Webkul\API\Http\Resources\Catalog\Category'
+            'repository' => 'Swim\Category\Repositories\CategoryRepository',
+            'resource' => 'Swim\API\Http\Resources\Catalog\Category'
         ]);
 
         Route::get('descendant-categories', 'CategoryController@index');
 
         Route::get('categories/{id}', 'ResourceController@get')->defaults('_config', [
-            'repository' => 'Webkul\Category\Repositories\CategoryRepository',
-            'resource' => 'Webkul\API\Http\Resources\Catalog\Category'
+            'repository' => 'Swim\Category\Repositories\CategoryRepository',
+            'resource' => 'Swim\API\Http\Resources\Catalog\Category'
         ]);
 
 
         //Attribute routes
         Route::get('attributes', 'ResourceController@index')->defaults('_config', [
-            'repository' => 'Webkul\Attribute\Repositories\AttributeRepository',
-            'resource' => 'Webkul\API\Http\Resources\Catalog\Attribute'
+            'repository' => 'Swim\Attribute\Repositories\AttributeRepository',
+            'resource' => 'Swim\API\Http\Resources\Catalog\Attribute'
         ]);
 
         Route::get('attributes/{id}', 'ResourceController@get')->defaults('_config', [
-            'repository' => 'Webkul\Attribute\Repositories\AttributeRepository',
-            'resource' => 'Webkul\API\Http\Resources\Catalog\Attribute'
+            'repository' => 'Swim\Attribute\Repositories\AttributeRepository',
+            'resource' => 'Swim\API\Http\Resources\Catalog\Attribute'
         ]);
 
 
         //AttributeFamily routes
         Route::get('families', 'ResourceController@index')->defaults('_config', [
-            'repository' => 'Webkul\Attribute\Repositories\AttributeFamilyRepository',
-            'resource' => 'Webkul\API\Http\Resources\Catalog\AttributeFamily'
+            'repository' => 'Swim\Attribute\Repositories\AttributeFamilyRepository',
+            'resource' => 'Swim\API\Http\Resources\Catalog\AttributeFamily'
         ]);
 
         Route::get('families/{id}', 'ResourceController@get')->defaults('_config', [
-            'repository' => 'Webkul\Attribute\Repositories\AttributeFamilyRepository',
-            'resource' => 'Webkul\API\Http\Resources\Catalog\AttributeFamily'
+            'repository' => 'Swim\Attribute\Repositories\AttributeFamilyRepository',
+            'resource' => 'Swim\API\Http\Resources\Catalog\AttributeFamily'
         ]);
 
 
@@ -59,57 +59,57 @@ Route::group(['prefix' => 'api'], function ($router) {
 
         //Product Review routes
         Route::get('reviews', 'ResourceController@index')->defaults('_config', [
-            'repository' => 'Webkul\Product\Repositories\ProductReviewRepository',
-            'resource' => 'Webkul\API\Http\Resources\Catalog\ProductReview'
+            'repository' => 'Swim\Product\Repositories\ProductReviewRepository',
+            'resource' => 'Swim\API\Http\Resources\Catalog\ProductReview'
         ]);
 
         Route::get('reviews/{id}', 'ResourceController@get')->defaults('_config', [
-            'repository' => 'Webkul\Product\Repositories\ProductReviewRepository',
-            'resource' => 'Webkul\API\Http\Resources\Catalog\ProductReview'
+            'repository' => 'Swim\Product\Repositories\ProductReviewRepository',
+            'resource' => 'Swim\API\Http\Resources\Catalog\ProductReview'
         ]);
 
         Route::post('reviews/{id}/create', 'ReviewController@store');
 
         Route::delete('reviews/{id}', 'ResourceController@destroy')->defaults('_config', [
-            'repository' => 'Webkul\Product\Repositories\ProductReviewRepository',
-            'resource' => 'Webkul\API\Http\Resources\Catalog\ProductReview',
+            'repository' => 'Swim\Product\Repositories\ProductReviewRepository',
+            'resource' => 'Swim\API\Http\Resources\Catalog\ProductReview',
             'authorization_required' => true
         ]);
         
 
         //Channel routes
         Route::get('channels', 'ResourceController@index')->defaults('_config', [
-            'repository' => 'Webkul\Core\Repositories\ChannelRepository',
-            'resource' => 'Webkul\API\Http\Resources\Core\Channel'
+            'repository' => 'Swim\Core\Repositories\ChannelRepository',
+            'resource' => 'Swim\API\Http\Resources\Core\Channel'
         ]);
 
         Route::get('channels/{id}', 'ResourceController@get')->defaults('_config', [
-            'repository' => 'Webkul\Core\Repositories\ChannelRepository',
-            'resource' => 'Webkul\API\Http\Resources\Core\Channel'
+            'repository' => 'Swim\Core\Repositories\ChannelRepository',
+            'resource' => 'Swim\API\Http\Resources\Core\Channel'
         ]);
 
 
         //Locale routes
         Route::get('locales', 'ResourceController@index')->defaults('_config', [
-            'repository' => 'Webkul\Core\Repositories\LocaleRepository',
-            'resource' => 'Webkul\API\Http\Resources\Core\Locale'
+            'repository' => 'Swim\Core\Repositories\LocaleRepository',
+            'resource' => 'Swim\API\Http\Resources\Core\Locale'
         ]);
 
         Route::get('locales/{id}', 'ResourceController@get')->defaults('_config', [
-            'repository' => 'Webkul\Core\Repositories\LocaleRepository',
-            'resource' => 'Webkul\API\Http\Resources\Core\Locale'
+            'repository' => 'Swim\Core\Repositories\LocaleRepository',
+            'resource' => 'Swim\API\Http\Resources\Core\Locale'
         ]);
 
 
         //Country routes
         Route::get('countries', 'ResourceController@index')->defaults('_config', [
-            'repository' => 'Webkul\Core\Repositories\CountryRepository',
-            'resource' => 'Webkul\API\Http\Resources\Core\Country'
+            'repository' => 'Swim\Core\Repositories\CountryRepository',
+            'resource' => 'Swim\API\Http\Resources\Core\Country'
         ]);
 
         Route::get('countries/{id}', 'ResourceController@get')->defaults('_config', [
-            'repository' => 'Webkul\Core\Repositories\CountryRepository',
-            'resource' => 'Webkul\API\Http\Resources\Core\Country'
+            'repository' => 'Swim\Core\Repositories\CountryRepository',
+            'resource' => 'Swim\API\Http\Resources\Core\Country'
         ]);
 
         Route::get('country-states', 'CoreController@getCountryStateGroup');
@@ -117,25 +117,25 @@ Route::group(['prefix' => 'api'], function ($router) {
 
         //Slider routes
         Route::get('sliders', 'ResourceController@index')->defaults('_config', [
-            'repository' => 'Webkul\Core\Repositories\SliderRepository',
-            'resource' => 'Webkul\API\Http\Resources\Core\Slider'
+            'repository' => 'Swim\Core\Repositories\SliderRepository',
+            'resource' => 'Swim\API\Http\Resources\Core\Slider'
         ]);
 
         Route::get('sliders/{id}', 'ResourceController@get')->defaults('_config', [
-            'repository' => 'Webkul\Core\Repositories\SliderRepository',
-            'resource' => 'Webkul\API\Http\Resources\Core\Slider'
+            'repository' => 'Swim\Core\Repositories\SliderRepository',
+            'resource' => 'Swim\API\Http\Resources\Core\Slider'
         ]);
 
 
         //Currency routes
         Route::get('currencies', 'ResourceController@index')->defaults('_config', [
-            'repository' => 'Webkul\Core\Repositories\CurrencyRepository',
-            'resource' => 'Webkul\API\Http\Resources\Core\Currency'
+            'repository' => 'Swim\Core\Repositories\CurrencyRepository',
+            'resource' => 'Swim\API\Http\Resources\Core\Currency'
         ]);
 
         Route::get('currencies/{id}', 'ResourceController@get')->defaults('_config', [
-            'repository' => 'Webkul\Core\Repositories\CurrencyRepository',
-            'resource' => 'Webkul\API\Http\Resources\Core\Currency'
+            'repository' => 'Swim\Core\Repositories\CurrencyRepository',
+            'resource' => 'Swim\API\Http\Resources\Core\Currency'
         ]);
 
         Route::get('config', 'CoreController@getConfig');
@@ -155,8 +155,8 @@ Route::group(['prefix' => 'api'], function ($router) {
         Route::post('customer/register', 'CustomerController@create');
 
         Route::get('customers/{id}', 'ResourceController@get')->defaults('_config', [
-            'repository' => 'Webkul\Customer\Repositories\CustomerRepository',
-            'resource' => 'Webkul\API\Http\Resources\Customer\Customer',
+            'repository' => 'Swim\Customer\Repositories\CustomerRepository',
+            'resource' => 'Swim\API\Http\Resources\Customer\Customer',
             'authorization_required' => true
         ]);
 
@@ -167,14 +167,14 @@ Route::group(['prefix' => 'api'], function ($router) {
         ]);
 
         Route::get('addresses/{id}', 'ResourceController@get')->defaults('_config', [
-            'repository' => 'Webkul\Customer\Repositories\CustomerAddressRepository',
-            'resource' => 'Webkul\API\Http\Resources\Customer\CustomerAddress',
+            'repository' => 'Swim\Customer\Repositories\CustomerAddressRepository',
+            'resource' => 'Swim\API\Http\Resources\Customer\CustomerAddress',
             'authorization_required' => true
         ]);
 
         Route::delete('addresses/{id}', 'ResourceController@destroy')->defaults('_config', [
-            'repository' => 'Webkul\Customer\Repositories\CustomerAddressRepository',
-            'resource' => 'Webkul\API\Http\Resources\Customer\CustomerAddress',
+            'repository' => 'Swim\Customer\Repositories\CustomerAddressRepository',
+            'resource' => 'Swim\API\Http\Resources\Customer\CustomerAddress',
             'authorization_required' => true
         ]);
 
@@ -189,56 +189,56 @@ Route::group(['prefix' => 'api'], function ($router) {
 
         //Order routes
         Route::get('orders', 'ResourceController@index')->defaults('_config', [
-            'repository' => 'Webkul\Sales\Repositories\OrderRepository',
-            'resource' => 'Webkul\API\Http\Resources\Sales\Order',
+            'repository' => 'Swim\Sales\Repositories\OrderRepository',
+            'resource' => 'Swim\API\Http\Resources\Sales\Order',
             'authorization_required' => true
         ]);
 
         Route::get('orders/{id}', 'ResourceController@get')->defaults('_config', [
-            'repository' => 'Webkul\Sales\Repositories\OrderRepository',
-            'resource' => 'Webkul\API\Http\Resources\Sales\Order',
+            'repository' => 'Swim\Sales\Repositories\OrderRepository',
+            'resource' => 'Swim\API\Http\Resources\Sales\Order',
             'authorization_required' => true
         ]);
 
 
         //Invoice routes
         Route::get('invoices', 'ResourceController@index')->defaults('_config', [
-            'repository' => 'Webkul\Sales\Repositories\InvoiceRepository',
-            'resource' => 'Webkul\API\Http\Resources\Sales\Invoice',
+            'repository' => 'Swim\Sales\Repositories\InvoiceRepository',
+            'resource' => 'Swim\API\Http\Resources\Sales\Invoice',
             'authorization_required' => true
         ]);
 
         Route::get('invoices/{id}', 'ResourceController@get')->defaults('_config', [
-            'repository' => 'Webkul\Sales\Repositories\InvoiceRepository',
-            'resource' => 'Webkul\API\Http\Resources\Sales\Invoice',
+            'repository' => 'Swim\Sales\Repositories\InvoiceRepository',
+            'resource' => 'Swim\API\Http\Resources\Sales\Invoice',
             'authorization_required' => true
         ]);
 
 
         //Invoice routes
         Route::get('shipments', 'ResourceController@index')->defaults('_config', [
-            'repository' => 'Webkul\Sales\Repositories\ShipmentRepository',
-            'resource' => 'Webkul\API\Http\Resources\Sales\Shipment',
+            'repository' => 'Swim\Sales\Repositories\ShipmentRepository',
+            'resource' => 'Swim\API\Http\Resources\Sales\Shipment',
             'authorization_required' => true
         ]);
 
         Route::get('shipments/{id}', 'ResourceController@get')->defaults('_config', [
-            'repository' => 'Webkul\Sales\Repositories\ShipmentRepository',
-            'resource' => 'Webkul\API\Http\Resources\Sales\Shipment',
+            'repository' => 'Swim\Sales\Repositories\ShipmentRepository',
+            'resource' => 'Swim\API\Http\Resources\Sales\Shipment',
             'authorization_required' => true
         ]);
 
 
         //Wishlist routes
         Route::get('wishlist', 'ResourceController@index')->defaults('_config', [
-            'repository' => 'Webkul\Customer\Repositories\WishlistRepository',
-            'resource' => 'Webkul\API\Http\Resources\Customer\Wishlist',
+            'repository' => 'Swim\Customer\Repositories\WishlistRepository',
+            'resource' => 'Swim\API\Http\Resources\Customer\Wishlist',
             'authorization_required' => true
         ]);
 
         Route::delete('wishlist/{id}', 'ResourceController@destroy')->defaults('_config', [
-            'repository' => 'Webkul\Customer\Repositories\WishlistRepository',
-            'resource' => 'Webkul\API\Http\Resources\Customer\Wishlist',
+            'repository' => 'Swim\Customer\Repositories\WishlistRepository',
+            'resource' => 'Swim\API\Http\Resources\Customer\Wishlist',
             'authorization_required' => true
         ]);
 

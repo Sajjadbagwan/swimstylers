@@ -1,5 +1,5 @@
 <?php
-    use Webkul\Shipping\Shipping;
+    use Swim\Shipping\Shipping;
     
     if (! function_exists('shipping')) {
         function shipping()

@@ -1,16 +1,16 @@
 <?php
 
-namespace Webkul\API\Http\Controllers\Shop;
+namespace Swim\API\Http\Controllers\Shop;
 
 use Illuminate\Support\Facades\Event;
-use Webkul\Customer\Repositories\CustomerRepository;
-use Webkul\API\Http\Resources\Customer\Customer as CustomerResource;
+use Swim\Customer\Repositories\CustomerRepository;
+use Swim\API\Http\Resources\Customer\Customer as CustomerResource;
 
 /**
  * Session controller
  *
- * @author    Jitendra Singh <jitendra@webkul.com>
- * @copyright 2018 Webkul Software Pvt Ltd (http://www.webkul.com)
+ * @author    Jitendra Singh <jitendra@Swim.com>
+ * @copyright 2018 Swim Software Pvt Ltd (http://www.Swim.com)
  */
 class SessionController extends Controller
 {
@@ -31,7 +31,7 @@ class SessionController extends Controller
     /**
      * Controller instance
      *
-     * @param Webkul\Customer\Repositories\CustomerRepository $customerRepository
+     * @param Swim\Customer\Repositories\CustomerRepository $customerRepository
      */
     public function __construct(CustomerRepository $customerRepository)
     {

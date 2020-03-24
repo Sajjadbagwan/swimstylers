@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\DB;
 use Illuminate\Database\Migrations\Migration;
-use Webkul\Category\Models\CategoryTranslation;
+use Swim\Category\Models\CategoryTranslation;
 
 class AddTriggerToCategoryTranslations extends Migration
 {

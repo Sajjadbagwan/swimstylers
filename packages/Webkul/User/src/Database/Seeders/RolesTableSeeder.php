@@ -1,9 +1,9 @@
 <?php
 
-namespace Webkul\User\Database\Seeders;
+namespace Swim\User\Database\Seeders;
 
 use Illuminate\Database\Seeder;
-use Webkul\User\Models\Role;
+use Swim\User\Models\Role;
 use DB;
 
 class RolesTableSeeder extends Seeder

@@ -1,8 +1,8 @@
 <?php
 
-namespace Webkul\Rule\Helpers;
+namespace Swim\Rule\Helpers;
 
-use Webkul\Checkout\Facades\Cart;
+use Swim\Checkout\Facades\Cart;
 
 class Validator
 {
@@ -24,7 +24,7 @@ class Validator
             if (! $condition['attribute'] || ! isset($condition['value']) || is_null($condition['value']) ||  $condition['value'] == '')
                 continue;
 
-            if ($entity instanceof \Webkul\Checkout\Contracts\Cart && strpos($condition['attribute'], 'cart|') === false)
+            if ($entity instanceof \Swim\Checkout\Contracts\Cart && strpos($condition['attribute'], 'cart|') === false)
                 continue;
             
             $totalConditionCount++;
@@ -61,7 +61,7 @@ class Validator
 
         switch (current($chunks)) {
             case 'cart':
-                $cart = $entity instanceof \Webkul\Checkout\Contracts\Cart ? $entity : $entity->cart;
+                $cart = $entity instanceof \Swim\Checkout\Contracts\Cart ? $entity : $entity->cart;
 
                 if (in_array($attributeCode, ['postcode', 'state', 'country'])) {
                     if (! $cart->shipping_address)

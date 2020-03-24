@@ -1,27 +1,27 @@
 <?php
 
-namespace Webkul\Checkout;
+namespace Swim\Checkout;
 
-use Webkul\Checkout\Repositories\CartRepository;
-use Webkul\Checkout\Repositories\CartItemRepository;
-use Webkul\Checkout\Repositories\CartAddressRepository;
-use Webkul\Customer\Models\CustomerAddress;
-use Webkul\Product\Repositories\ProductRepository;
-use Webkul\Tax\Helpers\Tax;
-use Webkul\Tax\Repositories\TaxCategoryRepository;
-use Webkul\Checkout\Models\CartItem;
-use Webkul\Checkout\Models\CartPayment;
-use Webkul\Customer\Repositories\WishlistRepository;
-use Webkul\Customer\Repositories\CustomerAddressRepository;
+use Swim\Checkout\Repositories\CartRepository;
+use Swim\Checkout\Repositories\CartItemRepository;
+use Swim\Checkout\Repositories\CartAddressRepository;
+use Swim\Customer\Models\CustomerAddress;
+use Swim\Product\Repositories\ProductRepository;
+use Swim\Tax\Helpers\Tax;
+use Swim\Tax\Repositories\TaxCategoryRepository;
+use Swim\Checkout\Models\CartItem;
+use Swim\Checkout\Models\CartPayment;
+use Swim\Customer\Repositories\WishlistRepository;
+use Swim\Customer\Repositories\CustomerAddressRepository;
 use Illuminate\Support\Facades\Event;
 use Illuminate\Support\Arr;
 
 /**
  * Facades handler for all the methods to be implemented in Cart.
  *
- * @author    Prashant Singh <prashant.singh852@webkul.com>
- * @author    Jitendra Singh <jitendra@webkul.com>
- * @copyright 2018 Webkul Software Pvt Ltd (http://www.webkul.com)
+ * @author    Prashant Singh <prashant.singh852@Swim.com>
+ * @author    Jitendra Singh <jitendra@Swim.com>
+ * @copyright 2018 Swim Software Pvt Ltd (http://www.Swim.com)
  */
 class Cart
 {
@@ -78,15 +78,15 @@ class Cart
     /**
      * Create a new controller instance.
      *
-     * @param Webkul\Checkout\Repositories\CartRepository           $cart
-     * @param Webkul\Checkout\Repositories\CartItemRepository       $cartItem
-     * @param Webkul\Checkout\Repositories\CartAddressRepository    $cartAddress
-     * @param Webkul\Product\Repositories\ProductRepository         $product
-     * @param Webkul\Product\Repositories\TaxCategoryRepository     $taxCategory
-     * @param Webkul\Product\Repositories\CustomerAddressRepository $customerAddress
-     * @param Webkul\Product\Repositories\CustomerAddressRepository $customerAddress
-     * @param Webkul\Discount\Repositories\CartRuleRepository       $cartRule
-     * @param Webkul\Helpers\Discount                               $discount
+     * @param Swim\Checkout\Repositories\CartRepository           $cart
+     * @param Swim\Checkout\Repositories\CartItemRepository       $cartItem
+     * @param Swim\Checkout\Repositories\CartAddressRepository    $cartAddress
+     * @param Swim\Product\Repositories\ProductRepository         $product
+     * @param Swim\Product\Repositories\TaxCategoryRepository     $taxCategory
+     * @param Swim\Product\Repositories\CustomerAddressRepository $customerAddress
+     * @param Swim\Product\Repositories\CustomerAddressRepository $customerAddress
+     * @param Swim\Discount\Repositories\CartRuleRepository       $cartRule
+     * @param Swim\Helpers\Discount                               $discount
      *
      * @return void
      */

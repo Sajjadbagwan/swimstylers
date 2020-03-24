@@ -1,6 +1,6 @@
 <?php
 
-namespace Webkul\Theme;
+namespace Swim\Theme;
 
 use Illuminate\Support\Facades\Event;
 

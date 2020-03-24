@@ -1,14 +1,14 @@
 <?php
 
-namespace Webkul\Core\Http\Controllers;
+namespace Swim\Core\Http\Controllers;
 
-use Webkul\Core\Repositories\SliderRepository;
+use Swim\Core\Repositories\SliderRepository;
 
 /**
  * Slider controller for managing the slider controls.
  *
- * @author  Prashant Singh <prashant.singh852@webkul.com> @prashant-webkul
- * @copyright  2018 Webkul Software Pvt Ltd (http://www.webkul.com)
+ * @author  Prashant Singh <prashant.singh852@Swim.com> @prashant-Swim
+ * @copyright  2018 Swim Software Pvt Ltd (http://www.Swim.com)
  */
 class SliderController extends Controller
 {
@@ -34,7 +34,7 @@ class SliderController extends Controller
     /**
      * Create a new controller instance.
      *
-     * @param  \Webkul\Core\Repositories\SliderRepository $sliderRepository
+     * @param  \Swim\Core\Repositories\SliderRepository $sliderRepository
      * @return void
      */
     public function __construct(SliderRepository $sliderRepository)

@@ -1,15 +1,15 @@
 <?php
 
-namespace Webkul\CMS\Http\Controllers\Shop;
+namespace Swim\CMS\Http\Controllers\Shop;
 
-use Webkul\CMS\Http\Controllers\Controller;
-use Webkul\CMS\Repositories\CmsRepository;
+use Swim\CMS\Http\Controllers\Controller;
+use Swim\CMS\Repositories\CmsRepository;
 
 /**
  * PagePresenter controller
  *
- * @author  Jitendra Singh <jitendra@webkul.com>
- * @copyright 2018 Webkul Software Pvt Ltd (http://www.webkul.com)
+ * @author  Jitendra Singh <jitendra@Swim.com>
+ * @copyright 2018 Swim Software Pvt Ltd (http://www.Swim.com)
  */
 class PagePresenterController extends Controller
 {
@@ -23,7 +23,7 @@ class PagePresenterController extends Controller
     /**
      * Create a new controller instance.
      *
-     * @param  \Webkul\CMS\Repositories\CmsRepository $cmsRepository
+     * @param  \Swim\CMS\Repositories\CmsRepository $cmsRepository
      * @return void
      */
     public function __construct(CmsRepository $cmsRepository)

@@ -1,6 +1,6 @@
 <?php
 
-namespace Webkul\Inventory\Contracts;
+namespace Swim\Inventory\Contracts;
 
 interface InventorySource
 {

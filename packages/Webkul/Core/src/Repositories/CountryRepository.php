@@ -1,14 +1,14 @@
 <?php
 
-namespace Webkul\Core\Repositories;
+namespace Swim\Core\Repositories;
 
-use Webkul\Core\Eloquent\Repository;
+use Swim\Core\Eloquent\Repository;
 
 /**
  * Country Reposotory
  *
- * @author    Jitendra Singh <jitendra@webkul.com>
- * @copyright 2018 Webkul Software Pvt Ltd (http://www.webkul.com)
+ * @author    Jitendra Singh <jitendra@Swim.com>
+ * @copyright 2018 Swim Software Pvt Ltd (http://www.Swim.com)
  */
 class CountryRepository extends Repository
 {
@@ -19,6 +19,6 @@ class CountryRepository extends Repository
      */
     function model()
     {
-        return 'Webkul\Core\Contracts\Country';
+        return 'Swim\Core\Contracts\Country';
     }
 }

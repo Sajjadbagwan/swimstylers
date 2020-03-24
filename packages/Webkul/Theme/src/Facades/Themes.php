@@ -1,6 +1,6 @@
 <?php
 
-namespace Webkul\Theme\Facades;
+namespace Swim\Theme\Facades;
 
 use Illuminate\Support\Facades\Facade;
 

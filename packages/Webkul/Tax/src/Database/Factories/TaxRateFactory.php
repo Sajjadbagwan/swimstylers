@@ -3,7 +3,7 @@
 /** @var \Illuminate\Database\Eloquent\Factory $factory */
 
 use Faker\Generator as Faker;
-use Webkul\Tax\Models\TaxRate;
+use Swim\Tax\Models\TaxRate;
 
 $factory->define(TaxRate::class, function (Faker $faker) {
     return [

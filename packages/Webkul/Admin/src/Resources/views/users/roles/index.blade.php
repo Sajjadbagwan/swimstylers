@@ -19,7 +19,7 @@
         </div>
 
         <div class="page-content">
-            @inject('roles','Webkul\Admin\DataGrids\RolesDataGrid')
+            @inject('roles','Swim\Admin\DataGrids\RolesDataGrid')
             {!! $roles->render() !!}
         </div>
     </div>

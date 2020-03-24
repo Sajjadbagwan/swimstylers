@@ -1,16 +1,16 @@
 <?php
 
-namespace Webkul\Product\Type;
+namespace Swim\Product\Type;
 
-use Webkul\Product\Models\ProductAttributeValue;
-use Webkul\Product\Models\ProductFlat;
+use Swim\Product\Models\ProductAttributeValue;
+use Swim\Product\Models\ProductFlat;
 use Illuminate\Support\Str;
 
 /**
  * Class Configurable.
  *
- * @author    Jitendra Singh <jitendra@webkul.com>
- * @copyright 2018 Webkul Software Pvt Ltd (http://www.webkul.com)
+ * @author    Jitendra Singh <jitendra@Swim.com>
+ * @copyright 2018 Swim Software Pvt Ltd (http://www.Swim.com)
  */
 class Configurable extends AbstractType
 {
@@ -463,7 +463,7 @@ class Configurable extends AbstractType
      */
     public function getAdditionalOptions($data)
     {
-        $childProduct = app('Webkul\Product\Repositories\ProductRepository')->findOneByField('id', $data['selected_configurable_option']);
+        $childProduct = app('Swim\Product\Repositories\ProductRepository')->findOneByField('id', $data['selected_configurable_option']);
 
         foreach ($this->product->super_attributes as $attribute) {
             $option = $attribute->options()->where('id', $childProduct->{$attribute->code})->first();
@@ -497,7 +497,7 @@ class Configurable extends AbstractType
      */
     public function getBaseImage($item)
     {
-        if ($item instanceof \Webkul\Customer\Contracts\Wishlist) {
+        if ($item instanceof \Swim\Customer\Contracts\Wishlist) {
             if (isset($item->additional['selected_configurable_option'])) {
                 $product = $this->productRepository->find($item->additional['selected_configurable_option']);
             } else {

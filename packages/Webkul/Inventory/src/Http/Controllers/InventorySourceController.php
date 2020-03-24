@@ -1,15 +1,15 @@
 <?php
 
-namespace Webkul\Inventory\Http\Controllers;
+namespace Swim\Inventory\Http\Controllers;
 
 use Illuminate\Support\Facades\Event;
-use Webkul\Inventory\Repositories\InventorySourceRepository;
+use Swim\Inventory\Repositories\InventorySourceRepository;
 
 /**
  * Inventory source controller
  *
- * @author    Jitendra Singh <jitendra@webkul.com>
- * @copyright 2018 Webkul Software Pvt Ltd (http://www.webkul.com)
+ * @author    Jitendra Singh <jitendra@Swim.com>
+ * @copyright 2018 Swim Software Pvt Ltd (http://www.Swim.com)
  */
 class InventorySourceController extends Controller
 {
@@ -30,7 +30,7 @@ class InventorySourceController extends Controller
     /**
      * Create a new controller instance.
      *
-     * @param  \Webkul\Inventory\Repositories\InventorySourceRepository  $inventorySourceRepository
+     * @param  \Swim\Inventory\Repositories\InventorySourceRepository  $inventorySourceRepository
      * @return void
      */
     public function __construct(InventorySourceRepository $inventorySourceRepository)
@@ -68,7 +68,7 @@ class InventorySourceController extends Controller
     public function store()
     {
         $this->validate(request(), [
-            'code'           => ['required', 'unique:inventory_sources,code', new \Webkul\Core\Contracts\Validations\Code],
+            'code'           => ['required', 'unique:inventory_sources,code', new \Swim\Core\Contracts\Validations\Code],
             'name'           => 'required',
             'contact_name'   => 'required',
             'contact_email'  => 'required|email',
@@ -117,7 +117,7 @@ class InventorySourceController extends Controller
     public function update($id)
     {
         $this->validate(request(), [
-            'code'           => ['required', 'unique:inventory_sources,code,' . $id, new \Webkul\Core\Contracts\Validations\Code],
+            'code'           => ['required', 'unique:inventory_sources,code,' . $id, new \Swim\Core\Contracts\Validations\Code],
             'name'           => 'required',
             'contact_name'   => 'required',
             'contact_email'  => 'required|email',

@@ -1,6 +1,6 @@
 <?php
 
-namespace Webkul\Product\Observers;
+namespace Swim\Product\Observers;
 
 use Illuminate\Support\Facades\Storage;
 

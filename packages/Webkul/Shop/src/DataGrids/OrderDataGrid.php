@@ -1,15 +1,15 @@
 <?php
 
-namespace Webkul\Shop\DataGrids;
+namespace Swim\Shop\DataGrids;
 
-use Webkul\Ui\DataGrid\DataGrid;
+use Swim\Ui\DataGrid\DataGrid;
 use DB;
 
 /**
  * OrderDataGrid class
  *
- * @author Rahul Shukla <rahulshkla.symfont517@webkul.com>
- * @copyright 2018 Webkul Software Pvt Ltd (http://www.webkul.com)
+ * @author Rahul Shukla <rahulshkla.symfont517@Swim.com>
+ * @copyright 2018 Swim Software Pvt Ltd (http://www.Swim.com)
  */
 class OrderDataGrid extends DataGrid
 {

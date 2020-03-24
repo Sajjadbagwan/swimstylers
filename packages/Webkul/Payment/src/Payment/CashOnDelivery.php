@@ -1,12 +1,12 @@
 <?php
 
-namespace Webkul\Payment\Payment;
+namespace Swim\Payment\Payment;
 
 /**
  * Cash On Delivery payment method class
  *
- * @author    Jitendra Singh <jitendra@webkul.com>
- * @copyright 2018 Webkul Software Pvt Ltd (http://www.webkul.com)
+ * @author    Jitendra Singh <jitendra@Swim.com>
+ * @copyright 2018 Swim Software Pvt Ltd (http://www.Swim.com)
  */
 class CashOnDelivery extends Payment
 {

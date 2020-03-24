@@ -1,11 +1,11 @@
 <?php
 
-namespace Webkul\Classes\Providers;
+namespace Swim\Classes\Providers;
 
 use Illuminate\Database\Eloquent\Factory as EloquentFactory;
 use Illuminate\Support\ServiceProvider;
-use Webkul\Classes\Models\ClassesProxy;
-use Webkul\Classes\Observers\ClassesObserver;
+use Swim\Classes\Models\ClassesProxy;
+use Swim\Classes\Observers\ClassesObserver;
 
 class ClassesServiceProvider extends ServiceProvider
 {

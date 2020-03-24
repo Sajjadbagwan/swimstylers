@@ -1,16 +1,16 @@
 <?php
 
-namespace Webkul\Admin\DataGrids;
+namespace Swim\Admin\DataGrids;
 
-use Webkul\Ui\DataGrid\DataGrid;
+use Swim\Ui\DataGrid\DataGrid;
 use DB;
 
 /**
  * CustomerDataGrid class
  *
- * @author Prashant Singh <prashant.singh852@webkul.com> @prashant-webkul
- * @author Vivek Sharma <viveksh047@webkul.com> @viveksh-webkul
- * @copyright 2018 Webkul Software Pvt Ltd (http://www.webkul.com)
+ * @author Prashant Singh <prashant.singh852@Swim.com> @prashant-Swim
+ * @author Vivek Sharma <viveksh047@Swim.com> @viveksh-Swim
+ * @copyright 2018 Swim Software Pvt Ltd (http://www.Swim.com)
  */
 class CustomerDataGrid extends DataGrid
 {

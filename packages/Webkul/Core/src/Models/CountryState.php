@@ -1,9 +1,9 @@
 <?php
 
-namespace Webkul\Core\Models;
+namespace Swim\Core\Models;
 
-use Webkul\Core\Eloquent\TranslatableModel;
-use Webkul\Core\Contracts\CountryState as CountryStateContract;
+use Swim\Core\Eloquent\TranslatableModel;
+use Swim\Core\Contracts\CountryState as CountryStateContract;
 
 class CountryState extends TranslatableModel implements CountryStateContract
 {

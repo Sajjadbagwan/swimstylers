@@ -1,16 +1,16 @@
 <?php
 
-namespace Webkul\Sales\Repositories;
+namespace Swim\Sales\Repositories;
 
 use Illuminate\Container\Container as App;
-use Webkul\Core\Eloquent\Repository;
-use Webkul\Sales\Contracts\RefundItem;
+use Swim\Core\Eloquent\Repository;
+use Swim\Sales\Contracts\RefundItem;
 
 /**
  * Refund Item Reposotory
  *
- * @author    Jitendra Singh <jitendra@webkul.com>
- * @copyright 2018 Webkul Software Pvt Ltd (http://www.webkul.com)
+ * @author    Jitendra Singh <jitendra@Swim.com>
+ * @copyright 2018 Swim Software Pvt Ltd (http://www.Swim.com)
  */
 
 class RefundItemRepository extends Repository

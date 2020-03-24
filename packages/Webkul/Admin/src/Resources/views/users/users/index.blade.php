@@ -20,7 +20,7 @@
 
         <div class="page-content">
 
-            @inject('datagrid','Webkul\Admin\DataGrids\UserDataGrid')
+            @inject('datagrid','Swim\Admin\DataGrids\UserDataGrid')
             {!! $datagrid->render() !!}
             {{-- <datetime></datetime> --}}
         </div>

@@ -18,7 +18,7 @@
         </div>
 
         <div class="page-content">
-            @inject('velocity_contents', 'Webkul\Velocity\DataGrids\ContentDataGrid')
+            @inject('velocity_contents', 'Swim\Velocity\DataGrids\ContentDataGrid')
             {!! $velocity_contents->render() !!}
         </div>
     </div>

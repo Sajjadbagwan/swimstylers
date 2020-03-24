@@ -38,7 +38,7 @@
                 :src="product.image"
                 :data-src="product.image"
                 class="card-img-top lzy_img" />
-                <!-- :src="`${$root.baseUrl}/vendor/webkul/ui/assets/images/product/meduim-product-placeholder.png`" /> -->
+                <!-- :src="`${$root.baseUrl}/vendor/Swim/ui/assets/images/product/meduim-product-placeholder.png`" /> -->
 
             <product-quick-view-btn :quick-view-details="product"></product-quick-view-btn>
         </a>

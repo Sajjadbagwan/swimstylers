@@ -3,9 +3,9 @@
 /** @var \Illuminate\Database\Eloquent\Factory $factory */
 
 use Faker\Generator as Faker;
-use Webkul\Sales\Models\Invoice;
-use Webkul\Sales\Models\Order;
-use Webkul\Sales\Models\OrderAddress;
+use Swim\Sales\Models\Invoice;
+use Swim\Sales\Models\Order;
+use Swim\Sales\Models\OrderAddress;
 
 $factory->define(Invoice::class, function (Faker $faker, array $attributes) {
     $subTotal = $faker->randomFloat(2);

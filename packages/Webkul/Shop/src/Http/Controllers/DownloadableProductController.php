@@ -1,15 +1,15 @@
 <?php
 
-namespace Webkul\Shop\Http\Controllers;
+namespace Swim\Shop\Http\Controllers;
 
 use Illuminate\Support\Facades\Storage;
-use Webkul\Sales\Repositories\DownloadableLinkPurchasedRepository;
+use Swim\Sales\Repositories\DownloadableLinkPurchasedRepository;
 
 /**
  * Downloadable Product Controller controller
  *
- * @author    Jitendra Singh <jitendra@webkul.com>
- * @copyright 2018 Webkul Software Pvt Ltd (http://www.webkul.com)
+ * @author    Jitendra Singh <jitendra@Swim.com>
+ * @copyright 2018 Swim Software Pvt Ltd (http://www.Swim.com)
  */
 class DownloadableProductController extends Controller
 {
@@ -23,7 +23,7 @@ class DownloadableProductController extends Controller
     /**
      * Create a new controller instance.
      *
-     * @param  \Webkul\Sales\Repositories\DownloadableLinkPurchasedRepository $downloadableLinkPurchasedRepository
+     * @param  \Swim\Sales\Repositories\DownloadableLinkPurchasedRepository $downloadableLinkPurchasedRepository
      * @return void
      */
     public function __construct(

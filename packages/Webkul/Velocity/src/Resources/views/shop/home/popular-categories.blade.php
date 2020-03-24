@@ -5,7 +5,7 @@
     <div class="row">
         @foreach ($category as $slug)
             @php
-                $categoryDetails = app('Webkul\Category\Repositories\CategoryRepository')->findByPath($slug);
+                $categoryDetails = app('Swim\Category\Repositories\CategoryRepository')->findByPath($slug);
             @endphp
 
             @if ($categoryDetails)

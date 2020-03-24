@@ -1,7 +1,7 @@
 <?php
 
 use Faker\Generator as Faker;
-use Webkul\Category\Models\Category;
+use Swim\Category\Models\Category;
 
 /** @var \Illuminate\Database\Eloquent\Factory $factory */
 $factory->define(Category::class, function (Faker $faker, array $attributes) {

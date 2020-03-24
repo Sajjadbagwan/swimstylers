@@ -1,9 +1,9 @@
 <?php
 
-namespace Webkul\CatalogRule\Helpers;
+namespace Swim\CatalogRule\Helpers;
 
 use Carbon\Carbon;
-use Webkul\CatalogRule\Repositories\CatalogRuleRepository;
+use Swim\CatalogRule\Repositories\CatalogRuleRepository;
 
 class CatalogRuleIndex
 {
@@ -31,9 +31,9 @@ class CatalogRuleIndex
     /**
      * Create a new helper instance.
      *
-     * @param  Webkul\CatalogRule\Repositories\CatalogRuleRepository     $catalogRuleRepository
-     * @param  Webkul\CatalogRuleProduct\Helpers\CatalogRuleProduct      $catalogRuleProductHelper
-     * @param  Webkul\CatalogRuleProduct\Helpers\CatalogRuleProductPrice $catalogRuleProductPriceHelper
+     * @param  Swim\CatalogRule\Repositories\CatalogRuleRepository     $catalogRuleRepository
+     * @param  Swim\CatalogRuleProduct\Helpers\CatalogRuleProduct      $catalogRuleProductHelper
+     * @param  Swim\CatalogRuleProduct\Helpers\CatalogRuleProductPrice $catalogRuleProductPriceHelper
      * @return void
      */
     public function __construct(

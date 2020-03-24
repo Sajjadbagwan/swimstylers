@@ -1,6 +1,6 @@
 <?php
 
-namespace Webkul\Customer\Notifications;
+namespace Swim\Customer\Notifications;
 
 use Illuminate\Notifications\Messages\MailMessage;
 use Illuminate\Auth\Notifications\ResetPassword;

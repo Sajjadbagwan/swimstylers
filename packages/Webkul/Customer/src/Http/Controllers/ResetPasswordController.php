@@ -1,6 +1,6 @@
 <?php
 
-namespace Webkul\Customer\Http\Controllers;
+namespace Swim\Customer\Http\Controllers;
 
 use Illuminate\Foundation\Auth\ResetsPasswords;
 use Illuminate\Support\Facades\Password;
@@ -11,8 +11,8 @@ use Illuminate\Support\Str;
 /**
  * Reset Password controlller for the customer.
  *
- * @author    Prashant Singh <prashant.singh852@webkul.com>
- * @copyright 2018 Webkul Software Pvt Ltd (http://www.webkul.com)
+ * @author    Prashant Singh <prashant.singh852@Swim.com>
+ * @copyright 2018 Swim Software Pvt Ltd (http://www.Swim.com)
  */
 class ResetPasswordController extends Controller
 {

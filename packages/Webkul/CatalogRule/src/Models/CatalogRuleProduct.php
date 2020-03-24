@@ -1,9 +1,9 @@
 <?php
 
-namespace Webkul\CatalogRule\Models;
+namespace Swim\CatalogRule\Models;
 
 use Illuminate\Database\Eloquent\Model;
-use Webkul\CatalogRule\Contracts\CatalogRuleProduct as CatalogRuleProductContract;
+use Swim\CatalogRule\Contracts\CatalogRuleProduct as CatalogRuleProductContract;
 
 class CatalogRuleProduct extends Model implements CatalogRuleProductContract
 {

@@ -1,18 +1,18 @@
 <?php
 
-namespace Webkul\Admin\Providers;
+namespace Swim\Admin\Providers;
 
 use Illuminate\Support\ServiceProvider;
-use Webkul\Admin\Providers\EventServiceProvider;
+use Swim\Admin\Providers\EventServiceProvider;
 use Illuminate\Contracts\Debug\ExceptionHandler;
-use Webkul\Admin\Exceptions\Handler;
-use Webkul\Core\Tree;
+use Swim\Admin\Exceptions\Handler;
+use Swim\Core\Tree;
 
 /**
  * Admin service provider
  *
- * @author    Jitendra Singh <jitendra@webkul.com>
- * @copyright 2018 Webkul Software Pvt Ltd (http://www.webkul.com)
+ * @author    Jitendra Singh <jitendra@Swim.com>
+ * @copyright 2018 Swim Software Pvt Ltd (http://www.Swim.com)
  */
 class AdminServiceProvider extends ServiceProvider
 {
@@ -28,7 +28,7 @@ class AdminServiceProvider extends ServiceProvider
         $this->loadTranslationsFrom(__DIR__ . '/../Resources/lang', 'admin');
 
         $this->publishes([
-            __DIR__ . '/../../publishable/assets' => public_path('vendor/webkul/admin/assets'),
+            __DIR__ . '/../../publishable/assets' => public_path('vendor/Swim/admin/assets'),
         ], 'public');
 
         $this->loadViewsFrom(__DIR__ . '/../Resources/views', 'admin');

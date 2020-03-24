@@ -1,11 +1,11 @@
 <?php
 
 
-namespace Webkul\Shop\Http\Controllers;
+namespace Swim\Shop\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Webkul\Category\Repositories\CategoryRepository;
-use Webkul\Product\Repositories\ProductRepository;
+use Swim\Category\Repositories\CategoryRepository;
+use Swim\Product\Repositories\ProductRepository;
 
 class ProductsCategoriesProxyController extends Controller
 {
@@ -26,8 +26,8 @@ class ProductsCategoriesProxyController extends Controller
     /**
      * Create a new controller instance.
      *
-     * @param Webkul\Category\Repositories\CategoryRepository $categoryRepository
-     * @param Webkul\Product\Repositories\ProductRepository   $productRepository
+     * @param Swim\Category\Repositories\CategoryRepository $categoryRepository
+     * @param Swim\Product\Repositories\ProductRepository   $productRepository
      *
      * @return void
      */

@@ -21,7 +21,7 @@
         </div>
 
         <div class="page-content">
-            @inject('sliders','Webkul\Admin\DataGrids\SliderDataGrid')
+            @inject('sliders','Swim\Admin\DataGrids\SliderDataGrid')
             {!! $sliders->render() !!}
         </div>
     </div>

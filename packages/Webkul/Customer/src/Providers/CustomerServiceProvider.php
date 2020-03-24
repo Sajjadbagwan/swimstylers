@@ -1,11 +1,11 @@
 <?php
 
-namespace Webkul\Customer\Providers;
+namespace Swim\Customer\Providers;
 
 use Illuminate\Database\Eloquent\Factory as EloquentFactory;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Routing\Router;
-use Webkul\Customer\Http\Middleware\RedirectIfNotCustomer;
+use Swim\Customer\Http\Middleware\RedirectIfNotCustomer;
 
 class CustomerServiceProvider extends ServiceProvider
 {

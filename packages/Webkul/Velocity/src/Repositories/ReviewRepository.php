@@ -1,15 +1,15 @@
 <?php
 
-namespace Webkul\Velocity\Repositories;
+namespace Swim\Velocity\Repositories;
 
 use Illuminate\Container\Container as App;
-use Webkul\Core\Eloquent\Repository;
-use Webkul\Product\Repositories\ProductRepository;
+use Swim\Core\Eloquent\Repository;
+use Swim\Product\Repositories\ProductRepository;
 
 /**
  * Review Reposotory
  *
- * @copyright 2019 Webkul Software Pvt Ltd (http://www.webkul.com)
+ * @copyright 2019 Swim Software Pvt Ltd (http://www.Swim.com)
  */
 class ReviewRepository extends Repository
 {
@@ -23,7 +23,7 @@ class ReviewRepository extends Repository
     /**
      * Create a new controller instance.
      *
-     * @param  Webkul\Product\Repositories\ProductRepository      $product
+     * @param  Swim\Product\Repositories\ProductRepository      $product
      * @return void
      */
     public function __construct(
@@ -42,7 +42,7 @@ class ReviewRepository extends Repository
      */
     function model()
     {
-        return 'Webkul\Product\Contracts\ProductReview';
+        return 'Swim\Product\Contracts\ProductReview';
     }
 
 

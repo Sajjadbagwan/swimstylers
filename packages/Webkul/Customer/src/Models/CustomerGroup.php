@@ -1,8 +1,8 @@
 <?php
-namespace Webkul\Customer\Models;
+namespace Swim\Customer\Models;
 
 use Illuminate\Database\Eloquent\Model;
-use Webkul\Customer\Contracts\CustomerGroup as CustomerGroupContract;
+use Swim\Customer\Contracts\CustomerGroup as CustomerGroupContract;
 
 class CustomerGroup extends Model implements CustomerGroupContract
 {

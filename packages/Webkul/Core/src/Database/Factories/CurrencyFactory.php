@@ -1,7 +1,7 @@
 <?php
 
 use Faker\Generator as Faker;
-use Webkul\Core\Models\Currency;
+use Swim\Core\Models\Currency;
 
 /** @var \Illuminate\Database\Eloquent\Factory $factory */
 $factory->define(Currency::class, function (Faker $faker, array $attributes) {

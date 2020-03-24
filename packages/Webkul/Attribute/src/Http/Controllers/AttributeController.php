@@ -1,15 +1,15 @@
 <?php
 
-namespace Webkul\Attribute\Http\Controllers;
+namespace Swim\Attribute\Http\Controllers;
 
 use Illuminate\Support\Facades\Event;
-use Webkul\Attribute\Repositories\AttributeRepository;
+use Swim\Attribute\Repositories\AttributeRepository;
 
 /**
  * Catalog attribute controller
  *
- * @author    Jitendra Singh <jitendra@webkul.com>
- * @copyright 2018 Webkul Software Pvt Ltd (http://www.webkul.com)
+ * @author    Jitendra Singh <jitendra@Swim.com>
+ * @copyright 2018 Swim Software Pvt Ltd (http://www.Swim.com)
  */
 class AttributeController extends Controller
 {
@@ -30,7 +30,7 @@ class AttributeController extends Controller
     /**
      * Create a new controller instance.
      *
-     * @param  \Webkul\Attribute\Repositories\AttributeRepository $attributeRepository
+     * @param  \Swim\Attribute\Repositories\AttributeRepository $attributeRepository
      * @return void
      */
     public function __construct(AttributeRepository $attributeRepository)
@@ -68,7 +68,7 @@ class AttributeController extends Controller
     public function store()
     {
         $this->validate(request(), [
-            'code' => ['required', 'unique:attributes,code', new \Webkul\Core\Contracts\Validations\Code],
+            'code' => ['required', 'unique:attributes,code', new \Swim\Core\Contracts\Validations\Code],
             'admin_name' => 'required',
             'type' => 'required'
         ]);
@@ -106,7 +106,7 @@ class AttributeController extends Controller
     public function update($id)
     {
         $this->validate(request(), [
-            'code' => ['required', 'unique:attributes,code,' . $id, new \Webkul\Core\Contracts\Validations\Code],
+            'code' => ['required', 'unique:attributes,code,' . $id, new \Swim\Core\Contracts\Validations\Code],
             'admin_name' => 'required',
             'type' => 'required'
         ]);

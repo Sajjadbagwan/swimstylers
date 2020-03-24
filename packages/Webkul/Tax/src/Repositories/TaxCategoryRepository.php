@@ -1,14 +1,14 @@
 <?php
 
-namespace Webkul\Tax\Repositories;
+namespace Swim\Tax\Repositories;
 
-use Webkul\Core\Eloquent\Repository;
+use Swim\Core\Eloquent\Repository;
 
 /**
  * Tax Category Reposotory
  *
- * @author    Prashant Singh <prashant.singh852@webkul.com>
- * @copyright 2018 Webkul Software Pvt Ltd (http://www.webkul.com)
+ * @author    Prashant Singh <prashant.singh852@Swim.com>
+ * @copyright 2018 Swim Software Pvt Ltd (http://www.Swim.com)
  */
 class TaxCategoryRepository extends Repository
 {
@@ -19,7 +19,7 @@ class TaxCategoryRepository extends Repository
      */
     function model()
     {
-        return 'Webkul\Tax\Contracts\TaxCategory';
+        return 'Swim\Tax\Contracts\TaxCategory';
     }
 
     public function attachOrDetach($taxCategory, $data)

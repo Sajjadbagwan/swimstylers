@@ -1,9 +1,9 @@
 <?php
 
-namespace Webkul\Velocity\Models;
+namespace Swim\Velocity\Models;
 
 use Illuminate\Database\Eloquent\Model;
-use Webkul\Velocity\Contracts\Category as CategoryContract;
+use Swim\Velocity\Contracts\Category as CategoryContract;
 
 class Category extends Model implements CategoryContract
 {

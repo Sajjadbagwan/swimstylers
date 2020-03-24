@@ -1,6 +1,6 @@
 <?php
 
-namespace Webkul\API\Http\Resources\Checkout;
+namespace Swim\API\Http\Resources\Checkout;
 
 use Illuminate\Http\Resources\Json\JsonResource;
 

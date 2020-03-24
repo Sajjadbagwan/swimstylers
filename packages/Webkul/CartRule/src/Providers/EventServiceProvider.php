@@ -1,6 +1,6 @@
 <?php
 
-namespace Webkul\CartRule\Providers;
+namespace Swim\CartRule\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\Event;
@@ -14,8 +14,8 @@ class EventServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        Event::listen('checkout.order.save.after', 'Webkul\CartRule\Listeners\Order@manageCartRule');
+        Event::listen('checkout.order.save.after', 'Swim\CartRule\Listeners\Order@manageCartRule');
 
-        Event::listen('checkout.cart.collect.totals.before', 'Webkul\CartRule\Listeners\Cart@applyCartRules');
+        Event::listen('checkout.cart.collect.totals.before', 'Swim\CartRule\Listeners\Cart@applyCartRules');
     }
 }

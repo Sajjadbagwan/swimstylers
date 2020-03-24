@@ -1,17 +1,17 @@
 <?php
 
-namespace Webkul\Admin\Http\Controllers\Customer;
+namespace Swim\Admin\Http\Controllers\Customer;
 
-use Webkul\Customer\Rules\VatIdRule;
-use Webkul\Admin\Http\Controllers\Controller;
-use Webkul\Customer\Repositories\CustomerRepository as Customer;
-use Webkul\Customer\Repositories\CustomerAddressRepository as CustomerAddress;
+use Swim\Customer\Rules\VatIdRule;
+use Swim\Admin\Http\Controllers\Controller;
+use Swim\Customer\Repositories\CustomerRepository as Customer;
+use Swim\Customer\Repositories\CustomerAddressRepository as CustomerAddress;
 
 /**
  * Customer's Address controller
  *
- * @author    Vivek Sharma <viveksh047@webkul.com>
- * @copyright 2019 Webkul Software Pvt Ltd (http://www.webkul.com)
+ * @author    Vivek Sharma <viveksh047@Swim.com>
+ * @copyright 2019 Swim Software Pvt Ltd (http://www.Swim.com)
  */
 class AddressController extends Controller
 {
@@ -39,7 +39,7 @@ class AddressController extends Controller
     /**
      * Create a new controller instance.
      *
-     * @param Webkul\Customer\Repositories\CustomerAddressRepository $customerAddress
+     * @param Swim\Customer\Repositories\CustomerAddressRepository $customerAddress
      *
      * @return void
      */

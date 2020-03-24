@@ -1,6 +1,6 @@
 <?php
 
-namespace Webkul\Velocity\Facades;
+namespace Swim\Velocity\Facades;
 
 use Illuminate\Support\Facades\Facade;
 

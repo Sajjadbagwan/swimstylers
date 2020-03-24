@@ -1,16 +1,16 @@
 <?php
 
-namespace Webkul\Product\Helpers;
+namespace Swim\Product\Helpers;
 
-use Webkul\Attribute\Repositories\AttributeOptionRepository as AttributeOption;
-use Webkul\Product\Models\Product;
-use Webkul\Product\Models\ProductAttributeValue;
+use Swim\Attribute\Repositories\AttributeOptionRepository as AttributeOption;
+use Swim\Product\Models\Product;
+use Swim\Product\Models\ProductAttributeValue;
 
 /**
  * Configurable Option Helper
  *
- * @author Jitendra Singh <jitendra@webkul.com>
- * @copyright 2018 Webkul Software Pvt Ltd (http://www.webkul.com)
+ * @author Jitendra Singh <jitendra@Swim.com>
+ * @copyright 2018 Swim Software Pvt Ltd (http://www.Swim.com)
  */
 class ConfigurableOption extends AbstractProduct
 {
@@ -31,8 +31,8 @@ class ConfigurableOption extends AbstractProduct
     /**
      * Create a new controller instance.
      *
-     * @param  Webkul\Attribute\Repositories\AttributeOptionRepository $attributeOption
-     * @param  Webkul\Product\Helpers\ProductImage                     $productImage
+     * @param  Swim\Attribute\Repositories\AttributeOptionRepository $attributeOption
+     * @param  Swim\Product\Helpers\ProductImage                     $productImage
      * @return void
      */
     public function __construct(
@@ -117,7 +117,7 @@ class ConfigurableOption extends AbstractProduct
         $allowAttributes = $this->getAllowAttributes($currentProduct);
 
         foreach ($allowedProducts as $product) {
-            if ($product instanceof \Webkul\Product\Models\ProductFlat) {
+            if ($product instanceof \Swim\Product\Models\ProductFlat) {
                 $productId = $product->product_id;
             } else {
                 $productId = $product->id;
@@ -128,7 +128,7 @@ class ConfigurableOption extends AbstractProduct
 
                 $attributeValue = $product->{$productAttribute->code};
 
-                if ($attributeValue == '' && $product instanceof \Webkul\Product\Models\ProductFlat)
+                if ($attributeValue == '' && $product instanceof \Swim\Product\Models\ProductFlat)
                     $attributeValue = $product->product->{$productAttribute->code};
 
                 $options[$productAttributeId][$attributeValue][] = $productId;
@@ -212,7 +212,7 @@ class ConfigurableOption extends AbstractProduct
         $prices = [];
 
         foreach ($this->getAllowedProducts($product) as $variant) {
-            if ($variant instanceof \Webkul\Product\Models\ProductFlat) {
+            if ($variant instanceof \Swim\Product\Models\ProductFlat) {
                 $variantId = $variant->product_id;
             } else {
                 $variantId = $variant->id;
@@ -235,7 +235,7 @@ class ConfigurableOption extends AbstractProduct
         $images = [];
 
         foreach ($this->getAllowedProducts($product) as $variant) {
-            if ($variant instanceof \Webkul\Product\Models\ProductFlat) {
+            if ($variant instanceof \Swim\Product\Models\ProductFlat) {
                 $variantId = $variant->product_id;
             } else {
                 $variantId = $variant->id;

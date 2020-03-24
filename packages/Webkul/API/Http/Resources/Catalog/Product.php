@@ -1,9 +1,9 @@
 <?php
 
-namespace Webkul\API\Http\Resources\Catalog;
+namespace Swim\API\Http\Resources\Catalog;
 
 use Illuminate\Http\Resources\Json\JsonResource;
-use Webkul\Product\Helpers\ProductType;
+use Swim\Product\Helpers\ProductType;
 
 class Product extends JsonResource
 {
@@ -14,9 +14,9 @@ class Product extends JsonResource
      */
     public function __construct($resource)
     {
-        $this->productImageHelper = app('Webkul\Product\Helpers\ProductImage');
+        $this->productImageHelper = app('Swim\Product\Helpers\ProductImage');
 
-        $this->productReviewHelper = app('Webkul\Product\Helpers\Review');
+        $this->productReviewHelper = app('Swim\Product\Helpers\Review');
 
         parent::__construct($resource);
     }

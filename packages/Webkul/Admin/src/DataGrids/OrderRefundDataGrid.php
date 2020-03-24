@@ -1,15 +1,15 @@
 <?php
 
-namespace Webkul\Admin\DataGrids;
+namespace Swim\Admin\DataGrids;
 
-use Webkul\Ui\DataGrid\DataGrid;
+use Swim\Ui\DataGrid\DataGrid;
 use DB;
 
 /**
  * OrderRefundDataGrid Class
  *
- * @author Prashant Singh <jitendra@webkul.com>
- * @copyright 2018 Webkul Software Pvt Ltd (http://www.webkul.com)
+ * @author Prashant Singh <jitendra@Swim.com>
+ * @copyright 2018 Swim Software Pvt Ltd (http://www.Swim.com)
  */
 class OrderRefundDataGrid extends DataGrid
 {

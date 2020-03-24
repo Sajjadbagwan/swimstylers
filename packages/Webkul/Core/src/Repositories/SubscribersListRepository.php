@@ -1,15 +1,15 @@
 <?php
 
-namespace Webkul\Core\Repositories;
+namespace Swim\Core\Repositories;
 
 use Illuminate\Container\Container as App;
-use Webkul\Core\Eloquent\Repository;
+use Swim\Core\Eloquent\Repository;
 
 /**
  * SubscribersList Repository
  *
- * @author    Prashant Singh <prashant.singh852@webkul.com>
- * @copyright 2018 Webkul Software Pvt Ltd (http://www.webkul.com)
+ * @author    Prashant Singh <prashant.singh852@Swim.com>
+ * @copyright 2018 Swim Software Pvt Ltd (http://www.Swim.com)
  */
 class SubscribersListRepository extends Repository
 {
@@ -20,7 +20,7 @@ class SubscribersListRepository extends Repository
      */
     function model()
     {
-        return 'Webkul\Core\Contracts\SubscribersList';
+        return 'Swim\Core\Contracts\SubscribersList';
     }
 
 

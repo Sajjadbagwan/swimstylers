@@ -1,17 +1,17 @@
 <?php
 
-namespace Webkul\API\Http\Controllers\Shop;
+namespace Swim\API\Http\Controllers\Shop;
 
 use Illuminate\Support\Facades\Event;
-use Webkul\Customer\Repositories\CustomerRepository;
-use Webkul\Customer\Repositories\CustomerGroupRepository;
+use Swim\Customer\Repositories\CustomerRepository;
+use Swim\Customer\Repositories\CustomerGroupRepository;
 
 /**
  * Customer controller
  *
- * @author    Jitendra Singh <jitendra@webkul.com>
- * @author    Vivek Sharma <viveksh047@webkul.com> @vivek-webkul
- * @copyright 2018 Webkul Software Pvt Ltd (http://www.webkul.com)
+ * @author    Jitendra Singh <jitendra@Swim.com>
+ * @author    Vivek Sharma <viveksh047@Swim.com> @vivek-Swim
+ * @copyright 2018 Swim Software Pvt Ltd (http://www.Swim.com)
  */
 class CustomerController extends Controller
 {
@@ -39,8 +39,8 @@ class CustomerController extends Controller
     /**
      * Create a new controller instance.
      *
-     * @param  \Webkul\Customer\Repositories\CustomerRepository     $customerRepository
-     * @param  \Webkul\Customer\Repositories\CustomerGroupRepository     $customerGroupRepository
+     * @param  \Swim\Customer\Repositories\CustomerRepository     $customerRepository
+     * @param  \Swim\Customer\Repositories\CustomerGroupRepository     $customerGroupRepository
      * @return void
      */
     public function __construct(

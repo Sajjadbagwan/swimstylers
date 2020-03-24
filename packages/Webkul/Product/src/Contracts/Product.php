@@ -1,6 +1,6 @@
 <?php
 
-namespace Webkul\Product\Contracts;
+namespace Swim\Product\Contracts;
 
 interface Product
 {

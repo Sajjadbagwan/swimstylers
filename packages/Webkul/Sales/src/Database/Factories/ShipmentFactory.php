@@ -3,9 +3,9 @@
 /** @var \Illuminate\Database\Eloquent\Factory $factory */
 
 use Faker\Generator as Faker;
-use Webkul\Inventory\Models\InventorySource;
-use Webkul\Sales\Models\OrderAddress;
-use Webkul\Sales\Models\Shipment;
+use Swim\Inventory\Models\InventorySource;
+use Swim\Sales\Models\OrderAddress;
+use Swim\Sales\Models\Shipment;
 
 $factory->define(Shipment::class, function (Faker $faker) {
     $address = factory(OrderAddress::class)->create();

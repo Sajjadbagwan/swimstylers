@@ -1,9 +1,9 @@
 <?php
 
-namespace Webkul\Velocity\Helpers;
+namespace Swim\Velocity\Helpers;
 
 use Illuminate\Support\Facades\Storage;
-use Webkul\Category\Repositories\CategoryRepository;
+use Swim\Category\Repositories\CategoryRepository;
 
 class AdminHelper
 {
@@ -35,7 +35,7 @@ class AdminHelper
         $data = request()->all();
         $type = 'category_icon_path';
 
-        if (! $category instanceof \Webkul\Category\Models\Category)
+        if (! $category instanceof \Swim\Category\Models\Category)
             $category = $this->categoryRepository->findOrFail($category);
 
         $category = $this->uploadImage($category, $data, $type);

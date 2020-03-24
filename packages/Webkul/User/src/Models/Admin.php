@@ -1,12 +1,12 @@
 <?php
 
-namespace Webkul\User\Models;
+namespace Swim\User\Models;
 
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
-use Webkul\User\Models\Role;
-use Webkul\User\Notifications\AdminResetPassword;
-use Webkul\User\Contracts\Admin as AdminContract;
+use Swim\User\Models\Role;
+use Swim\User\Notifications\AdminResetPassword;
+use Swim\User\Contracts\Admin as AdminContract;
 
 
 class Admin extends Authenticatable implements AdminContract

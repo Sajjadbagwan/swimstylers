@@ -1,6 +1,6 @@
 <?php
 
-namespace Webkul\CartRule\Models;
+namespace Swim\CartRule\Models;
 
 use Konekt\Concord\Proxies\ModelProxy;
 

@@ -358,7 +358,7 @@
                                         </tr>
                                     @endif
 
-                                    @php ($taxRates = Webkul\Tax\Helpers\Tax::getTaxRatesWithAmount($order, true))
+                                    @php ($taxRates = Swim\Tax\Helpers\Tax::getTaxRatesWithAmount($order, true))
                                     @foreach ($taxRates as $taxRate => $baseTaxAmount)
                                     <tr {{ $loop->last ? 'class=border' : ''}}>
                                         <td id="taxrate-{{ core()->taxRateAsIdentifier($taxRate) }}">{{ __('admin::app.sales.orders.tax') }} {{ $taxRate }} %</td>

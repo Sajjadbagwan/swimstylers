@@ -1,17 +1,17 @@
 <?php
 
-namespace Webkul\Velocity\Http\Controllers\Admin;
+namespace Swim\Velocity\Http\Controllers\Admin;
 
 use Illuminate\Http\Response;
-use Webkul\Product\Repositories\ProductRepository;
-use Webkul\Velocity\Repositories\ContentRepository;
+use Swim\Product\Repositories\ProductRepository;
+use Swim\Velocity\Repositories\ContentRepository;
 
 /**
  * Content Controller
  *
- * @author    Vivek Sharma <viveksh047@webkul.com> @vivek
- * @author    Shubham Mehrotra <shubhammehrotra.symfony@webkul.com> @shubhwebkul
- * @copyright 2019 Webkul Software Pvt Ltd (http://www.webkul.com)
+ * @author    Vivek Sharma <viveksh047@Swim.com> @vivek
+ * @author    Shubham Mehrotra <shubhammehrotra.symfony@Swim.com> @shubhSwim
+ * @copyright 2019 Swim Software Pvt Ltd (http://www.Swim.com)
  */
 class ContentController extends Controller
 {
@@ -32,8 +32,8 @@ class ContentController extends Controller
     /**
      * Create a new controller instance.
      *
-     * @param \Webkul\Product\Repositories\ProductRepository $productRepository;
-     * @param \Webkul\Velocity\Repositories\ContentRepository $content;
+     * @param \Swim\Product\Repositories\ProductRepository $productRepository;
+     * @param \Swim\Velocity\Repositories\ContentRepository $content;
      * @return void
      */
     public function __construct(
@@ -124,7 +124,7 @@ class ContentController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Webkul\Product\Http\Requests\ProductForm $request
+     * @param  \Swim\Product\Http\Requests\ProductForm $request
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */

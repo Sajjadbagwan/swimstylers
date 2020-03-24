@@ -21,7 +21,7 @@
         {!! view_render_event('bagisto.admin.catalog.categories.list.before') !!}
 
         <div class="page-content">
-            {!! app('Webkul\Admin\DataGrids\CategoryDataGrid')->render() !!}
+            {!! app('Swim\Admin\DataGrids\CategoryDataGrid')->render() !!}
         </div>
 
         {!! view_render_event('bagisto.admin.catalog.categories.list.after') !!}

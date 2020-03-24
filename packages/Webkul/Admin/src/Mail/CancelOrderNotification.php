@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Webkul\Admin\Mail;
+namespace Swim\Admin\Mail;
 
 use Illuminate\Bus\Queueable;
 use Illuminate\Mail\Mailable;

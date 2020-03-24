@@ -1,10 +1,10 @@
 <?php
 
-namespace Webkul\Core\Models;
+namespace Swim\Core\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Storage;
-use Webkul\Core\Contracts\Slider as SliderContract;
+use Swim\Core\Contracts\Slider as SliderContract;
 
 class Slider extends Model implements SliderContract
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Webkul\Tax\Models;
+namespace Swim\Tax\Models;
 
 use Konekt\Concord\Proxies\ModelProxy;
 

@@ -1,5 +1,5 @@
 @php
-    $brandname = app('Webkul\Velocity\Helpers\Helper');
+    $brandname = app('Swim\Velocity\Helpers\Helper');
     $topBrandsCollection = $brandname->getBrandsWithCategories();
 @endphp
 

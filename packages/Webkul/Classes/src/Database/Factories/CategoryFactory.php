@@ -1,7 +1,7 @@
 <?php
 
 use Faker\Generator as Faker;
-use Webkul\Classes\Models\Classes;
+use Swim\Classes\Models\Classes;
 
 /** @var \Illuminate\Database\Eloquent\Factory $factory */
 $factory->define(Classes::class, function (Faker $faker, array $attributes) {

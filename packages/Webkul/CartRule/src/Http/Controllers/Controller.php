@@ -1,6 +1,6 @@
 <?php
 
-namespace Webkul\CartRule\Http\Controllers;
+namespace Swim\CartRule\Http\Controllers;
 
 use Illuminate\Routing\Controller as BaseController;
 use Illuminate\Foundation\Bus\DispatchesJobs;

@@ -1,21 +1,21 @@
 <?php
 
-namespace Webkul\Category\Repositories;
+namespace Swim\Category\Repositories;
 
 use Illuminate\Container\Container as App;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\Event;
-use Webkul\Core\Eloquent\Repository;
-use Webkul\Category\Models\Category;
-use Webkul\Category\Models\CategoryTranslation;
+use Swim\Core\Eloquent\Repository;
+use Swim\Category\Models\Category;
+use Swim\Category\Models\CategoryTranslation;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Illuminate\Support\Facades\DB;
 
 /**
  * Category Reposotory
  *
- * @author    Jitendra Singh <jitendra@webkul.com>
- * @copyright 2018 Webkul Software Pvt Ltd (http://www.webkul.com)
+ * @author    Jitendra Singh <jitendra@Swim.com>
+ * @copyright 2018 Swim Software Pvt Ltd (http://www.Swim.com)
  */
 class CategoryRepository extends Repository
 {
@@ -26,7 +26,7 @@ class CategoryRepository extends Repository
      */
     public function model()
     {
-        return 'Webkul\Category\Contracts\Category';
+        return 'Swim\Category\Contracts\Category';
     }
 
     /**

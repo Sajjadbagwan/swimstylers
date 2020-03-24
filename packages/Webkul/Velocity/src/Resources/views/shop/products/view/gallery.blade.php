@@ -1,5 +1,5 @@
-@inject ('productImageHelper', 'Webkul\Product\Helpers\ProductImage')
-@inject ('wishListHelper', 'Webkul\Customer\Helpers\Wishlist')
+@inject ('productImageHelper', 'Swim\Product\Helpers\ProductImage')
+@inject ('wishListHelper', 'Swim\Customer\Helpers\Wishlist')
 
 @php
     $images = $productImageHelper->getGalleryImages($product);

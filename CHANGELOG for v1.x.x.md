@@ -86,7 +86,7 @@
 
 * #2527 [fixed] - Order datagrid is using static text.
 
-* #2529 [fixed] - [Webkul\Admin] Customer firstname & lastname are using wrong translations
+* #2529 [fixed] - [Swim\Admin] Customer firstname & lastname are using wrong translations
 
 * #2533 [fixed] - Shipment email notification is not sending to customer.
 

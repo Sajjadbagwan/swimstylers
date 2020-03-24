@@ -84,7 +84,7 @@
 
                                     <select class="control" id="customer_groups" name="customer_groups[]" v-validate="'required'" data-vv-as="&quot;{{ __('admin::app.promotions.cart-rules.customer-groups') }}&quot;" multiple="multiple">
 
-                                        @foreach(app('Webkul\Customer\Repositories\CustomerGroupRepository')->all() as $customerGroup)
+                                        @foreach(app('Swim\Customer\Repositories\CustomerGroupRepository')->all() as $customerGroup)
                                             <option value="{{ $customerGroup->id }}" {{ old('customer_groups') && in_array($customerGroup->id, old('customer_groups')) ? 'selected' : '' }}>
                                                 {{ $customerGroup->name }}
                                             </option>
@@ -423,7 +423,7 @@
 
             data: function() {
                 return {
-                    condition_attributes: @json(app('\Webkul\CartRule\Repositories\CartRuleRepository')->getConditionAttributes()),
+                    condition_attributes: @json(app('\Swim\CartRule\Repositories\CartRuleRepository')->getConditionAttributes()),
 
                     attribute_type_indexes: {
                         'cart': 0,

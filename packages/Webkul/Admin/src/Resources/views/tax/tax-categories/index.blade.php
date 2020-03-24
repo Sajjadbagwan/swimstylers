@@ -19,7 +19,7 @@
         </div>
 
         <div class="page-content">
-            @inject('taxCategories','Webkul\Admin\DataGrids\TaxCategoryDataGrid')
+            @inject('taxCategories','Swim\Admin\DataGrids\TaxCategoryDataGrid')
             {!! $taxCategories->render() !!}
         </div>
     </div>

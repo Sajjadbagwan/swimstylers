@@ -1,22 +1,22 @@
 <?php
 
-namespace Webkul\Product\Listeners;
+namespace Swim\Product\Listeners;
 
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
-use Webkul\Attribute\Repositories\AttributeRepository;
-use Webkul\Attribute\Repositories\AttributeOptionRepository;
-use Webkul\Product\Helpers\ProductType;
-use Webkul\Product\Repositories\ProductFlatRepository;
-use Webkul\Product\Repositories\ProductAttributeValueRepository;
-use Webkul\Product\Models\ProductAttributeValue;
+use Swim\Attribute\Repositories\AttributeRepository;
+use Swim\Attribute\Repositories\AttributeOptionRepository;
+use Swim\Product\Helpers\ProductType;
+use Swim\Product\Repositories\ProductFlatRepository;
+use Swim\Product\Repositories\ProductAttributeValueRepository;
+use Swim\Product\Models\ProductAttributeValue;
 
 /**
  * Product Flat Event handler
  *
- * @author    Jitendra Singh <jitendra@webkul.com>
- * @author    Prashant Singh <prashant.singh852@webkul.com>
- * @copyright 2018 Webkul Software Pvt Ltd (http://www.webkul.com)
+ * @author    Jitendra Singh <jitendra@Swim.com>
+ * @author    Prashant Singh <prashant.singh852@Swim.com>
+ * @copyright 2018 Swim Software Pvt Ltd (http://www.Swim.com)
  */
 class ProductFlat
 {
@@ -75,10 +75,10 @@ class ProductFlat
     /**
      * Create a new listener instance.
      *
-     * @param  Webkul\Attribute\Repositories\AttributeRepository           $attributeRepository
-     * @param  Webkul\Attribute\Repositories\AttributeOptionRepository     $attributeOptionRepository
-     * @param  Webkul\Product\Repositories\ProductFlatRepository           $productFlatRepository
-     * @param  Webkul\Product\Repositories\ProductAttributeValueRepository $productAttributeValueRepository
+     * @param  Swim\Attribute\Repositories\AttributeRepository           $attributeRepository
+     * @param  Swim\Attribute\Repositories\AttributeOptionRepository     $attributeOptionRepository
+     * @param  Swim\Product\Repositories\ProductFlatRepository           $productFlatRepository
+     * @param  Swim\Product\Repositories\ProductAttributeValueRepository $productAttributeValueRepository
      * @return void
      */
     public function __construct(
@@ -177,12 +177,12 @@ class ProductFlat
 
         if (isset($product['channels'])) {
             foreach ($product['channels'] as $channel) {
-                $channel = app('Webkul\Core\Repositories\ChannelRepository')->findOrFail($channel);
+                $channel = app('Swim\Core\Repositories\ChannelRepository')->findOrFail($channel);
                 $channels[] = $channel['code'];
             }
         } else if (isset($parentProduct['channels'])){
             foreach ($parentProduct['channels'] as $channel) {
-                $channel = app('Webkul\Core\Repositories\ChannelRepository')->findOrFail($channel);
+                $channel = app('Swim\Core\Repositories\ChannelRepository')->findOrFail($channel);
                 $channels[] = $channel['code'];
             }
         } else {

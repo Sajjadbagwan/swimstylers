@@ -21,7 +21,7 @@
         </div>
 
         <div class="page-content">
-            @inject('subscribers','Webkul\Admin\DataGrids\NewsLetterDataGrid')
+            @inject('subscribers','Swim\Admin\DataGrids\NewsLetterDataGrid')
             {!! $subscribers->render() !!}
         </div>
     </div>

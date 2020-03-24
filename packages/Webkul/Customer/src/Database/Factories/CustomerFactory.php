@@ -4,7 +4,7 @@
 
 use Faker\Generator as Faker;
 use Illuminate\Support\Facades\Hash;
-use Webkul\Customer\Models\Customer;
+use Swim\Customer\Models\Customer;
 
 $factory->define(Customer::class, function (Faker $faker) {
     $now = date("Y-m-d H:i:s");

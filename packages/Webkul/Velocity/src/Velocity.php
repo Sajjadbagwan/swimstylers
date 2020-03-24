@@ -1,8 +1,8 @@
 <?php
 
-namespace Webkul\Velocity;
+namespace Swim\Velocity;
 
-use Webkul\Category\Repositories\CategoryRepository as Category;
+use Swim\Category\Repositories\CategoryRepository as Category;
 
 class Velocity
 {
@@ -37,7 +37,7 @@ class Velocity
     /**
      * Create a new instance.
      *
-     * @param  Webkul\Category\Repositories\CategoryRepository  $category
+     * @param  Swim\Category\Repositories\CategoryRepository  $category
      * @return void
      */
     public function __construct(

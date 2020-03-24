@@ -1,4 +1,4 @@
-@inject ('wishListHelper', 'Webkul\Customer\Helpers\Wishlist')
+@inject ('wishListHelper', 'Swim\Customer\Helpers\Wishlist')
 
 {!! view_render_event('bagisto.shop.products.wishlist.before') !!}
     @auth('customer')

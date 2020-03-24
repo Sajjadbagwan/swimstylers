@@ -1,15 +1,15 @@
 <?php
 
-namespace Webkul\CartRule\Helpers;
+namespace Swim\CartRule\Helpers;
 
 use Carbon\Carbon;
-use Webkul\CartRule\Repositories\CartRuleRepository;
-use Webkul\CartRule\Repositories\CartRuleCouponRepository;
-use Webkul\CartRule\Repositories\CartRuleCouponUsageRepository;
-use Webkul\CartRule\Repositories\CartRuleCustomerRepository;
-use Webkul\Customer\Repositories\CustomerGroupRepository;
-use Webkul\Rule\Helpers\Validator;
-use Webkul\Checkout\Facades\Cart;
+use Swim\CartRule\Repositories\CartRuleRepository;
+use Swim\CartRule\Repositories\CartRuleCouponRepository;
+use Swim\CartRule\Repositories\CartRuleCouponUsageRepository;
+use Swim\CartRule\Repositories\CartRuleCustomerRepository;
+use Swim\Customer\Repositories\CustomerGroupRepository;
+use Swim\Rule\Helpers\Validator;
+use Swim\Checkout\Facades\Cart;
 
 class CartRule
 {
@@ -63,12 +63,12 @@ class CartRule
     /**
      * Create a new helper instance.
      *
-     * @param  Webkul\CartRule\Repositories\CartRuleRepository            $cartRuleRepository
-     * @param  Webkul\CartRule\Repositories\CartRuleCouponRepository      $cartRuleCouponRepository
-     * @param  Webkul\CartRule\Repositories\CartRuleCouponUsageRepository $cartRuleCouponUsageRepository
-     * @param  Webkul\CartRule\Repositories\CartRuleCustomerRepository    $cartRuleCustomerRepository
-     * @param  Webkul\Customer\Repositories\CustomerGroupRepository       $customerGroupRepository
-     * @param  Webkul\Rule\Helpers\Validator                              $validator
+     * @param  Swim\CartRule\Repositories\CartRuleRepository            $cartRuleRepository
+     * @param  Swim\CartRule\Repositories\CartRuleCouponRepository      $cartRuleCouponRepository
+     * @param  Swim\CartRule\Repositories\CartRuleCouponUsageRepository $cartRuleCouponUsageRepository
+     * @param  Swim\CartRule\Repositories\CartRuleCustomerRepository    $cartRuleCustomerRepository
+     * @param  Swim\Customer\Repositories\CustomerGroupRepository       $customerGroupRepository
+     * @param  Swim\Rule\Helpers\Validator                              $validator
      * @return void
      */
     public function __construct(

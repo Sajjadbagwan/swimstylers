@@ -1,9 +1,9 @@
 <?php
 
-namespace Webkul\Payment\Payment;
+namespace Swim\Payment\Payment;
 
 use Illuminate\Support\Facades\Config;
-use Webkul\Checkout\Facades\Cart;
+use Swim\Checkout\Facades\Cart;
 
 abstract class Payment
 {

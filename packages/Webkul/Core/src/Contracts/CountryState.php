@@ -1,6 +1,6 @@
 <?php
 
-namespace Webkul\Core\Contracts;
+namespace Swim\Core\Contracts;
 
 interface CountryState
 {

@@ -1,9 +1,9 @@
 <?php
 
-namespace Webkul\Product\Models;
+namespace Swim\Product\Models;
 
 use Illuminate\Database\Eloquent\Model;
-use Webkul\Product\Contracts\ProductFlat as ProductFlatContract;
+use Swim\Product\Contracts\ProductFlat as ProductFlatContract;
 
 class ProductFlat extends Model implements ProductFlatContract
 {

@@ -1,10 +1,10 @@
 <?php
 
-namespace Webkul\API\Http\Resources\Sales;
+namespace Swim\API\Http\Resources\Sales;
 
 use Illuminate\Http\Resources\Json\JsonResource;
-use Webkul\API\Http\Resources\Customer\Customer as CustomerResource;
-use Webkul\API\Http\Resources\Inventory\InventorySource as InventorySourceResource;
+use Swim\API\Http\Resources\Customer\Customer as CustomerResource;
+use Swim\API\Http\Resources\Inventory\InventorySource as InventorySourceResource;
 
 class Shipment extends JsonResource
 {

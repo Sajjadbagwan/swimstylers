@@ -1,21 +1,21 @@
 <?php
 
-namespace Webkul\Classes\Repositories;
+namespace Swim\Classes\Repositories;
 
 use Illuminate\Container\Container as App;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\Event;
-use Webkul\Core\Eloquent\Repository;
-use Webkul\Classes\Models\Classes;
-use Webkul\Classes\Models\ClassesTranslation;
+use Swim\Core\Eloquent\Repository;
+use Swim\Classes\Models\Classes;
+use Swim\Classes\Models\ClassesTranslation;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Illuminate\Support\Facades\DB;
 
 /**
  * Classes Reposotory
  *
- * @author    Jitendra Singh <jitendra@webkul.com>
- * @copyright 2018 Webkul Software Pvt Ltd (http://www.webkul.com)
+ * @author    Jitendra Singh <jitendra@Swim.com>
+ * @copyright 2018 Swim Software Pvt Ltd (http://www.Swim.com)
  */
 class ClassesRepository extends Repository
 {
@@ -26,7 +26,7 @@ class ClassesRepository extends Repository
      */
     public function model()
     {
-        return 'Webkul\Classes\Contracts\Classes';
+        return 'Swim\Classes\Contracts\Classes';
     }
 
     /**

@@ -1,23 +1,23 @@
 <?php
 
-namespace Webkul\Product\Type;
+namespace Swim\Product\Type;
 
 use Illuminate\Support\Facades\Storage;
 use phpDocumentor\Reflection\Types\Boolean;
-use Webkul\Attribute\Repositories\AttributeRepository;
-use Webkul\Product\Repositories\ProductRepository;
-use Webkul\Product\Repositories\ProductAttributeValueRepository;
-use Webkul\Product\Repositories\ProductInventoryRepository;
-use Webkul\Product\Repositories\ProductImageRepository;
-use Webkul\Product\Models\ProductAttributeValue;
-use Webkul\Product\Helpers\ProductImage;
+use Swim\Attribute\Repositories\AttributeRepository;
+use Swim\Product\Repositories\ProductRepository;
+use Swim\Product\Repositories\ProductAttributeValueRepository;
+use Swim\Product\Repositories\ProductInventoryRepository;
+use Swim\Product\Repositories\ProductImageRepository;
+use Swim\Product\Models\ProductAttributeValue;
+use Swim\Product\Helpers\ProductImage;
 use Cart;
 
 /**
  * Abstract class Type
  *
- * @author    Jitendra Singh <jitendra@webkul.com>
- * @copyright 2018 Webkul Software Pvt Ltd (http://www.webkul.com)
+ * @author    Jitendra Singh <jitendra@Swim.com>
+ * @copyright 2018 Swim Software Pvt Ltd (http://www.Swim.com)
  */
 abstract class AbstractType
 {
@@ -122,12 +122,12 @@ abstract class AbstractType
     /**
      * Create a new product type instance.
      *
-     * @param  Webkul\Attribute\Repositories\AttributeRepository           $attributeRepository
-     * @param  Webkul\Product\Repositories\ProductRepository               $productRepository
-     * @param  Webkul\Product\Repositories\ProductAttributeValueRepository $attributeValueRepository
-     * @param  Webkul\Product\Repositories\ProductInventoryRepository      $productInventoryRepository
-     * @param  Webkul\Product\Repositories\ProductImageRepository          $productImageRepository
-     * @param  Webkul\Product\Helpers\ProductImage                         $productImageHelper
+     * @param  Swim\Attribute\Repositories\AttributeRepository           $attributeRepository
+     * @param  Swim\Product\Repositories\ProductRepository               $productRepository
+     * @param  Swim\Product\Repositories\ProductAttributeValueRepository $attributeValueRepository
+     * @param  Swim\Product\Repositories\ProductInventoryRepository      $productInventoryRepository
+     * @param  Swim\Product\Repositories\ProductImageRepository          $productImageRepository
+     * @param  Swim\Product\Helpers\ProductImage                         $productImageHelper
      * @return void
      */
     public function __construct(
@@ -493,7 +493,7 @@ abstract class AbstractType
      */
     public function haveSpecialPrice()
     {
-        $rulePrice = app('Webkul\CatalogRule\Helpers\CatalogRuleProductPrice')->getRulePrice($this->product);
+        $rulePrice = app('Swim\CatalogRule\Helpers\CatalogRuleProductPrice')->getRulePrice($this->product);
 
         if ((is_null($this->product->special_price) || ! (float) $this->product->special_price) && ! $rulePrice)
             return false;

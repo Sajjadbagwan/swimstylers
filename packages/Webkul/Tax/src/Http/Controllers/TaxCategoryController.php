@@ -1,16 +1,16 @@
 <?php
 
-namespace Webkul\Tax\Http\Controllers;
+namespace Swim\Tax\Http\Controllers;
 
 use Illuminate\Support\Facades\Event;
-use Webkul\Tax\Repositories\TaxCategoryRepository;
-use Webkul\Tax\Repositories\TaxRateRepository;
+use Swim\Tax\Repositories\TaxCategoryRepository;
+use Swim\Tax\Repositories\TaxRateRepository;
 
 /**
  * Tax controller
  *
- * @author    Prashant Singh <prashant.singh852@webkul.com>
- * @copyright 2018 Webkul Software Pvt Ltd (http://www.webkul.com)
+ * @author    Prashant Singh <prashant.singh852@Swim.com>
+ * @copyright 2018 Swim Software Pvt Ltd (http://www.Swim.com)
  */
 class TaxCategoryController extends Controller
 {
@@ -38,8 +38,8 @@ class TaxCategoryController extends Controller
     /**
      * Create a new controller instance.
      *
-     * @param  \Webkul\Tax\Repositories\TaxCategoryRepository $taxCategoryRepository
-     * @param  \Webkul\Tax\Repositories\TaxRateRepository     $taxRateRepository
+     * @param  \Swim\Tax\Repositories\TaxCategoryRepository $taxCategoryRepository
+     * @param  \Swim\Tax\Repositories\TaxRateRepository     $taxRateRepository
      * @return void
      */
     public function __construct(

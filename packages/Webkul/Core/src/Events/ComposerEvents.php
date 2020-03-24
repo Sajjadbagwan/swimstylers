@@ -1,6 +1,6 @@
 <?php
 
-namespace Webkul\Core\Events;
+namespace Swim\Core\Events;
 
 use Symfony\Component\Console\Output\ConsoleOutput;
 

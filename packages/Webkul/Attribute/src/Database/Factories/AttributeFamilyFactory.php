@@ -3,7 +3,7 @@
 /** @var \Illuminate\Database\Eloquent\Factory $factory */
 
 use Faker\Generator as Faker;
-use Webkul\Attribute\Models\AttributeFamily;
+use Swim\Attribute\Models\AttributeFamily;
 
 $factory->define(AttributeFamily::class, function (Faker $faker) {
     return [

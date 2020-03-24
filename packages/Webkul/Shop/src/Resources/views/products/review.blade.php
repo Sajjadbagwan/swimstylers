@@ -1,4 +1,4 @@
-@inject ('reviewHelper', 'Webkul\Product\Helpers\Review')
+@inject ('reviewHelper', 'Swim\Product\Helpers\Review')
 
 {!! view_render_event('bagisto.shop.products.review.before', ['product' => $product]) !!}
 

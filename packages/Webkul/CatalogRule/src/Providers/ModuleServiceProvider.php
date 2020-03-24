@@ -1,14 +1,14 @@
 <?php
 
-namespace Webkul\CatalogRule\Providers;
+namespace Swim\CatalogRule\Providers;
 
 use Konekt\Concord\BaseModuleServiceProvider;
 
 class ModuleServiceProvider extends BaseModuleServiceProvider
 {
     protected $models = [
-        \Webkul\CatalogRule\Models\CatalogRule::class,
-        \Webkul\CatalogRule\Models\CatalogRuleProduct::class,
-        \Webkul\CatalogRule\Models\CatalogRuleProductPrice::class
+        \Swim\CatalogRule\Models\CatalogRule::class,
+        \Swim\CatalogRule\Models\CatalogRuleProduct::class,
+        \Swim\CatalogRule\Models\CatalogRuleProductPrice::class
     ];
 }

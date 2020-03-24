@@ -1,16 +1,16 @@
 <?php
 
-namespace Webkul\Product\Helpers;
+namespace Swim\Product\Helpers;
 
-use Webkul\Product\Models\ProductAttributeValue;
-use Webkul\Product\Models\ProductFlatProxy;
-use Webkul\Product\Models\ProductFlat;
+use Swim\Product\Models\ProductAttributeValue;
+use Swim\Product\Models\ProductFlatProxy;
+use Swim\Product\Models\ProductFlat;
 
 /**
  * Abstract Product Helper
  *
- * @author Jitendra Singh <jitendra@webkul.com>
- * @copyright 2018 Webkul Software Pvt Ltd (http://www.webkul.com)
+ * @author Jitendra Singh <jitendra@Swim.com>
+ * @copyright 2018 Swim Software Pvt Ltd (http://www.Swim.com)
  */
 abstract class AbstractProduct
 {

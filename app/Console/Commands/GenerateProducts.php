@@ -3,8 +3,8 @@
 namespace App\Console\Commands;
 
 use Illuminate\Console\Command;
-use Webkul\Product\Repositories\ProductRepository as Product;
-use Webkul\Product\Helpers\GenerateProduct;
+use Swim\Product\Repositories\ProductRepository as Product;
+use Swim\Product\Helpers\GenerateProduct;
 
 class GenerateProducts extends Command
 {

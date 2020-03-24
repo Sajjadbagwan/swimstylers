@@ -1,15 +1,15 @@
 <?php
 
-namespace Webkul\API\Http\Controllers\Shop;
+namespace Swim\API\Http\Controllers\Shop;
 
-use Webkul\Customer\Repositories\CustomerAddressRepository;
-use Webkul\API\Http\Resources\Customer\CustomerAddress as CustomerAddressResource;
+use Swim\Customer\Repositories\CustomerAddressRepository;
+use Swim\API\Http\Resources\Customer\CustomerAddress as CustomerAddressResource;
 
 /**
  * Address controller
  *
- * @author    Jitendra Singh <jitendra@webkul.com>
- * @copyright 2018 Webkul Software Pvt Ltd (http://www.webkul.com)
+ * @author    Jitendra Singh <jitendra@Swim.com>
+ * @copyright 2018 Swim Software Pvt Ltd (http://www.Swim.com)
  */
 class AddressController extends Controller
 {
@@ -37,7 +37,7 @@ class AddressController extends Controller
     /**
      * Controller instance
      *
-     * @param Webkul\Customer\Repositories\CustomerAddressRepository $customerAddressRepository
+     * @param Swim\Customer\Repositories\CustomerAddressRepository $customerAddressRepository
      */
     public function __construct(
         CustomerAddressRepository $customerAddressRepository

@@ -1,16 +1,16 @@
 <?php
 
-namespace Webkul\Velocity\Repositories;
+namespace Swim\Velocity\Repositories;
 
 use Illuminate\Container\Container as App;
-use Webkul\Core\Eloquent\Repository;
-use Webkul\Category\Repositories\CategoryRepository as Category;
+use Swim\Core\Eloquent\Repository;
+use Swim\Category\Repositories\CategoryRepository as Category;
 
 /**
  * Category Reposotory
  *
- * @author    Vivek Sharma <viveksh047@webkul.com>
- * @copyright 2019 Webkul Software Pvt Ltd (http://www.webkul.com)
+ * @author    Vivek Sharma <viveksh047@Swim.com>
+ * @copyright 2019 Swim Software Pvt Ltd (http://www.Swim.com)
  */
 class CategoryRepository extends Repository
 {   
@@ -24,7 +24,7 @@ class CategoryRepository extends Repository
     /**
      * Create a new controller instance.
      *
-     * @param  Webkul\Category\Repositories\CategoryRepository $category
+     * @param  Swim\Category\Repositories\CategoryRepository $category
      * @return void
      */
     public function __construct(
@@ -44,7 +44,7 @@ class CategoryRepository extends Repository
      */
     function model()
     {
-        return 'Webkul\Velocity\Models\Category';
+        return 'Swim\Velocity\Models\Category';
     }
 
     public function getChannelCategories()

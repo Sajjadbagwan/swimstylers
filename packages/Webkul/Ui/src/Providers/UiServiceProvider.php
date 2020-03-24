@@ -1,6 +1,6 @@
 <?php
 
-namespace Webkul\Ui\Providers;
+namespace Swim\Ui\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Pagination\Paginator;
@@ -17,7 +17,7 @@ class UiServiceProvider extends ServiceProvider
         include __DIR__ . '/../Http/routes.php';
 
         $this->publishes([
-            __DIR__ . '/../../publishable/assets' => public_path('vendor/webkul/ui/assets'),
+            __DIR__ . '/../../publishable/assets' => public_path('vendor/Swim/ui/assets'),
         ], 'public');
 
         $this->loadTranslationsFrom(__DIR__ . '/../Resources/lang', 'ui');
@@ -35,6 +35,6 @@ class UiServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->bind('datagrid', 'Webkul\Ui\DataGrid\DataGrid');
+        $this->app->bind('datagrid', 'Swim\Ui\DataGrid\DataGrid');
     }
 }

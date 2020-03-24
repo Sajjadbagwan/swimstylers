@@ -1,9 +1,9 @@
 <?php
 
-namespace Webkul\Product\Models;
+namespace Swim\Product\Models;
 
 use Illuminate\Database\Eloquent\Model;
-use Webkul\Product\Contracts\ProductDownloadableSampleTranslation as ProductDownloadableSampleTranslationContract;
+use Swim\Product\Contracts\ProductDownloadableSampleTranslation as ProductDownloadableSampleTranslationContract;
 
 class ProductDownloadableSampleTranslation extends Model implements ProductDownloadableSampleTranslationContract
 {

@@ -1,4 +1,4 @@
-@inject ('productImageHelper', 'Webkul\Product\Helpers\ProductImage')
+@inject ('productImageHelper', 'Swim\Product\Helpers\ProductImage')
 
 <?php $cart = cart()->getCart(); ?>
 
@@ -86,7 +86,7 @@
                         <div class="item">
                             <div class="item-image" >
                                
-                                <img src="http://127.0.0.1:8000/vendor/webkul/ui/assets/images/product/meduim-product-placeholder.png" />
+                                <img src="http://127.0.0.1:8000/vendor/Swim/ui/assets/images/product/meduim-product-placeholder.png" />
                             </div>
 
                             <div class="item-details">

@@ -1,6 +1,6 @@
 <?php
 
-namespace Webkul\Product\CacheFilters;
+namespace Swim\Product\CacheFilters;
 
 use Intervention\Image\Image;
 use Intervention\Image\Filters\FilterInterface;

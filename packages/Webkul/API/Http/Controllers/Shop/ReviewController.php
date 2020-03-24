@@ -1,16 +1,16 @@
 <?php
 
-namespace Webkul\API\Http\Controllers\Shop;
+namespace Swim\API\Http\Controllers\Shop;
 
 use Illuminate\Http\Request;
-use Webkul\Product\Repositories\ProductReviewRepository;
-use Webkul\API\Http\Resources\Catalog\ProductReview as ProductReviewResource;
+use Swim\Product\Repositories\ProductReviewRepository;
+use Swim\API\Http\Resources\Catalog\ProductReview as ProductReviewResource;
 
 /**
  * Review controller
  *
- * @author    Jitendra Singh <jitendra@webkul.com>
- * @copyright 2018 Webkul Software Pvt Ltd (http://www.webkul.com)
+ * @author    Jitendra Singh <jitendra@Swim.com>
+ * @copyright 2018 Swim Software Pvt Ltd (http://www.Swim.com)
  */
 class ReviewController extends Controller
 {
@@ -31,7 +31,7 @@ class ReviewController extends Controller
     /**
      * Controller instance
      *
-     * @param Webkul\Product\Repositories\ProductReviewRepository $reviewRepository
+     * @param Swim\Product\Repositories\ProductReviewRepository $reviewRepository
      */
     public function __construct(ProductReviewRepository $reviewRepository)
     {

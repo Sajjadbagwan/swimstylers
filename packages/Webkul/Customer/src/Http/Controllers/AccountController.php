@@ -1,6 +1,6 @@
 <?php
 
-namespace Webkul\Customer\Http\Controllers;
+namespace Swim\Customer\Http\Controllers;
 
 /**
  * Account Controlller for the customers
@@ -8,8 +8,8 @@ namespace Webkul\Customer\Http\Controllers;
  * behavior for custome and group of
  * customers.
  *
- * @author    Prashant Singh <prashant.singh852@webkul.com>
- * @copyright 2018 Webkul Software Pvt Ltd (http://www.webkul.com)
+ * @author    Prashant Singh <prashant.singh852@Swim.com>
+ * @copyright 2018 Swim Software Pvt Ltd (http://www.Swim.com)
  */
 class AccountController extends Controller
 {

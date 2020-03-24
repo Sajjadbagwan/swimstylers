@@ -1,16 +1,16 @@
 <?php
 
-namespace Webkul\Velocity\Http\Controllers\Admin;
+namespace Swim\Velocity\Http\Controllers\Admin;
 
 use Illuminate\Http\Response;
-use Webkul\Category\Repositories\CategoryRepository as Category;
-use Webkul\Velocity\Repositories\CategoryRepository as VelocityCategory;
+use Swim\Category\Repositories\CategoryRepository as Category;
+use Swim\Velocity\Repositories\CategoryRepository as VelocityCategory;
 
 /**
  * Category Controller
  *
- * @author    Vivek Sharma <viveksh047@webkul.com> @vivek
- * @copyright 2019 Webkul Software Pvt Ltd (http://www.webkul.com)
+ * @author    Vivek Sharma <viveksh047@Swim.com> @vivek
+ * @copyright 2019 Swim Software Pvt Ltd (http://www.Swim.com)
  */
 class CategoryController extends Controller
 {
@@ -31,8 +31,8 @@ class CategoryController extends Controller
     /**
      * Create a new controller instance.
      *
-     * @param \Webkul\Category\Repositories\CategoryRepository $category;
-     * @param \Webkul\Velocity\Repositories\CategoryRepository $velocityCategory;
+     * @param \Swim\Category\Repositories\CategoryRepository $category;
+     * @param \Swim\Velocity\Repositories\CategoryRepository $velocityCategory;
      * @return void
      */
     public function __construct(

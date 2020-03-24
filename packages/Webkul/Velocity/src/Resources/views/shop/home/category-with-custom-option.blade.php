@@ -1,8 +1,8 @@
 @php
-    $category[0] = app('Webkul\Category\Repositories\CategoryRepository')->findByPath($category[0]);
-    $category[1] = app('Webkul\Category\Repositories\CategoryRepository')->findByPath($category[1]);
-    $category[2] = app('Webkul\Category\Repositories\CategoryRepository')->findByPath($category[2]);
-    $category[3] = app('Webkul\Category\Repositories\CategoryRepository')->findByPath($category[3]);
+    $category[0] = app('Swim\Category\Repositories\CategoryRepository')->findByPath($category[0]);
+    $category[1] = app('Swim\Category\Repositories\CategoryRepository')->findByPath($category[1]);
+    $category[2] = app('Swim\Category\Repositories\CategoryRepository')->findByPath($category[2]);
+    $category[3] = app('Swim\Category\Repositories\CategoryRepository')->findByPath($category[3]);
 @endphp
 
 <div class="container-fluid category-with-custom-options">

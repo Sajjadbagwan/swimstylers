@@ -1,6 +1,6 @@
 <?php
 
-namespace Webkul\User;
+namespace Swim\User;
 
 class Bouncer
 {

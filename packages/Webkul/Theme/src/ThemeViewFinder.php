@@ -1,8 +1,8 @@
 <?php 
 
-namespace Webkul\Theme;
+namespace Swim\Theme;
 
-use Webkul\Theme\Facades\Themes;
+use Swim\Theme\Facades\Themes;
 use Illuminate\Support\Arr;
 use Illuminate\View\FileViewFinder;
 

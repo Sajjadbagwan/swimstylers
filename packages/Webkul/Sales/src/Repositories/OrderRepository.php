@@ -1,19 +1,19 @@
 <?php
 
-namespace Webkul\Sales\Repositories;
+namespace Swim\Sales\Repositories;
 
 use Illuminate\Container\Container as App;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Event;
-use Webkul\Core\Eloquent\Repository;
-use Webkul\Sales\Contracts\Order;
-use Webkul\Sales\Models\Order as OrderModel;
+use Swim\Core\Eloquent\Repository;
+use Swim\Sales\Contracts\Order;
+use Swim\Sales\Models\Order as OrderModel;
 
 /**
  * Order Repository
  *
- * @author    Jitendra Singh <jitendra@webkul.com>
- * @copyright 2018 Webkul Software Pvt Ltd (http://www.webkul.com)
+ * @author    Jitendra Singh <jitendra@Swim.com>
+ * @copyright 2018 Swim Software Pvt Ltd (http://www.Swim.com)
  */
 class OrderRepository extends Repository
 {
@@ -34,8 +34,8 @@ class OrderRepository extends Repository
     /**
      * Create a new repository instance.
      *
-     * @param Webkul\Sales\Repositories\OrderItemRepository                 $orderItemRepository
-     * @param Webkul\Sales\Repositories\DownloadableLinkPurchasedRepository $downloadableLinkPurchasedRepository
+     * @param Swim\Sales\Repositories\OrderItemRepository                 $orderItemRepository
+     * @param Swim\Sales\Repositories\DownloadableLinkPurchasedRepository $downloadableLinkPurchasedRepository
      *
      * @return void
      */

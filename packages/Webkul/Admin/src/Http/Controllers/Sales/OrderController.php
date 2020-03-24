@@ -1,15 +1,15 @@
 <?php
 
-namespace Webkul\Admin\Http\Controllers\Sales;
+namespace Swim\Admin\Http\Controllers\Sales;
 
-use Webkul\Admin\Http\Controllers\Controller;
-use Webkul\Sales\Repositories\OrderRepository;
+use Swim\Admin\Http\Controllers\Controller;
+use Swim\Sales\Repositories\OrderRepository;
 
 /**
  * Sales Order controller
  *
- * @author    Jitendra Singh <jitendra@webkul.com>
- * @copyright 2018 Webkul Software Pvt Ltd (http://www.webkul.com)
+ * @author    Jitendra Singh <jitendra@Swim.com>
+ * @copyright 2018 Swim Software Pvt Ltd (http://www.Swim.com)
  */
 class OrderController extends Controller
 {
@@ -30,7 +30,7 @@ class OrderController extends Controller
     /**
      * Create a new controller instance.
      *
-     * @param  \Webkul\Sales\Repositories\OrderRepository $orderRepository
+     * @param  \Swim\Sales\Repositories\OrderRepository $orderRepository
      * @return void
      */
     public function __construct(OrderRepository $orderRepository)

@@ -1,5 +1,5 @@
 <?php
-    use Webkul\Payment\Payment;
+    use Swim\Payment\Payment;
     
     if (! function_exists('payment')) {
         function payment()

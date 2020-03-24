@@ -1,17 +1,17 @@
 <?php
 
-namespace Webkul\Core\Helpers;
+namespace Swim\Core\Helpers;
 
 // here you can define custom actions
 // all public methods declared in helper class will be available in $I
 
 use Codeception\Module\Laravel5;
 use Illuminate\Support\Facades\Event;
-use Webkul\Product\Models\Product;
-use Webkul\Product\Models\ProductInventory;
-use Webkul\Product\Models\ProductAttributeValue;
-use Webkul\Product\Models\ProductDownloadableLink;
-use Webkul\Product\Models\ProductDownloadableLinkTranslation;
+use Swim\Product\Models\Product;
+use Swim\Product\Models\ProductInventory;
+use Swim\Product\Models\ProductAttributeValue;
+use Swim\Product\Models\ProductDownloadableLink;
+use Swim\Product\Models\ProductDownloadableLinkTranslation;
 
 class Laravel5Helper extends Laravel5
 {
@@ -71,7 +71,7 @@ class Laravel5Helper extends Laravel5
      * @param array $configs
      * @param array $productStates
      *
-     * @return \Webkul\Product\Models\Product
+     * @return \Swim\Product\Models\Product
      * @part ORM
      */
     public function haveProduct(int $productType, array $configs = [], array $productStates = []): Product
@@ -103,7 +103,7 @@ class Laravel5Helper extends Laravel5
      * @param array $configs
      * @param array $productStates
      *
-     * @return \Webkul\Product\Models\Product
+     * @return \Swim\Product\Models\Product
      */
     private function haveSimpleProduct(array $configs = [], array $productStates = []): Product
     {
@@ -126,7 +126,7 @@ class Laravel5Helper extends Laravel5
      * @param array $configs
      * @param array $productStates
      *
-     * @return \Webkul\Product\Models\Product
+     * @return \Swim\Product\Models\Product
      */
     private function haveVirtualProduct(array $configs = [], array $productStates = []): Product
     {
@@ -149,7 +149,7 @@ class Laravel5Helper extends Laravel5
      * @param array $configs
      * @param array $productStates
      *
-     * @return \Webkul\Product\Models\Product
+     * @return \Swim\Product\Models\Product
      */
     private function haveDownloadableProduct(array $configs = [], array $productStates = []): Product
     {
@@ -172,7 +172,7 @@ class Laravel5Helper extends Laravel5
      * @param array $attributes
      * @param array $states
      *
-     * @return \Webkul\Product\Models\Product
+     * @return \Swim\Product\Models\Product
      */
     private function createProduct(array $attributes = [], array $states = []): Product
     {

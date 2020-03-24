@@ -1,6 +1,6 @@
 <?php
 
-namespace Webkul\Admin\Imports;
+namespace Swim\Admin\Imports;
 
 use Illuminate\Support\Collection;
 use Maatwebsite\Excel\Concerns\ToCollection;
@@ -11,8 +11,8 @@ use Maatwebsite\Excel\Concerns\Importable;
 /**
  * DataGridImport class
  *
- * @author    Rahul Shukla <rahulshukla.symfony517@webkul.com>
- * @copyright 2018 Webkul Software Pvt Ltd (http://www.webkul.com)
+ * @author    Rahul Shukla <rahulshukla.symfony517@Swim.com>
+ * @copyright 2018 Swim Software Pvt Ltd (http://www.Swim.com)
 */
 
 class DataGridImport implements ToCollection, WithHeadingRow

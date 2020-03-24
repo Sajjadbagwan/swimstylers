@@ -5,9 +5,9 @@
 use Faker\Generator as Faker;
 use Illuminate\Support\Facades\DB;
 
-use Webkul\Customer\Models\Customer;
-use Webkul\Checkout\Models\Cart;
-use Webkul\Checkout\Models\CartAddress;
+use Swim\Customer\Models\Customer;
+use Swim\Checkout\Models\Cart;
+use Swim\Checkout\Models\CartAddress;
 
 $factory->define(Cart::class, function (Faker $faker) {
     $now = date("Y-m-d H:i:s");

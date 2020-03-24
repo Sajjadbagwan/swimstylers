@@ -1,6 +1,6 @@
  <?php
 
  return [
-    'name'    => 'Webkul Bagisto Classes',
+    'name'    => 'Swim Bagisto Classes',
     'version' => '0.0.1'
  ];

@@ -1,16 +1,16 @@
 <?php
 
-namespace Webkul\Core\Http\Controllers;
+namespace Swim\Core\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
-use Webkul\Core\Repositories\SubscribersListRepository;
+use Swim\Core\Repositories\SubscribersListRepository;
 
 /**
  * Subscription controller
  *
- * @author    Prashant Singh <prashant.singh852@webkul.com> @prashant-webkul
- * @copyright 2018 Webkul Software Pvt Ltd (http://www.webkul.com)
+ * @author    Prashant Singh <prashant.singh852@Swim.com> @prashant-Swim
+ * @copyright 2018 Swim Software Pvt Ltd (http://www.Swim.com)
  */
 class SubscriptionController extends Controller
 {
@@ -31,7 +31,7 @@ class SubscriptionController extends Controller
     /**
      * Create a new controller instance.
      *
-     * @param  \Webkul\Core\Repositories\SubscribersListRepository $subscribersListRepository
+     * @param  \Swim\Core\Repositories\SubscribersListRepository $subscribersListRepository
      * @return void
      */
     public function __construct(SubscribersListRepository $subscribersListRepository)

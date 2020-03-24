@@ -1,14 +1,14 @@
 <?php
 
-namespace Webkul\Checkout\Repositories;
+namespace Swim\Checkout\Repositories;
 
-use Webkul\Core\Eloquent\Repository;
+use Swim\Core\Eloquent\Repository;
 
 /**
  * Cart Reposotory
  *
- * @author    Prashant Singh <prashant.singh852@webkul.com>
- * @copyright 2018 Webkul Software Pvt Ltd (http://www.webkul.com)
+ * @author    Prashant Singh <prashant.singh852@Swim.com>
+ * @copyright 2018 Swim Software Pvt Ltd (http://www.Swim.com)
  */
 
 class CartRepository extends Repository
@@ -21,7 +21,7 @@ class CartRepository extends Repository
 
     function model()
     {
-        return 'Webkul\Checkout\Contracts\Cart';
+        return 'Swim\Checkout\Contracts\Cart';
     }
 
     /**

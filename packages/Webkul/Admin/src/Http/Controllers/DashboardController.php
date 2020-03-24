@@ -1,19 +1,19 @@
 <?php
 
-namespace Webkul\Admin\Http\Controllers;
+namespace Swim\Admin\Http\Controllers;
 
 use Illuminate\Support\Facades\DB;
 use Carbon\Carbon;
-use Webkul\Sales\Repositories\OrderRepository;
-use Webkul\Sales\Repositories\OrderItemRepository;
-use Webkul\Customer\Repositories\CustomerRepository;
-use Webkul\Product\Repositories\ProductInventoryRepository;
+use Swim\Sales\Repositories\OrderRepository;
+use Swim\Sales\Repositories\OrderItemRepository;
+use Swim\Customer\Repositories\CustomerRepository;
+use Swim\Product\Repositories\ProductInventoryRepository;
 
 /**
  * Dashboard controller
  *
- * @author    Jitendra Singh <jitendra@webkul.com>
- * @copyright 2018 Webkul Software Pvt Ltd (http://www.webkul.com)
+ * @author    Jitendra Singh <jitendra@Swim.com>
+ * @copyright 2018 Swim Software Pvt Ltd (http://www.Swim.com)
  */
 class DashboardController extends Controller
 {
@@ -83,10 +83,10 @@ class DashboardController extends Controller
     /**
      * Create a new controller instance.
      *
-     * @param  \Webkul\Sales\Repositories\OrderRepository              $orderRepository
-     * @param  \Webkul\Sales\Repositories\OrderItemRepository          $orderItemRepository
-     * @param  \Webkul\Customer\Repositories\CustomerRepository        $customerRepository
-     * @param  \Webkul\Product\Repositories\ProductInventoryRepository $productInventoryRepository
+     * @param  \Swim\Sales\Repositories\OrderRepository              $orderRepository
+     * @param  \Swim\Sales\Repositories\OrderItemRepository          $orderItemRepository
+     * @param  \Swim\Customer\Repositories\CustomerRepository        $customerRepository
+     * @param  \Swim\Product\Repositories\ProductInventoryRepository $productInventoryRepository
      * @return void
      */
     public function __construct(

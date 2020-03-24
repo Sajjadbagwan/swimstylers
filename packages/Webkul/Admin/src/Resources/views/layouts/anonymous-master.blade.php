@@ -7,10 +7,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
-        <link rel="icon" sizes="16x16" href="{{ asset('vendor/webkul/ui/assets/images/favicon.ico') }}" />
+        <link rel="icon" sizes="16x16" href="{{ asset('vendor/Swim/ui/assets/images/favicon.ico') }}" />
 
-        <link rel="stylesheet" href="{{ asset('vendor/webkul/admin/assets/css/admin.css') }}">
-        <link rel="stylesheet" href="{{ asset('vendor/webkul/ui/assets/css/ui.css') }}">
+        <link rel="stylesheet" href="{{ asset('vendor/Swim/admin/assets/css/admin.css') }}">
+        <link rel="stylesheet" href="{{ asset('vendor/Swim/ui/assets/css/ui.css') }}">
 
         <style>
             .container {
@@ -80,7 +80,7 @@
                         @if (core()->getConfigData('general.design.admin_logo.logo_image'))
                             <img src="{{ \Illuminate\Support\Facades\Storage::url(core()->getConfigData('general.design.admin_logo.logo_image')) }}" alt="{{ config('app.name') }}" style="height: 40px; width: 110px;"/>
                         @else
-                            <img src="{{ asset('vendor/webkul/ui/assets/images/logo.png') }}" alt="{{ config('app.name') }}"/>
+                            <img src="{{ asset('vendor/Swim/ui/assets/images/logo.png') }}" alt="{{ config('app.name') }}"/>
                         @endif
                     </div>
 
@@ -125,8 +125,8 @@
             @endif
         </script>
 
-        <script type="text/javascript" src="{{ asset('vendor/webkul/admin/assets/js/admin.js') }}"></script>
-        <script type="text/javascript" src="{{ asset('vendor/webkul/ui/assets/js/ui.js') }}"></script>
+        <script type="text/javascript" src="{{ asset('vendor/Swim/admin/assets/js/admin.js') }}"></script>
+        <script type="text/javascript" src="{{ asset('vendor/Swim/ui/assets/js/ui.js') }}"></script>
 
         @stack('javascript')
 

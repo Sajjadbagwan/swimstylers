@@ -1,19 +1,19 @@
 <?php
 
-namespace Webkul\Admin\Http\Controllers\Customer;
+namespace Swim\Admin\Http\Controllers\Customer;
 
-use Webkul\Admin\Http\Controllers\Controller;
-use Webkul\Customer\Repositories\CustomerRepository;
-use Webkul\Customer\Repositories\CustomerGroupRepository;
-use Webkul\Core\Repositories\ChannelRepository;
-use Webkul\Admin\Mail\NewCustomerNotification;
+use Swim\Admin\Http\Controllers\Controller;
+use Swim\Customer\Repositories\CustomerRepository;
+use Swim\Customer\Repositories\CustomerGroupRepository;
+use Swim\Core\Repositories\ChannelRepository;
+use Swim\Admin\Mail\NewCustomerNotification;
 use Mail;
 
 /**
  * Customer controlller
  *
- * @author    Rahul Shukla <rahulshukla.symfony517@webkul.com>
- * @copyright 2018 Webkul Software Pvt Ltd (http://www.webkul.com)
+ * @author    Rahul Shukla <rahulshukla.symfony517@Swim.com>
+ * @copyright 2018 Swim Software Pvt Ltd (http://www.Swim.com)
  */
 class CustomerController extends Controller
 {
@@ -48,9 +48,9 @@ class CustomerController extends Controller
     /**
      * Create a new controller instance.
      *
-     * @param \Webkul\Customer\Repositories\CustomerRepository      $customerRepository
-     * @param \Webkul\Customer\Repositories\CustomerGroupRepository $customerGroupRepository
-     * @param \Webkul\Core\Repositories\ChannelRepository           $channelRepository
+     * @param \Swim\Customer\Repositories\CustomerRepository      $customerRepository
+     * @param \Swim\Customer\Repositories\CustomerGroupRepository $customerGroupRepository
+     * @param \Swim\Core\Repositories\ChannelRepository           $channelRepository
      */
     public function __construct(
         CustomerRepository $customerRepository,

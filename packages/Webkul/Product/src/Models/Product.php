@@ -1,13 +1,13 @@
 <?php
 
-namespace Webkul\Product\Models;
+namespace Swim\Product\Models;
 
 use Illuminate\Database\Eloquent\Model;
-use Webkul\Attribute\Models\AttributeFamilyProxy;
-use Webkul\Category\Models\CategoryProxy;
-use Webkul\Attribute\Models\AttributeProxy;
-use Webkul\Inventory\Models\InventorySourceProxy;
-use Webkul\Product\Contracts\Product as ProductContract;
+use Swim\Attribute\Models\AttributeFamilyProxy;
+use Swim\Category\Models\CategoryProxy;
+use Swim\Attribute\Models\AttributeProxy;
+use Swim\Inventory\Models\InventorySourceProxy;
+use Swim\Product\Contracts\Product as ProductContract;
 
 class Product extends Model implements ProductContract
 {
@@ -262,7 +262,7 @@ class Product extends Model implements ProductContract
             if (isset($this->id)) {
                 $this->attributes[$key] = '';
 
-                $attribute = core()->getSingletonInstance(\Webkul\Attribute\Repositories\AttributeRepository::class)
+                $attribute = core()->getSingletonInstance(\Swim\Attribute\Repositories\AttributeRepository::class)
                         ->getAttributeByCode($key);
 
                 $this->attributes[$key] = $this->getCustomAttributeValue($attribute);
@@ -284,7 +284,7 @@ class Product extends Model implements ProductContract
         $hiddenAttributes = $this->getHidden();
 
         if (isset($this->id)) {
-            $familyAttributes = core()->getSingletonInstance(\Webkul\Attribute\Repositories\AttributeRepository::class)
+            $familyAttributes = core()->getSingletonInstance(\Swim\Attribute\Repositories\AttributeRepository::class)
                     ->getFamilyAttributes($this->attribute_family);
 
             foreach ($familyAttributes as $attribute) {
@@ -338,7 +338,7 @@ class Product extends Model implements ProductContract
      */
     public function newEloquentBuilder($query)
     {
-        return new \Webkul\Product\Database\Eloquent\Builder($query);
+        return new \Swim\Product\Database\Eloquent\Builder($query);
     }
 
     /**

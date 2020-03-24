@@ -14,7 +14,7 @@
 
         <option value=""></option>
 
-        @foreach (app('Webkul\Tax\Repositories\TaxCategoryRepository')->all() as $taxCategory)
+        @foreach (app('Swim\Tax\Repositories\TaxCategoryRepository')->all() as $taxCategory)
             <option value="{{ $taxCategory->id }}" {{ $taxCategory->id == $selectedOption ? 'selected' : ''}}>
                 {{ $taxCategory->name }}
             </option>

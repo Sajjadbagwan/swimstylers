@@ -4,20 +4,20 @@
     "license": "MIT",
     "authors": [
         {
-            "name": "rahulshukla-webkul",
-            "email": "rahulshukla.symfony517@webkul.com"
+            "name": "rahulshukla-Swim",
+            "email": "rahulshukla.symfony517@Swim.com"
         }
     ],
     "require": {},
     "autoload": {
         "psr-4": {
-            "Webkul\\Shipping\\": "src/"
+            "Swim\\Shipping\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Webkul\\Shipping\\Providers\\ShippingServiceProvider"
+                "Swim\\Shipping\\Providers\\ShippingServiceProvider"
             ],
             "aliases": {}
         }

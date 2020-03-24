@@ -1,6 +1,6 @@
 <?php
 
-namespace Webkul\Customer\Mail;
+namespace Swim\Customer\Mail;
 
 use Illuminate\Bus\Queueable;
 use Illuminate\Mail\Mailable;
@@ -10,8 +10,8 @@ use Illuminate\Contracts\Queue\ShouldQueue;
 /**
  * Verification Mail class
  *
- * @author    Rahul Shukla <rahulshukla.symfony517@webkul.com>
- * @copyright 2018 Webkul Software Pvt Ltd (http://www.webkul.com)
+ * @author    Rahul Shukla <rahulshukla.symfony517@Swim.com>
+ * @copyright 2018 Swim Software Pvt Ltd (http://www.Swim.com)
  */
 class VerificationEmail extends Mailable
 {

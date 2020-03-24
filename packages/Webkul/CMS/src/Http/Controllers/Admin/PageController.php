@@ -1,15 +1,15 @@
 <?php
 
-namespace Webkul\CMS\Http\Controllers\Admin;
+namespace Swim\CMS\Http\Controllers\Admin;
 
-use Webkul\CMS\Http\Controllers\Controller;
-use Webkul\CMS\Repositories\CmsRepository;
+use Swim\CMS\Http\Controllers\Controller;
+use Swim\CMS\Repositories\CmsRepository;
 
 /**
  * CMS controller
  *
- * @author  Jitendra Singh <jitendra@webkul.com>
- * @copyright 2018 Webkul Software Pvt Ltd (http://www.webkul.com)
+ * @author  Jitendra Singh <jitendra@Swim.com>
+ * @copyright 2018 Swim Software Pvt Ltd (http://www.Swim.com)
  */
  class PageController extends Controller
 {
@@ -30,7 +30,7 @@ use Webkul\CMS\Repositories\CmsRepository;
     /**
      * Create a new controller instance.
      *
-     * @param  \Webkul\CMS\Repositories\CmsRepository $cmsRepository
+     * @param  \Swim\CMS\Repositories\CmsRepository $cmsRepository
      * @return void
      */
     public function __construct(CmsRepository $cmsRepository)
@@ -72,7 +72,7 @@ use Webkul\CMS\Repositories\CmsRepository;
         $data = request()->all();
 
         $this->validate(request(), [
-            'url_key' => ['required', 'unique:cms_page_translations,url_key', new \Webkul\Core\Contracts\Validations\Slug],
+            'url_key' => ['required', 'unique:cms_page_translations,url_key', new \Swim\Core\Contracts\Validations\Slug],
             'page_title' => 'required',
             'channels' => 'required',
             'html_content' => 'required'
@@ -109,7 +109,7 @@ use Webkul\CMS\Repositories\CmsRepository;
         $locale = request()->get('locale') ?: app()->getLocale();
 
         $this->validate(request(), [
-            $locale . '.url_key' => ['required', new \Webkul\Core\Contracts\Validations\Slug, function ($attribute, $value, $fail) use ($id) {
+            $locale . '.url_key' => ['required', new \Swim\Core\Contracts\Validations\Slug, function ($attribute, $value, $fail) use ($id) {
                 if (! $this->cmsRepository->isUrlKeyUnique($id, $value))
                     $fail(trans('admin::app.response.already-taken', ['name' => 'Page']));
             }],

@@ -1,6 +1,6 @@
 <?php
 
-namespace Webkul\Checkout\Listeners;
+namespace Swim\Checkout\Listeners;
 use Cart;
 
 class CustomerEventsHandler {
@@ -27,6 +27,6 @@ class CustomerEventsHandler {
      */
     public function subscribe($events)
     {
-        $events->listen('customer.after.login', 'Webkul\Checkout\Listeners\CustomerEventsHandler@onCustomerLogin');
+        $events->listen('customer.after.login', 'Swim\Checkout\Listeners\CustomerEventsHandler@onCustomerLogin');
     }
 }

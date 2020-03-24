@@ -1,9 +1,9 @@
 <?php
 
-namespace Webkul\Customer\Rules;
+namespace Swim\Customer\Rules;
 
 use Illuminate\Contracts\Validation\Rule;
-use Webkul\Customer\Rules\VatValidator;
+use Swim\Customer\Rules\VatValidator;
 
 /**
  * Class VatIdRule

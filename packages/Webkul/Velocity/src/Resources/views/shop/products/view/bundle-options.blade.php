@@ -147,7 +147,7 @@
                     return {
                         options: [],
                         currency_options: @json(core()->getAccountJsSymbols()),
-                        config: @json(app('Webkul\Product\Helpers\BundleOption')->getBundleConfig($product)),
+                        config: @json(app('Swim\Product\Helpers\BundleOption')->getBundleConfig($product)),
                     }
                 },
 

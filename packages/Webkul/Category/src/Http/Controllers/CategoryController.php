@@ -1,17 +1,17 @@
 <?php
 
-namespace Webkul\Category\Http\Controllers;
+namespace Swim\Category\Http\Controllers;
 
 use Illuminate\Support\Facades\Event;
-use Webkul\Category\Repositories\CategoryRepository;
-use Webkul\Category\Models\CategoryTranslation;
-use Webkul\Attribute\Repositories\AttributeRepository;
+use Swim\Category\Repositories\CategoryRepository;
+use Swim\Category\Models\CategoryTranslation;
+use Swim\Attribute\Repositories\AttributeRepository;
 
 /**
  * Catalog category controller
  *
- * @author    Jitendra Singh <jitendra@webkul.com>
- * @copyright 2018 Webkul Software Pvt Ltd (http://www.webkul.com)
+ * @author    Jitendra Singh <jitendra@Swim.com>
+ * @copyright 2018 Swim Software Pvt Ltd (http://www.Swim.com)
  */
 class CategoryController extends Controller
 {
@@ -39,8 +39,8 @@ class CategoryController extends Controller
     /**
      * Create a new controller instance.
      *
-     * @param  \Webkul\Category\Repositories\CategoryRepository   $categoryRepository
-     * @param  \Webkul\Attribute\Repositories\AttributeRepository $attributeRepository
+     * @param  \Swim\Category\Repositories\CategoryRepository   $categoryRepository
+     * @param  \Swim\Attribute\Repositories\AttributeRepository $attributeRepository
      * @return void
      */
     public function __construct(
@@ -87,7 +87,7 @@ class CategoryController extends Controller
     public function store()
     {
         $this->validate(request(), [
-            'slug' => ['required', 'unique:category_translations,slug', new \Webkul\Core\Contracts\Validations\Slug],
+            'slug' => ['required', 'unique:category_translations,slug', new \Swim\Core\Contracts\Validations\Slug],
             'name' => 'required',
             'image.*' => 'mimes:jpeg,jpg,bmp,png',
             'description' => 'required_if:display_mode,==,description_only,products_and_description'
@@ -140,7 +140,7 @@ class CategoryController extends Controller
         $locale = request()->get('locale') ?: app()->getLocale();
 
         $this->validate(request(), [
-            $locale . '.slug' => ['required', new \Webkul\Core\Contracts\Validations\Slug, function ($attribute, $value, $fail) use ($id) {
+            $locale . '.slug' => ['required', new \Swim\Core\Contracts\Validations\Slug, function ($attribute, $value, $fail) use ($id) {
                 if (! $this->categoryRepository->isSlugUnique($id, $value)) {
                     $fail(trans('admin::app.response.already-taken', ['name' => 'Category']));
                 }

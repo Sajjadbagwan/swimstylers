@@ -1,14 +1,14 @@
 <?php
 
-namespace Webkul\CatalogRule\Listeners;
+namespace Swim\CatalogRule\Listeners;
 
-use Webkul\CatalogRule\Helpers\CatalogRuleIndex;
+use Swim\CatalogRule\Helpers\CatalogRuleIndex;
 
 /**
  * Products Event handler
  *
- * @author    Jitendra Singh <jitendra@webkul.com>
- * @copyright 2018 Webkul Software Pvt Ltd (http://www.webkul.com)
+ * @author    Jitendra Singh <jitendra@Swim.com>
+ * @copyright 2018 Swim Software Pvt Ltd (http://www.Swim.com)
  */
 class Product
 {
@@ -22,7 +22,7 @@ class Product
     /**
      * Create a new listener instance.
      * 
-     * @param  Webkul\CatalogRule\Helpers\CatalogRuleIndex $catalogRuleIndexHelper
+     * @param  Swim\CatalogRule\Helpers\CatalogRuleIndex $catalogRuleIndexHelper
      * @return void
      */
     public function __construct(CatalogRuleIndex $catalogRuleIndexHelper)

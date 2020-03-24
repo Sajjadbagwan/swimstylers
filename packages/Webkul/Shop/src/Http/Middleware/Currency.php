@@ -1,8 +1,8 @@
 <?php
 
-namespace Webkul\Shop\Http\Middleware;
+namespace Swim\Shop\Http\Middleware;
 
-use Webkul\Core\Repositories\CurrencyRepository;
+use Swim\Core\Repositories\CurrencyRepository;
 use Closure;
 
 class Currency
@@ -13,7 +13,7 @@ class Currency
     protected $currency;
 
     /**
-     * @param \Webkul\Core\Repositories\CurrencyRepository $locale
+     * @param \Swim\Core\Repositories\CurrencyRepository $locale
      */
     public function __construct(CurrencyRepository $currency)
     {

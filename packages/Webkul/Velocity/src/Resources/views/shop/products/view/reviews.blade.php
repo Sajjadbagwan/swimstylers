@@ -1,5 +1,5 @@
-@inject ('reviewHelper', 'Webkul\Product\Helpers\Review')
-@inject ('customHelper', 'Webkul\Velocity\Helpers\Helper')
+@inject ('reviewHelper', 'Swim\Product\Helpers\Review')
+@inject ('customHelper', 'Swim\Velocity\Helpers\Helper')
 
 @php
     if (! isset($total)) {

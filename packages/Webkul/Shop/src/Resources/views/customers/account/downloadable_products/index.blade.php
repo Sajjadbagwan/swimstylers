@@ -25,7 +25,7 @@
             <div class="account-items-list">
                 <div class="account-table-content">
 
-                    {!! app('Webkul\Shop\DataGrids\DownloadableProductDataGrid')->render() !!}
+                    {!! app('Swim\Shop\DataGrids\DownloadableProductDataGrid')->render() !!}
                     
                 </div>
             </div>

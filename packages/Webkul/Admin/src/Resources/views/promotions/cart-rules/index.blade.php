@@ -20,7 +20,7 @@
         </div>
 
         <div class="page-content">
-            @inject('cartRuleGrid','Webkul\Admin\DataGrids\CartRuleDataGrid')
+            @inject('cartRuleGrid','Swim\Admin\DataGrids\CartRuleDataGrid')
             {!! $cartRuleGrid->render() !!}
         </div>
     </div>

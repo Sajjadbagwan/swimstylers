@@ -1,6 +1,6 @@
 <?php
 
-namespace Webkul\Core\Helpers;
+namespace Swim\Core\Helpers;
 
 use Astrotomic\Translatable\Locales as BaseLocales;
 

@@ -10,7 +10,7 @@
 @stop
 
 @section('content-wrapper')
-    @inject ('productRepository', 'Webkul\Product\Repositories\ProductRepository')
+    @inject ('productRepository', 'Swim\Product\Repositories\ProductRepository')
 
     <div class="main">
         {!! view_render_event('bagisto.shop.products.index.before', ['category' => $category]) !!}
@@ -43,7 +43,7 @@
 
                         @include ('shop::products.list.toolbar')
 
-                        @inject ('toolbarHelper', 'Webkul\Product\Helpers\Toolbar')
+                        @inject ('toolbarHelper', 'Swim\Product\Helpers\Toolbar')
 
                         @if ($toolbarHelper->getCurrentMode() == 'grid')
                             <div class="product-grid-3">

@@ -1,14 +1,14 @@
 <?php
 
-namespace Webkul\Customer\Repositories;
+namespace Swim\Customer\Repositories;
 
-use Webkul\Core\Eloquent\Repository;
+use Swim\Core\Eloquent\Repository;
 
 /**
  * CustomerGroup Reposotory
  *
- * @author    Rahul Shukla <rahulshukla.symfony517@webkul.com>
- * @copyright 2018 Webkul Software Pvt Ltd (http://www.webkul.com)
+ * @author    Rahul Shukla <rahulshukla.symfony517@Swim.com>
+ * @copyright 2018 Swim Software Pvt Ltd (http://www.Swim.com)
  */
 
 class CustomerGroupRepository extends Repository
@@ -21,7 +21,7 @@ class CustomerGroupRepository extends Repository
 
     function model()
     {
-        return 'Webkul\Customer\Contracts\CustomerGroup';
+        return 'Swim\Customer\Contracts\CustomerGroup';
     }
 
     /**

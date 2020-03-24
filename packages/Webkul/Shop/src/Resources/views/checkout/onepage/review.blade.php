@@ -62,7 +62,7 @@
 
     </div>
 
-    @inject ('productImageHelper', 'Webkul\Product\Helpers\ProductImage')
+    @inject ('productImageHelper', 'Swim\Product\Helpers\ProductImage')
 
     <div class="cart-item-list mt-20">
         @foreach ($cart->items as $item)
@@ -128,7 +128,7 @@
         <?php }else { ?>
                 <div class="item mb-5" style="margin-bottom: 5px;">
                 <div class="item-image">
-                   <img src="http://127.0.0.1:8000/vendor/webkul/ui/assets/images/product/meduim-product-placeholder.png" />
+                   <img src="http://127.0.0.1:8000/vendor/Swim/ui/assets/images/product/meduim-product-placeholder.png" />
                 </div>
 
                 <div class="item-details">

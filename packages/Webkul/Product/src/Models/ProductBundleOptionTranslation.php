@@ -1,9 +1,9 @@
 <?php
 
-namespace Webkul\Product\Models;
+namespace Swim\Product\Models;
 
 use Illuminate\Database\Eloquent\Model;
-use Webkul\Product\Contracts\ProductBundleOptionTranslation as ProductBundleOptionTranslationContract;
+use Swim\Product\Contracts\ProductBundleOptionTranslation as ProductBundleOptionTranslationContract;
 
 class ProductBundleOptionTranslation extends Model implements ProductBundleOptionTranslationContract
 {

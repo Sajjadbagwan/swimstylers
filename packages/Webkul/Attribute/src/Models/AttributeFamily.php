@@ -1,10 +1,10 @@
 <?php
 
-namespace Webkul\Attribute\Models;
+namespace Swim\Attribute\Models;
 
 use Illuminate\Database\Eloquent\Model;
-use Webkul\Product\Models\ProductProxy;
-use Webkul\Attribute\Contracts\AttributeFamily as AttributeFamilyContract;
+use Swim\Product\Models\ProductProxy;
+use Swim\Attribute\Contracts\AttributeFamily as AttributeFamilyContract;
 
 class AttributeFamily extends Model implements AttributeFamilyContract
 {

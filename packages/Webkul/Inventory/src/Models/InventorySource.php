@@ -1,9 +1,9 @@
 <?php
 
-namespace Webkul\Inventory\Models;
+namespace Swim\Inventory\Models;
 
 use Illuminate\Database\Eloquent\Model;
-use Webkul\Inventory\Contracts\InventorySource as InventorySourceContract;
+use Swim\Inventory\Contracts\InventorySource as InventorySourceContract;
 
 class InventorySource extends Model implements InventorySourceContract
 {

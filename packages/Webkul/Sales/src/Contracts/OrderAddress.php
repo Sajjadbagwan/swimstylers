@@ -1,6 +1,6 @@
 <?php
 
-namespace Webkul\Sales\Contracts;
+namespace Swim\Sales\Contracts;
 
 interface OrderAddress
 {

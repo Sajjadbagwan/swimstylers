@@ -1,6 +1,6 @@
 <?php
 
-namespace Webkul\Velocity\Providers;
+namespace Swim\Velocity\Providers;
 
 use Illuminate\Routing\Router;
 use Illuminate\Support\Facades\App;
@@ -9,14 +9,14 @@ use Illuminate\Support\Facades\Event;
 use Illuminate\Support\Facades\Cache;
 use Illuminate\Foundation\AliasLoader;
 use Illuminate\Support\ServiceProvider;
-use Webkul\Velocity\Facades\Velocity as VelocityFacade;
+use Swim\Velocity\Facades\Velocity as VelocityFacade;
 
 /**
  * Velocity ServiceProvider
  *
- * @author Vivek Sharma <viveksh047@webkul.com> @vivek-webkul
- * @author Shubham Mehrotra <shubhammehrotra.symfony@webkul.com> @shubhwebkul
- * @copyright 2019 Webkul Software Pvt Ltd (http://www.webkul.com)
+ * @author Vivek Sharma <viveksh047@Swim.com> @vivek-Swim
+ * @author Shubham Mehrotra <shubhammehrotra.symfony@Swim.com> @shubhSwim
+ * @copyright 2019 Swim Software Pvt Ltd (http://www.Swim.com)
  */
 class VelocityServiceProvider extends ServiceProvider
 {
@@ -95,7 +95,7 @@ class VelocityServiceProvider extends ServiceProvider
     // this function will provide global variables shared by view (blade files)
     private function loadGloableVariables()
     {
-        $velocityHelper = app('Webkul\Velocity\Helpers\Helper');
+        $velocityHelper = app('Swim\Velocity\Helpers\Helper');
         $velocityMetaData = $velocityHelper->getVelocityMetaData();
 
         view()->share('showRecentlyViewed', true);

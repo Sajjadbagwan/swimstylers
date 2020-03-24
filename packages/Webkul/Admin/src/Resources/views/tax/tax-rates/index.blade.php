@@ -32,7 +32,7 @@
         </div>
 
         <div class="page-content">
-            @inject('taxRateGrid', 'Webkul\Admin\DataGrids\TaxRateDataGrid')
+            @inject('taxRateGrid', 'Swim\Admin\DataGrids\TaxRateDataGrid')
             {!! $taxRateGrid->render() !!}
         </div>
     </div>

@@ -1,6 +1,6 @@
 <?php
 
-namespace Webkul\Customer\Http\Controllers;
+namespace Swim\Customer\Http\Controllers;
 
 use Illuminate\Support\Facades\Event;
 use Cookie;
@@ -8,8 +8,8 @@ use Cookie;
 /**
  * Session controller for the user customer
  *
- * @author    Prashant Singh <prashant.singh852@webkul.com>
- * @copyright 2018 Webkul Software Pvt Ltd (http://www.webkul.com)
+ * @author    Prashant Singh <prashant.singh852@Swim.com>
+ * @copyright 2018 Swim Software Pvt Ltd (http://www.Swim.com)
  */
 class SessionController extends Controller
 {

@@ -3,9 +3,9 @@
 /** @var \Illuminate\Database\Eloquent\Factory $factory */
 
 use Faker\Generator as Faker;
-use Webkul\Product\Models\Product;
-use Webkul\Sales\Models\Order;
-use Webkul\Sales\Models\OrderItem;
+use Swim\Product\Models\Product;
+use Swim\Sales\Models\Order;
+use Swim\Sales\Models\OrderItem;
 
 $factory->define(OrderItem::class, function (Faker $faker) {
     $now = date("Y-m-d H:i:s");

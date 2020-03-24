@@ -1,6 +1,6 @@
 <?php
 
-namespace Webkul\Velocity\Providers;
+namespace Swim\Velocity\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\Event;
@@ -8,8 +8,8 @@ use Illuminate\Support\Facades\Event;
 /**
  * Event ServiceProvider
  *
- * @author Vivek Sharma <viveksh047@webkul.com> @vivek-webkul
- * @copyright 2019 Webkul Software Pvt Ltd (http://www.webkul.com)
+ * @author Vivek Sharma <viveksh047@Swim.com> @vivek-Swim
+ * @copyright 2019 Swim Software Pvt Ltd (http://www.Swim.com)
  */
 class EventServiceProvider extends ServiceProvider
 {
@@ -57,18 +57,18 @@ class EventServiceProvider extends ServiceProvider
         Event::listen([
             'core.locale.create.after',
             'core.locale.update.after',
-        ], 'Webkul\Velocity\Helpers\AdminHelper@saveLocaleImg');
+        ], 'Swim\Velocity\Helpers\AdminHelper@saveLocaleImg');
 
         Event::listen([
             'catalog.category.create.after',
             'catalog.category.update.after',
-        ], 'Webkul\Velocity\Helpers\AdminHelper@storeCategoryIcon');
+        ], 'Swim\Velocity\Helpers\AdminHelper@storeCategoryIcon');
 
         Event::listen([
             'core.settings.slider.create.after',
             'core.settings.slider.update.after',
-        ], 'Webkul\Velocity\Helpers\AdminHelper@storeSliderDetails');
+        ], 'Swim\Velocity\Helpers\AdminHelper@storeSliderDetails');
 
-        Event::listen('checkout.order.save.after', 'Webkul\Velocity\Helpers\Helper@topBrand');
+        Event::listen('checkout.order.save.after', 'Swim\Velocity\Helpers\Helper@topBrand');
     }
 }

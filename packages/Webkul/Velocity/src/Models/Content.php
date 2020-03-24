@@ -1,9 +1,9 @@
 <?php
 
-namespace Webkul\Velocity\Models;
+namespace Swim\Velocity\Models;
 
-use Webkul\Core\Eloquent\TranslatableModel;
-use Webkul\Velocity\Contracts\Content as ContentContract;
+use Swim\Core\Eloquent\TranslatableModel;
+use Swim\Velocity\Contracts\Content as ContentContract;
 
 class Content extends TranslatableModel implements ContentContract
 {

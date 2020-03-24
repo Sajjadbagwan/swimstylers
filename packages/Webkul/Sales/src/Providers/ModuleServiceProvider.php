@@ -1,22 +1,22 @@
 <?php
 
-namespace Webkul\Sales\Providers;
+namespace Swim\Sales\Providers;
 
 use Konekt\Concord\BaseModuleServiceProvider;
 
 class ModuleServiceProvider extends BaseModuleServiceProvider
 {
     protected $models = [
-        \Webkul\Sales\Models\Order::class,
-        \Webkul\Sales\Models\OrderItem::class,
-        \Webkul\Sales\Models\DownloadableLinkPurchased::class,
-        \Webkul\Sales\Models\OrderAddress::class,
-        \Webkul\Sales\Models\OrderPayment::class,
-        \Webkul\Sales\Models\Invoice::class,
-        \Webkul\Sales\Models\InvoiceItem::class,
-        \Webkul\Sales\Models\Shipment::class,
-        \Webkul\Sales\Models\ShipmentItem::class,
-        \Webkul\Sales\Models\Refund::class,
-        \Webkul\Sales\Models\RefundItem::class,
+        \Swim\Sales\Models\Order::class,
+        \Swim\Sales\Models\OrderItem::class,
+        \Swim\Sales\Models\DownloadableLinkPurchased::class,
+        \Swim\Sales\Models\OrderAddress::class,
+        \Swim\Sales\Models\OrderPayment::class,
+        \Swim\Sales\Models\Invoice::class,
+        \Swim\Sales\Models\InvoiceItem::class,
+        \Swim\Sales\Models\Shipment::class,
+        \Swim\Sales\Models\ShipmentItem::class,
+        \Swim\Sales\Models\Refund::class,
+        \Swim\Sales\Models\RefundItem::class,
     ];
 }

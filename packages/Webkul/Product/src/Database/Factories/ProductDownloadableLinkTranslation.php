@@ -3,8 +3,8 @@
 /** @var \Illuminate\Database\Eloquent\Factory $factory */
 
 use Faker\Generator as Faker;
-use Webkul\Product\Models\ProductDownloadableLink;
-use Webkul\Product\Models\ProductDownloadableLinkTranslation;
+use Swim\Product\Models\ProductDownloadableLink;
+use Swim\Product\Models\ProductDownloadableLinkTranslation;
 
 $factory->define(ProductDownloadableLinkTranslation::class, function (Faker $faker) {
     return [

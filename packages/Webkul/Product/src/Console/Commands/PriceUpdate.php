@@ -1,9 +1,9 @@
 <?php
 
-namespace Webkul\Product\Console\Commands;
+namespace Swim\Product\Console\Commands;
 
 use Illuminate\Console\Command;
-use Webkul\Product\Repositories\ProductFlatRepository;
+use Swim\Product\Repositories\ProductFlatRepository;
 
 class PriceUpdate extends Command
 {
@@ -32,7 +32,7 @@ class PriceUpdate extends Command
     /**
      * Create a new command instance.
      *
-     * @param  Webkul\Product\Repositories\ProductFlatRepository $productFlatRepository
+     * @param  Swim\Product\Repositories\ProductFlatRepository $productFlatRepository
      * @return void
      */
     public function __construct(

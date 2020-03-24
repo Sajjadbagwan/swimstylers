@@ -1,6 +1,6 @@
 <?php
 
-namespace Webkul\Checkout\Contracts;
+namespace Swim\Checkout\Contracts;
 
 interface CartAddress
 {

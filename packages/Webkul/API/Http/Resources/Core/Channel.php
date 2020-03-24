@@ -1,11 +1,11 @@
 <?php
 
-namespace Webkul\API\Http\Resources\Core;
+namespace Swim\API\Http\Resources\Core;
 
 use Illuminate\Http\Resources\Json\JsonResource;
-use Webkul\API\Http\Resources\Core\Locale as LocaleResource;
-use Webkul\API\Http\Resources\Core\Currency as CurrencyResource;
-use Webkul\API\Http\Resources\Catalog\Category as CategoryResource;
+use Swim\API\Http\Resources\Core\Locale as LocaleResource;
+use Swim\API\Http\Resources\Core\Currency as CurrencyResource;
+use Swim\API\Http\Resources\Catalog\Category as CategoryResource;
 
 class Channel extends JsonResource
 {

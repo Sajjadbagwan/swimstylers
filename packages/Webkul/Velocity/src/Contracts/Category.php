@@ -1,6 +1,6 @@
 <?php
 
-namespace Webkul\Velocity\Contracts;
+namespace Swim\Velocity\Contracts;
 
 interface Category
 {

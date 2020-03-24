@@ -3,9 +3,9 @@
 /** @var \Illuminate\Database\Eloquent\Factory $factory */
 
 use Faker\Generator as Faker;
-use Webkul\Tax\Models\TaxMap;
-use Webkul\Tax\Models\TaxRate;
-use Webkul\Tax\Models\TaxCategory;
+use Swim\Tax\Models\TaxMap;
+use Swim\Tax\Models\TaxRate;
+use Swim\Tax\Models\TaxCategory;
 
 $factory->define(TaxMap::class, function (Faker $faker) {
     return [

@@ -141,7 +141,7 @@ return [
             'forgot_pass' => 'Wachtwoord vergeten?',
             'button_title' => 'Aanmelden',
             'remember' => 'Remember Me',
-            'footer' => '© Copyright :year Webkul Software, All rights reserved',
+            'footer' => '© Copyright :year Swim Software, All rights reserved',
             'invalid-creds' => 'Please check your credentials and try again.',
             'verify-first' => 'Verify your email account first.',
             'not-activated' => 'Your activation seeks admin approval',
@@ -658,8 +658,8 @@ return [
         ]
     ],
 
-    'webkul' => [
-        'copy-right' => '© Copyright :year Webkul Software, All rights reserved',
+    'Swim' => [
+        'copy-right' => '© Copyright :year Swim Software, All rights reserved',
     ],
 
     'response' => [

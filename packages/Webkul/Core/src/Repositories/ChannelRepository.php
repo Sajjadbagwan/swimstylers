@@ -1,15 +1,15 @@
 <?php
 
-namespace Webkul\Core\Repositories;
+namespace Swim\Core\Repositories;
 
-use Webkul\Core\Eloquent\Repository;
+use Swim\Core\Eloquent\Repository;
 use Illuminate\Support\Facades\Storage;
 
 /**
  * Channel Reposotory
  *
- * @author    Jitendra Singh <jitendra@webkul.com>
- * @copyright 2018 Webkul Software Pvt Ltd (http://www.webkul.com)
+ * @author    Jitendra Singh <jitendra@Swim.com>
+ * @copyright 2018 Swim Software Pvt Ltd (http://www.Swim.com)
  */
 class ChannelRepository extends Repository
 {
@@ -20,7 +20,7 @@ class ChannelRepository extends Repository
      */
     function model()
     {
-        return 'Webkul\Core\Contracts\Channel';
+        return 'Swim\Core\Contracts\Channel';
     }
 
     /**

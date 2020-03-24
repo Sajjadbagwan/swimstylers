@@ -1,6 +1,6 @@
 <?php
 
-namespace Webkul\CatalogRule\Http\Controllers;
+namespace Swim\CatalogRule\Http\Controllers;
 
 use Illuminate\Routing\Controller as BaseController;
 use Illuminate\Foundation\Bus\DispatchesJobs;

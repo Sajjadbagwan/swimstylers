@@ -1,15 +1,15 @@
 <?php
 
-namespace Webkul\Core\Http\Controllers;
+namespace Swim\Core\Http\Controllers;
 
-use Webkul\Core\Repositories\CountryRepository;
-use Webkul\Core\Repositories\CountryStateRepository;
+use Swim\Core\Repositories\CountryRepository;
+use Swim\Core\Repositories\CountryStateRepository;
 
 /**
  * Country controller
  *
- * @author    Jitendra Singh <jitendra@webkul.com>
- * @copyright 2018 Webkul Software Pvt Ltd (http://www.webkul.com)
+ * @author    Jitendra Singh <jitendra@Swim.com>
+ * @copyright 2018 Swim Software Pvt Ltd (http://www.Swim.com)
  */
 class CountryStateController extends Controller
 {
@@ -37,8 +37,8 @@ class CountryStateController extends Controller
     /**
      * Create a new controller instance.
      *
-     * @param  \Webkul\Core\Repositories\CountryRepository      $countryRepository
-     * @param  \Webkul\Core\Repositories\CountryStateRepository $countryStateRepository
+     * @param  \Swim\Core\Repositories\CountryRepository      $countryRepository
+     * @param  \Swim\Core\Repositories\CountryStateRepository $countryStateRepository
      * @return void
      */
     public function __construct(

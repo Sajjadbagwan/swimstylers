@@ -4,7 +4,7 @@
             @if (core()->getConfigData('general.design.admin_logo.logo_image'))
                 <img src="{{ \Illuminate\Support\Facades\Storage::url(core()->getConfigData('general.design.admin_logo.logo_image')) }}" alt="{{ config('app.name') }}" style="height: 40px; width: 110px;"/>
             @else
-                <img src="{{ asset('vendor/webkul/ui/assets/images/logo.png') }}" alt="{{ config('app.name') }}"/>
+                <img src="{{ asset('vendor/Swim/ui/assets/images/logo.png') }}" alt="{{ config('app.name') }}"/>
             @endif
         </a>
     </div>
@@ -175,7 +175,7 @@
                 </span>
             </div>
 
-            @foreach (Webkul\Tax\Helpers\Tax::getTaxRatesWithAmount($order, true) as $taxRate => $baseTaxAmount )
+            @foreach (Swim\Tax\Helpers\Tax::getTaxRatesWithAmount($order, true) as $taxRate => $baseTaxAmount )
             <div>
                 <span id="taxrate-{{ core()->taxRateAsIdentifier($taxRate) }}">{{ __('shop::app.mail.order.tax') }} {{ $taxRate }} %</span>
                 <span id="basetaxamount-{{ core()->taxRateAsIdentifier($taxRate) }}" style="float: right;">

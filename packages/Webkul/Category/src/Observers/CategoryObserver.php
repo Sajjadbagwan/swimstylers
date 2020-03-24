@@ -1,9 +1,9 @@
 <?php
 
-namespace Webkul\Category\Observers;
+namespace Swim\Category\Observers;
 
 use Illuminate\Support\Facades\Storage;
-use Webkul\Category\Models\Category;
+use Swim\Category\Models\Category;
 use Carbon\Carbon;
 
 class CategoryObserver

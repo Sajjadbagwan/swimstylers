@@ -1,17 +1,17 @@
 <?php
 
-namespace Webkul\Shop\Http\Controllers;
+namespace Swim\Shop\Http\Controllers;
 
-use Webkul\Sales\Repositories\OrderRepository;
-use Webkul\Sales\Repositories\InvoiceRepository;
+use Swim\Sales\Repositories\OrderRepository;
+use Swim\Sales\Repositories\InvoiceRepository;
 use PDF;
 
 /**
  * Customer controlller for the customer basically for the tasks of customers
  * which will be done after customer authenticastion.
  *
- * @author    Prashant Singh <prashant.singh852@webkul.com>
- * @copyright 2018 Webkul Software Pvt Ltd (http://www.webkul.com)
+ * @author    Prashant Singh <prashant.singh852@Swim.com>
+ * @copyright 2018 Swim Software Pvt Ltd (http://www.Swim.com)
  */
 class OrderController extends Controller
 {
@@ -32,8 +32,8 @@ class OrderController extends Controller
     /**
      * Create a new controller instance.
      *
-     * @param  \Webkul\Order\Repositories\OrderRepository   $orderRepository
-     * @param  \Webkul\Order\Repositories\InvoiceRepository $invoiceRepository
+     * @param  \Swim\Order\Repositories\OrderRepository   $orderRepository
+     * @param  \Swim\Order\Repositories\InvoiceRepository $invoiceRepository
      * @return void
      */
     public function __construct(

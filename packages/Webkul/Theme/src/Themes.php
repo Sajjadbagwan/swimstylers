@@ -1,9 +1,9 @@
 <?php
 
-namespace Webkul\Theme;
+namespace Swim\Theme;
 
 use Illuminate\Support\Facades\Config;
-use Webkul\Theme\Theme;
+use Swim\Theme\Theme;
 
 class Themes
 {

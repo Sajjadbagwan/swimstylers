@@ -1,4 +1,4 @@
-<?php namespace Webkul\Theme\Exceptions;
+<?php namespace Swim\Theme\Exceptions;
 
 class ThemeNotFound extends \Exception {
 

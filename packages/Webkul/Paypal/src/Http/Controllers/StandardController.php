@@ -1,16 +1,16 @@
 <?php
 
-namespace Webkul\Paypal\Http\Controllers;
+namespace Swim\Paypal\Http\Controllers;
 
-use Webkul\Checkout\Facades\Cart;
-use Webkul\Sales\Repositories\OrderRepository;
-use Webkul\Paypal\Helpers\Ipn;
+use Swim\Checkout\Facades\Cart;
+use Swim\Sales\Repositories\OrderRepository;
+use Swim\Paypal\Helpers\Ipn;
 
 /**
  * Paypal Standard controller
  *
- * @author    Jitendra Singh <jitendra@webkul.com>
- * @copyright 2018 Webkul Software Pvt Ltd (http://www.webkul.com)
+ * @author    Jitendra Singh <jitendra@Swim.com>
+ * @copyright 2018 Swim Software Pvt Ltd (http://www.Swim.com)
  */
 class StandardController extends Controller
 {
@@ -31,7 +31,7 @@ class StandardController extends Controller
     /**
      * Create a new controller instance.
      *
-     * @param  \Webkul\Attribute\Repositories\OrderRepository  $orderRepository
+     * @param  \Swim\Attribute\Repositories\OrderRepository  $orderRepository
      * @return void
      */
     public function __construct(

@@ -1,9 +1,9 @@
 <?php
 
-namespace Webkul\Sales\Models;
+namespace Swim\Sales\Models;
 
 use Illuminate\Database\Eloquent\Model;
-use Webkul\Sales\Contracts\OrderPayment as OrderPaymentContract;
+use Swim\Sales\Contracts\OrderPayment as OrderPaymentContract;
 
 
 class OrderPayment extends Model implements OrderPaymentContract

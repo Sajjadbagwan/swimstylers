@@ -1,8 +1,8 @@
 <?php
 
-namespace Webkul\Customer\Helpers;
+namespace Swim\Customer\Helpers;
 
-use Webkul\Customer\Repositories\WishlistRepository;
+use Swim\Customer\Repositories\WishlistRepository;
 
 class Wishlist
 {
@@ -16,7 +16,7 @@ class Wishlist
     /**
      * Create a new controller instance.
      *
-     * @param  Webkul\Customer\Repositories\WishlistRepository
+     * @param  Swim\Customer\Repositories\WishlistRepository
      * @return void
      */
     public function __construct(WishlistRepository $wishlistRepository)

@@ -1,18 +1,18 @@
 <?php
 
-namespace Webkul\Shop\Http\Controllers;
+namespace Swim\Shop\Http\Controllers;
 
 use Illuminate\Support\Facades\Storage;
-use Webkul\Product\Repositories\ProductRepository;
-use Webkul\Product\Repositories\ProductAttributeValueRepository;
-use Webkul\Product\Repositories\ProductDownloadableSampleRepository;
-use Webkul\Product\Repositories\ProductDownloadableLinkRepository;
+use Swim\Product\Repositories\ProductRepository;
+use Swim\Product\Repositories\ProductAttributeValueRepository;
+use Swim\Product\Repositories\ProductDownloadableSampleRepository;
+use Swim\Product\Repositories\ProductDownloadableLinkRepository;
 
 /**
  * Product controller
  *
- * @author    Jitendra Singh <jitendra@webkul.com>
- * @copyright 2018 Webkul Software Pvt Ltd (http://www.webkul.com)
+ * @author    Jitendra Singh <jitendra@Swim.com>
+ * @copyright 2018 Swim Software Pvt Ltd (http://www.Swim.com)
  */
 class ProductController extends Controller
 {
@@ -47,10 +47,10 @@ class ProductController extends Controller
     /**
      * Create a new controller instance.
      *
-     * @param  \Webkul\Product\Repositories\ProductRepository                   $productRepository
-     * @param  \Webkul\Product\Repositories\productAttributeValueRepository     $productAttributeValueRepository
-     * @param  \Webkul\Product\Repositories\ProductDownloadableSampleRepository $productDownloadableSampleRepository
-     * @param  \Webkul\Product\Repositories\ProductDownloadableLinkRepository   $productDownloadableLinkRepository
+     * @param  \Swim\Product\Repositories\ProductRepository                   $productRepository
+     * @param  \Swim\Product\Repositories\productAttributeValueRepository     $productAttributeValueRepository
+     * @param  \Swim\Product\Repositories\ProductDownloadableSampleRepository $productDownloadableSampleRepository
+     * @param  \Swim\Product\Repositories\ProductDownloadableLinkRepository   $productDownloadableLinkRepository
      * @return void
      */
     public function __construct(

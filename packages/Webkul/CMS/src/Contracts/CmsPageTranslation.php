@@ -1,6 +1,6 @@
 <?php
 
-namespace Webkul\CMS\Contracts;
+namespace Swim\CMS\Contracts;
 
 interface CmsPageTranslation
 {

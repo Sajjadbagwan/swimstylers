@@ -19,7 +19,7 @@
         </div>
 
         <div class="page-content">
-            @inject('customerGroup','Webkul\Admin\DataGrids\CustomerGroupDataGrid')
+            @inject('customerGroup','Swim\Admin\DataGrids\CustomerGroupDataGrid')
             {!! $customerGroup->render() !!}
         </div>
     </div>

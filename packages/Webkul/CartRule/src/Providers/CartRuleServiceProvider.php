@@ -1,6 +1,6 @@
 <?php
 
-namespace Webkul\CartRule\Providers;
+namespace Swim\CartRule\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Routing\Router;

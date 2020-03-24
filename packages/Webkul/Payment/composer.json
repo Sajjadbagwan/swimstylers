@@ -4,22 +4,22 @@
     "authors": [
         {
             "name": "Jitendra Singh",
-            "email": "jitendra@webkul.com"
+            "email": "jitendra@Swim.com"
         }
     ],
     "require": {},
     "autoload": {
         "psr-4": {
-            "Webkul\\Payment\\": "src/"
+            "Swim\\Payment\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Webkul\\Payment\\Providers\\PaymentServiceProvider"
+                "Swim\\Payment\\Providers\\PaymentServiceProvider"
             ],
             "aliases": {
-                "Bouncer": "Webkul\\Payment\\Facades\\Bouncer"
+                "Bouncer": "Swim\\Payment\\Facades\\Bouncer"
             }
         }
     },

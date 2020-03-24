@@ -18,7 +18,7 @@
         </div>
 
         <div class="page-content">
-            @inject('velocity_category', 'Webkul\Velocity\DataGrids\CategoryDataGrid')
+            @inject('velocity_category', 'Swim\Velocity\DataGrids\CategoryDataGrid')
             {!! $velocity_category->render() !!}
         </div>
     </div>

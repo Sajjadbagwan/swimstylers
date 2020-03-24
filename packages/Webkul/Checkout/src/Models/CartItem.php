@@ -1,11 +1,11 @@
 <?php
 
-namespace Webkul\Checkout\Models;
+namespace Swim\Checkout\Models;
 
 use Illuminate\Database\Eloquent\Model;
-use Webkul\Product\Models\ProductProxy;
-use Webkul\Product\Models\ProductFlatProxy;
-use Webkul\Checkout\Contracts\CartItem as CartItemContract;
+use Swim\Product\Models\ProductProxy;
+use Swim\Product\Models\ProductFlatProxy;
+use Swim\Checkout\Contracts\CartItem as CartItemContract;
 
 
 class CartItem extends Model implements CartItemContract

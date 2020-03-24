@@ -1,15 +1,15 @@
 <?php
 
-namespace Webkul\Velocity\DataGrids;
+namespace Swim\Velocity\DataGrids;
 
-use Webkul\Ui\DataGrid\DataGrid;
+use Swim\Ui\DataGrid\DataGrid;
 use DB;
 
 /**
  * Content DataGrid
  *
- * @author Vivek Sharma <viveksh047@webkul.com> @viveksh-webkul
- * @copyright 2019 Webkul Software Pvt Ltd (http://www.webkul.com)
+ * @author Vivek Sharma <viveksh047@Swim.com> @viveksh-Swim
+ * @copyright 2019 Swim Software Pvt Ltd (http://www.Swim.com)
  */
 class ContentDataGrid extends DataGrid
 {

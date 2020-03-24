@@ -1,10 +1,10 @@
 <?php
 
-namespace Webkul\CMS\Models;
+namespace Swim\CMS\Models;
 
-use Webkul\Core\Eloquent\TranslatableModel;
-use Webkul\CMS\Contracts\CmsPage as CmsPageContract;
-use Webkul\Core\Models\ChannelProxy;
+use Swim\Core\Eloquent\TranslatableModel;
+use Swim\CMS\Contracts\CmsPage as CmsPageContract;
+use Swim\Core\Models\ChannelProxy;
 
 class CmsPage extends TranslatableModel implements CmsPageContract
 {

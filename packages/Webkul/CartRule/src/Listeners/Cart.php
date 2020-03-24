@@ -1,14 +1,14 @@
 <?php
 
-namespace Webkul\CartRule\Listeners;
+namespace Swim\CartRule\Listeners;
 
-use Webkul\CartRule\Helpers\CartRule;
+use Swim\CartRule\Helpers\CartRule;
 
 /**
  * Cart event handler
  *
- * @author    Jitendra Singh <jitendra@webkul.com>
- * @copyright 2018 Webkul Software Pvt Ltd (http://www.webkul.com)
+ * @author    Jitendra Singh <jitendra@Swim.com>
+ * @copyright 2018 Swim Software Pvt Ltd (http://www.Swim.com)
  */
 class Cart
 {
@@ -22,7 +22,7 @@ class Cart
     /**
      * Create a new listener instance.
      *
-     * @param  Webkul\CartRule\Repositories\CartRule $cartRuleHepler
+     * @param  Swim\CartRule\Repositories\CartRule $cartRuleHepler
      * @return void
      */
     public function __construct(CartRule $cartRuleHepler)

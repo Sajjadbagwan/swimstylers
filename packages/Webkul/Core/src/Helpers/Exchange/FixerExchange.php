@@ -1,9 +1,9 @@
 <?php
 
-namespace Webkul\Core\Helpers\Exchange;
+namespace Swim\Core\Helpers\Exchange;
 
-use Webkul\Core\Helpers\Exchange\ExchangeRate;
-use Webkul\Core\Repositories\ExchangeRateRepository;
+use Swim\Core\Helpers\Exchange\ExchangeRate;
+use Swim\Core\Repositories\ExchangeRateRepository;
 
 class FixerExchange  extends ExchangeRate
 {
@@ -33,7 +33,7 @@ class FixerExchange  extends ExchangeRate
     {
         $rates = array();
 
-        $this->exchangeRate = app('Webkul\Core\Repositories\ExchangeRateRepository');
+        $this->exchangeRate = app('Swim\Core\Repositories\ExchangeRateRepository');
 
         // dummy api call
         $client = new \GuzzleHttp\Client();

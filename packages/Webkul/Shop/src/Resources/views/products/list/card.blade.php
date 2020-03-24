@@ -2,7 +2,7 @@
 
 <div class="product-card">
 
-    @inject ('productImageHelper', 'Webkul\Product\Helpers\ProductImage')
+    @inject ('productImageHelper', 'Swim\Product\Helpers\ProductImage')
 
     <?php $productBaseImage = $productImageHelper->getProductBaseImage($product); ?>
 
@@ -14,7 +14,7 @@
 
     <div class="product-image">
         <a href="{{ route('shop.productOrCategory.index', $product->url_key) }}" title="{{ $product->name }}">
-            <img src="{{ $productBaseImage['medium_image_url'] }}" onerror="this.src='{{ asset('vendor/webkul/ui/assets/images/product/meduim-product-placeholder.png') }}'"/>
+            <img src="{{ $productBaseImage['medium_image_url'] }}" onerror="this.src='{{ asset('vendor/Swim/ui/assets/images/product/meduim-product-placeholder.png') }}'"/>
         </a>
     </div>
 

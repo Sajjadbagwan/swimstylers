@@ -1,17 +1,17 @@
 <?php
 
-namespace Webkul\CartRule\Listeners;
+namespace Swim\CartRule\Listeners;
 
-use Webkul\CartRule\Repositories\CartRuleRepository;
-use Webkul\CartRule\Repositories\CartRuleCustomerRepository;
-use Webkul\CartRule\Repositories\CartRuleCouponRepository;
-use Webkul\CartRule\Repositories\CartRuleCouponUsageRepository;
+use Swim\CartRule\Repositories\CartRuleRepository;
+use Swim\CartRule\Repositories\CartRuleCustomerRepository;
+use Swim\CartRule\Repositories\CartRuleCouponRepository;
+use Swim\CartRule\Repositories\CartRuleCouponUsageRepository;
 
 /**
  * Order event handler
  *
- * @author    Jitendra Singh <jitendra@webkul.com>
- * @copyright 2018 Webkul Software Pvt Ltd (http://www.webkul.com)
+ * @author    Jitendra Singh <jitendra@Swim.com>
+ * @copyright 2018 Swim Software Pvt Ltd (http://www.Swim.com)
  */
 class Order
 {
@@ -46,10 +46,10 @@ class Order
     /**
      * Create a new listener instance.
      *
-     * @param  Webkul\CartRule\Repositories\CartRuleRepository            $cartRuleRepository
-     * @param  Webkul\CartRule\Repositories\CartRuleCustomerRepository    $cartRuleCustomerRepository
-     * @param  Webkul\CartRule\Repositories\CartRuleCouponRepository      $cartRuleCouponRepository
-     * @param  Webkul\CartRule\Repositories\CartRuleCouponUsageRepository $cartRuleCouponUsageRepository
+     * @param  Swim\CartRule\Repositories\CartRuleRepository            $cartRuleRepository
+     * @param  Swim\CartRule\Repositories\CartRuleCustomerRepository    $cartRuleCustomerRepository
+     * @param  Swim\CartRule\Repositories\CartRuleCouponRepository      $cartRuleCouponRepository
+     * @param  Swim\CartRule\Repositories\CartRuleCouponUsageRepository $cartRuleCouponUsageRepository
      * @return void
      */
     public function __construct(

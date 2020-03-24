@@ -1,17 +1,17 @@
 <?php
 
-namespace Webkul\API\Http\Controllers\Shop;
+namespace Swim\API\Http\Controllers\Shop;
 
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
-use Webkul\Classes\Repositories\ProductRepository;
-use Webkul\API\Http\Resources\Classes as ClassesResource;
+use Swim\Classes\Repositories\ProductRepository;
+use Swim\API\Http\Resources\Classes as ClassesResource;
 
 /**
  * Product controller
  *
- * @author    Jitendra Singh <jitendra@webkul.com>
- * @copyright 2018 Webkul Software Pvt Ltd (http://www.webkul.com)
+ * @author    Jitendra Singh <jitendra@Swim.com>
+ * @copyright 2018 Swim Software Pvt Ltd (http://www.Swim.com)
  */
 class ClassesController extends Controller
 {
@@ -25,7 +25,7 @@ class ClassesController extends Controller
     /**
      * Create a new controller instance.
      *
-     * @param  Webkul\Product\Repositories\ProductRepository $productRepository
+     * @param  Swim\Product\Repositories\ProductRepository $productRepository
      * @return void
      */
     public function __construct(ClassesRepository $classesRepository)
@@ -63,7 +63,7 @@ class ClassesController extends Controller
     public function additionalInformation($id)
     {
         return response()->json([
-                'data' => app('Webkul\Classes\Helpers\View')->getAdditionalData($this->classesRepository->findOrFail($id))
+                'data' => app('Swim\Classes\Helpers\View')->getAdditionalData($this->classesRepository->findOrFail($id))
             ]);
     }
 
@@ -75,7 +75,7 @@ class ClassesController extends Controller
     public function configurableConfig($id)
     {
         return response()->json([
-                'data' => app('Webkul\Classes\Helpers\ConfigurableOption')->getConfigurationConfig($this->classesRepository->findOrFail($id))
+                'data' => app('Swim\Classes\Helpers\ConfigurableOption')->getConfigurationConfig($this->classesRepository->findOrFail($id))
             ]);
     }
 }

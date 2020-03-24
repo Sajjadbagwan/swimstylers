@@ -1,16 +1,16 @@
 <?php
 
-namespace Webkul\Customer\Http\Controllers;
+namespace Swim\Customer\Http\Controllers;
 
-use Webkul\Product\Repositories\ProductRepository;
-use Webkul\Customer\Repositories\WishlistRepository;
+use Swim\Product\Repositories\ProductRepository;
+use Swim\Customer\Repositories\WishlistRepository;
 use Cart;
 
 /**
  * Customer controller
  *
- * @author    Prashant Singh <prashant.singh852@webkul.com>
- * @copyright 2018 Webkul Software Pvt Ltd (http://www.webkul.com)
+ * @author    Prashant Singh <prashant.singh852@Swim.com>
+ * @copyright 2018 Swim Software Pvt Ltd (http://www.Swim.com)
  */
 
 class WishlistController extends Controller
@@ -39,8 +39,8 @@ class WishlistController extends Controller
     /**
      * Create a new controller instance.
      *
-     * @param  \Webkul\Customer\Repositories\WishlistRepository $wishlistRepository
-     * @param  \Webkul\Product\Repositories\ProductRepository   $productRepository
+     * @param  \Swim\Customer\Repositories\WishlistRepository $wishlistRepository
+     * @param  \Swim\Product\Repositories\ProductRepository   $productRepository
      * @return void
      */
     public function __construct(

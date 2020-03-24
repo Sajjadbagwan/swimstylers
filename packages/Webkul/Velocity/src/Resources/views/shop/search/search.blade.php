@@ -1,4 +1,4 @@
-@inject ('toolbarHelper', 'Webkul\Product\Helpers\Toolbar')
+@inject ('toolbarHelper', 'Swim\Product\Helpers\Toolbar')
 
 @extends('shop::layouts.master')
 

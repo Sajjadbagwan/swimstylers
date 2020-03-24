@@ -1,19 +1,19 @@
 <?php
 
-namespace Webkul\Attribute\Repositories;
+namespace Swim\Attribute\Repositories;
 
-use Webkul\Core\Eloquent\Repository;
+use Swim\Core\Eloquent\Repository;
 use Illuminate\Support\Facades\Event;
-use Webkul\Attribute\Repositories\AttributeRepository;
-use Webkul\Attribute\Repositories\AttributeGroupRepository;
+use Swim\Attribute\Repositories\AttributeRepository;
+use Swim\Attribute\Repositories\AttributeGroupRepository;
 use Illuminate\Container\Container as App;
 use Illuminate\Support\Str;
 
 /**
  * Attribute Reposotory
  *
- * @author    Jitendra Singh <jitendra@webkul.com>
- * @copyright 2018 Webkul Software Pvt Ltd (http://www.webkul.com)
+ * @author    Jitendra Singh <jitendra@Swim.com>
+ * @copyright 2018 Swim Software Pvt Ltd (http://www.Swim.com)
  */
 class AttributeFamilyRepository extends Repository
 {
@@ -34,8 +34,8 @@ class AttributeFamilyRepository extends Repository
     /**
      * Create a new controller instance.
      *
-     * @param  Webkul\Attribute\Repositories\AttributeRepository      $attributeRepository
-     * @param  Webkul\Attribute\Repositories\AttributeGroupRepository $attributeGroupRepository
+     * @param  Swim\Attribute\Repositories\AttributeRepository      $attributeRepository
+     * @param  Swim\Attribute\Repositories\AttributeGroupRepository $attributeGroupRepository
      * @return void
      */
     public function __construct(
@@ -58,7 +58,7 @@ class AttributeFamilyRepository extends Repository
      */
     function model()
     {
-        return 'Webkul\Attribute\Contracts\AttributeFamily';
+        return 'Swim\Attribute\Contracts\AttributeFamily';
     }
 
     /**

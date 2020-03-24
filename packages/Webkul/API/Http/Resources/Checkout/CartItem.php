@@ -1,9 +1,9 @@
 <?php
 
-namespace Webkul\API\Http\Resources\Checkout;
+namespace Swim\API\Http\Resources\Checkout;
 
 use Illuminate\Http\Resources\Json\JsonResource;
-use Webkul\API\Http\Resources\Catalog\Product as ProductResource;
+use Swim\API\Http\Resources\Catalog\Product as ProductResource;
 
 class CartItem extends JsonResource
 {

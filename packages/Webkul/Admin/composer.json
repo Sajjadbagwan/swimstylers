@@ -4,7 +4,7 @@
     "authors": [
         {
             "name": "Jitendra Singh",
-            "email": "jitendra@webkul.com"
+            "email": "jitendra@Swim.com"
         }
     ],
     "require": {
@@ -14,13 +14,13 @@
     },
     "autoload": {
         "psr-4": {
-            "Webkul\\Admin\\": "src/"
+            "Swim\\Admin\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Webkul\\Admin\\AdminServiceProvider"
+                "Swim\\Admin\\AdminServiceProvider"
             ],
             "aliases": {}
         }

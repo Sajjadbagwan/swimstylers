@@ -1,8 +1,8 @@
 <?php
 
-namespace Webkul\Velocity\Repositories;
+namespace Swim\Velocity\Repositories;
 
-use Webkul\Core\Eloquent\Repository;
+use Swim\Core\Eloquent\Repository;
 
 class VelocityMetadataRepository extends Repository
 {
@@ -13,6 +13,6 @@ class VelocityMetadataRepository extends Repository
      */
     function model()
     {
-        return 'Webkul\Velocity\Models\VelocityMetadata';
+        return 'Swim\Velocity\Models\VelocityMetadata';
     }
 }

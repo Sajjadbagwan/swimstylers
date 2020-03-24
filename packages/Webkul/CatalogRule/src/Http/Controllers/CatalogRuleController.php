@@ -1,17 +1,17 @@
 <?php
 
-namespace Webkul\CatalogRule\Http\Controllers;
+namespace Swim\CatalogRule\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Event;
-use Webkul\CatalogRule\Repositories\CatalogRuleRepository;
-use Webkul\CatalogRule\Helpers\CatalogRuleIndex;
+use Swim\CatalogRule\Repositories\CatalogRuleRepository;
+use Swim\CatalogRule\Helpers\CatalogRuleIndex;
 
 /**
  * Catalog Rule controller
  *
- * @author Jitendra Singh <jitendra@webkul.com>
- * @copyright 2018 Webkul Software Pvt Ltd (http://www.webkul.com)
+ * @author Jitendra Singh <jitendra@Swim.com>
+ * @copyright 2018 Swim Software Pvt Ltd (http://www.Swim.com)
  */
 class CatalogRuleController extends Controller
 {
@@ -39,8 +39,8 @@ class CatalogRuleController extends Controller
     /**
      * Create a new controller instance.
      *
-     * @param  \Webkul\CatalogRule\Repositories\CatalogRuleRepository $catalogRuleRepository
-     * @param  \Webkul\CatalogRule\Helpers\CatalogRuleIndex           $catalogRuleIndexHelper
+     * @param  \Swim\CatalogRule\Repositories\CatalogRuleRepository $catalogRuleRepository
+     * @param  \Swim\CatalogRule\Helpers\CatalogRuleIndex           $catalogRuleIndexHelper
      * @return void
      */
     public function __construct(

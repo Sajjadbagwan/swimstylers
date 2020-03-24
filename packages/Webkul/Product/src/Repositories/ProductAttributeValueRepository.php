@@ -1,17 +1,17 @@
 <?php
 
-namespace Webkul\Product\Repositories;
+namespace Swim\Product\Repositories;
 
 use Illuminate\Container\Container as App;
-use Webkul\Attribute\Repositories\AttributeRepository;
-use Webkul\Core\Eloquent\Repository;
-use Webkul\Product\Models\ProductAttributeValue;
+use Swim\Attribute\Repositories\AttributeRepository;
+use Swim\Core\Eloquent\Repository;
+use Swim\Product\Models\ProductAttributeValue;
 
 /**
  * Product Attribute Value Reposotory
  *
- * @author    Jitendra Singh <jitendra@webkul.com>
- * @copyright 2018 Webkul Software Pvt Ltd (http://www.webkul.com)
+ * @author    Jitendra Singh <jitendra@Swim.com>
+ * @copyright 2018 Swim Software Pvt Ltd (http://www.Swim.com)
  */
 class ProductAttributeValueRepository extends Repository
 {
@@ -25,7 +25,7 @@ class ProductAttributeValueRepository extends Repository
     /**
      * Create a new controller instance.
      *
-     * @param  Webkul\Attribute\Repositories\AttributeRepository $attributeRepository
+     * @param  Swim\Attribute\Repositories\AttributeRepository $attributeRepository
      * @return void
      */
     public function __construct(
@@ -45,7 +45,7 @@ class ProductAttributeValueRepository extends Repository
      */
     function model()
     {
-        return 'Webkul\Product\Contracts\ProductAttributeValue';
+        return 'Swim\Product\Contracts\ProductAttributeValue';
     }
 
     /**

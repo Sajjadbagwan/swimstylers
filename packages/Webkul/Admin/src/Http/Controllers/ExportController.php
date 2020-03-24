@@ -1,15 +1,15 @@
 <?php
 
-namespace Webkul\Admin\Http\Controllers;
+namespace Swim\Admin\Http\Controllers;
 
-use Webkul\Admin\Exports\DataGridExport;
+use Swim\Admin\Exports\DataGridExport;
 use Excel;
 
 /**
  * Export controlller
  *
- * @author    Rahul Shukla <rahulshukla.symfony517@webkul.com>
- * @copyright 2018 Webkul Software Pvt Ltd (http://www.webkul.com)
+ * @author    Rahul Shukla <rahulshukla.symfony517@Swim.com>
+ * @copyright 2018 Swim Software Pvt Ltd (http://www.Swim.com)
  */
 class ExportController extends Controller
 {
@@ -38,7 +38,7 @@ class ExportController extends Controller
         $format = $criteria['format'];
 
         $gridName = explode('\\', $criteria['gridName']);
-        $path = '\Webkul\Admin\DataGrids'.'\\'.last($gridName);
+        $path = '\Swim\Admin\DataGrids'.'\\'.last($gridName);
 
         $proceed = false;
 

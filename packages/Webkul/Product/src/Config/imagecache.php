@@ -52,9 +52,9 @@ return array(
     */
 
     'templates' => array(
-        'small' => 'Webkul\Product\CacheFilters\Small',
-        'medium' => 'Webkul\Product\CacheFilters\Medium',
-        'large' => 'Webkul\Product\CacheFilters\Large',
+        'small' => 'Swim\Product\CacheFilters\Small',
+        'medium' => 'Swim\Product\CacheFilters\Medium',
+        'large' => 'Swim\Product\CacheFilters\Large',
     ),
 
     /*

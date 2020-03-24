@@ -1,18 +1,18 @@
 <?php
 
-namespace Webkul\Admin\Http\Controllers;
+namespace Swim\Admin\Http\Controllers;
 
 use Illuminate\Support\Facades\Event;
-use Webkul\Core\Repositories\CoreConfigRepository;
-use Webkul\Core\Tree;
+use Swim\Core\Repositories\CoreConfigRepository;
+use Swim\Core\Tree;
 use Illuminate\Support\Facades\Storage;
-use Webkul\Admin\Http\Requests\ConfigurationForm;
+use Swim\Admin\Http\Requests\ConfigurationForm;
 
 /**
  * Configuration controller
  *
- * @author    Jitendra Singh <jitendra@webkul.com>
- * @copyright 2018 Webkul Software Pvt Ltd (http://www.webkul.com)
+ * @author    Jitendra Singh <jitendra@Swim.com>
+ * @copyright 2018 Swim Software Pvt Ltd (http://www.Swim.com)
  */
 class ConfigurationController extends Controller
 {
@@ -39,7 +39,7 @@ class ConfigurationController extends Controller
     /**
      * Create a new controller instance.
      *
-     * @param  \Webkul\Core\Repositories\CoreConfigRepository $coreConfigRepository
+     * @param  \Swim\Core\Repositories\CoreConfigRepository $coreConfigRepository
      * @return void
      */
     public function __construct(CoreConfigRepository $coreConfigRepository)
@@ -114,7 +114,7 @@ class ConfigurationController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Webkul\Admin\Http\Requests\ConfigurationForm $request
+     * @param  \Swim\Admin\Http\Requests\ConfigurationForm $request
      * @return \Illuminate\Http\Response
      */
     public function store(ConfigurationForm $request)

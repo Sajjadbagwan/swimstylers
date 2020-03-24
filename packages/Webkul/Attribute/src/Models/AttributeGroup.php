@@ -1,9 +1,9 @@
 <?php
 
-namespace Webkul\Attribute\Models;
+namespace Swim\Attribute\Models;
 
 use Illuminate\Database\Eloquent\Model;
-use Webkul\Attribute\Contracts\AttributeGroup as AttributeGroupContract;
+use Swim\Attribute\Contracts\AttributeGroup as AttributeGroupContract;
 
 class AttributeGroup extends Model implements AttributeGroupContract
 {

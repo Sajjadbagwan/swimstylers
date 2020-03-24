@@ -64,7 +64,7 @@
                                 <?php $selectedOptionIds = old('inventory_sources') ?: $page->channels->pluck('id')->toArray() ?>
 
                                 <select type="text" class="control" name="channels[]" v-validate="'required'" value="{{ old('channel[]') }}" data-vv-as="&quot;{{ __('admin::app.cms.pages.channel') }}&quot;" multiple="multiple">
-                                    @foreach(app('Webkul\Core\Repositories\ChannelRepository')->all() as $channel)
+                                    @foreach(app('Swim\Core\Repositories\ChannelRepository')->all() as $channel)
                                         <option value="{{ $channel->id }}" {{ in_array($channel->id, $selectedOptionIds) ? 'selected' : '' }}>
                                             {{ $channel->name }}
                                         </option>
@@ -122,7 +122,7 @@
 @stop
 
 @push('scripts')
-    <script src="{{ asset('vendor/webkul/admin/assets/js/tinyMCE/tinymce.min.js') }}"></script>
+    <script src="{{ asset('vendor/Swim/admin/assets/js/tinyMCE/tinymce.min.js') }}"></script>
 
     <script>
         $(document).ready(function () {

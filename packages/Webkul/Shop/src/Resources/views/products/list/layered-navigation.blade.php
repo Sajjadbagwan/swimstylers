@@ -1,8 +1,8 @@
-@inject ('attributeRepository', 'Webkul\Attribute\Repositories\AttributeRepository')
+@inject ('attributeRepository', 'Swim\Attribute\Repositories\AttributeRepository')
 
-@inject ('productFlatRepository', 'Webkul\Product\Repositories\ProductFlatRepository')
+@inject ('productFlatRepository', 'Swim\Product\Repositories\ProductFlatRepository')
 
-@inject ('productRepository', 'Webkul\Product\Repositories\ProductRepository')
+@inject ('productRepository', 'Swim\Product\Repositories\ProductRepository')
 
 <?php
     $filterAttributes = [];

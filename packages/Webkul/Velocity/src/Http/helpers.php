@@ -1,6 +1,6 @@
 <?php
 
-    use Webkul\Velocity\Velocity;
+    use Swim\Velocity\Velocity;
 
     if (! function_exists('velocity')) {
         function velocity()

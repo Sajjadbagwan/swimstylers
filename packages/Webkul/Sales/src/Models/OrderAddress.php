@@ -1,9 +1,9 @@
 <?php
 
-namespace Webkul\Sales\Models;
+namespace Swim\Sales\Models;
 
 use Illuminate\Database\Eloquent\Model;
-use Webkul\Sales\Contracts\OrderAddress as OrderAddressContract;
+use Swim\Sales\Contracts\OrderAddress as OrderAddressContract;
 
 class OrderAddress extends Model implements OrderAddressContract
 {

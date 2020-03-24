@@ -1,7 +1,7 @@
 <?php
 
 Route::group(['middleware' => ['web', 'locale', 'theme', 'currency']], function () {
-    Route::namespace('Webkul\Velocity\Http\Controllers\Shop')->group(function () {
+    Route::namespace('Swim\Velocity\Http\Controllers\Shop')->group(function () {
         Route::get('/product-details/{slug}', 'ShopController@fetchProductDetails')
         ->name('velocity.shop.product');
 

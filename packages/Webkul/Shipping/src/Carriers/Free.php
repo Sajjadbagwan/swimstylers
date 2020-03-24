@@ -1,10 +1,10 @@
 <?php
 
-namespace Webkul\Shipping\Carriers;
+namespace Swim\Shipping\Carriers;
 
 use Config;
-use Webkul\Checkout\Models\CartShippingRate;
-use Webkul\Shipping\Facades\Shipping;
+use Swim\Checkout\Models\CartShippingRate;
+use Swim\Shipping\Facades\Shipping;
 
 /**
  * Class Rate.

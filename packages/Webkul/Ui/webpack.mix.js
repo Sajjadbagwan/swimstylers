@@ -9,7 +9,7 @@ require("laravel-mix-merge-manifest");
 if (mix.inProduction()) {
     var publicPath = 'publishable/assets';
 } else {
-    var publicPath = "../../../public/vendor/webkul/ui/assets";
+    var publicPath = "../../../public/vendor/Swim/ui/assets";
 }
 
 mix.setPublicPath(publicPath).mergeManifest();

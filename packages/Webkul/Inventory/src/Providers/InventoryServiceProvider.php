@@ -1,6 +1,6 @@
 <?php
 
-namespace Webkul\Inventory\Providers;
+namespace Swim\Inventory\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Database\Eloquent\Factory as EloquentFactory;

@@ -1,10 +1,10 @@
 <?php
 
-namespace Webkul\Product\Models;
+namespace Swim\Product\Models;
 
-use Webkul\Core\Eloquent\TranslatableModel;
+use Swim\Core\Eloquent\TranslatableModel;
 use Illuminate\Support\Facades\Storage;
-use Webkul\Product\Contracts\ProductDownloadableSample as ProductDownloadableSampleContract;
+use Swim\Product\Contracts\ProductDownloadableSample as ProductDownloadableSampleContract;
 
 class ProductDownloadableSample extends TranslatableModel implements ProductDownloadableSampleContract
 {

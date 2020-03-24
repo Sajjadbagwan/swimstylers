@@ -6,11 +6,11 @@
 
 @section('content-wrapper')
     <div class="account-content">
-        @inject ('productImageHelper', 'Webkul\Product\Helpers\ProductImage')
+        @inject ('productImageHelper', 'Swim\Product\Helpers\ProductImage')
 
         @include('shop::customers.account.partials.sidemenu')
 
-        @inject ('reviewHelper', 'Webkul\Product\Helpers\Review')
+        @inject ('reviewHelper', 'Swim\Product\Helpers\Review')
 
         <div class="account-layout">
 

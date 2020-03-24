@@ -171,7 +171,7 @@
                 </span>
             </div>
 
-            @foreach (Webkul\Tax\Helpers\Tax::getTaxRatesWithAmount($order, false) as $taxRate => $taxAmount )
+            @foreach (Swim\Tax\Helpers\Tax::getTaxRatesWithAmount($order, false) as $taxRate => $taxAmount )
                 <div>
                     <span id="taxrate-{{ core()->taxRateAsIdentifier($taxRate) }}">{{ __('shop::app.mail.order.cancel.tax') }} {{ $taxRate }} %</span>
                     <span id="taxamount-{{ core()->taxRateAsIdentifier($taxRate) }}" style="float: right;">

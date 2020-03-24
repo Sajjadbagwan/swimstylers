@@ -1,9 +1,9 @@
 <?php
 
-namespace Webkul\API\Http\Resources\Sales;
+namespace Swim\API\Http\Resources\Sales;
 
 use Illuminate\Http\Resources\Json\JsonResource;
-use Webkul\API\Http\Resources\Catalog\Product as ProductResource;
+use Swim\API\Http\Resources\Catalog\Product as ProductResource;
 
 class OrderItem extends JsonResource
 {

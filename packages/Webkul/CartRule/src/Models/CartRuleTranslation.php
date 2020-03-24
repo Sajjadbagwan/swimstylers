@@ -1,9 +1,9 @@
 <?php
 
-namespace Webkul\CartRule\Models;
+namespace Swim\CartRule\Models;
 
 use Illuminate\Database\Eloquent\Model;
-use Webkul\CartRule\Contracts\CartRuleTranslation as CartRuleTranslationContract;
+use Swim\CartRule\Contracts\CartRuleTranslation as CartRuleTranslationContract;
 
 class CartRuleTranslation extends Model implements CartRuleTranslationContract
 {

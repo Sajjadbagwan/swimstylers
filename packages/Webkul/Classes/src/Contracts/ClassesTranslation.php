@@ -1,6 +1,6 @@
 <?php
 
-namespace Webkul\Classes\Contracts;
+namespace Swim\Classes\Contracts;
 
 interface ClassesTranslation
 {

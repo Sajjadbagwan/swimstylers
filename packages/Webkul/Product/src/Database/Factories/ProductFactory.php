@@ -3,7 +3,7 @@
 /** @var \Illuminate\Database\Eloquent\Factory $factory */
 
 use Faker\Generator as Faker;
-use Webkul\Product\Models\Product;
+use Swim\Product\Models\Product;
 
 $factory->define(Product::class, function (Faker $faker) {
     $now = date("Y-m-d H:i:s");

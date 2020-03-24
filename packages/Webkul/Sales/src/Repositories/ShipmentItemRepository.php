@@ -1,17 +1,17 @@
 <?php
 
-namespace Webkul\Sales\Repositories;
+namespace Swim\Sales\Repositories;
 
 use Illuminate\Container\Container as App;
-use Webkul\Core\Eloquent\Repository;
+use Swim\Core\Eloquent\Repository;
 use Illuminate\Support\Facades\Event;
-use Webkul\Sales\Contracts\ShipmentItem;
+use Swim\Sales\Contracts\ShipmentItem;
 
 /**
  * ShipmentItem Reposotory
  *
- * @author    Jitendra Singh <jitendra@webkul.com>
- * @copyright 2018 Webkul Software Pvt Ltd (http://www.webkul.com)
+ * @author    Jitendra Singh <jitendra@Swim.com>
+ * @copyright 2018 Swim Software Pvt Ltd (http://www.Swim.com)
  */
 class ShipmentItemRepository extends Repository
 {

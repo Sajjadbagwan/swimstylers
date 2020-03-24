@@ -3,7 +3,7 @@
 /** @var \Illuminate\Database\Eloquent\Factory $factory */
 
 use Faker\Generator as Faker;
-use Webkul\Customer\Models\CustomerGroup;
+use Swim\Customer\Models\CustomerGroup;
 
 $factory->define(CustomerGroup::class, function (Faker $faker) {
     $name = ucfirst($faker->word);

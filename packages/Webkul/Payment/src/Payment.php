@@ -1,6 +1,6 @@
 <?php
 
-namespace Webkul\Payment;
+namespace Swim\Payment;
 
 use Illuminate\Support\Facades\Config;
 

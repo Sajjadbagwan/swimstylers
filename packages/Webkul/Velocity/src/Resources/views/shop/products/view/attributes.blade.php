@@ -1,4 +1,4 @@
-@inject ('productViewHelper', 'Webkul\Product\Helpers\View')
+@inject ('productViewHelper', 'Swim\Product\Helpers\View')
 
 {!! view_render_event('bagisto.shop.products.view.attributes.before', ['product' => $product]) !!}
     @php

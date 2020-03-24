@@ -5,7 +5,7 @@
 @stop
 
 @section('content-wrapper')
-    @inject ('productImageHelper', 'Webkul\Product\Helpers\ProductImage')
+    @inject ('productImageHelper', 'Swim\Product\Helpers\ProductImage')
     <section class="cart">
         @if ($cart)
             <div class="title">
@@ -104,7 +104,7 @@
                                 ?>
                                     <div class="item mt-5">
                                         <div class="item-image" style="margin-right: 15px;">
-                                        <a href="#"><img src="http://127.0.0.1:8000/vendor/webkul/ui/assets/images/product/meduim-product-placeholder.png" /></a>
+                                        <a href="#"><img src="http://127.0.0.1:8000/vendor/Swim/ui/assets/images/product/meduim-product-placeholder.png" /></a>
                                         </div>
                                         <div class="item-details">
 

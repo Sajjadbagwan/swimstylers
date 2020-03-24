@@ -1,11 +1,11 @@
 <?php
 
-namespace Webkul\CatalogRule\Models;
+namespace Swim\CatalogRule\Models;
 
 use Illuminate\Database\Eloquent\Model;
-use Webkul\CatalogRule\Contracts\CatalogRule as CatalogRuleContract;
-use Webkul\Core\Models\ChannelProxy;
-use Webkul\Customer\Models\CustomerGroupProxy;
+use Swim\CatalogRule\Contracts\CatalogRule as CatalogRuleContract;
+use Swim\Core\Models\ChannelProxy;
+use Swim\Customer\Models\CustomerGroupProxy;
 
 class CatalogRule extends Model implements CatalogRuleContract
 {

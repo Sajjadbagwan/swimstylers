@@ -26,7 +26,7 @@
         </div>
 
         <div class="page-content">
-            @inject('customerGrid','Webkul\Admin\DataGrids\CustomerDataGrid')
+            @inject('customerGrid','Swim\Admin\DataGrids\CustomerDataGrid')
 
             {!! $customerGrid->render() !!}
         </div>

@@ -1,6 +1,6 @@
 <?php
 
-namespace Webkul\Ui\DataGrid\Facades;
+namespace Swim\Ui\DataGrid\Facades;
 use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\Facade;
 

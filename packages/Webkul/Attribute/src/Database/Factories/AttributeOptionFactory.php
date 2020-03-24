@@ -3,9 +3,9 @@
 /** @var \Illuminate\Database\Eloquent\Factory $factory */
 
 use Faker\Generator as Faker;
-use Webkul\Attribute\Models\Attribute;
-use Webkul\Attribute\Models\AttributeOption;
-use Webkul\Core\Models\Locale;
+use Swim\Attribute\Models\Attribute;
+use Swim\Attribute\Models\AttributeOption;
+use Swim\Core\Models\Locale;
 
 $factory->define(AttributeOption::class, function (Faker $faker, array $attributes) {
 

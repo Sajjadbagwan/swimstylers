@@ -1,6 +1,6 @@
 <?php
 
-namespace Webkul\Product\Database\Eloquent;
+namespace Swim\Product\Database\Eloquent;
 
 use Illuminate\Database\Eloquent\Builder as BaseBuilder;
 use Illuminate\Pagination\Paginator;

@@ -1,4 +1,4 @@
-@inject ('productRepository', 'Webkul\Product\Repositories\ProductRepository')
+@inject ('productRepository', 'Swim\Product\Repositories\ProductRepository')
 
 <category-products
     category-slug="{{ $category }}"

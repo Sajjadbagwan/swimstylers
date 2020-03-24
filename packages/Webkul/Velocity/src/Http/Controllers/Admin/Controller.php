@@ -1,6 +1,6 @@
 <?php
 
-namespace Webkul\Velocity\Http\Controllers\Admin;
+namespace Swim\Velocity\Http\Controllers\Admin;
 
 use Illuminate\Foundation\Bus\DispatchesJobs;
 use Illuminate\Routing\Controller as BaseController;

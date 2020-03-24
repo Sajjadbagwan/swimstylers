@@ -2,7 +2,7 @@
 
 /** @var \Illuminate\Database\Eloquent\Factory $factory */
 use Faker\Generator as Faker;
-use Webkul\Inventory\Models\InventorySource;
+use Swim\Inventory\Models\InventorySource;
 
 $factory->define(InventorySource::class, function (Faker $faker) {
     $now = date("Y-m-d H:i:s");

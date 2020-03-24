@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="{{ asset('vendor/webkul/ui/assets/css/ui.css') }}">
+        <link rel="stylesheet" href="{{ asset('vendor/Swim/ui/assets/css/ui.css') }}">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,500">
 
         <style type="text/css">
@@ -405,5 +405,5 @@
         </div>
     </body>
 
-    <script type="text/javascript" src="{{ asset('vendor/webkul/ui/assets/js/ui.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('vendor/Swim/ui/assets/js/ui.js') }}"></script>
 </html>

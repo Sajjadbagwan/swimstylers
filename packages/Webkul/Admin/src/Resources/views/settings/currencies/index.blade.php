@@ -19,7 +19,7 @@
         </div>
 
         <div class="page-content">
-            @inject('currencies','Webkul\Admin\DataGrids\CurrencyDataGrid')
+            @inject('currencies','Swim\Admin\DataGrids\CurrencyDataGrid')
             {!! $currencies->render() !!}
         </div>
     </div>

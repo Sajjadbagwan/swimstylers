@@ -36,12 +36,12 @@ return [
     'providers' => [
         'customers' => [
             'driver' => 'eloquent',
-            'model' => Webkul\Customer\Models\Customer::class,
+            'model' => Swim\Customer\Models\Customer::class,
         ],
 
         'admins' => [
             'driver' => 'eloquent',
-            'model' => Webkul\User\Models\Admin::class,
+            'model' => Swim\User\Models\Admin::class,
         ]
     ],
 

@@ -1,18 +1,18 @@
 <?php
 
-namespace Webkul\Attribute\Repositories;
+namespace Swim\Attribute\Repositories;
 
-use Webkul\Core\Eloquent\Repository;
+use Swim\Core\Eloquent\Repository;
 use Illuminate\Support\Facades\Event;
-use Webkul\Attribute\Repositories\AttributeOptionRepository;
+use Swim\Attribute\Repositories\AttributeOptionRepository;
 use Illuminate\Container\Container as App;
 use Illuminate\Support\Str;
 
 /**
  * Attribute Reposotory
  *
- * @author    Jitendra Singh <jitendra@webkul.com>
- * @copyright 2018 Webkul Software Pvt Ltd (http://www.webkul.com)
+ * @author    Jitendra Singh <jitendra@Swim.com>
+ * @copyright 2018 Swim Software Pvt Ltd (http://www.Swim.com)
  */
 class AttributeRepository extends Repository
 {
@@ -26,7 +26,7 @@ class AttributeRepository extends Repository
     /**
      * Create a new repository instance.
      *
-     * @param  Webkul\Attribute\Repositories\AttributeOptionRepository  $attributeOptionRepository
+     * @param  Swim\Attribute\Repositories\AttributeOptionRepository  $attributeOptionRepository
      * @return void
      */
     public function __construct(
@@ -46,7 +46,7 @@ class AttributeRepository extends Repository
      */
     function model()
     {
-        return 'Webkul\Attribute\Contracts\Attribute';
+        return 'Swim\Attribute\Contracts\Attribute';
     }
 
     /**

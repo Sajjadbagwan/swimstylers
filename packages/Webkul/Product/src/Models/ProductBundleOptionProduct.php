@@ -1,9 +1,9 @@
 <?php
 
-namespace Webkul\Product\Models;
+namespace Swim\Product\Models;
 
 use Illuminate\Database\Eloquent\Model;
-use Webkul\Product\Contracts\ProductBundleOptionProduct as ProductBundleOptionProductContract;
+use Swim\Product\Contracts\ProductBundleOptionProduct as ProductBundleOptionProductContract;
 
 class ProductBundleOptionProduct extends Model implements ProductBundleOptionProductContract
 {

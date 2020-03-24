@@ -12,7 +12,7 @@
     <meta http-equiv="content-language" content="{{ app()->getLocale() }}">
 
     <link rel="stylesheet" href="{{ bagisto_asset('css/shop.css') }}">
-    <link rel="stylesheet" href="{{ asset('vendor/webkul/ui/assets/css/ui.css') }}">
+    <link rel="stylesheet" href="{{ asset('vendor/Swim/ui/assets/css/ui.css') }}">
 
     @if ($favicon = core()->getCurrentChannel()->favicon_url)
         <link rel="icon" sizes="16x16" href="{{ $favicon }}" />
@@ -107,7 +107,7 @@
     </script>
 
     <script type="text/javascript" src="{{ bagisto_asset('js/shop.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('vendor/webkul/ui/assets/js/ui.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('vendor/Swim/ui/assets/js/ui.js') }}"></script>
 
     @stack('scripts')
 

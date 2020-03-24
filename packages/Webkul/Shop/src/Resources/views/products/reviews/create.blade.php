@@ -10,7 +10,7 @@
 
         <div class="review-layouter mb-20">
             <div class="product-info">
-                @inject ('productImageHelper', 'Webkul\Product\Helpers\ProductImage')
+                @inject ('productImageHelper', 'Swim\Product\Helpers\ProductImage')
 
                 <?php $productBaseImage = $productImageHelper->getProductBaseImage($product); ?>
 

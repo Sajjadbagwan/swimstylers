@@ -1,10 +1,10 @@
 <?php
 
-namespace Webkul\Sales\Models;
+namespace Swim\Sales\Models;
 
 use Illuminate\Database\Eloquent\Model;
-use Webkul\Inventory\Models\InventorySource;
-use Webkul\Sales\Contracts\Shipment as ShipmentContract;
+use Swim\Inventory\Models\InventorySource;
+use Swim\Sales\Contracts\Shipment as ShipmentContract;
 
 class Shipment extends Model implements ShipmentContract
 {

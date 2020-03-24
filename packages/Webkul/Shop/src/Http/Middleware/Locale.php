@@ -1,8 +1,8 @@
 <?php
 
-namespace Webkul\Shop\Http\Middleware;
+namespace Swim\Shop\Http\Middleware;
 
-use Webkul\Core\Repositories\LocaleRepository;
+use Swim\Core\Repositories\LocaleRepository;
 use Closure;
 
 class Locale
@@ -13,7 +13,7 @@ class Locale
     protected $locale;
 
     /**
-     * @param \Webkul\Core\Repositories\LocaleRepository $locale
+     * @param \Swim\Core\Repositories\LocaleRepository $locale
      */
     public function __construct(LocaleRepository $locale)
     {

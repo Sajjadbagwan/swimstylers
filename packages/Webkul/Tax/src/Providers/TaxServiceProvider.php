@@ -1,5 +1,5 @@
 <?php
-namespace Webkul\Tax\Providers;
+namespace Swim\Tax\Providers;
 
 use Illuminate\Support\ServiceProvider;
 

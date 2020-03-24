@@ -1,9 +1,9 @@
 <?php
 
-namespace Webkul\Product\Models;
+namespace Swim\Product\Models;
 
 use Illuminate\Database\Eloquent\Model;
-use Webkul\Product\Contracts\ProductGroupedProduct as ProductGroupedProductContract;
+use Swim\Product\Contracts\ProductGroupedProduct as ProductGroupedProductContract;
 
 class ProductGroupedProduct extends Model implements ProductGroupedProductContract
 {

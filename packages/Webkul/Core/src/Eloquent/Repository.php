@@ -1,6 +1,6 @@
 <?php
 
-namespace Webkul\Core\Eloquent;
+namespace Swim\Core\Eloquent;
 
 use Prettus\Repository\Eloquent\BaseRepository;
 use Illuminate\Database\Eloquent\Model;
@@ -9,8 +9,8 @@ use Illuminate\Container\Container as App;
 /**
  * Reposotory
  *
- * @author    Jitendra Singh <jitendra@webkul.com>
- * @copyright 2018 Webkul Software Pvt Ltd (http://www.webkul.com)
+ * @author    Jitendra Singh <jitendra@Swim.com>
+ * @copyright 2018 Swim Software Pvt Ltd (http://www.Swim.com)
  */
 abstract class Repository extends BaseRepository {
 

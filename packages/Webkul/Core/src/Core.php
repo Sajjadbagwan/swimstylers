@@ -1,16 +1,16 @@
 <?php
 
-namespace Webkul\Core;
+namespace Swim\Core;
 
 use Carbon\Carbon;
-use Webkul\Core\Models\Channel;
-use Webkul\Core\Repositories\CurrencyRepository;
-use Webkul\Core\Repositories\ExchangeRateRepository;
-use Webkul\Core\Repositories\CountryRepository;
-use Webkul\Core\Repositories\CountryStateRepository;
-use Webkul\Core\Repositories\ChannelRepository;
-use Webkul\Core\Repositories\LocaleRepository;
-use Webkul\Core\Repositories\CoreConfigRepository;
+use Swim\Core\Models\Channel;
+use Swim\Core\Repositories\CurrencyRepository;
+use Swim\Core\Repositories\ExchangeRateRepository;
+use Swim\Core\Repositories\CountryRepository;
+use Swim\Core\Repositories\CountryStateRepository;
+use Swim\Core\Repositories\ChannelRepository;
+use Swim\Core\Repositories\LocaleRepository;
+use Swim\Core\Repositories\CoreConfigRepository;
 use Illuminate\Support\Facades\Config;
 
 class Core
@@ -67,13 +67,13 @@ class Core
     /**
      * Create a new instance.
      *
-     * @param Webkul\Core\Repositories\ChannelRepository      $channelRepository
-     * @param Webkul\Core\Repositories\CurrencyRepository     $currencyRepository
-     * @param Webkul\Core\Repositories\ExchangeRateRepository $exchangeRateRepository
-     * @param Webkul\Core\Repositories\CountryRepository      $countryRepository
-     * @param Webkul\Core\Repositories\CountryStateRepository $countryStateRepository
-     * @param Webkul\Core\Repositories\LocaleRepository       $localeRepository
-     * @param Webkul\Core\Repositories\CoreConfigRepository   $coreConfigRepository
+     * @param Swim\Core\Repositories\ChannelRepository      $channelRepository
+     * @param Swim\Core\Repositories\CurrencyRepository     $currencyRepository
+     * @param Swim\Core\Repositories\ExchangeRateRepository $exchangeRateRepository
+     * @param Swim\Core\Repositories\CountryRepository      $countryRepository
+     * @param Swim\Core\Repositories\CountryStateRepository $countryStateRepository
+     * @param Swim\Core\Repositories\LocaleRepository       $localeRepository
+     * @param Swim\Core\Repositories\CoreConfigRepository   $coreConfigRepository
      *
      * @return void
      */

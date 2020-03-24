@@ -104,7 +104,7 @@
                                 <span class="control-error" v-if="errors.has('admin_name')">@{{ errors.first('admin_name') }}</span>
                             </div>
 
-                            @foreach (app('Webkul\Core\Repositories\LocaleRepository')->all() as $locale)
+                            @foreach (app('Swim\Core\Repositories\LocaleRepository')->all() as $locale)
 
                                 <div class="control-group">
                                     <label for="locale-{{ $locale->code }}">{{ $locale->name . ' (' . $locale->code . ')' }}</label>
@@ -333,7 +333,7 @@
 
                             <th>{{ __('admin::app.catalog.attributes.admin_name') }}</th>
 
-                            @foreach (app('Webkul\Core\Repositories\LocaleRepository')->all() as $locale)
+                            @foreach (app('Swim\Core\Repositories\LocaleRepository')->all() as $locale)
 
                                 <th>{{ $locale->name . ' (' . $locale->code . ')' }}</th>
 
@@ -364,7 +364,7 @@
                                 </div>
                             </td>
 
-                            @foreach (app('Webkul\Core\Repositories\LocaleRepository')->all() as $locale)
+                            @foreach (app('Swim\Core\Repositories\LocaleRepository')->all() as $locale)
                                 <td>
                                     <div class="control-group" :class="[errors.has(localeInputName(row, '{{ $locale->code }}')) ? 'has-error' : '']">
                                         <input type="text" v-validate="getOptionValidation(row, '{{ $locale->code }}')" v-model="row['{{ $locale->code }}']" :name="localeInputName(row, '{{ $locale->code }}')" class="control" data-vv-as="&quot;{{ $locale->name . ' (' . $locale->code . ')' }}&quot;"/>
@@ -431,7 +431,7 @@
                         row['notRequired'] = true;
                     @endif
 
-                    @foreach (app('Webkul\Core\Repositories\LocaleRepository')->all() as $locale)
+                    @foreach (app('Swim\Core\Repositories\LocaleRepository')->all() as $locale)
                         row['{{ $locale->code }}'] = "{{ $option->translate($locale->code)['label'] ?? '' }}";
                     @endforeach
 
@@ -455,7 +455,7 @@
                     const id = 'option_' + rowCount;
                     let row = {'id': id};
 
-                    @foreach (app('Webkul\Core\Repositories\LocaleRepository')->all() as $locale)
+                    @foreach (app('Swim\Core\Repositories\LocaleRepository')->all() as $locale)
                         row['{{ $locale->code }}'] = '';
                     @endforeach
 

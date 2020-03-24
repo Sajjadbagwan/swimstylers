@@ -1,15 +1,15 @@
 <?php
 
-namespace Webkul\Attribute\Http\Controllers;
+namespace Swim\Attribute\Http\Controllers;
 
-use Webkul\Attribute\Repositories\AttributeFamilyRepository;
-use Webkul\Attribute\Repositories\AttributeRepository;
+use Swim\Attribute\Repositories\AttributeFamilyRepository;
+use Swim\Attribute\Repositories\AttributeRepository;
 
 /**
  * Catalog family controller
  *
- * @author    Jitendra Singh <jitendra@webkul.com>
- * @copyright 2018 Webkul Software Pvt Ltd (http://www.webkul.com)
+ * @author    Jitendra Singh <jitendra@Swim.com>
+ * @copyright 2018 Swim Software Pvt Ltd (http://www.Swim.com)
  */
 class AttributeFamilyController extends Controller
 {
@@ -37,8 +37,8 @@ class AttributeFamilyController extends Controller
     /**
      * Create a new controller instance.
      *
-     * @param  \Webkul\Attribute\Repositories\AttributeFamilyRepository $attributeFamilyRepository
-     * @param  \Webkul\Attribute\Repositories\AttributeRepository       $attributeRepository
+     * @param  \Swim\Attribute\Repositories\AttributeFamilyRepository $attributeFamilyRepository
+     * @param  \Swim\Attribute\Repositories\AttributeRepository       $attributeRepository
      * @return void
      */
     public function __construct(
@@ -85,7 +85,7 @@ class AttributeFamilyController extends Controller
     public function store()
     {
         $this->validate(request(), [
-            'code' => ['required', 'unique:attribute_families,code', new \Webkul\Core\Contracts\Validations\Code],
+            'code' => ['required', 'unique:attribute_families,code', new \Swim\Core\Contracts\Validations\Code],
             'name' => 'required'
         ]);
 
@@ -120,7 +120,7 @@ class AttributeFamilyController extends Controller
     public function update($id)
     {
         $this->validate(request(), [
-            'code' => ['required', 'unique:attribute_families,code,' . $id, new \Webkul\Core\Contracts\Validations\Code],
+            'code' => ['required', 'unique:attribute_families,code,' . $id, new \Swim\Core\Contracts\Validations\Code],
             'name' => 'required'
         ]);
 

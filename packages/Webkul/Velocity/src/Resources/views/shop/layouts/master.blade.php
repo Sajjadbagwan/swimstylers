@@ -70,7 +70,7 @@
 
                     <div class="main-content-wrapper col-12 no-padding">
                         @php
-                            $velocityContent = app('Webkul\Velocity\Repositories\ContentRepository')->getAllContents();
+                            $velocityContent = app('Swim\Velocity\Repositories\ContentRepository')->getAllContents();
                         @endphp
 
                         <content-header
@@ -177,13 +177,13 @@
                     @endif
                 @endif
 
-                window._translations = @json(app('Webkul\Velocity\Helpers\Helper')->jsonTranslations());
+                window._translations = @json(app('Swim\Velocity\Helpers\Helper')->jsonTranslations());
             })();
         </script>
 
         <script
             type="text/javascript"
-            src="{{ asset('vendor/webkul/ui/assets/js/ui.js') }}">
+            src="{{ asset('vendor/Swim/ui/assets/js/ui.js') }}">
         </script>
 
         @stack('scripts')

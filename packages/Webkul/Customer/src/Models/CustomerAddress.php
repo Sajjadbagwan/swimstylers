@@ -1,9 +1,9 @@
 <?php
 
-namespace Webkul\Customer\Models;
+namespace Swim\Customer\Models;
 
 use Illuminate\Database\Eloquent\Model;
-use Webkul\Customer\Contracts\CustomerAddress as CustomerAddressContract;
+use Swim\Customer\Contracts\CustomerAddress as CustomerAddressContract;
 
 class CustomerAddress extends Model implements CustomerAddressContract
 {

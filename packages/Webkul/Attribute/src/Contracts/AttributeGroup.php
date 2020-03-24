@@ -1,6 +1,6 @@
 <?php
 
-namespace Webkul\Attribute\Contracts;
+namespace Swim\Attribute\Contracts;
 
 interface AttributeGroup
 {

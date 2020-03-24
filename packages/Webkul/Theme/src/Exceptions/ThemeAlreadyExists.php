@@ -1,6 +1,6 @@
 <?php 
 
-namespace Webkul\Theme\Exceptions;
+namespace Swim\Theme\Exceptions;
 
 class ThemeAlreadyExists extends \Exception {
 

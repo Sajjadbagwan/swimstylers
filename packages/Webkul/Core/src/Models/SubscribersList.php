@@ -1,9 +1,9 @@
 <?php
 
-namespace Webkul\Core\Models;
+namespace Swim\Core\Models;
 
 use Illuminate\Database\Eloquent\Model;
-use Webkul\Core\Contracts\SubscribersList as SubscribersListContract;
+use Swim\Core\Contracts\SubscribersList as SubscribersListContract;
 
 class SubscribersList extends Model implements SubscribersListContract
 {

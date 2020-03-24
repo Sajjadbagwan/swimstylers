@@ -1,7 +1,7 @@
-@if (Webkul\Product\Helpers\ProductType::hasVariants($product->type))
+@if (Swim\Product\Helpers\ProductType::hasVariants($product->type))
 
-    @inject ('configurableOptionHelper', 'Webkul\Product\Helpers\ConfigurableOption')
-    @inject ('productImageHelper', 'Webkul\Product\Helpers\ProductImage')
+    @inject ('configurableOptionHelper', 'Swim\Product\Helpers\ConfigurableOption')
+    @inject ('productImageHelper', 'Swim\Product\Helpers\ProductImage')
 
     @php
         $config = $configurableOptionHelper->getConfigurationConfig($product);

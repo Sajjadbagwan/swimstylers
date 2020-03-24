@@ -1,12 +1,12 @@
 <?php
 
-namespace Webkul\Core\Models;
+namespace Swim\Core\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Storage;
-use Webkul\Category\Models\CategoryProxy;
-use Webkul\Inventory\Models\InventorySourceProxy;
-use Webkul\Core\Contracts\Channel as ChannelContract;
+use Swim\Category\Models\CategoryProxy;
+use Swim\Inventory\Models\InventorySourceProxy;
+use Swim\Core\Contracts\Channel as ChannelContract;
 
 class Channel extends Model implements ChannelContract
 {

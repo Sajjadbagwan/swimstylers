@@ -1475,22 +1475,22 @@
         },
         {
             "name": "konekt/concord",
-            "version": "1.5.0",
+            "version": "1.5.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/artkonekt/concord.git",
-                "reference": "2d9f7080c35636c0c7b94bb614d1e50942088061"
+                "reference": "e01b5f6c8e0935762ce1dfbd1fb9dd044563277c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/artkonekt/concord/zipball/2d9f7080c35636c0c7b94bb614d1e50942088061",
-                "reference": "2d9f7080c35636c0c7b94bb614d1e50942088061",
+                "url": "https://api.github.com/repos/artkonekt/concord/zipball/e01b5f6c8e0935762ce1dfbd1fb9dd044563277c",
+                "reference": "e01b5f6c8e0935762ce1dfbd1fb9dd044563277c",
                 "shasum": ""
             },
             "require": {
                 "illuminate/console": "~5.5|~6.0|~7.0",
                 "illuminate/support": "~5.5|~6.0|~7.0",
-                "konekt/enum": "~2.1",
+                "konekt/enum": "~2.1|~3.0",
                 "konekt/enum-eloquent": "^1.3.1",
                 "php": "^7.2"
             },
@@ -1532,27 +1532,27 @@
                 }
             ],
             "description": "Concord is a Laravel Extension for building modular Laravel Applications",
-            "time": "2020-03-13T16:50:52+00:00"
+            "time": "2020-03-19T16:34:23+00:00"
         },
         {
             "name": "konekt/enum",
-            "version": "2.3.0",
+            "version": "3.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/artkonekt/enum.git",
-                "reference": "e05d1bccfb77e54b74ad4e3d3bd9d662c62316d7"
+                "reference": "34e770b69bc8a1713c3845dbfa51e389118b9a56"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/artkonekt/enum/zipball/e05d1bccfb77e54b74ad4e3d3bd9d662c62316d7",
-                "reference": "e05d1bccfb77e54b74ad4e3d3bd9d662c62316d7",
+                "url": "https://api.github.com/repos/artkonekt/enum/zipball/34e770b69bc8a1713c3845dbfa51e389118b9a56",
+                "reference": "34e770b69bc8a1713c3845dbfa51e389118b9a56",
                 "shasum": ""
             },
             "require": {
-                "php": ">=7.0.0"
+                "php": "^7.1.3"
             },
             "require-dev": {
-                "phpunit/phpunit": "6.2 - 8"
+                "phpunit/phpunit": "7 - 8"
             },
             "type": "library",
             "autoload": {
@@ -1576,7 +1576,7 @@
                 "enum",
                 "konekt"
             ],
-            "time": "2019-06-25T17:08:18+00:00"
+            "time": "2019-06-24T20:39:03+00:00"
         },
         {
             "name": "konekt/enum-eloquent",
@@ -1648,16 +1648,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v6.18.1",
+            "version": "v6.18.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "367c2c8dfdfe83cb2ddbc029c0222174098d093a"
+                "reference": "9425a2f410d05d5bba493f62cff03854a8b19559"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/367c2c8dfdfe83cb2ddbc029c0222174098d093a",
-                "reference": "367c2c8dfdfe83cb2ddbc029c0222174098d093a",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/9425a2f410d05d5bba493f62cff03854a8b19559",
+                "reference": "9425a2f410d05d5bba493f62cff03854a8b19559",
                 "shasum": ""
             },
             "require": {
@@ -1742,7 +1742,7 @@
                 "ext-memcached": "Required to use the memcache cache driver.",
                 "ext-pcntl": "Required to use all features of the queue worker.",
                 "ext-posix": "Required to use all features of the queue worker.",
-                "ext-redis": "Required to use the Redis cache and queue drivers.",
+                "ext-redis": "Required to use the Redis cache and queue drivers (^4.0|^5.0).",
                 "filp/whoops": "Required for friendly error pages in development (^2.4).",
                 "fzaninotto/faker": "Required to use the eloquent factory builder (^1.9.1).",
                 "guzzlehttp/guzzle": "Required to use the Mailgun mail driver and the ping methods on schedules (^6.0|^7.0).",
@@ -1790,7 +1790,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2020-03-10T14:11:04+00:00"
+            "time": "2020-03-17T17:08:02+00:00"
         },
         {
             "name": "laravel/helpers",
@@ -2053,16 +2053,16 @@
         },
         {
             "name": "league/flysystem",
-            "version": "1.0.65",
+            "version": "1.0.66",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/flysystem.git",
-                "reference": "8f17b3ba67097aafb8318cd5c553b1acf7c891c8"
+                "reference": "021569195e15f8209b1c4bebb78bd66aa4f08c21"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/8f17b3ba67097aafb8318cd5c553b1acf7c891c8",
-                "reference": "8f17b3ba67097aafb8318cd5c553b1acf7c891c8",
+                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/021569195e15f8209b1c4bebb78bd66aa4f08c21",
+                "reference": "021569195e15f8209b1c4bebb78bd66aa4f08c21",
                 "shasum": ""
             },
             "require": {
@@ -2135,15 +2135,11 @@
             ],
             "funding": [
                 {
-                    "url": "https://github.com/frankdejonge",
-                    "type": "github"
-                },
-                {
-                    "url": "https://tidelift.com/funding/github/packagist/league/flysystem",
-                    "type": "tidelift"
+                    "url": "https://offset.earth/frankdejonge",
+                    "type": "other"
                 }
             ],
-            "time": "2020-03-08T18:53:20+00:00"
+            "time": "2020-03-17T18:58:12+00:00"
         },
         {
             "name": "maatwebsite/excel",
@@ -3061,20 +3057,20 @@
         },
         {
             "name": "phpoption/phpoption",
-            "version": "1.7.2",
+            "version": "1.7.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmittjoh/php-option.git",
-                "reference": "77f7c4d2e65413aff5b5a8cc8b3caf7a28d81959"
+                "reference": "4acfd6a4b33a509d8c88f50e5222f734b6aeebae"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmittjoh/php-option/zipball/77f7c4d2e65413aff5b5a8cc8b3caf7a28d81959",
-                "reference": "77f7c4d2e65413aff5b5a8cc8b3caf7a28d81959",
+                "url": "https://api.github.com/repos/schmittjoh/php-option/zipball/4acfd6a4b33a509d8c88f50e5222f734b6aeebae",
+                "reference": "4acfd6a4b33a509d8c88f50e5222f734b6aeebae",
                 "shasum": ""
             },
             "require": {
-                "php": "^5.5.9 || ^7.0"
+                "php": "^5.5.9 || ^7.0 || ^8.0"
             },
             "require-dev": {
                 "bamarni/composer-bin-plugin": "^1.3",
@@ -3112,7 +3108,7 @@
                 "php",
                 "type"
             ],
-            "time": "2019-12-15T19:35:24+00:00"
+            "time": "2020-03-21T18:07:53+00:00"
         },
         {
             "name": "prettus/l5-repository",
@@ -5513,16 +5509,16 @@
     "packages-dev": [
         {
             "name": "behat/gherkin",
-            "version": "v4.6.1",
+            "version": "v4.6.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Behat/Gherkin.git",
-                "reference": "25bdcaf37898b4a939fa3031d5d753ced97e4759"
+                "reference": "51ac4500c4dc30cbaaabcd2f25694299df666a31"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Behat/Gherkin/zipball/25bdcaf37898b4a939fa3031d5d753ced97e4759",
-                "reference": "25bdcaf37898b4a939fa3031d5d753ced97e4759",
+                "url": "https://api.github.com/repos/Behat/Gherkin/zipball/51ac4500c4dc30cbaaabcd2f25694299df666a31",
+                "reference": "51ac4500c4dc30cbaaabcd2f25694299df666a31",
                 "shasum": ""
             },
             "require": {
@@ -5568,20 +5564,20 @@
                 "gherkin",
                 "parser"
             ],
-            "time": "2020-02-27T11:29:57+00:00"
+            "time": "2020-03-17T14:03:26+00:00"
         },
         {
             "name": "codeception/codeception",
-            "version": "4.1.2",
+            "version": "4.1.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Codeception/Codeception.git",
-                "reference": "35224380f3033bd1778765fe3f114e8d1bc9a9dc"
+                "reference": "55d8d1d882fa0777e47de17b04c29b3c50fe29e7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Codeception/Codeception/zipball/35224380f3033bd1778765fe3f114e8d1bc9a9dc",
-                "reference": "35224380f3033bd1778765fe3f114e8d1bc9a9dc",
+                "url": "https://api.github.com/repos/Codeception/Codeception/zipball/55d8d1d882fa0777e47de17b04c29b3c50fe29e7",
+                "reference": "55d8d1d882fa0777e47de17b04c29b3c50fe29e7",
                 "shasum": ""
             },
             "require": {
@@ -5659,7 +5655,7 @@
                     "type": "open_collective"
                 }
             ],
-            "time": "2020-03-14T16:36:25+00:00"
+            "time": "2020-03-23T17:07:20+00:00"
         },
         {
             "name": "codeception/lib-asserts",
@@ -6153,16 +6149,16 @@
         },
         {
             "name": "laravel/dusk",
-            "version": "v5.9.2",
+            "version": "v5.10.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/dusk.git",
-                "reference": "7abf5a7152863f8597a43d640cce3adb6cd8ab3f"
+                "reference": "38776592d7c427a10eff69b15ba911f629a69ed8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/dusk/zipball/7abf5a7152863f8597a43d640cce3adb6cd8ab3f",
-                "reference": "7abf5a7152863f8597a43d640cce3adb6cd8ab3f",
+                "url": "https://api.github.com/repos/laravel/dusk/zipball/38776592d7c427a10eff69b15ba911f629a69ed8",
+                "reference": "38776592d7c427a10eff69b15ba911f629a69ed8",
                 "shasum": ""
             },
             "require": {
@@ -6217,7 +6213,7 @@
                 "testing",
                 "webdriver"
             ],
-            "time": "2020-02-18T19:13:12+00:00"
+            "time": "2020-03-17T17:00:25+00:00"
         },
         {
             "name": "mockery/mockery",

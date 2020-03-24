@@ -26,7 +26,7 @@
         </div>
 
         <div class="page-content">
-            @inject('cmsGrid', 'Webkul\Admin\DataGrids\CMSPageDataGrid')
+            @inject('cmsGrid', 'Swim\Admin\DataGrids\CMSPageDataGrid')
 
             {!! $cmsGrid->render() !!}
         </div>

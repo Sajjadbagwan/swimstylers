@@ -1,6 +1,6 @@
 <?php
 
-namespace Webkul\Core\Contracts\Validations;
+namespace Swim\Core\Contracts\Validations;
 
 use Illuminate\Contracts\Validation\Rule;
 

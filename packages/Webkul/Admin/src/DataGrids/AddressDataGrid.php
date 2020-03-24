@@ -1,16 +1,16 @@
 <?php
 
-namespace Webkul\Admin\DataGrids;
+namespace Swim\Admin\DataGrids;
 
 use DB;
-use Webkul\Ui\DataGrid\DataGrid;
-use Webkul\Customer\Repositories\CustomerRepository as Customer;
+use Swim\Ui\DataGrid\DataGrid;
+use Swim\Customer\Repositories\CustomerRepository as Customer;
 
 /**
  * Address Data Grid class
  *
- * @author Vivek Sharma <viveksh047@webkul.com>
- * @copyright 2019 Webkul Software Pvt Ltd (http://www.webkul.com)
+ * @author Vivek Sharma <viveksh047@Swim.com>
+ * @copyright 2019 Swim Software Pvt Ltd (http://www.Swim.com)
  */
 class AddressDataGrid extends DataGrid
 {
@@ -32,7 +32,7 @@ class AddressDataGrid extends DataGrid
     /**
      * Create a new controller instance.
      *
-     * @param  Webkul\Customer\Repositories\CustomerRepository  $customer
+     * @param  Swim\Customer\Repositories\CustomerRepository  $customer
      * @return void
      */
     public function __construct(

@@ -1,15 +1,15 @@
 <?php
 
-namespace Webkul\Shop\Http\Controllers;
+namespace Swim\Shop\Http\Controllers;
 
-use Webkul\Shop\Http\Controllers\Controller;
-use Webkul\Core\Repositories\SliderRepository;
+use Swim\Shop\Http\Controllers\Controller;
+use Swim\Core\Repositories\SliderRepository;
 
 /**
  * Home page controller
  *
- * @author    Prashant Singh <prashant.singh852@webkul.com> @prashant-webkul
- * @copyright 2018 Webkul Software Pvt Ltd (http://www.webkul.com)
+ * @author    Prashant Singh <prashant.singh852@Swim.com> @prashant-Swim
+ * @copyright 2018 Swim Software Pvt Ltd (http://www.Swim.com)
  */
  class HomeController extends Controller
 {
@@ -23,7 +23,7 @@ use Webkul\Core\Repositories\SliderRepository;
     /**
      * Create a new controller instance.
      *
-     * @param  \Webkul\Core\Repositories\SliderRepository $sliderRepository
+     * @param  \Swim\Core\Repositories\SliderRepository $sliderRepository
      * @return void
     */
     public function __construct(SliderRepository $sliderRepository)

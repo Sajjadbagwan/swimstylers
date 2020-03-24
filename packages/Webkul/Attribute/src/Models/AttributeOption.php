@@ -1,10 +1,10 @@
 <?php
 
-namespace Webkul\Attribute\Models;
+namespace Swim\Attribute\Models;
 
 use Illuminate\Support\Facades\Storage;
-use Webkul\Core\Eloquent\TranslatableModel;
-use Webkul\Attribute\Contracts\AttributeOption as AttributeOptionContract;
+use Swim\Core\Eloquent\TranslatableModel;
+use Swim\Attribute\Contracts\AttributeOption as AttributeOptionContract;
 
 class AttributeOption extends TranslatableModel implements AttributeOptionContract
 {

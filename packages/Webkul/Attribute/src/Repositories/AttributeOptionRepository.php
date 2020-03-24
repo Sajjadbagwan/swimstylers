@@ -1,14 +1,14 @@
 <?php
 
-namespace Webkul\Attribute\Repositories;
+namespace Swim\Attribute\Repositories;
 
-use Webkul\Core\Eloquent\Repository;
+use Swim\Core\Eloquent\Repository;
 
 /**
  * Attribute Option Reposotory
  *
- * @author    Jitendra Singh <jitendra@webkul.com>
- * @copyright 2018 Webkul Software Pvt Ltd (http://www.webkul.com)
+ * @author    Jitendra Singh <jitendra@Swim.com>
+ * @copyright 2018 Swim Software Pvt Ltd (http://www.Swim.com)
  */
 class AttributeOptionRepository extends Repository
 {
@@ -20,7 +20,7 @@ class AttributeOptionRepository extends Repository
      */
     function model()
     {
-        return 'Webkul\Attribute\Contracts\AttributeOption';
+        return 'Swim\Attribute\Contracts\AttributeOption';
     }
 
     /**

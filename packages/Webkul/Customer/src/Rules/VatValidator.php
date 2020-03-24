@@ -1,6 +1,6 @@
 <?php
 
-namespace Webkul\Customer\Rules;
+namespace Swim\Customer\Rules;
 
 /**
  * Class VatValidator
@@ -10,7 +10,7 @@ namespace Webkul\Customer\Rules;
  * @see     https://raw.githubusercontent.com/danielebarbaro/laravel-vat-eu-validator
  *
  * @package Danielebarbaro\LaravelVatEuValidator
- * @author  Vivek Sharma <viveksh047@webkul.com> @vivek-webkul
+ * @author  Vivek Sharma <viveksh047@Swim.com> @vivek-Swim
  */
 class VatValidator
 {

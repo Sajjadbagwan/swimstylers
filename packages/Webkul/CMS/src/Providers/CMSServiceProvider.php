@@ -1,9 +1,9 @@
 <?php
 
-namespace Webkul\CMS\Providers;
+namespace Swim\CMS\Providers;
 
 use Illuminate\Support\ServiceProvider;
-use Webkul\CMS\Providers\ModuleServiceProvider;
+use Swim\CMS\Providers\ModuleServiceProvider;
 
 class CMSServiceProvider extends ServiceProvider
 {

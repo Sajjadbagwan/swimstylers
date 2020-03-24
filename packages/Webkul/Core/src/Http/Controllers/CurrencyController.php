@@ -1,15 +1,15 @@
 <?php
 
-namespace Webkul\Core\Http\Controllers;
+namespace Swim\Core\Http\Controllers;
 
 use Illuminate\Support\Facades\Event;
-use Webkul\Core\Repositories\CurrencyRepository;
+use Swim\Core\Repositories\CurrencyRepository;
 
 /**
  * Currency controller
  *
- * @author    Jitendra Singh <jitendra@webkul.com>
- * @copyright 2018 Webkul Software Pvt Ltd (http://www.webkul.com)
+ * @author    Jitendra Singh <jitendra@Swim.com>
+ * @copyright 2018 Swim Software Pvt Ltd (http://www.Swim.com)
  */
 class CurrencyController extends Controller
 {
@@ -30,7 +30,7 @@ class CurrencyController extends Controller
     /**
      * Create a new controller instance.
      *
-     * @param  \Webkul\Core\Repositories\CurrencyRepository $currencyRepository
+     * @param  \Swim\Core\Repositories\CurrencyRepository $currencyRepository
      * @return void
      */
     public function __construct(CurrencyRepository $currencyRepository)
@@ -105,7 +105,7 @@ class CurrencyController extends Controller
     public function update($id)
     {
         $this->validate(request(), [
-            'code' => ['required', 'unique:currencies,code,' . $id, new \Webkul\Core\Contracts\Validations\Code],
+            'code' => ['required', 'unique:currencies,code,' . $id, new \Swim\Core\Contracts\Validations\Code],
             'name' => 'required'
         ]);
 

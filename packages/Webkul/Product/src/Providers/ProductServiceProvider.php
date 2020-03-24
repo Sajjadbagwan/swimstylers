@@ -1,12 +1,12 @@
 <?php
 
-namespace Webkul\Product\Providers;
+namespace Swim\Product\Providers;
 
 use Illuminate\Database\Eloquent\Factory as EloquentFactory;
 use Illuminate\Support\ServiceProvider;
-use Webkul\Product\Models\ProductProxy;
-use Webkul\Product\Observers\ProductObserver;
-use Webkul\Product\Console\Commands\PriceUpdate;
+use Swim\Product\Models\ProductProxy;
+use Swim\Product\Observers\ProductObserver;
+use Swim\Product\Console\Commands\PriceUpdate;
 
 class ProductServiceProvider extends ServiceProvider
 {

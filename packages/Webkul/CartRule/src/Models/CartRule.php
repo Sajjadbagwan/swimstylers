@@ -1,12 +1,12 @@
 <?php
 
-namespace Webkul\CartRule\Models;
+namespace Swim\CartRule\Models;
 
-// use Webkul\Core\Eloquent\TranslatableModel;
+// use Swim\Core\Eloquent\TranslatableModel;
 use Illuminate\Database\Eloquent\Model;
-use Webkul\CartRule\Contracts\CartRule as CartRuleContract;
-use Webkul\Core\Models\ChannelProxy;
-use Webkul\Customer\Models\CustomerGroupProxy;
+use Swim\CartRule\Contracts\CartRule as CartRuleContract;
+use Swim\Core\Models\ChannelProxy;
+use Swim\Customer\Models\CustomerGroupProxy;
 
 // class CartRule extends TranslatableModel implements CartRuleContract
 class CartRule extends Model implements CartRuleContract

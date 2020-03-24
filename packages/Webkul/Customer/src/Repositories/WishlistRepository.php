@@ -1,14 +1,14 @@
 <?php
 
-namespace Webkul\Customer\Repositories;
+namespace Swim\Customer\Repositories;
 
-use Webkul\Core\Eloquent\Repository;
+use Swim\Core\Eloquent\Repository;
 
 /**
  * Wishlist Reposotory
  *
- * @author    Prashant Singh <prashant.singh852@webkul.com>
- * @copyright 2018 Webkul Software Pvt Ltd (http://www.webkul.com)
+ * @author    Prashant Singh <prashant.singh852@Swim.com>
+ * @copyright 2018 Swim Software Pvt Ltd (http://www.Swim.com)
  */
 
 class WishlistRepository extends Repository
@@ -21,7 +21,7 @@ class WishlistRepository extends Repository
 
     function model()
     {
-        return 'Webkul\Customer\Contracts\Wishlist';
+        return 'Swim\Customer\Contracts\Wishlist';
     }
 
     /**

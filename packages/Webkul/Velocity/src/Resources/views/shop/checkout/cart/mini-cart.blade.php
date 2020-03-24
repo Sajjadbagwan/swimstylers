@@ -1,4 +1,4 @@
-@inject ('productImageHelper', 'Webkul\Product\Helpers\ProductImage')
+@inject ('productImageHelper', 'Swim\Product\Helpers\ProductImage')
 
 @php
     $cart = cart()->getCart();

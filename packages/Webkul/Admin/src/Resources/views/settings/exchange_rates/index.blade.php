@@ -29,7 +29,7 @@
         </div>
 
         <div class="page-content">
-            @inject('exchange_rates','Webkul\Admin\DataGrids\ExchangeRatesDataGrid')
+            @inject('exchange_rates','Swim\Admin\DataGrids\ExchangeRatesDataGrid')
             {!! $exchange_rates->render() !!}
         </div>
     </div>

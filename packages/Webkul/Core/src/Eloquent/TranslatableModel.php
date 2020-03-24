@@ -1,11 +1,11 @@
 <?php
 
-namespace Webkul\Core\Eloquent;
+namespace Swim\Core\Eloquent;
 
 use Illuminate\Database\Eloquent\Model;
 use Astrotomic\Translatable\Translatable;
-use Webkul\Core\Models\Locale;
-use Webkul\Core\Helpers\Locales;
+use Swim\Core\Models\Locale;
+use Swim\Core\Helpers\Locales;
 
 class TranslatableModel extends Model
 {

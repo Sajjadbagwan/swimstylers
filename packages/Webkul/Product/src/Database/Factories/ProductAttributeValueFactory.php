@@ -3,9 +3,9 @@
 /** @var \Illuminate\Database\Eloquent\Factory $factory */
 
 use Faker\Generator as Faker;
-use Webkul\Product\Models\Product;
-use Webkul\Product\Models\ProductAttributeValue;
-use Webkul\Attribute\Models\AttributeOption;
+use Swim\Product\Models\Product;
+use Swim\Product\Models\ProductAttributeValue;
+use Swim\Attribute\Models\AttributeOption;
 
 $factory->defineAs(ProductAttributeValue::class, 'sku', function (Faker $faker) {
     return [

@@ -1,17 +1,17 @@
 <?php
 
-namespace Webkul\CartRule\Http\Controllers;
+namespace Swim\CartRule\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Event;
-use Webkul\CartRule\Repositories\CartRuleRepository;
-use Webkul\CartRule\Repositories\CartRuleCouponRepository;
+use Swim\CartRule\Repositories\CartRuleRepository;
+use Swim\CartRule\Repositories\CartRuleCouponRepository;
 
 /**
  * Cart Rule controller
  *
- * @author    Jitendra Singh <jitendra@webkul.com>
- * @copyright 2018 Webkul Software Pvt Ltd (http://www.webkul.com)
+ * @author    Jitendra Singh <jitendra@Swim.com>
+ * @copyright 2018 Swim Software Pvt Ltd (http://www.Swim.com)
  */
 class CartRuleController extends Controller
 {
@@ -39,8 +39,8 @@ class CartRuleController extends Controller
     /**
      * Create a new controller instance.
      *
-     * @param \Webkul\CartRule\Repositories\CartRuleRepository       $cartRuleRepository
-     * @param \Webkul\CartRule\Repositories\CartRuleCouponRepository $cartRuleCouponRepository
+     * @param \Swim\CartRule\Repositories\CartRuleRepository       $cartRuleRepository
+     * @param \Swim\CartRule\Repositories\CartRuleCouponRepository $cartRuleCouponRepository
      *
      * @return void
      */

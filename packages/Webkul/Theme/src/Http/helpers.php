@@ -1,6 +1,6 @@
 <?php
 
-use Webkul\Theme\ViewRenderEventManager;
+use Swim\Theme\ViewRenderEventManager;
 
 if (! function_exists('themes')) {
     function themes()

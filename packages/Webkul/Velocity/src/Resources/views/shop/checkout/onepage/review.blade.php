@@ -1,4 +1,4 @@
-@inject ('productImageHelper', 'Webkul\Product\Helpers\ProductImage')
+@inject ('productImageHelper', 'Swim\Product\Helpers\ProductImage')
 
 <div class="form-container review-checkout-conainer">
     <accordian :title="'{{ __('shop::app.checkout.onepage.summary') }}'" :active="true">

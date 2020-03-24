@@ -1,11 +1,11 @@
 <?php
 
-namespace Webkul\CatalogRule\Providers;
+namespace Swim\CatalogRule\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Routing\Router;
 use Illuminate\Support\Facades\Event;
-use Webkul\CatalogRule\Console\Commands\PriceRuleIndex;
+use Swim\CatalogRule\Console\Commands\PriceRuleIndex;
 
 class CatalogRuleServiceProvider extends ServiceProvider
 {
@@ -18,7 +18,7 @@ class CatalogRuleServiceProvider extends ServiceProvider
     {
         $this->loadMigrationsFrom(__DIR__ . '/../Database/Migrations');
 
-        Event::listen('catalog.product.update.after', 'Webkul\CatalogRule\Listeners\Product@createProductRuleIndex');
+        Event::listen('catalog.product.update.after', 'Swim\CatalogRule\Listeners\Product@createProductRuleIndex');
     }
 
     /**

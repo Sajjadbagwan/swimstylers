@@ -3,7 +3,7 @@
 /** @var \Illuminate\Database\Eloquent\Factory $factory */
 
 use Faker\Generator as Faker;
-use Webkul\Core\Models\SubscribersList;
+use Swim\Core\Models\SubscribersList;
 
 $factory->define(SubscribersList::class, function (Faker $faker) {
     return [

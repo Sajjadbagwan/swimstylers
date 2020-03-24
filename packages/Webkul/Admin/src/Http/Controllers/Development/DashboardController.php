@@ -1,14 +1,14 @@
 <?php
 
-namespace Webkul\Admin\Http\Controllers\Development;
+namespace Swim\Admin\Http\Controllers\Development;
 
-use Webkul\Admin\Http\Controllers\Controller;
+use Swim\Admin\Http\Controllers\Controller;
 
 /**
  * Dashboard controller
  *
  * @author    Alexey Khachatryan <info@khachatryan.org>
- * @copyright 2018 Webkul Software Pvt Ltd (http://www.webkul.com)
+ * @copyright 2018 Swim Software Pvt Ltd (http://www.Swim.com)
  */
 class DashboardController extends Controller
 {

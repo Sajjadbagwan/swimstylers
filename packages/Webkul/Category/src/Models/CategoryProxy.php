@@ -1,6 +1,6 @@
 <?php
 
-namespace Webkul\Category\Models;
+namespace Swim\Category\Models;
 
 use Konekt\Concord\Proxies\ModelProxy;
 

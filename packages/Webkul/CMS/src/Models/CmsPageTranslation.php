@@ -1,9 +1,9 @@
 <?php
 
-namespace Webkul\CMS\Models;
+namespace Swim\CMS\Models;
 
 use Illuminate\Database\Eloquent\Model;
-use Webkul\CMS\Contracts\CmsPageTranslation as CmsPageTranslationContract;
+use Swim\CMS\Contracts\CmsPageTranslation as CmsPageTranslationContract;
 
 class CmsPageTranslation extends Model implements CmsPageTranslationContract
 {

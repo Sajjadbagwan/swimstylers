@@ -1,19 +1,19 @@
 <?php
 
-namespace Webkul\User\Http\Controllers;
+namespace Swim\User\Http\Controllers;
 
 use Illuminate\Support\Str;
 use Illuminate\Support\Facades\Event;
-use Webkul\User\Repositories\AdminRepository;
-use Webkul\User\Repositories\RoleRepository;
-use Webkul\User\Http\Requests\UserForm;
+use Swim\User\Repositories\AdminRepository;
+use Swim\User\Repositories\RoleRepository;
+use Swim\User\Http\Requests\UserForm;
 use Hash;
 
 /**
  * Admin user controller
  *
- * @author    Jitendra Singh <jitendra@webkul.com>
- * @copyright 2018 Webkul Software Pvt Ltd (http://www.webkul.com)
+ * @author    Jitendra Singh <jitendra@Swim.com>
+ * @copyright 2018 Swim Software Pvt Ltd (http://www.Swim.com)
  */
 class UserController extends Controller
 {
@@ -41,8 +41,8 @@ class UserController extends Controller
     /**
      * Create a new controller instance.
      *
-     * @param  \Webkul\User\Repositories\AdminRepository $adminRepository
-     * @param  \Webkul\User\Repositories\RoleRepository $roleRepository
+     * @param  \Swim\User\Repositories\AdminRepository $adminRepository
+     * @param  \Swim\User\Repositories\RoleRepository $roleRepository
      * @return void
      */
     public function __construct(
@@ -84,7 +84,7 @@ class UserController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Webkul\User\Http\Requests\UserForm  $request
+     * @param  \Swim\User\Http\Requests\UserForm  $request
      * @return \Illuminate\Http\RedirectResponse
      */
     public function store(UserForm $request)
@@ -125,7 +125,7 @@ class UserController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Webkul\User\Http\Requests\UserForm  $request
+     * @param  \Swim\User\Http\Requests\UserForm  $request
      * @param  int  $id
      * @return \Illuminate\Http\RedirectResponse
      */

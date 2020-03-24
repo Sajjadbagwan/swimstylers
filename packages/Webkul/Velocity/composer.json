@@ -5,26 +5,26 @@
 
     "authors": [
         {
-            "name": "viveksharma-webkul",
-            "email": "viveksh047@webkul.com"
+            "name": "viveksharma-Swim",
+            "email": "viveksh047@Swim.com"
         },
         {
             "name": "Shubham Mehrotra",
-            "email": "shubhammehrotra.symfony@webkul.com"
+            "email": "shubhammehrotra.symfony@Swim.com"
         }
     ],
 
     "require": {},
     "autoload": {
         "psr-4": {
-            "Webkul\\Velocity\\": "src/"
+            "Swim\\Velocity\\": "src/"
         }
     },
 
     "extra": {
         "laravel": {
             "providers": [
-                "Webkul\\Velocity\\Providers\\VelocityServiceProvider"
+                "Swim\\Velocity\\Providers\\VelocityServiceProvider"
             ],
             "aliases": {}
         }

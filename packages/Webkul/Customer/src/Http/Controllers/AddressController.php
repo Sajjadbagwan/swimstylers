@@ -1,19 +1,19 @@
 <?php
 
-namespace Webkul\Customer\Http\Controllers;
+namespace Swim\Customer\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
-use Webkul\Customer\Repositories\CustomerAddressRepository;
-use Webkul\Customer\Rules\VatIdRule;
+use Swim\Customer\Repositories\CustomerAddressRepository;
+use Swim\Customer\Rules\VatIdRule;
 use Auth;
 
 /**
  * Customer controlller for the customer basically for the tasks of customers which will
  * be done after customer authenticastion.
  *
- * @author    Prashant Singh <prashant.singh852@webkul.com>
- * @copyright 2018 Webkul Software Pvt Ltd (http://www.webkul.com)
+ * @author    Prashant Singh <prashant.singh852@Swim.com>
+ * @copyright 2018 Swim Software Pvt Ltd (http://www.Swim.com)
  */
 class AddressController extends Controller
 {
@@ -27,7 +27,7 @@ class AddressController extends Controller
     /**
      * CustomerAddressRepository object
      *
-     * @param \Webkul\Customer\Repositories\CustomerAddressRepository $customerAddressRepository
+     * @param \Swim\Customer\Repositories\CustomerAddressRepository $customerAddressRepository
      *
      * @var Object
      */

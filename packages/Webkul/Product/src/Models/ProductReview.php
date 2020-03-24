@@ -1,11 +1,11 @@
 <?php
 
-namespace Webkul\Product\Models;
+namespace Swim\Product\Models;
 
 use Illuminate\Database\Eloquent\Model;
-use Webkul\Customer\Models\CustomerProxy;
-use Webkul\Product\Models\Product;
-use Webkul\Product\Contracts\ProductReview as ProductReviewContract;
+use Swim\Customer\Models\CustomerProxy;
+use Swim\Product\Models\Product;
+use Swim\Product\Contracts\ProductReview as ProductReviewContract;
 
 class ProductReview extends Model implements ProductReviewContract
 {

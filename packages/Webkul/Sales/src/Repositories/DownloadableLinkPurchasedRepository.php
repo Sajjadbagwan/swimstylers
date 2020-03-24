@@ -1,17 +1,17 @@
 <?php
 
-namespace Webkul\Sales\Repositories;
+namespace Swim\Sales\Repositories;
 
 use Illuminate\Container\Container as App;
-use Webkul\Core\Eloquent\Repository;
-use Webkul\Sales\Contracts\DownloadableLinkPurchased;
-use Webkul\Product\Repositories\ProductDownloadableLinkRepository;
+use Swim\Core\Eloquent\Repository;
+use Swim\Sales\Contracts\DownloadableLinkPurchased;
+use Swim\Product\Repositories\ProductDownloadableLinkRepository;
 
 /**
  * DownloadableLinkPurchased Reposotory
  *
- * @author    Jitendra Singh <jitendra@webkul.com>
- * @copyright 2018 Webkul Software Pvt Ltd (http://www.webkul.com)
+ * @author    Jitendra Singh <jitendra@Swim.com>
+ * @copyright 2018 Swim Software Pvt Ltd (http://www.Swim.com)
  */
 class DownloadableLinkPurchasedRepository extends Repository
 {
@@ -26,7 +26,7 @@ class DownloadableLinkPurchasedRepository extends Repository
     /**
      * Create a new repository instance.
      *
-     * @param  Webkul\Product\Repositories\ProductDownloadableLinkRepository $productDownloadableLinkRepository
+     * @param  Swim\Product\Repositories\ProductDownloadableLinkRepository $productDownloadableLinkRepository
      * @return void
      */
     public function __construct(
@@ -82,7 +82,7 @@ class DownloadableLinkPurchasedRepository extends Repository
     /**
      * Return true, if ordered item is valid downloadable product with links
      *
-     * @param mixed $orderItem Webkul\Sales\Models\OrderItem;
+     * @param mixed $orderItem Swim\Sales\Models\OrderItem;
      * @return bool
      */
     private function isValidDownloadableProduct($orderItem) : bool {

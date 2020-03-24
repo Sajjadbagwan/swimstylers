@@ -1,25 +1,25 @@
 <?php
 
-namespace Webkul\API\Http\Controllers\Shop;
+namespace Swim\API\Http\Controllers\Shop;
 
 use Illuminate\Support\Facades\Event;
-use Webkul\Checkout\Repositories\CartRepository;
-use Webkul\Checkout\Repositories\CartItemRepository;
-use Webkul\Shipping\Facades\Shipping;
-use Webkul\Payment\Facades\Payment;
-use Webkul\API\Http\Resources\Checkout\Cart as CartResource;
-use Webkul\API\Http\Resources\Checkout\CartShippingRate as CartShippingRateResource;
-use Webkul\API\Http\Resources\Sales\Order as OrderResource;
-use Webkul\Checkout\Http\Requests\CustomerAddressForm;
-use Webkul\Sales\Repositories\OrderRepository;
+use Swim\Checkout\Repositories\CartRepository;
+use Swim\Checkout\Repositories\CartItemRepository;
+use Swim\Shipping\Facades\Shipping;
+use Swim\Payment\Facades\Payment;
+use Swim\API\Http\Resources\Checkout\Cart as CartResource;
+use Swim\API\Http\Resources\Checkout\CartShippingRate as CartShippingRateResource;
+use Swim\API\Http\Resources\Sales\Order as OrderResource;
+use Swim\Checkout\Http\Requests\CustomerAddressForm;
+use Swim\Sales\Repositories\OrderRepository;
 use Illuminate\Support\Str;
 use Cart;
 
 /**
  * Checkout controller
  *
- * @author    Jitendra Singh <jitendra@webkul.com>
- * @copyright 2018 Webkul Software Pvt Ltd (http://www.webkul.com)
+ * @author    Jitendra Singh <jitendra@Swim.com>
+ * @copyright 2018 Swim Software Pvt Ltd (http://www.Swim.com)
  */
 class CheckoutController extends Controller
 {
@@ -47,9 +47,9 @@ class CheckoutController extends Controller
     /**
      * Controller instance
      *
-     * @param Webkul\Checkout\Repositories\CartRepository     $cartRepository
-     * @param Webkul\Checkout\Repositories\CartItemRepository $cartItemRepository
-     * @param Webkul\Sales\Repositories\OrderRepository       $orderRepository
+     * @param Swim\Checkout\Repositories\CartRepository     $cartRepository
+     * @param Swim\Checkout\Repositories\CartItemRepository $cartItemRepository
+     * @param Swim\Sales\Repositories\OrderRepository       $orderRepository
      */
     public function __construct(
         CartRepository $cartRepository,
@@ -76,7 +76,7 @@ class CheckoutController extends Controller
     /**
      * Saves customer address.
      *
-     * @param  \Webkul\Checkout\Http\Requests\CustomerAddressForm $request
+     * @param  \Swim\Checkout\Http\Requests\CustomerAddressForm $request
      * @return \Illuminate\Http\Response
     */
     public function saveAddress(CustomerAddressForm $request)

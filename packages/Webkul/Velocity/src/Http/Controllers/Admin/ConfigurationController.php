@@ -1,17 +1,17 @@
 <?php
 
-namespace Webkul\Velocity\Http\Controllers\Admin;
+namespace Swim\Velocity\Http\Controllers\Admin;
 
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Str;
-use Webkul\Velocity\Repositories\VelocityMetadataRepository;
+use Swim\Velocity\Repositories\VelocityMetadataRepository;
 
 /**
  * Category Controller
  *
- * @author    Shubham Mehrotra <shubhammehrotra.symfony@webkul.com> @shubhwebkul
- * @author    Vivek Sharma <viveksh047@webkul.com> @vivek-webkul
- * @copyright 2019 Webkul Software Pvt Ltd (http://www.webkul.com)
+ * @author    Shubham Mehrotra <shubhammehrotra.symfony@Swim.com> @shubhSwim
+ * @author    Vivek Sharma <viveksh047@Swim.com> @vivek-Swim
+ * @copyright 2019 Swim Software Pvt Ltd (http://www.Swim.com)
  */
 
 class ConfigurationController extends Controller
@@ -26,7 +26,7 @@ class ConfigurationController extends Controller
     /**
      * Create a new controller instance.
      *
-     * @param  \Webkul\Velocity\Repositories\MetadataRepository $metaDataRepository
+     * @param  \Swim\Velocity\Repositories\MetadataRepository $metaDataRepository
      */
 
     public function __construct (
@@ -34,7 +34,7 @@ class ConfigurationController extends Controller
     ) {
         $this->_config = request('_config');
         
-        $this->velocityHelper = app('Webkul\Velocity\Helpers\Helper');
+        $this->velocityHelper = app('Swim\Velocity\Helpers\Helper');
 
         $this->velocityMetaDataRepository = $velocityMetadataRepository;
     }

@@ -1,21 +1,21 @@
 <?php
 
-namespace Webkul\Product\Repositories;
+namespace Swim\Product\Repositories;
 
-use Webkul\Core\Eloquent\Repository;
+use Swim\Core\Eloquent\Repository;
 use Illuminate\Support\Str;
 
 /**
  * ProductBundleOptionProduct Repository
  *
- * @author Jitendra Singh <jitendra@webkul.com>
- * @copyright 2018 Webkul Software Pvt Ltd (http://www.webkul.com)
+ * @author Jitendra Singh <jitendra@Swim.com>
+ * @copyright 2018 Swim Software Pvt Ltd (http://www.Swim.com)
  */
 class ProductBundleOptionProductRepository extends Repository
 {
     public function model()
     {
-        return 'Webkul\Product\Contracts\ProductBundleOptionProduct';
+        return 'Swim\Product\Contracts\ProductBundleOptionProduct';
     }
 
     /**

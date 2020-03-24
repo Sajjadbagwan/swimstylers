@@ -1,8 +1,8 @@
 <?php
 
 use Illuminate\Database\Seeder;
-use Webkul\Velocity\Database\Seeders\VelocityMetaDataSeeder;
-use Webkul\Admin\Database\Seeders\DatabaseSeeder as BagistoDatabaseSeeder;
+use Swim\Velocity\Database\Seeders\VelocityMetaDataSeeder;
+use Swim\Admin\Database\Seeders\DatabaseSeeder as BagistoDatabaseSeeder;
 
 class DatabaseSeeder extends Seeder
 {

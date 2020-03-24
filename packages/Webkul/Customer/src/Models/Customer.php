@@ -1,15 +1,15 @@
 <?php
 
-namespace Webkul\Customer\Models;
+namespace Swim\Customer\Models;
 
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Tymon\JWTAuth\Contracts\JWTSubject;
-use Webkul\Checkout\Models\CartProxy;
-use Webkul\Sales\Models\OrderProxy;
-use Webkul\Product\Models\ProductReviewProxy;
-use Webkul\Customer\Notifications\CustomerResetPassword;
-use Webkul\Customer\Contracts\Customer as CustomerContract;
+use Swim\Checkout\Models\CartProxy;
+use Swim\Sales\Models\OrderProxy;
+use Swim\Product\Models\ProductReviewProxy;
+use Swim\Customer\Notifications\CustomerResetPassword;
+use Swim\Customer\Contracts\Customer as CustomerContract;
 
 class Customer extends Authenticatable implements CustomerContract, JWTSubject
 {

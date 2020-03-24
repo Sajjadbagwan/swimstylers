@@ -1,14 +1,14 @@
 <?php
 
-namespace Webkul\Tax\Repositories;
+namespace Swim\Tax\Repositories;
 
-use Webkul\Core\Eloquent\Repository;
+use Swim\Core\Eloquent\Repository;
 
 /**
  * Tax Mapping Reposotory
  *
- * @author    Prashant Singh <prashant.singh852@webkul.com>
- * @copyright 2018 Webkul Software Pvt Ltd (http://www.webkul.com)
+ * @author    Prashant Singh <prashant.singh852@Swim.com>
+ * @copyright 2018 Swim Software Pvt Ltd (http://www.Swim.com)
  */
 class TaxMapRepository extends Repository
 {
@@ -19,7 +19,7 @@ class TaxMapRepository extends Repository
      */
     function model()
     {
-        return 'Webkul\Tax\Contracts\TaxMap';
+        return 'Swim\Tax\Contracts\TaxMap';
     }
 
     /**

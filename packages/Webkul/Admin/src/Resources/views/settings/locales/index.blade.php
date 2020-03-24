@@ -20,7 +20,7 @@
 
         <div class="page-content">
 
-            @inject('locales','Webkul\Admin\DataGrids\LocalesDataGrid')
+            @inject('locales','Swim\Admin\DataGrids\LocalesDataGrid')
             {!! $locales->render() !!}
         </div>
     </div>

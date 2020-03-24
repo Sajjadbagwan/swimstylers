@@ -1,15 +1,15 @@
 <?php
 
-namespace Webkul\Admin\Http\Controllers\Customer;
+namespace Swim\Admin\Http\Controllers\Customer;
 
-use Webkul\Admin\Http\Controllers\Controller;
-use Webkul\Customer\Repositories\CustomerGroupRepository;
+use Swim\Admin\Http\Controllers\Controller;
+use Swim\Customer\Repositories\CustomerGroupRepository;
 
 /**
  * Customer Group controlller
  *
- * @author    Rahul Shukla <rahulshukla.symfony517@webkul.com>
- * @copyright 2018 Webkul Software Pvt Ltd (http://www.webkul.com)
+ * @author    Rahul Shukla <rahulshukla.symfony517@Swim.com>
+ * @copyright 2018 Swim Software Pvt Ltd (http://www.Swim.com)
  */
 class CustomerGroupController extends Controller
 {
@@ -30,7 +30,7 @@ class CustomerGroupController extends Controller
      /**
      * Create a new controller instance.
      *
-     * @param \Webkul\Customer\Repositories\CustomerGroupRepository $customerGroupRepository;
+     * @param \Swim\Customer\Repositories\CustomerGroupRepository $customerGroupRepository;
      * @return void
      */
     public function __construct(CustomerGroupRepository $customerGroupRepository)
@@ -70,7 +70,7 @@ class CustomerGroupController extends Controller
     public function store()
     {
         $this->validate(request(), [
-            'code' => ['required', 'unique:customer_groups,code', new \Webkul\Core\Contracts\Validations\Code],
+            'code' => ['required', 'unique:customer_groups,code', new \Swim\Core\Contracts\Validations\Code],
             'name' => 'required',
         ]);
 
@@ -107,7 +107,7 @@ class CustomerGroupController extends Controller
     public function update($id)
     {
         $this->validate(request(), [
-            'code' => ['required', 'unique:customer_groups,code,' . $id, new \Webkul\Core\Contracts\Validations\Code],
+            'code' => ['required', 'unique:customer_groups,code,' . $id, new \Swim\Core\Contracts\Validations\Code],
             'name' => 'required',
         ]);
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace Webkul\Paypal\Providers;
+namespace Swim\Paypal\Providers;
 
 use Illuminate\Support\ServiceProvider;
 

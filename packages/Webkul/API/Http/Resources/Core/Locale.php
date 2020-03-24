@@ -1,6 +1,6 @@
 <?php
 
-namespace Webkul\API\Http\Resources\Core;
+namespace Swim\API\Http\Resources\Core;
 
 use Illuminate\Http\Resources\Json\JsonResource;
 

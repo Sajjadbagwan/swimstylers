@@ -1,14 +1,14 @@
 <?php
 
-namespace Webkul\CartRule\Repositories;
+namespace Swim\CartRule\Repositories;
 
-use Webkul\Core\Eloquent\Repository;
+use Swim\Core\Eloquent\Repository;
 
 /**
  * CartRuleCoupon Reposotory
  *
- * @author    Jitendra Singh <jitendra@webkul.com>
- * @copyright 2018 Webkul Software Pvt Ltd (http://www.webkul.com)
+ * @author    Jitendra Singh <jitendra@Swim.com>
+ * @copyright 2018 Swim Software Pvt Ltd (http://www.Swim.com)
  */
 class CartRuleCouponRepository extends Repository
 {
@@ -28,7 +28,7 @@ class CartRuleCouponRepository extends Repository
      */
     function model()
     {
-        return 'Webkul\CartRule\Contracts\CartRuleCoupon';
+        return 'Swim\CartRule\Contracts\CartRuleCoupon';
     }
 
     /**
@@ -40,7 +40,7 @@ class CartRuleCouponRepository extends Repository
      */
     public function generateCoupons($data, $cartRuleId)
     {
-        $cartRule = app('Webkul\CartRule\Repositories\CartRuleRepository')->findOrFail($cartRuleId);
+        $cartRule = app('Swim\CartRule\Repositories\CartRuleRepository')->findOrFail($cartRuleId);
 
         for ($i = 0; $i < $data['coupon_qty']; $i++) {
             parent::create([

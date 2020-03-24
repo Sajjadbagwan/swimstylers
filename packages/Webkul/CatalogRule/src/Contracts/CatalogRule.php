@@ -1,6 +1,6 @@
 <?php
 
-namespace Webkul\CatalogRule\Contracts;
+namespace Swim\CatalogRule\Contracts;
 
 interface CatalogRule
 {

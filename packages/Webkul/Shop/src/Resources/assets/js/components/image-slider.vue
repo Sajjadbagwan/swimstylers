@@ -66,7 +66,7 @@ export default {
             this.currentIndex = 0;
 
             if(this.images.length == 0) {
-                this.images.push = "vendor/webkul/shop/assets/images/banner.png";
+                this.images.push = "vendor/Swim/shop/assets/images/banner.png";
             } else {
                 this.images_loaded = true;
             }

@@ -1,6 +1,6 @@
 <?php
 
-namespace Webkul\Tax\Helpers;
+namespace Swim\Tax\Helpers;
 
 class Tax
 {

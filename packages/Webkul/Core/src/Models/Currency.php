@@ -1,9 +1,9 @@
 <?php
 
-namespace Webkul\Core\Models;
+namespace Swim\Core\Models;
 
 use Illuminate\Database\Eloquent\Model;
-use Webkul\Core\Contracts\Currency as CurrencyContract;
+use Swim\Core\Contracts\Currency as CurrencyContract;
 
 class Currency extends Model implements CurrencyContract
 {

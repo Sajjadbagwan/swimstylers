@@ -1,16 +1,16 @@
 <?php
 
-namespace Webkul\Product\Repositories;
+namespace Swim\Product\Repositories;
 
 use Illuminate\Container\Container as App;
-use Webkul\Core\Eloquent\Repository;
-use Webkul\Product\Repositories\ProductRepository;
+use Swim\Core\Eloquent\Repository;
+use Swim\Product\Repositories\ProductRepository;
 
 /**
  * Search Reposotory
  *
- * @author    Prashant Singh <prashant.singh852@webkul.com> @prashant-webkul
- * @copyright 2018 Webkul Software Pvt Ltd (http://www.webkul.com)
+ * @author    Prashant Singh <prashant.singh852@Swim.com> @prashant-Swim
+ * @copyright 2018 Swim Software Pvt Ltd (http://www.Swim.com)
  */
 class SearchRepository extends Repository
 {
@@ -24,7 +24,7 @@ class SearchRepository extends Repository
     /**
      * Create a new repository instance.
      *
-     * @param  Webkul\Product\Repositories\ProductRepository $productRepository
+     * @param  Swim\Product\Repositories\ProductRepository $productRepository
      * @return void
      */
     public function __construct(
@@ -39,7 +39,7 @@ class SearchRepository extends Repository
 
     function model()
     {
-        return 'Webkul\Product\Contracts\Product';
+        return 'Swim\Product\Contracts\Product';
     }
 
     public function search($data)

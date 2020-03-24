@@ -1,6 +1,6 @@
 <?php
 
-namespace Webkul\Product\Database\Seeders;
+namespace Swim\Product\Database\Seeders;
 
 use Illuminate\Database\Seeder;
 

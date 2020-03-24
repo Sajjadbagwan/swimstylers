@@ -192,7 +192,7 @@
 
             </div>
 
-            @inject ('productImageHelper', 'Webkul\Product\Helpers\ProductImage')
+            @inject ('productImageHelper', 'Swim\Product\Helpers\ProductImage')
 
             <div class="sale-stock">
                 <div class="card">

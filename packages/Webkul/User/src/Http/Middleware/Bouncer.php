@@ -1,6 +1,6 @@
 <?php
 
-namespace Webkul\User\Http\Middleware;
+namespace Swim\User\Http\Middleware;
 
 use Closure;
 use Illuminate\Support\Facades\Auth;

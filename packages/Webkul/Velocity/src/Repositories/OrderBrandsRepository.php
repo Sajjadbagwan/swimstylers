@@ -1,14 +1,14 @@
 <?php
 
-namespace Webkul\Velocity\Repositories;
+namespace Swim\Velocity\Repositories;
 
 use Illuminate\Container\Container as App;
-use Webkul\Core\Eloquent\Repository;
+use Swim\Core\Eloquent\Repository;
 
 /**
  * OrderBrands Reposotory
  *
- * @copyright 2019 Webkul Software Pvt Ltd (http://www.webkul.com)
+ * @copyright 2019 Swim Software Pvt Ltd (http://www.Swim.com)
  */
 class OrderBrandsRepository extends Repository
 {   
@@ -16,7 +16,7 @@ class OrderBrandsRepository extends Repository
     /**
      * Create a new controller instance.
      *
-     * @param  Webkul\OrderBrands\Repositories\OrderBrandsRepository $OrderBrands
+     * @param  Swim\OrderBrands\Repositories\OrderBrandsRepository $OrderBrands
      * @return void
      */
     public function __construct(
@@ -33,7 +33,7 @@ class OrderBrandsRepository extends Repository
      */
     function model()
     {
-        return 'Webkul\Velocity\Models\OrderBrands';
+        return 'Swim\Velocity\Models\OrderBrands';
     }
     
 }

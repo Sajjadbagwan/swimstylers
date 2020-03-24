@@ -1,7 +1,7 @@
 <?php
 
-use Webkul\Sales\Models\Order;
-use Webkul\Sales\Repositories\OrderRepository;
+use Swim\Sales\Models\Order;
+use Swim\Sales\Repositories\OrderRepository;
 
 class OrderRepositoryCest
 {

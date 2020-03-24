@@ -1,16 +1,16 @@
 <?php
 
-namespace Webkul\Core\Http\Controllers;
+namespace Swim\Core\Http\Controllers;
 
 use Illuminate\Support\Facades\Event;
-use Webkul\Core\Repositories\ExchangeRateRepository;
-use Webkul\Core\Repositories\CurrencyRepository;
+use Swim\Core\Repositories\ExchangeRateRepository;
+use Swim\Core\Repositories\CurrencyRepository;
 
 /**
  * ExchangeRate controller
  *
- * @author Jitendra Singh <jitendra@webkul.com>
- * @copyright 2018 Webkul Software Pvt Ltd (http://www.webkul.com)
+ * @author Jitendra Singh <jitendra@Swim.com>
+ * @copyright 2018 Swim Software Pvt Ltd (http://www.Swim.com)
  */
 class ExchangeRateController extends Controller
 {
@@ -38,8 +38,8 @@ class ExchangeRateController extends Controller
     /**
      * Create a new controller instance.
      *
-     * @param  \Webkul\Core\Repositories\ExchangeRateRepository $exchangeRateRepository
-     * @param  \Webkul\Core\Repositories\CurrencyRepository     $currencyRepository
+     * @param  \Swim\Core\Repositories\ExchangeRateRepository $exchangeRateRepository
+     * @param  \Swim\Core\Repositories\CurrencyRepository     $currencyRepository
      * @return void
      */
     public function __construct(

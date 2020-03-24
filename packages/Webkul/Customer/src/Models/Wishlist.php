@@ -1,10 +1,10 @@
 <?php
 
-namespace Webkul\Customer\Models;
+namespace Swim\Customer\Models;
 
 use Illuminate\Database\Eloquent\Model;
-use Webkul\Product\Models\ProductProxy;
-use Webkul\Customer\Contracts\Wishlist as WishlistContract;
+use Swim\Product\Models\ProductProxy;
+use Swim\Customer\Contracts\Wishlist as WishlistContract;
 
 class Wishlist extends Model implements WishlistContract
 {

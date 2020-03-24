@@ -1,9 +1,9 @@
 <?php
 
-namespace Webkul\Checkout\Models;
+namespace Swim\Checkout\Models;
 
 use Illuminate\Database\Eloquent\Model;
-use Webkul\Checkout\Contracts\CartPayment as CartPaymentContract;
+use Swim\Checkout\Contracts\CartPayment as CartPaymentContract;
 
 class CartPayment extends Model implements CartPaymentContract
 {

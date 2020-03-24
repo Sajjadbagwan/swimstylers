@@ -1,9 +1,9 @@
 <?php
 
-namespace Webkul\Product\Helpers;
+namespace Swim\Product\Helpers;
 
-use Webkul\Product\Repositories\ProductRepository as Product;
-use Webkul\Attribute\Repositories\AttributeFamilyRepository as AttributeFamily;
+use Swim\Product\Repositories\ProductRepository as Product;
+use Swim\Attribute\Repositories\AttributeFamilyRepository as AttributeFamily;
 use Illuminate\Support\Str;
 
 class GenerateProduct

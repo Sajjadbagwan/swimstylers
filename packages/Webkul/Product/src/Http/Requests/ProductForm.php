@@ -1,13 +1,13 @@
 <?php
 
-namespace Webkul\Product\Http\Requests;
+namespace Swim\Product\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Validation\Rule;
-use Webkul\Attribute\Repositories\AttributeFamilyRepository as AttributeFamily;
-use Webkul\Product\Repositories\ProductRepository as Product;
-use Webkul\Product\Repositories\ProductAttributeValueRepository as AttributeValue;
-use Webkul\Product\Models\ProductAttributeValue;
+use Swim\Attribute\Repositories\AttributeFamilyRepository as AttributeFamily;
+use Swim\Product\Repositories\ProductRepository as Product;
+use Swim\Product\Repositories\ProductAttributeValueRepository as AttributeValue;
+use Swim\Product\Models\ProductAttributeValue;
 
 class ProductForm extends FormRequest
 {
@@ -35,9 +35,9 @@ class ProductForm extends FormRequest
     /**
      * Create a new controller instance.
      *
-     * @param  Webkul\Attribute\Repositories\AttributeFamilyRepository     $attributeFamily
-     * @param  Webkul\Product\Repositories\ProductRepository               $product
-     * @param  Webkul\Product\Repositories\ProductAttributeValueRepository $attributeValue
+     * @param  Swim\Attribute\Repositories\AttributeFamilyRepository     $attributeFamily
+     * @param  Swim\Product\Repositories\ProductRepository               $product
+     * @param  Swim\Product\Repositories\ProductAttributeValueRepository $attributeValue
      * @return void
      */
     public function __construct(AttributeFamily $attributeFamily, Product $product, AttributeValue $attributeValue)
@@ -71,11 +71,11 @@ class ProductForm extends FormRequest
         $product = $this->product->find($this->id);
         
         $this->rules = array_merge($product->getTypeInstance()->getTypeValidationRules(), [
-            'sku' => ['required', 'unique:products,sku,' . $this->id, new \Webkul\Core\Contracts\Validations\Slug],
+            'sku' => ['required', 'unique:products,sku,' . $this->id, new \Swim\Core\Contracts\Validations\Slug],
             'images.*' => 'mimes:jpeg,jpg,bmp,png',
             'special_price_from' => 'nullable|date',
             'special_price_to' => 'nullable|date|after_or_equal:special_price_from',
-            'special_price' => ['nullable', new \Webkul\Core\Contracts\Validations\Decimal, 'lt:price']
+            'special_price' => ['nullable', new \Swim\Core\Contracts\Validations\Decimal, 'lt:price']
         ]);
 
         foreach ($product->getEditableAttributes() as $attribute) {
@@ -92,13 +92,13 @@ class ProductForm extends FormRequest
             if ($attribute->type == 'text' && $attribute->validation) {
                 array_push($validations, 
                         $attribute->validation == 'decimal'
-                        ? new \Webkul\Core\Contracts\Validations\Decimal
+                        ? new \Swim\Core\Contracts\Validations\Decimal
                         : $attribute->validation
                     );
             }
 
             if ($attribute->type == 'price')
-                array_push($validations, new \Webkul\Core\Contracts\Validations\Decimal);
+                array_push($validations, new \Swim\Core\Contracts\Validations\Decimal);
 
             if ($attribute->is_unique) {
                 array_push($validations, function ($field, $value, $fail) use ($attribute) {

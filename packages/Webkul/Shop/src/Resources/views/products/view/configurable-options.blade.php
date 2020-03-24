@@ -1,6 +1,6 @@
-@if (Webkul\Product\Helpers\ProductType::hasVariants($product->type))
+@if (Swim\Product\Helpers\ProductType::hasVariants($product->type))
 
-    @inject ('configurableOptionHelper', 'Webkul\Product\Helpers\ConfigurableOption')
+    @inject ('configurableOptionHelper', 'Swim\Product\Helpers\ConfigurableOption')
 
     {!! view_render_event('bagisto.shop.products.view.configurable-options.before', ['product' => $product]) !!}
 

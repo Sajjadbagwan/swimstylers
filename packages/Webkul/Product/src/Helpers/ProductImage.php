@@ -1,15 +1,15 @@
 <?php
 
-namespace Webkul\Product\Helpers;
+namespace Swim\Product\Helpers;
 
-use Webkul\Attribute\Repositories\AttributeOptionRepository as AttributeOption;
+use Swim\Attribute\Repositories\AttributeOptionRepository as AttributeOption;
 use Illuminate\Support\Facades\Storage;
 
 /**
  * Product Image Helper
  *
- * @author Jitendra Singh <jitendra@webkul.com>
- * @copyright 2018 Webkul Software Pvt Ltd (http://www.webkul.com)
+ * @author Jitendra Singh <jitendra@Swim.com>
+ * @copyright 2018 Swim Software Pvt Ltd (http://www.Swim.com)
  */
 class ProductImage extends AbstractProduct
 {
@@ -40,10 +40,10 @@ class ProductImage extends AbstractProduct
 
         if (! $product->parent_id && ! count($images)) {
             $images[] = [
-                'small_image_url' => asset('vendor/webkul/ui/assets/images/product/small-product-placeholder.png'),
-                'medium_image_url' => asset('vendor/webkul/ui/assets/images/product/meduim-product-placeholder.png'),
-                'large_image_url' => asset('vendor/webkul/ui/assets/images/product/large-product-placeholder.png'),
-                'original_image_url' => asset('vendor/webkul/ui/assets/images/product/large-product-placeholder.png')
+                'small_image_url' => asset('vendor/Swim/ui/assets/images/product/small-product-placeholder.png'),
+                'medium_image_url' => asset('vendor/Swim/ui/assets/images/product/meduim-product-placeholder.png'),
+                'large_image_url' => asset('vendor/Swim/ui/assets/images/product/large-product-placeholder.png'),
+                'original_image_url' => asset('vendor/Swim/ui/assets/images/product/large-product-placeholder.png')
             ];
         }
 
@@ -69,10 +69,10 @@ class ProductImage extends AbstractProduct
             ];
         } else {
             $image = [
-                'small_image_url' => asset('vendor/webkul/ui/assets/images/product/small-product-placeholder.png'),
-                'medium_image_url' => asset('vendor/webkul/ui/assets/images/product/meduim-product-placeholder.png'),
-                'large_image_url' => asset('vendor/webkul/ui/assets/images/product/large-product-placeholder.png'),
-                'original_image_url' => asset('vendor/webkul/ui/assets/images/product/large-product-placeholder.png'),
+                'small_image_url' => asset('vendor/Swim/ui/assets/images/product/small-product-placeholder.png'),
+                'medium_image_url' => asset('vendor/Swim/ui/assets/images/product/meduim-product-placeholder.png'),
+                'large_image_url' => asset('vendor/Swim/ui/assets/images/product/large-product-placeholder.png'),
+                'original_image_url' => asset('vendor/Swim/ui/assets/images/product/large-product-placeholder.png'),
             ];
         }
 

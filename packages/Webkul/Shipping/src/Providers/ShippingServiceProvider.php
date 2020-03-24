@@ -1,11 +1,11 @@
 <?php
 
-namespace Webkul\Shipping\Providers;
+namespace Swim\Shipping\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Foundation\AliasLoader;
-use Webkul\Shipping\Shipping;
-use Webkul\Shipping\Facades\Shipping as ShippingFacade;
+use Swim\Shipping\Shipping;
+use Swim\Shipping\Facades\Shipping as ShippingFacade;
 
 class ShippingServiceProvider extends ServiceProvider
 {

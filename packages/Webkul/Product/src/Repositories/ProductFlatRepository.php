@@ -1,20 +1,20 @@
 <?php
 
-namespace Webkul\Product\Repositories;
+namespace Swim\Product\Repositories;
 
-use Webkul\Core\Eloquent\Repository;
+use Swim\Core\Eloquent\Repository;
 
 /**
  * Product Repository
  *
- * @author Prashant Singh <prashant.singh852@webkul.com> @prashant-webkul
- * @copyright 2018 Webkul Software Pvt Ltd (http://www.webkul.com)
+ * @author Prashant Singh <prashant.singh852@Swim.com> @prashant-Swim
+ * @copyright 2018 Swim Software Pvt Ltd (http://www.Swim.com)
  */
 class ProductFlatRepository extends Repository
 {
     public function model()
     {
-        return 'Webkul\Product\Contracts\ProductFlat';
+        return 'Swim\Product\Contracts\ProductFlat';
     }
 
     /**
@@ -79,7 +79,7 @@ class ProductFlatRepository extends Repository
             $categoryProductAttributes = $this->getCategoryProductAttribute($category->id);
 
             if ($categoryProductAttributes) {
-                foreach (app('Webkul\Attribute\Repositories\AttributeRepository')->getFilterAttributes() as $filterAttribute) {
+                foreach (app('Swim\Attribute\Repositories\AttributeRepository')->getFilterAttributes() as $filterAttribute) {
                     if (in_array($filterAttribute->id, $categoryProductAttributes)) {
                         $filterAttributes[] = $filterAttribute;
                     } else  if ($filterAttribute ['code'] == 'price') {

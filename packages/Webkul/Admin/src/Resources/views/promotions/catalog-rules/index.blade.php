@@ -20,7 +20,7 @@
         </div>
 
         <div class="page-content">
-            @inject('catalogRuleGrid','Webkul\Admin\DataGrids\CatalogRuleDataGrid')
+            @inject('catalogRuleGrid','Swim\Admin\DataGrids\CatalogRuleDataGrid')
             {!! $catalogRuleGrid->render() !!}
         </div>
     </div>

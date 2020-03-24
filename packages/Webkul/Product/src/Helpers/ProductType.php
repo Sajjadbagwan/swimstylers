@@ -1,8 +1,8 @@
 <?php
 
-namespace Webkul\Product\Helpers;
+namespace Swim\Product\Helpers;
 
-use Webkul\Product\Type\AbstractType;
+use Swim\Product\Type\AbstractType;
 
 class ProductType extends AbstractProduct
 {

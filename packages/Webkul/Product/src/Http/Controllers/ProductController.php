@@ -1,23 +1,23 @@
 <?php
 
-namespace Webkul\Product\Http\Controllers;
+namespace Swim\Product\Http\Controllers;
 
 use Illuminate\Support\Facades\Event;
-use Webkul\Product\Http\Requests\ProductForm;
-use Webkul\Product\Helpers\ProductType;
-use Webkul\Category\Repositories\CategoryRepository;
-use Webkul\Product\Repositories\ProductRepository;
-use Webkul\Product\Repositories\ProductDownloadableLinkRepository;
-use Webkul\Product\Repositories\ProductDownloadableSampleRepository;
-use Webkul\Attribute\Repositories\AttributeFamilyRepository;
-use Webkul\Inventory\Repositories\InventorySourceRepository;
+use Swim\Product\Http\Requests\ProductForm;
+use Swim\Product\Helpers\ProductType;
+use Swim\Category\Repositories\CategoryRepository;
+use Swim\Product\Repositories\ProductRepository;
+use Swim\Product\Repositories\ProductDownloadableLinkRepository;
+use Swim\Product\Repositories\ProductDownloadableSampleRepository;
+use Swim\Attribute\Repositories\AttributeFamilyRepository;
+use Swim\Inventory\Repositories\InventorySourceRepository;
 use Illuminate\Support\Facades\Storage;
 
 /**
  * Product controller
  *
- * @author    Jitendra Singh <jitendra@webkul.com>
- * @copyright 2018 Webkul Software Pvt Ltd (http://www.webkul.com)
+ * @author    Jitendra Singh <jitendra@Swim.com>
+ * @copyright 2018 Swim Software Pvt Ltd (http://www.Swim.com)
  */
 class ProductController extends Controller
 {
@@ -73,12 +73,12 @@ class ProductController extends Controller
     /**
      * Create a new controller instance.
      *
-     * @param  \Webkul\Category\Repositories\CategoryRepository                 $categoryRepository
-     * @param  \Webkul\Product\Repositories\ProductRepository                   $productRepository
-     * @param  \Webkul\Product\Repositories\ProductDownloadableLinkRepository   $productDownloadableLinkRepository
-     * @param  \Webkul\Product\Repositories\ProductDownloadableSampleRepository $productDownloadableSampleRepository
-     * @param  \Webkul\Attribute\Repositories\AttributeFamilyRepository         $attributeFamilyRepository
-     * @param  \Webkul\Inventory\Repositories\InventorySourceRepository         $inventorySource
+     * @param  \Swim\Category\Repositories\CategoryRepository                 $categoryRepository
+     * @param  \Swim\Product\Repositories\ProductRepository                   $productRepository
+     * @param  \Swim\Product\Repositories\ProductDownloadableLinkRepository   $productDownloadableLinkRepository
+     * @param  \Swim\Product\Repositories\ProductDownloadableSampleRepository $productDownloadableSampleRepository
+     * @param  \Swim\Attribute\Repositories\AttributeFamilyRepository         $attributeFamilyRepository
+     * @param  \Swim\Inventory\Repositories\InventorySourceRepository         $inventorySource
      * @return void
      */
     public function __construct(
@@ -159,7 +159,7 @@ class ProductController extends Controller
         $this->validate(request(), [
             'type' => 'required',
             'attribute_family_id' => 'required',
-            'sku' => ['required', 'unique:products,sku', new \Webkul\Core\Contracts\Validations\Slug]
+            'sku' => ['required', 'unique:products,sku', new \Swim\Core\Contracts\Validations\Slug]
         ]);
 
         $product = $this->productRepository->create(request()->all());
@@ -189,7 +189,7 @@ class ProductController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Webkul\Product\Http\Requests\ProductForm $request
+     * @param  \Swim\Product\Http\Requests\ProductForm $request
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */

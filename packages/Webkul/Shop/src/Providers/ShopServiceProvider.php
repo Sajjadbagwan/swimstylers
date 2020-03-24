@@ -1,20 +1,20 @@
 <?php
 
-namespace Webkul\Shop\Providers;
+namespace Swim\Shop\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Routing\Router;
 use Illuminate\Pagination\Paginator;
-use Webkul\Shop\Http\Middleware\Locale;
-use Webkul\Shop\Http\Middleware\Theme;
-use Webkul\Shop\Http\Middleware\Currency;
-use Webkul\Core\Tree;
+use Swim\Shop\Http\Middleware\Locale;
+use Swim\Shop\Http\Middleware\Theme;
+use Swim\Shop\Http\Middleware\Currency;
+use Swim\Core\Tree;
 
 /**
  * Shop service provider
  *
- * @author    Jitendra Singh <jitendra@webkul.com>
- * @copyright 2018 Webkul Software Pvt Ltd (http://www.webkul.com)
+ * @author    Jitendra Singh <jitendra@Swim.com>
+ * @copyright 2018 Swim Software Pvt Ltd (http://www.Swim.com)
  */
 class ShopServiceProvider extends ServiceProvider
 {

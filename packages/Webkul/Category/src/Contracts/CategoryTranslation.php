@@ -1,6 +1,6 @@
 <?php
 
-namespace Webkul\Category\Contracts;
+namespace Swim\Category\Contracts;
 
 interface CategoryTranslation
 {

@@ -133,7 +133,7 @@ return [
             'forgot_pass' => '¿Has olvidado la contraseña?',
             'button_title' => 'Entrar',
             'remember' => 'Recuérdame',
-            'footer' => '© Copyright :year Webkul Software, All rights reserved',
+            'footer' => '© Copyright :year Swim Software, All rights reserved',
             'invalid-creds' => 'Por favor, verifica tus credenciales e intenta de nuevo',
             'verify-first' => 'Verifica tu correo electrónico primero',
             'not-activated' => 'La activación de la cuenta será aprovada por el administrador',
@@ -601,8 +601,8 @@ return [
         ]
     ],
 
-    'webkul' => [
-        'copy-right' => '© Copyright :year Webkul Software, All rights reserved',
+    'Swim' => [
+        'copy-right' => '© Copyright :year Swim Software, All rights reserved',
     ],
 
     'response' => [

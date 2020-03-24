@@ -1,6 +1,6 @@
 <?php
 
-namespace Webkul\CMS\Database\Seeders;
+namespace Swim\CMS\Database\Seeders;
 
 use Carbon\Carbon;
 use Illuminate\Database\Seeder;

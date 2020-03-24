@@ -1,14 +1,14 @@
 <?php
 
-namespace Webkul\Category\Models;
+namespace Swim\Category\Models;
 
 use Illuminate\Database\Eloquent\Model;
-use Webkul\Category\Contracts\CategoryTranslation as CategoryTranslationContract;
+use Swim\Category\Contracts\CategoryTranslation as CategoryTranslationContract;
 
 /**
  * Class CategoryTranslation
  *
- * @package Webkul\Category\Models
+ * @package Swim\Category\Models
  *
  * @property-read string $url_path maintained by database triggers
  */

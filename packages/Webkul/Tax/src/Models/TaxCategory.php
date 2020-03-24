@@ -1,9 +1,9 @@
 <?php
 
-namespace Webkul\Tax\Models;
+namespace Swim\Tax\Models;
 
 use Illuminate\Database\Eloquent\Model;
-use Webkul\Tax\Contracts\TaxCategory as TaxCategoryContract;
+use Swim\Tax\Contracts\TaxCategory as TaxCategoryContract;
 
 class TaxCategory extends Model implements TaxCategoryContract
 {

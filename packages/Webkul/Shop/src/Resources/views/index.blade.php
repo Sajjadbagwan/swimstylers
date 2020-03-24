@@ -1,4 +1,4 @@
-@inject('rateHelper' , 'Webkul\Shipping\Helper\Rate')
+@inject('rateHelper' , 'Swim\Shipping\Helper\Rate')
 <div>
     @foreach ($rateHelper->collectRates() as $key=>$count)
         <div class="shipping-method">

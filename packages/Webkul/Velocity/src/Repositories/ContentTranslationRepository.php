@@ -1,14 +1,14 @@
 <?php
 
-namespace Webkul\Velocity\Repositories;
+namespace Swim\Velocity\Repositories;
 
-use Webkul\Core\Eloquent\Repository;
+use Swim\Core\Eloquent\Repository;
 
 /**
  * ContentTranslation Reposotory
  *
- * @author    Vivek Sharma <viveksh047@webkul.com>
- * @copyright 2019 Webkul Software Pvt Ltd (http://www.webkul.com)
+ * @author    Vivek Sharma <viveksh047@Swim.com>
+ * @copyright 2019 Swim Software Pvt Ltd (http://www.Swim.com)
  */
 class ContentTranslationRepository extends Repository
 {
@@ -19,6 +19,6 @@ class ContentTranslationRepository extends Repository
      */
     function model()
     {
-        return 'Webkul\Velocity\Models\ContentTranslation';
+        return 'Swim\Velocity\Models\ContentTranslation';
     }
 }

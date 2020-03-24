@@ -1,6 +1,6 @@
 <?php
 
-namespace Webkul\Shop\Http\Middleware;
+namespace Swim\Shop\Http\Middleware;
 
 use Closure;
 

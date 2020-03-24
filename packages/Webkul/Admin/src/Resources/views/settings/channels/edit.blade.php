@@ -56,7 +56,7 @@
                                 <label for="inventory_sources" class="required">{{ __('admin::app.settings.channels.inventory_sources') }}</label>
                                 <?php $selectedOptionIds = old('inventory_sources') ?: $channel->inventory_sources->pluck('id')->toArray() ?>
                                 <select v-validate="'required'" class="control" id="inventory_sources" name="inventory_sources[]" data-vv-as="&quot;{{ __('admin::app.settings.channels.inventory_sources') }}&quot;" multiple>
-                                    @foreach (app('Webkul\Inventory\Repositories\InventorySourceRepository')->all() as $inventorySource)
+                                    @foreach (app('Swim\Inventory\Repositories\InventorySourceRepository')->all() as $inventorySource)
                                         <option value="{{ $inventorySource->id }}" {{ in_array($inventorySource->id, $selectedOptionIds) ? 'selected' : '' }}>
                                             {{ $inventorySource->name }}
                                         </option>
@@ -69,7 +69,7 @@
                                 <label for="root_category_id" class="required">{{ __('admin::app.settings.channels.root-category') }}</label>
                                 <?php $selectedOption = old('root_category_id') ?: $channel->root_category_id ?>
                                 <select v-validate="'required'" class="control" id="root_category_id" name="root_category_id" data-vv-as="&quot;{{ __('admin::app.settings.channels.root-category') }}&quot;">
-                                    @foreach (app('Webkul\Category\Repositories\CategoryRepository')->getRootCategories() as $category)
+                                    @foreach (app('Swim\Category\Repositories\CategoryRepository')->getRootCategories() as $category)
                                         <option value="{{ $category->id }}" {{ $selectedOption == $category->id ? 'selected' : '' }}>
                                             {{ $category->name }}
                                         </option>
@@ -225,7 +225,7 @@
 @stop
 
 @push('scripts')
-    <script src="{{ asset('vendor/webkul/admin/assets/js/tinyMCE/tinymce.min.js') }}"></script>
+    <script src="{{ asset('vendor/Swim/admin/assets/js/tinyMCE/tinymce.min.js') }}"></script>
 
     <script>
         $(document).ready(function () {

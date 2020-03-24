@@ -22,7 +22,7 @@
 
         <div class="page-content">
 
-            {!! app('Webkul\Admin\DataGrids\AttributeDataGrid')->render() !!}
+            {!! app('Swim\Admin\DataGrids\AttributeDataGrid')->render() !!}
             
         </div>
 

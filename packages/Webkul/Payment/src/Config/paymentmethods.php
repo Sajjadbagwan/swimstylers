@@ -4,7 +4,7 @@ return [
         'code' => 'cashondelivery',
         'title' => 'Cash On Delivery',
         'description' => 'Cash On Delivery',
-        'class' => 'Webkul\Payment\Payment\CashOnDelivery',
+        'class' => 'Swim\Payment\Payment\CashOnDelivery',
         'active' => true,
         'sort' => 1
     ],
@@ -13,7 +13,7 @@ return [
         'code' => 'moneytransfer',
         'title' => 'Money Transfer',
         'description' => 'Money Transfer',
-        'class' => 'Webkul\Payment\Payment\MoneyTransfer',
+        'class' => 'Swim\Payment\Payment\MoneyTransfer',
         'active' => true,
         'sort' => 2
     ],
@@ -22,10 +22,10 @@ return [
         'code' => 'paypal_standard',
         'title' => 'Paypal Standard',
         'description' => 'Paypal Standard',
-        'class' => 'Webkul\Paypal\Payment\Standard',
+        'class' => 'Swim\Paypal\Payment\Standard',
         'sandbox' => true,
         'active' => true,
-        'business_account' => 'test@webkul.com',
+        'business_account' => 'test@Swim.com',
         'sort' => 3
     ]
 ];

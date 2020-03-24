@@ -1,7 +1,7 @@
 @extends('shop::layouts.master')
 
-@inject ('productImageHelper', 'Webkul\Product\Helpers\ProductImage')
-@inject ('productRatingHelper', 'Webkul\Product\Helpers\Review')
+@inject ('productImageHelper', 'Swim\Product\Helpers\ProductImage')
+@inject ('productRatingHelper', 'Swim\Product\Helpers\Review')
 
 @php
     $channel = core()->getCurrentChannel();

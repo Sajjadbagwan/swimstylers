@@ -3,7 +3,7 @@
 /** @var \Illuminate\Database\Eloquent\Factory $factory */
 
 use Faker\Generator as Faker;
-use Webkul\Tax\Models\TaxCategory;
+use Swim\Tax\Models\TaxCategory;
 
 $factory->define(TaxCategory::class, function (Faker $faker) {
     return [

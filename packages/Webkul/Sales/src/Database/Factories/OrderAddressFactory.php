@@ -3,10 +3,10 @@
 /** @var \Illuminate\Database\Eloquent\Factory $factory */
 
 use Faker\Generator as Faker;
-use Webkul\Customer\Models\Customer;
-use Webkul\Customer\Models\CustomerAddress;
-use Webkul\Sales\Models\Order;
-use Webkul\Sales\Models\OrderAddress;
+use Swim\Customer\Models\Customer;
+use Swim\Customer\Models\CustomerAddress;
+use Swim\Sales\Models\Order;
+use Swim\Sales\Models\OrderAddress;
 
 $factory->define(OrderAddress::class, function (Faker $faker) {
     $customer = factory(Customer::class)->create();

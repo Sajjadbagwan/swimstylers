@@ -3,10 +3,10 @@
 /** @var \Illuminate\Database\Eloquent\Factory $factory */
 
 use Faker\Generator as Faker;
-use Webkul\Product\Models\Product;
-use Webkul\Sales\Models\Invoice;
-use Webkul\Sales\Models\InvoiceItem;
-use Webkul\Sales\Models\OrderItem;
+use Swim\Product\Models\Product;
+use Swim\Sales\Models\Invoice;
+use Swim\Sales\Models\InvoiceItem;
+use Swim\Sales\Models\OrderItem;
 
 $factory->define(InvoiceItem::class, function (Faker $faker, array $attributes) {
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace Webkul\Attribute\Http\Controllers;
+namespace Swim\Attribute\Http\Controllers;
 
 use Illuminate\Foundation\Bus\DispatchesJobs;
 use Illuminate\Routing\Controller as BaseController;

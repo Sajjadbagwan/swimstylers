@@ -1,15 +1,15 @@
 <?php
 
-namespace Webkul\User\Http\Controllers;
+namespace Swim\User\Http\Controllers;
 
 use Illuminate\Support\Facades\Event;
-use Webkul\User\Repositories\RoleRepository;
+use Swim\User\Repositories\RoleRepository;
 
 /**
  * Admin user role controller
  *
- * @author    Jitendra Singh <jitendra@webkul.com>
- * @copyright 2018 Webkul Software Pvt Ltd (http://www.webkul.com)
+ * @author    Jitendra Singh <jitendra@Swim.com>
+ * @copyright 2018 Swim Software Pvt Ltd (http://www.Swim.com)
  */
 class RoleController extends Controller
 {
@@ -30,7 +30,7 @@ class RoleController extends Controller
     /**
      * Create a new controller instance.
      *
-     * @param  \Webkul\User\Repositories\RoleRepository $roleRepository
+     * @param  \Swim\User\Repositories\RoleRepository $roleRepository
      * @return void
      */
     public function __construct(RoleRepository $roleRepository)

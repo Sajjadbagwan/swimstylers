@@ -1,6 +1,6 @@
 <?php
 
-namespace Webkul\Rule\Providers;
+namespace Swim\Rule\Providers;
 
 use Illuminate\Support\ServiceProvider;
 

@@ -1,11 +1,11 @@
 <?php
 
-namespace Webkul\Category\Providers;
+namespace Swim\Category\Providers;
 
 use Illuminate\Database\Eloquent\Factory as EloquentFactory;
 use Illuminate\Support\ServiceProvider;
-use Webkul\Category\Models\CategoryProxy;
-use Webkul\Category\Observers\CategoryObserver;
+use Swim\Category\Models\CategoryProxy;
+use Swim\Category\Observers\CategoryObserver;
 
 class CategoryServiceProvider extends ServiceProvider
 {

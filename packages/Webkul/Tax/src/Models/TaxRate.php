@@ -1,10 +1,10 @@
 <?php
 
-namespace Webkul\Tax\Models;
+namespace Swim\Tax\Models;
 
 use Illuminate\Database\Eloquent\Model;
-use Webkul\Tax\Models\TaxCategory;
-use Webkul\Tax\Contracts\TaxRate as TaxRateContract;
+use Swim\Tax\Models\TaxCategory;
+use Swim\Tax\Contracts\TaxRate as TaxRateContract;
 
 class TaxRate extends Model implements TaxRateContract
 {

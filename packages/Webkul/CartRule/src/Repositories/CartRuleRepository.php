@@ -1,21 +1,21 @@
 <?php
 
-namespace Webkul\CartRule\Repositories;
+namespace Swim\CartRule\Repositories;
 
 use Illuminate\Container\Container as App;
-use Webkul\Core\Eloquent\Repository;
-use Webkul\Attribute\Repositories\AttributeFamilyRepository;
-use Webkul\Attribute\Repositories\AttributeRepository;
-use Webkul\Category\Repositories\CategoryRepository;
-use Webkul\Tax\Repositories\TaxCategoryRepository;
-use Webkul\Core\Repositories\CountryRepository;
-use Webkul\Core\Repositories\CountryStateRepository;
+use Swim\Core\Eloquent\Repository;
+use Swim\Attribute\Repositories\AttributeFamilyRepository;
+use Swim\Attribute\Repositories\AttributeRepository;
+use Swim\Category\Repositories\CategoryRepository;
+use Swim\Tax\Repositories\TaxCategoryRepository;
+use Swim\Core\Repositories\CountryRepository;
+use Swim\Core\Repositories\CountryStateRepository;
 
 /**
  * CartRule Reposotory
  *
- * @author    Jitendra Singh <jitendra@webkul.com>
- * @copyright 2018 Webkul Software Pvt Ltd (http://www.webkul.com)
+ * @author    Jitendra Singh <jitendra@Swim.com>
+ * @copyright 2018 Swim Software Pvt Ltd (http://www.Swim.com)
  */
 class CartRuleRepository extends Repository
 {
@@ -71,13 +71,13 @@ class CartRuleRepository extends Repository
     /**
      * Create a new repository instance.
      *
-     * @param  Webkul\Attribute\Repositories\AttributeFamilyRepository $attributeFamilyRepository
-     * @param  Webkul\Attribute\Repositories\AttributeRepository       $attributeRepository
-     * @param  Webkul\Category\Repositories\CategoryRepository         $categoryRepository
-     * @param  Webkul\CartRule\Repositories\CartRuleCouponRepository   $cartRuleCouponRepository
-     * @param  Webkul\Tax\Repositories\TaxCategoryRepository           $taxCategoryRepository
-     * @param  Webkul\Core\Repositories\CountryRepository              $countryRepository
-     * @param  Webkul\Core\Repositories\CountryStateRepository         $countryStateRepository
+     * @param  Swim\Attribute\Repositories\AttributeFamilyRepository $attributeFamilyRepository
+     * @param  Swim\Attribute\Repositories\AttributeRepository       $attributeRepository
+     * @param  Swim\Category\Repositories\CategoryRepository         $categoryRepository
+     * @param  Swim\CartRule\Repositories\CartRuleCouponRepository   $cartRuleCouponRepository
+     * @param  Swim\Tax\Repositories\TaxCategoryRepository           $taxCategoryRepository
+     * @param  Swim\Core\Repositories\CountryRepository              $countryRepository
+     * @param  Swim\Core\Repositories\CountryStateRepository         $countryStateRepository
      * @param  Illuminate\Container\Container                          $app
      * @return void
      */
@@ -116,7 +116,7 @@ class CartRuleRepository extends Repository
      */
     function model()
     {
-        return 'Webkul\CartRule\Contracts\CartRule';
+        return 'Swim\CartRule\Contracts\CartRule';
     }
 
     /**

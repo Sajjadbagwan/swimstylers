@@ -4,9 +4,9 @@
 
 use Faker\Generator as Faker;
 use Illuminate\Support\Facades\DB;
-use Webkul\Core\Models\Channel;
-use Webkul\Customer\Models\Customer;
-use Webkul\Sales\Models\Order;
+use Swim\Core\Models\Channel;
+use Swim\Customer\Models\Customer;
+use Swim\Sales\Models\Order;
 
 $factory->define(Order::class, function (Faker $faker) {
     $lastOrder = DB::table('orders')

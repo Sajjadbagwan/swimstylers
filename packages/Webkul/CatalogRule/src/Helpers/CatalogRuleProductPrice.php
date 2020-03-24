@@ -1,10 +1,10 @@
 <?php
 
-namespace Webkul\CatalogRule\Helpers;
+namespace Swim\CatalogRule\Helpers;
 
 use Carbon\Carbon;
-use Webkul\CatalogRule\Repositories\CatalogRuleProductPriceRepository;
-use Webkul\Customer\Repositories\CustomerGroupRepository;
+use Swim\CatalogRule\Repositories\CatalogRuleProductPriceRepository;
+use Swim\Customer\Repositories\CustomerGroupRepository;
 
 class CatalogRuleProductPrice
 {
@@ -32,9 +32,9 @@ class CatalogRuleProductPrice
     /**
      * Create a new helper instance.
      *
-     * @param  Webkul\Attribute\Repositories\CatalogRuleProductPriceRepository $catalogRuleProductPriceRepository
-     * @param  Webkul\CatalogRule\Repositories\CatalogRuleProduct              $catalogRuleProductHelper
-     * @param  Webkul\Customer\Repositories\CustomerGroupRepository            $customerGroupRepository
+     * @param  Swim\Attribute\Repositories\CatalogRuleProductPriceRepository $catalogRuleProductPriceRepository
+     * @param  Swim\CatalogRule\Repositories\CatalogRuleProduct              $catalogRuleProductHelper
+     * @param  Swim\Customer\Repositories\CustomerGroupRepository            $customerGroupRepository
      * @return void
      */
     public function __construct(

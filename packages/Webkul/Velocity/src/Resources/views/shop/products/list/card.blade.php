@@ -1,6 +1,6 @@
-@inject ('productImageHelper', 'Webkul\Product\Helpers\ProductImage')
-@inject ('reviewHelper', 'Webkul\Product\Helpers\Review')
-@inject ('toolbarHelper', 'Webkul\Product\Helpers\Toolbar')
+@inject ('productImageHelper', 'Swim\Product\Helpers\ProductImage')
+@inject ('reviewHelper', 'Swim\Product\Helpers\Review')
+@inject ('toolbarHelper', 'Swim\Product\Helpers\Toolbar')
 {{-- @include('shop::UI.product-quick-view') --}}
 
 @push('css')

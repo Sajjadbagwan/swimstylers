@@ -1,5 +1,5 @@
-@inject ('toolbarHelper', 'Webkul\Product\Helpers\Toolbar')
-@inject ('productRepository', 'Webkul\Product\Repositories\ProductRepository')
+@inject ('toolbarHelper', 'Swim\Product\Helpers\Toolbar')
+@inject ('productRepository', 'Swim\Product\Repositories\ProductRepository')
 
 @extends('shop::layouts.master')
 

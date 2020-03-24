@@ -1,19 +1,19 @@
 <?php
 
-namespace Webkul\CatalogRule\Repositories;
+namespace Swim\CatalogRule\Repositories;
 
 use Illuminate\Container\Container as App;
-use Webkul\Core\Eloquent\Repository;
-use Webkul\Attribute\Repositories\AttributeFamilyRepository;
-use Webkul\Attribute\Repositories\AttributeRepository;
-use Webkul\Category\Repositories\CategoryRepository;
-use Webkul\Tax\Repositories\TaxCategoryRepository;
+use Swim\Core\Eloquent\Repository;
+use Swim\Attribute\Repositories\AttributeFamilyRepository;
+use Swim\Attribute\Repositories\AttributeRepository;
+use Swim\Category\Repositories\CategoryRepository;
+use Swim\Tax\Repositories\TaxCategoryRepository;
 
 /**
  * CatalogRule Reposotory
  *
- * @author    Jitendra Singh <jitendra@webkul.com>
- * @copyright 2018 Webkul Software Pvt Ltd (http://www.webkul.com)
+ * @author    Jitendra Singh <jitendra@Swim.com>
+ * @copyright 2018 Swim Software Pvt Ltd (http://www.Swim.com)
  */
 class CatalogRuleRepository extends Repository
 {
@@ -48,10 +48,10 @@ class CatalogRuleRepository extends Repository
     /**
      * Create a new repository instance.
      *
-     * @param  Webkul\Attribute\Repositories\AttributeFamilyRepository $attributeFamilyRepository
-     * @param  Webkul\Attribute\Repositories\AttributeRepository       $attributeRepository
-     * @param  Webkul\Category\Repositories\CategoryRepository         $categoryRepository
-     * @param  Webkul\Tax\Repositories\TaxCategoryRepository           $taxCategoryRepository
+     * @param  Swim\Attribute\Repositories\AttributeFamilyRepository $attributeFamilyRepository
+     * @param  Swim\Attribute\Repositories\AttributeRepository       $attributeRepository
+     * @param  Swim\Category\Repositories\CategoryRepository         $categoryRepository
+     * @param  Swim\Tax\Repositories\TaxCategoryRepository           $taxCategoryRepository
      * @param  Illuminate\Container\Container                          $app
      * @return void
      */
@@ -81,7 +81,7 @@ class CatalogRuleRepository extends Repository
      */
     function model()
     {
-        return 'Webkul\CatalogRule\Contracts\CatalogRule';
+        return 'Swim\CatalogRule\Contracts\CatalogRule';
     }
 
     /**

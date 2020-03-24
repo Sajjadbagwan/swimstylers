@@ -27,7 +27,7 @@
                 </ul>
             </div>
 
-            {!! app('Webkul\Address\DataGrids\Admin\OrderDataGrid')->render() !!}
+            {!! app('Swim\Address\DataGrids\Admin\OrderDataGrid')->render() !!}
 
         </div>
     </div>

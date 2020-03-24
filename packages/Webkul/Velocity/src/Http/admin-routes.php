@@ -3,7 +3,7 @@
 Route::group(['middleware' => ['web']], function () {
     Route::prefix('admin/velocity')->group(function () {
         Route::group(['middleware' => ['admin']], function () {
-            Route::namespace('Webkul\Velocity\Http\Controllers\Admin')->group(function () {
+            Route::namespace('Swim\Velocity\Http\Controllers\Admin')->group(function () {
                 // Content Pages Route
                 Route::get('/content', 'ContentController@index')->defaults('_config', [
                     'view' => 'velocity::admin.content.index'

@@ -3,8 +3,8 @@
 /** @var \Illuminate\Database\Eloquent\Factory $factory */
 
 use Faker\Generator as Faker;
-use Webkul\Attribute\Models\Attribute;
-use Webkul\Core\Models\Locale;
+use Swim\Attribute\Models\Attribute;
+use Swim\Core\Models\Locale;
 
 $factory->define(Attribute::class, function (Faker $faker, array $attributes) {
     $types = [

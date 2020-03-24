@@ -1,6 +1,6 @@
 <?php
 
-namespace Webkul\Shop\Exceptions;
+namespace Swim\Shop\Exceptions;
 
 use Exception;
 use Illuminate\Auth\AuthenticationException;
