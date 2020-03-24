@@ -19,11 +19,30 @@ class UserDataGrid extends DataGrid
 
     public function prepareQueryBuilder()
     {
-        $queryBuilder = DB::table('admins as u')->addSelect('u.id as user_id', 'u.name as user_name', 'u.status', 'u.email', 'ro.name as role_name')->leftJoin('roles as ro', 'u.role_id', '=', 'ro.id');
 
+        $roleid = auth()->guard('admin')->user()->role['id'];
+            if($roleid == 1) {
+            $queryBuilder = DB::table('admins as u')
+                ->addSelect('u.id as user_id', 'u.name as user_name', 'u.status', 'u.email', 'ro.name as role_name')
+                ->leftJoin('roles as ro', 'u.role_id', '=', 'ro.id');
+        }else{
+            $AuthId = auth()->guard('admin')->user()->id;
+            $getUserDetail = DB::table('admins_detail')->where('user_id',$AuthId)->first();
+            $getUser = DB::table('admins_detail')->where('branch_id',$getUserDetail->branch_id)->get();
+            $uarr = [];
+            foreach($getUser as $u){
+                array_push($uarr,$u->user_id);
+            }
+            $queryBuilder = DB::table('admins as u')
+                ->leftJoin('roles as ro', 'u.role_id', '=', 'ro.id')
+                ->addSelect('u.id as user_id', 'u.name as user_name', 'u.status', 'u.email', 'ro.name as role_name')
+                ->whereIn('u.id',  $uarr);
+
+        }
         $this->addFilter('user_id', 'u.id');
         $this->addFilter('user_name', 'u.name');
         $this->addFilter('role_name', 'ro.name');
+
 
         $this->setQueryBuilder($queryBuilder);
     }
