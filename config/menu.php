@@ -2,17 +2,18 @@
 
 return [
     'admin' => [
-    	[
-        'key' => 'master',
-        'name' => 'admin::app.acl.master',
-        'route' => 'admin.master.branch.index',
-        'sort' => 2
+	    	[
+	        'key' => 'masters',
+	        'name' => 'Masters',
+	        'route' => 'admin.masters.branch.index',
+	        'sort' => 2,
+	        'icon-class' => 'sales-icon'
     ], [
-        'key' => 'master.branch',
-        'name' => 'admin::app.acl.branch',
-        'route' => 'admin.master.branch.index',
-        'sort' => 1
-    ],
+	        'key' => 'masters.branch',
+	        'name' => 'Branch',
+	        'route' => 'admin.masters.branch.index',
+	        'sort' => 1
+	    ],
     ],
     
     'customer' => [

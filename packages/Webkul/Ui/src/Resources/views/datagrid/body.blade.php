@@ -1,4 +1,5 @@
 <tbody>
+
     @if (count($records))
         @foreach ($records as $key => $record)
             <tr>

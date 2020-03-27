@@ -268,7 +268,7 @@ return [
         Webkul\CMS\Providers\CMSServiceProvider::class,
         Webkul\Velocity\Providers\VelocityServiceProvider::class,
 
-        //Webkul\Branch\Providers\BranchServiceProvider::class,
+        Webkul\Masters\Providers\MastersServiceProvider::class,
         //Swim\Branch\Providers\BranchServiceProvider::class,
     ],
 

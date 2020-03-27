@@ -102,7 +102,7 @@
         "Webkul\\Rule\\": "packages/Webkul/Rule/src",
         "Webkul\\CMS\\": "packages/Webkul/CMS/src",
         "Webkul\\Velocity\\": "packages/Webkul/Velocity/src",
-        "Webkul\\Branch\\": "packages/Webkul/Branch/src"
+        "Webkul\\Masters\\": "packages/Webkul/Masters/src"
       }
     },
 

@@ -172,6 +172,16 @@ Route::group(['middleware' => ['web']], function () {
 
             Route::post('groups/delete/{id}', 'Webkul\Admin\Http\Controllers\Customer\CustomerGroupController@destroy')->name('admin.groups.delete');
 
+            // Masters Routes
+            Route::prefix('masters')->group(function () {
+
+                // Masters Branch Routes
+                Route::get('/branch', 'Webkul\Admin\Http\Controllers\Masters\BranchController@index')->defaults('_config', ['view' => 'admin::masters.branch.index'])->name('admin.masters.branch.index');
+
+                 Route::get('/branch/create', 'Webkul\Admin\Http\Controllers\Masters\BranchController@create')->defaults('_config',['view' => 'admin::masters.branch.create'])->name('admin.branch.create');
+
+            });
+
 
             // Sales Routes
             Route::prefix('sales')->group(function () {

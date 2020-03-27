@@ -23,6 +23,7 @@
 
         <div class="page-content">
             @inject('orderGrid', 'Webkul\Admin\DataGrids\OrderDataGrid')
+            <?php //echo "<pre>";print_r($orderGrid);exit(); ?>
             {!! $orderGrid->render() !!}
         </div>
     </div>
