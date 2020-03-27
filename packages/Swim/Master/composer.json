@@ -1,0 +1,27 @@
+{
+    "name": "bagisto/laravel-classes",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jitendra Singh",
+            "email": "jitendra@Swim.com"
+        }
+    ],
+    "require": {
+        "baum/baum": "~1.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Swim\\Master\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Swim\\Master\\Providers\\MasterServiceProvider"
+            ],
+            "aliases": { }
+        }
+    },
+    "minimum-stability": "dev"
+}

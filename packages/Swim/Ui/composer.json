@@ -1,0 +1,25 @@
+{
+    "name": "bagisto/laravel-ui",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jitendra Singh",
+            "email": "jitendra@Swim.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Swim\\Ui\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Swim\\Ui\\Providers\\UiServiceProvider"
+            ],
+            "aliases": {}
+        }
+    },
+    "minimum-stability": "dev"
+}

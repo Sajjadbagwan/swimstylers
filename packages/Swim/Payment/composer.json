@@ -1,0 +1,27 @@
+{
+    "name": "bagisto/laravel-payment",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jitendra Singh",
+            "email": "jitendra@Swim.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Swim\\Payment\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Swim\\Payment\\Providers\\PaymentServiceProvider"
+            ],
+            "aliases": {
+                "Bouncer": "Swim\\Payment\\Facades\\Bouncer"
+            }
+        }
+    },
+    "minimum-stability": "dev"
+}

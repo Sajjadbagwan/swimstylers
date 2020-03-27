@@ -1,0 +1,27 @@
+{
+    "name": "bagisto/laravel-product",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jitendra Singh",
+            "email": "jitendra@Swim.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Swim\\Product\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Swim\\Product\\Providers\\ProductServiceProvider"
+            ],
+            "aliases": {
+                "Bouncer": "Swim\\Product\\Facades\\Bouncer"
+            }
+        }
+    },
+    "minimum-stability": "dev"
+}

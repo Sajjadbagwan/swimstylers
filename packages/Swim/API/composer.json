@@ -1,0 +1,34 @@
+{
+    "name": "Swim/laravel-api",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Prashant Singh",
+            "email": "prashant.singh852@Swim.com"
+        }
+    ],
+    "require": {
+        "Swim/laravel-user": "dev-master",
+        "Swim/laravel-core": "dev-master",
+        "Swim/laravel-product": "dev-master",
+        "Swim/laravel-shop": "dev-master",
+        "Swim/laravel-category": "dev-master",
+        "Swim/laravel-tax": "dev-master",
+        "Swim/laravel-inventory": "dev-master",
+        "Swim/laravel-checkout": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "Swim\\API\\": "/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Swim\\API\\AdminServiceProvider"
+            ],
+            "aliases": {}
+        }
+    },
+    "minimum-stability": "dev"
+}

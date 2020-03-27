@@ -1,0 +1,27 @@
+{
+    "name": "bagisto/laravel-core",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jitendra Singh",
+            "email": "jitendra@Swim.com"
+        }
+    ],
+    "require": {
+        "propaganistas/laravel-intl": "^2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Swim\\Core\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Swim\\Core\\Providers\\CoreServiceProvider"
+            ],
+            "aliases": { }
+        }
+    },
+    "minimum-stability": "dev"
+}

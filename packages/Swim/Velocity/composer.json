@@ -1,0 +1,34 @@
+{
+    "name": "bagisto/velocity-theme",
+    "description": "Velocity Theme for Bagisto.",
+    "license": "MIT",
+
+    "authors": [
+        {
+            "name": "viveksharma-Swim",
+            "email": "viveksh047@Swim.com"
+        },
+        {
+            "name": "Shubham Mehrotra",
+            "email": "shubhammehrotra.symfony@Swim.com"
+        }
+    ],
+
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Swim\\Velocity\\": "src/"
+        }
+    },
+
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Swim\\Velocity\\Providers\\VelocityServiceProvider"
+            ],
+            "aliases": {}
+        }
+    },
+
+    "minimum-stability": "dev"
+}

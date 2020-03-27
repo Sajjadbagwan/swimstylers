@@ -1,0 +1,26 @@
+{
+    "name": "bagisto/laravel-shipping",
+    "description": "Shipping Package for Shipping Method",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "rahulshukla-Swim",
+            "email": "rahulshukla.symfony517@Swim.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Swim\\Shipping\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Swim\\Shipping\\Providers\\ShippingServiceProvider"
+            ],
+            "aliases": {}
+        }
+    },
+    "minimum-stability": "dev"
+}
